@@ -16,6 +16,19 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Adding MCQs
+
+The live question bank is `src/data/questions.json`. To add an AI Studio JSON export, place the file in the project and run:
+
+```bash
+npm run import:questions -- path/to/export.json --source "KMU 2025" --year 2025
+npm run validate:questions
+npm run lint
+npm run build
+```
+
+The importer accepts the app format (`id`, `answer`) and extractor format (`number`, `correct`). It requires a valid subject, source, year, at least four options (`A`–`D`; optional `E` is preserved), and an answer. After checking the result, commit and push `src/data/questions.json`; Vercel will deploy the updated bank automatically.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

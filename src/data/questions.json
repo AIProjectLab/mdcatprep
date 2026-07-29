@@ -3215,7 +3215,9 @@
     "text": "Genetic drift is change in the allele frequency of population due to;",
     "options": {
       "A": "Random chance",
-      "B": "Non random mating"
+      "B": "Non random mating",
+      "C": "Natural selection",
+      "D": "Mutation"
     },
     "answer": "A"
   },
