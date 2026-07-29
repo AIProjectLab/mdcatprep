@@ -1,0 +1,109 @@
+"use client";
+
+import { useState } from "react";
+import { useUser } from "@clerk/nextjs";
+import { useRouter } from "next/navigation";
+
+export default function PaymentPageClient({ userId, email }: { userId: string; email: string }) {
+  const { user } = useUser();
+  const router = useRouter();
+  const [txId, setTxId] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
+  // Check if user already has access (from metadata)
+  const hasAccess = user?.publicMetadata?.hasAccess === true;
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!txId.trim()) {
+      setError("Please enter the JazzCash transaction ID");
+      return;
+    }
+    setError("");
+    // Send verification request to admin
+    const res = await fetch("/api/payment/verify", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ userId, email, transactionId: txId.trim() }),
+    });
+    if (res.ok) {
+      setSubmitted(true);
+    } else {
+      setError("Failed to submit. Please try again or contact support.");
+    }
+  };
+
+  if (hasAccess) {
+    router.push("/dashboard");
+    return null;
+  }
+
+  if (submitted) {
+    return (
+      <main className="flex min-h-screen items-center justify-center px-4">
+        <div className="max-w-lg text-center">
+          <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100">
+            <svg className="h-8 w-8 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+          </div>
+          <h1 className="text-2xl font-bold">Payment Submitted!</h1>
+          <p className="mt-4 text-gray-600">
+            We have received your payment request. Our team will verify it within a few hours.
+            You will get access once confirmed. Check back on your dashboard.
+          </p>
+        </div>
+      </main>
+    );
+  }
+
+  return (
+    <main className="flex min-h-screen items-center justify-center px-4 py-12">
+      <div className="w-full max-w-lg">
+        <h1 className="text-2xl font-bold text-center">Get MDCAT Pro Access</h1>
+        <p className="mt-2 text-center text-gray-600">One-time payment of PKR 500</p>
+
+        <div className="mt-8 rounded-xl border bg-white p-6 shadow-sm">
+          <h2 className="font-semibold text-gray-900">Step 1: Send PKR 500 via JazzCash</h2>
+          <div className="mt-3 rounded-lg bg-gray-50 p-4 text-center">
+            <p className="text-sm text-gray-500">Send to JazzCash Number</p>
+            <p className="mt-1 text-2xl font-bold text-gray-900 tracking-wider">{process.env.NEXT_PUBLIC_JAZZCASH_NUMBER || "03XX-XXXXXXX"}</p>
+            <p className="mt-1 text-xs text-gray-500">{process.env.NEXT_PUBLIC_JAZZCASH_NAME || "Your Name"}</p>
+          </div>
+          <p className="mt-2 text-xs text-gray-500">
+            Open JazzCash → Send Money → Enter this number → PKR 500 → Your MPIN → Done
+          </p>
+        </div>
+
+        <div className="mt-4 rounded-xl border bg-white p-6 shadow-sm">
+          <h2 className="font-semibold text-gray-900">Step 2: Enter Transaction ID</h2>
+          <p className="mt-1 text-xs text-gray-500">
+            After sending, you will receive an SMS with a Transaction ID. Enter it below.
+          </p>
+          <form onSubmit={handleSubmit} className="mt-4 space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700">Transaction ID</label>
+              <input
+                type="text"
+                value={txId}
+                onChange={(e) => setTxId(e.target.value)}
+                placeholder="e.g. JZ2K9P4M8Q"
+                className="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500"
+              />
+            </div>
+            {error && <p className="text-sm text-red-600">{error}</p>}
+            <button
+              type="submit"
+              className="w-full rounded-lg bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white shadow hover:bg-emerald-500 transition"
+            >
+              Submit for Verification
+            </button>
+          </form>
+        </div>
+
+        <p className="mt-4 text-center text-xs text-gray-400">
+          Having issues? Contact us on WhatsApp: 03XX-XXXXXXX
+        </p>
+      </div>
+    </main>
+  );
+}
