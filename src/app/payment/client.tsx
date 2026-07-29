@@ -60,17 +60,28 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
     <main className="flex min-h-screen items-center justify-center px-4 py-12">
       <div className="w-full max-w-lg">
         <h1 className="text-2xl font-bold text-center">Get MDCAT Pro Access</h1>
-        <p className="mt-2 text-center text-gray-600">One-time payment of PKR 500</p>
+        <p className="mt-2 text-center text-gray-600">One-time payment of PKR 1,000</p>
+
+        <div className="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 p-5">
+          <h2 className="font-semibold text-gray-900">What you get with Pro</h2>
+          <ul className="mt-3 space-y-2 text-sm text-gray-700">
+            <li>✓ Unlimited 180-MCQ full exam simulations</li>
+            <li>✓ 90-MCQ half tests and 30-MCQ quick practice</li>
+            <li>✓ Subject-focused practice for all MDCAT subjects</li>
+            <li>✓ Score history and subject-wise performance review</li>
+            <li>✓ Private WhatsApp preparation and doubt-solving group</li>
+          </ul>
+        </div>
 
         <div className="mt-8 rounded-xl border bg-white p-6 shadow-sm">
-          <h2 className="font-semibold text-gray-900">Step 1: Send PKR 500 via JazzCash</h2>
+          <h2 className="font-semibold text-gray-900">Step 1: Send PKR 1,000 via JazzCash</h2>
           <div className="mt-3 rounded-lg bg-gray-50 p-4 text-center">
             <p className="text-sm text-gray-500">Send to JazzCash Number</p>
             <p className="mt-1 text-2xl font-bold text-gray-900 tracking-wider">{process.env.NEXT_PUBLIC_JAZZCASH_NUMBER || "03XX-XXXXXXX"}</p>
             <p className="mt-1 text-xs text-gray-500">{process.env.NEXT_PUBLIC_JAZZCASH_NAME || "Your Name"}</p>
           </div>
           <p className="mt-2 text-xs text-gray-500">
-            Open JazzCash → Send Money → Enter this number → PKR 500 → Your MPIN → Done
+            Open JazzCash → Send Money → Enter this number → PKR 1,000 → Your MPIN → Done
           </p>
         </div>
 

@@ -49,7 +49,7 @@ export default function Home() {
           <div className="rounded-xl border border-emerald-600 bg-emerald-50 p-6 shadow-sm text-left">
             <div className="flex items-center justify-between">
               <h3 className="text-lg font-bold text-gray-900">Pro</h3>
-              <span className="rounded-full bg-emerald-600 px-3 py-0.5 text-xs font-semibold text-white">PKR 500</span>
+              <span className="rounded-full bg-emerald-600 px-3 py-0.5 text-xs font-semibold text-white">PKR 1,000</span>
             </div>
             <p className="mt-1 text-sm text-gray-500">One-time payment. Unlimited access.</p>
             <ul className="mt-4 space-y-2 text-sm text-gray-600">
@@ -61,7 +61,7 @@ export default function Home() {
             </ul>
             <SignedOut>
               <Link href="/sign-up" className="mt-4 block w-full rounded-lg bg-emerald-600 px-4 py-2.5 text-center text-sm font-semibold text-white shadow hover:bg-emerald-500 transition">
-                Get Started — PKR 500
+                Get Started — PKR 1,000
               </Link>
             </SignedOut>
             <SignedIn>

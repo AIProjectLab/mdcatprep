@@ -122,14 +122,28 @@ export default function DashboardClient({
               <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-amber-100">
                 <span className="text-2xl">🎯</span>
               </div>
-              <h1 className="text-2xl font-bold">Free Test Complete!</h1>
+              <h1 className="text-2xl font-bold">Your diagnostic is complete 🎯</h1>
               <p className="mt-4 text-gray-600">
-                You have used your free test. Upgrade to Pro for unlimited mock tests with real past paper questions.
+                Your score is saved. Review your result or continue with the complete MDCAT preparation package.
               </p>
-              <Link href="/payment"
-                className="mt-6 inline-block rounded-lg bg-emerald-600 px-8 py-3 text-sm font-semibold text-white hover:bg-emerald-500">
-                Upgrade Now — PKR 500
-              </Link>
+              {tests[0] && (
+                <Link href={`/result/${tests[0].id}`} className="mt-5 inline-block text-sm font-semibold text-emerald-700 underline">
+                  Review My Diagnostic Result
+                </Link>
+              )}
+              <div className="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 p-5 text-left">
+                <h2 className="font-bold text-gray-900">MDCAT Pro — PKR 1,000 one-time</h2>
+                <ul className="mt-3 space-y-2 text-sm text-gray-700">
+                  <li>✓ Unlimited 180-MCQ full exam simulations</li>
+                  <li>✓ 90-MCQ half tests and 30-MCQ quick practice</li>
+                  <li>✓ Subject-focused tests for Biology, Chemistry, Physics, English, and LR</li>
+                  <li>✓ Score history and subject-wise performance review</li>
+                  <li>✓ Private WhatsApp preparation and doubt-solving group</li>
+                </ul>
+                <Link href="/payment" className="mt-5 block rounded-lg bg-emerald-600 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-emerald-500">
+                  Get Pro Access — PKR 1,000
+                </Link>
+              </div>
             </>
           ) : (
             <>
@@ -142,7 +156,7 @@ export default function DashboardClient({
               {!paymentPending && (
                 <Link href="/payment"
                   className="mt-6 inline-block rounded-lg bg-emerald-600 px-8 py-3 text-sm font-semibold text-white hover:bg-emerald-500">
-                  Buy Access — PKR 500
+                  Buy Pro Access — PKR 1,000
                 </Link>
               )}
             </>
