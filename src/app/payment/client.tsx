@@ -17,7 +17,7 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!txId.trim()) {
-      setError("Please enter the JazzCash transaction ID");
+      setError("Please enter the Easypaisa transaction ID");
       return;
     }
     setError("");
@@ -74,14 +74,14 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
         </div>
 
         <div className="mt-8 rounded-xl border bg-white p-6 shadow-sm">
-          <h2 className="font-semibold text-gray-900">Step 1: Send PKR 1,000 via JazzCash</h2>
+          <h2 className="font-semibold text-gray-900">Step 1: Send PKR 1,000 via Easypaisa</h2>
           <div className="mt-3 rounded-lg bg-gray-50 p-4 text-center">
-            <p className="text-sm text-gray-500">Send to JazzCash Number</p>
-            <p className="mt-1 text-2xl font-bold text-gray-900 tracking-wider">{process.env.NEXT_PUBLIC_JAZZCASH_NUMBER || "03XX-XXXXXXX"}</p>
-            <p className="mt-1 text-xs text-gray-500">{process.env.NEXT_PUBLIC_JAZZCASH_NAME || "Your Name"}</p>
+            <p className="text-sm text-gray-500">Send to Easypaisa Number</p>
+            <p className="mt-1 text-2xl font-bold text-gray-900 tracking-wider">{process.env.NEXT_PUBLIC_EASYPAISA_NUMBER || "03XX-XXXXXXX"}</p>
+            <p className="mt-1 text-xs text-gray-500">{process.env.NEXT_PUBLIC_EASYPAISA_NAME || "Your Name"}</p>
           </div>
           <p className="mt-2 text-xs text-gray-500">
-            Open JazzCash → Send Money → Enter this number → PKR 1,000 → Your MPIN → Done
+            Open Easypaisa → Send Money → Enter this number → PKR 1,000 → Your PIN → Done
           </p>
         </div>
 
@@ -97,7 +97,7 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
                 type="text"
                 value={txId}
                 onChange={(e) => setTxId(e.target.value)}
-                placeholder="e.g. JZ2K9P4M8Q"
+                placeholder="Enter your Easypaisa transaction ID"
                 className="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500"
               />
             </div>
