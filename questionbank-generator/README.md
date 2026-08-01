@@ -2,8 +2,8 @@
 
 Automatically generate **MDCAT-style MCQs** from scanned textbook PDFs using **Gemini Vision AI** — no OCR required.
 
-- **Input:** Any scanned textbook PDF (tested with KPK FSC Biology 11th & 12th)
-- **Output:** JSON MCQs matching real KMU MDCAT past papers, tagged by official PMDC syllabus unit
+- **Input:** Any scanned textbook PDF (Biology, Chemistry, or Physics)
+- **Output:** JSON MCQs matching real KMU MDCAT past papers, tagged by the selected subject's official PMDC syllabus unit
 - **Speed:** ~5-6 MCQs per page, ~1 min/page
 - **Accuracy:** Vision AI reads images directly — diagrams, tables, mixed text all handled
 
@@ -72,8 +72,8 @@ img = bitmap.to_pil()  # → PIL Image object
 
 The PNG image is base64-encoded and sent to **Gemini 2.5 Flash** along with a carefully engineered prompt. The prompt contains:
 
-1. **13 real KMU past paper MCQs** as few-shot examples (so the output matches the exact style)
-2. **The full 16-unit official PMDC syllabus** (so Gemini knows which unit each MCQ belongs to)
+1. **Real KMU past-paper examples** for general MDCAT style
+2. **The selected subject's official PMDC syllabus** (Biology: 16 units, Chemistry: 20 units, Physics: 16 units)
 3. **Style rules**: short questions, `________` blanks, "INCORRECT" negation, single-word options
 4. **Difficulty distribution**: 15% Easy / 70% Moderate / 15% Hard
 
@@ -128,6 +128,8 @@ The PMDC MDCAT exam has **81 Biology MCQs** out of 180 total (45% weight). The o
 - **No negative marking**
 - **Paper-based MCQs**
 - **Difficulty:** 15% Easy, 70% Moderate, 15% Hard
+
+The generator uses separate official unit maps for Biology, Chemistry, and Physics. Select the correct subject before processing a book; do not process Chemistry or Physics books as Biology.
 
 ### MDCAT 2026 Key Dates (from Public Notices)
 

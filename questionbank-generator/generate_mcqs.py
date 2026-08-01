@@ -14,8 +14,8 @@ MODEL = "qwen2.5-vl-7b-instruct"
 OUTPUT_DIR = Path(__file__).parent / "generated_mcqs"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-# Official PMDC MDCAT 2025 Biology Syllabus (16 units)
-OFFICIAL_UNITS = {
+# Official PMDC MDCAT 2025 syllabus unit maps.
+BIOLOGY_UNITS = {
     1: "Acellular Life (Viruses, AIDS)",
     2: "Bioenergetics (Respiration)",
     3: "Biological Molecules (Water, Carbs, Proteins, Lipids, DNA/RNA)",
@@ -34,6 +34,57 @@ OFFICIAL_UNITS = {
     16: "Biotechnology"
 }
 
+CHEMISTRY_UNITS = {
+    1: "Fundamentals: Moles, Stoichiometry, Limiting Reactants and Yield",
+    2: "Atomic Structure",
+    3: "Gases",
+    4: "Liquids and Hydrogen Bonding",
+    5: "Solids and Crystal Lattice",
+    6: "Chemical Equilibrium",
+    7: "Reaction Kinetics",
+    8: "Thermochemistry and Energetics",
+    9: "Electrochemistry",
+    10: "Chemical Bonding",
+    11: "S- and P-Block Elements",
+    12: "Transition Elements",
+    13: "Fundamental Principles of Organic Chemistry",
+    14: "Chemistry of Hydrocarbons",
+    15: "Alkyl Halides",
+    16: "Alcohols and Phenols",
+    17: "Aldehydes and Ketones",
+    18: "Carboxylic Acids",
+    19: "Macromolecules",
+    20: "Industrial Chemistry",
+}
+
+PHYSICS_UNITS = {
+    1: "Vectors and Equilibrium",
+    2: "Force and Motion",
+    3: "Work and Energy",
+    4: "Rotational and Circular Motion",
+    5: "Fluid Dynamics",
+    6: "Waves",
+    7: "Thermodynamics",
+    8: "Electrostatics",
+    9: "Current Electricity",
+    10: "Electromagnetism",
+    11: "Electromagnetic Induction",
+    12: "Alternating Current",
+    13: "Electronics",
+    14: "Dawn of Modern Physics",
+    15: "Atomic Spectra",
+    16: "Nuclear Physics",
+}
+
+SUBJECT_UNITS = {
+    "Biology": BIOLOGY_UNITS,
+    "Chemistry": CHEMISTRY_UNITS,
+    "Physics": PHYSICS_UNITS,
+}
+
+# Backward-compatible alias used by existing Biology-only code.
+OFFICIAL_UNITS = BIOLOGY_UNITS
+
 FEW_SHOT_EXAMPLES = [
     {"text": "Sugarcane contains ________", "options": {"A": "Fructose", "B": "Glucose", "C": "Ribose", "D": "Sucrose"}, "correct": "D", "subject": "Biology"},
     {"text": "Sickle cell anaemia results from?", "options": {"A": "Reduction in oxygen carrying capacity of haemoglobin", "B": "Linkage between the polypeptide chains", "C": "Single amino acid substitution in the haemoglobin molecule", "D": "Viral infections of RNA viruses"}, "correct": "C", "subject": "Biology"},
@@ -50,8 +101,22 @@ FEW_SHOT_EXAMPLES = [
     {"text": "Which cytoplasmic organelle make their own proteins?", "options": {"A": "Chromosomes", "B": "Golgi apparatus", "C": "Mitochondria", "D": "Smooth endoplasmic reticulum"}, "correct": "C", "subject": "Biology"}
 ]
 
-OFFICIAL_UNITS_STR = "\n".join(f"  Unit {k}: {v}" for k, v in OFFICIAL_UNITS.items())
 FEW_SHOT_JSON = json.dumps(FEW_SHOT_EXAMPLES, indent=2)
+
+
+def units_for_subject(subject):
+    return SUBJECT_UNITS.get(subject, BIOLOGY_UNITS)
+
+
+def annotate_unit(mcq, subject):
+    """Keep only valid unit numbers for the selected subject."""
+    unit = mcq.get("unit")
+    units = units_for_subject(subject)
+    if isinstance(unit, int) and unit in units:
+        mcq["unit_label"] = units[unit]
+    else:
+        mcq.pop("unit", None)
+        mcq.pop("unit_label", None)
 
 
 def render_page(pdf_path, page_index, scale=1):
@@ -112,14 +177,18 @@ def next_unprocessed_pages(pdf_path, output_name, limit=5):
 
 
 def generate_mcqs(image_b64, subject="Biology", model=None):
-    prompt = f"""You are an MDCAT exam question writer. The Pakistan Medical & Dental Council (PMDC) MDCAT exam has 81 Biology MCQs (45% weight). The official syllabus has 16 units:
+    subject_units = units_for_subject(subject)
+    subject_units_str = "\n".join(f"  Unit {k}: {v}" for k, v in subject_units.items())
+    style_examples = FEW_SHOT_JSON if subject == "Biology" else "No subject-specific examples are provided. Follow the official units and the general MDCAT style rules below."
+    prompt = f"""You are an MDCAT exam question writer for **{subject}**. Use only the official PMDC MDCAT {subject} syllabus below, which contains {len(subject_units)} units:
 
-{OFFICIAL_UNITS_STR}
+You are generating **{subject}** questions. Use only the following official {subject} syllabus units:
+{subject_units_str}
 
 Look at this textbook page and generate MCQs that exactly match the style of real KMU MDCAT past papers.
 
-Here are real past paper examples — match this style EXACTLY:
-{FEW_SHOT_JSON}
+Here are Biology past-paper examples for general MDCAT style only (do not copy their subject content):
+{style_examples}
 
 KEY STYLE RULES:
 1. Questions must be SHORT and DIRECT (5-15 words typically)
@@ -130,7 +199,7 @@ KEY STYLE RULES:
 6. Test one specific fact or concept per question
 7. Distribute difficulty: ~15% easy, ~70% moderate, ~15% hard
 8. Generate 4-6 MCQs per page
-9. For each MCQ, identify which official syllabus Unit it belongs to
+9. For each MCQ, identify the correct official {subject} syllabus Unit (do not invent unit numbers)
 
 Output ONLY a valid JSON array, no markdown, no code fences, no extra text.
 Required format:
@@ -221,8 +290,7 @@ def process_pdf(pdf_path, output_name=None, pages=None, subject="Biology", model
                 mcq["correct"] = str(mcq.get("correct", "")).upper()
                 if mcq["correct"] not in ("A","B","C","D"):
                     continue
-                if mcq.get("unit") and isinstance(mcq["unit"], int):
-                    mcq["unit_label"] = OFFICIAL_UNITS.get(mcq["unit"], f"Unit {mcq['unit']}")
+                annotate_unit(mcq, subject)
                 if mcq["text"] not in seen_questions:
                     mcq["number"] = mcq_counter
                     mcq.setdefault("source", source or pdf_path.stem)
@@ -256,8 +324,7 @@ def process_pdf(pdf_path, output_name=None, pages=None, subject="Biology", model
                     mcq["correct"] = str(mcq.get("correct", "")).upper()
                     if mcq["correct"] not in ("A","B","C","D"):
                         continue
-                    if mcq.get("unit") and isinstance(mcq["unit"], int):
-                        mcq["unit_label"] = OFFICIAL_UNITS.get(mcq["unit"], f"Unit {mcq['unit']}")
+                    annotate_unit(mcq, subject)
                     if mcq["text"] not in seen_questions:
                         mcq["number"] = mcq_counter
                         mcq.setdefault("source", source or pdf_path.stem)
@@ -284,10 +351,12 @@ def process_pdf(pdf_path, output_name=None, pages=None, subject="Biology", model
             if u and isinstance(u, int):
                 units_covered.add(u)
         if units_covered:
-            print(f"\nCoverage: {len(units_covered)}/{len(OFFICIAL_UNITS)} syllabus units")
+            subject_units = units_for_subject(subject)
+            print(f"\nCoverage: {len(units_covered)}/{len(subject_units)} syllabus units")
             for u in sorted(units_covered):
                 count = sum(1 for m in all_mcqs if m.get("unit") == u)
-                print(f"  Unit {u}: {OFFICIAL_UNITS[u]} — {count} MCQs")
+                label = subject_units.get(u, f"Unmapped unit {u}")
+                print(f"  Unit {u}: {label} — {count} MCQs")
 
     print(f"\nDone! {len(all_mcqs)} MCQs saved to {output_path}")
     return output_path
