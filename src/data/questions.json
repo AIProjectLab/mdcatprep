@@ -17388,5 +17388,719 @@
       "D": "102"
     },
     "answer": "C"
+  },
+  {
+    "id": 1230,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "The primary function of the ________ is to transport oxygen in blood.",
+    "options": {
+      "A": "Red Blood Cells",
+      "B": "White Blood Cells",
+      "C": "Platelets",
+      "D": "Lymphocytes"
+    },
+    "answer": "A",
+    "unit": 13,
+    "unitLabel": "Respiration"
+  },
+  {
+    "id": 1231,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which of the following is NOT a component of nucleic acids?",
+    "options": {
+      "A": "Phosphate group",
+      "B": "Sugar",
+      "C": "Amino acid",
+      "D": "Nucleobase"
+    },
+    "answer": "C",
+    "unit": 3,
+    "unitLabel": "Biological Molecules (Water, Carbs, Proteins, Lipids, DNA/RNA)"
+  },
+  {
+    "id": 1232,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "The ________ is a type of protein that helps in blood clotting.",
+    "options": {
+      "A": "Enzyme",
+      "B": "Antibody",
+      "C": "Fibrinogen",
+      "D": "Hemoglobin"
+    },
+    "answer": "C",
+    "unit": 12,
+    "unitLabel": "Immunity"
+  },
+  {
+    "id": 1233,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which of the following is a function of the nervous system?",
+    "options": {
+      "A": "Digestion",
+      "B": "Respiration",
+      "C": "Coordination and control",
+      "D": "Excretion"
+    },
+    "answer": "C",
+    "unit": 5,
+    "unitLabel": "Coordination & Control / Nervous & Chemical Coordination"
+  },
+  {
+    "id": 1234,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "The ________ is a type of cell that helps in the immune response.",
+    "options": {
+      "A": "Neutrophil",
+      "B": "Erythrocyte",
+      "C": "Lymphocyte",
+      "D": "Platelet"
+    },
+    "answer": "C",
+    "unit": 12,
+    "unitLabel": "Immunity"
+  },
+  {
+    "id": 1235,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which of the following is NOT a function of enzymes?",
+    "options": {
+      "A": "Catalysis",
+      "B": "Transportation",
+      "C": "Regulation",
+      "D": "Storage"
+    },
+    "answer": "D",
+    "unit": 6,
+    "unitLabel": "Enzymes"
+  },
+  {
+    "id": 1236,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "The ________ is the primary energy currency of cells.",
+    "options": {
+      "A": "ATP",
+      "B": "GTP",
+      "C": "NADH",
+      "D": "FAD"
+    },
+    "answer": "A",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1237,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which of the following is NOT a biological macromolecule?",
+    "options": {
+      "A": "Protein",
+      "B": "Carbohydrate",
+      "C": "Nucleic acid",
+      "D": "Lipid"
+    },
+    "answer": "D",
+    "unit": 3,
+    "unitLabel": "Biological Molecules (Water, Carbs, Proteins, Lipids, DNA/RNA)"
+  },
+  {
+    "id": 1238,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "The ________ is a type of enzyme that catalyzes the breakdown of glucose.",
+    "options": {
+      "A": "Protease",
+      "B": "Lipase",
+      "C": "Glucokinase",
+      "D": "DNA polymerase"
+    },
+    "answer": "C",
+    "unit": 6,
+    "unitLabel": "Enzymes"
+  },
+  {
+    "id": 1239,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which of the following is NOT a component of cell walls in plants?",
+    "options": {
+      "A": "Cellulose",
+      "B": "Chitin",
+      "C": "pectin",
+      "D": "hemicellulose"
+    },
+    "answer": "B",
+    "unit": 1,
+    "unitLabel": "Acellular Life (Viruses, AIDS)"
+  },
+  {
+    "id": 1240,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which of the following is NOT a function of lysosomes?",
+    "options": {
+      "A": "Digestion",
+      "B": "Storage",
+      "C": "Cellular waste disposal",
+      "D": "Enzyme production"
+    },
+    "answer": "D",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1241,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "What is the primary function of peroxisomes in animal cells?",
+    "options": {
+      "A": "Energy production",
+      "B": "Detoxification and oxidation reactions",
+      "C": "Protein synthesis",
+      "D": "DNA replication"
+    },
+    "answer": "B",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1242,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which organelle is responsible for the breakdown of cellular waste and foreign particles?",
+    "options": {
+      "A": "Mitochondria",
+      "B": "Lysosomes",
+      "C": "Golgi apparatus",
+      "D": "Endoplasmic reticulum"
+    },
+    "answer": "B",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1243,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "What is the function of centrioles in animal cells?",
+    "options": {
+      "A": "Energy production",
+      "B": "Cell division and movement coordination",
+      "C": "Protein synthesis",
+      "D": "Storage"
+    },
+    "answer": "B",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1244,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which cytoskeletal element is responsible for cell shape maintenance?",
+    "options": {
+      "A": "Microtubules",
+      "B": "Intermediate filaments",
+      "C": "Actin filaments",
+      "D": "Lipid bilayer"
+    },
+    "answer": "B",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1245,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "The basic unit of structure and function in living organisms is the ________.",
+    "options": {
+      "A": "Cell",
+      "B": "Organism",
+      "C": "Tissue",
+      "D": "Molecule"
+    },
+    "answer": "A",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1246,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which technique is commonly used for isolating and examining various cell components?",
+    "options": {
+      "A": "Microscopy",
+      "B": "Differential Staining",
+      "C": "Centrifugation",
+      "D": "Tissue Culture"
+    },
+    "answer": "B",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1247,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which of the following is NOT a common technique used for examining cell components?",
+    "options": {
+      "A": "Microscopy",
+      "B": "Differential Staining",
+      "C": "Centrifugation",
+      "D": "Tissue Culture"
+    },
+    "answer": "D",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1248,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "The compound light microscope is limited by the nature of its energy source, which is ________.",
+    "options": {
+      "A": "Light",
+      "B": "Electrons",
+      "C": "Magnetic fields",
+      "D": "Infrared radiation"
+    },
+    "answer": "A",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1249,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which stain is used to visualize DNA in cells?",
+    "options": {
+      "A": "Aniline blue",
+      "B": "Feulgen's stain",
+      "C": "Methylene blue",
+      "D": "Safranin"
+    },
+    "answer": "B",
+    "unit": 6,
+    "unitLabel": "Enzymes"
+  },
+  {
+    "id": 1250,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "What is the final color of Eosin?",
+    "options": {
+      "A": "Blue",
+      "B": "Pink/Red",
+      "C": "Red/Purple",
+      "D": "Yellow"
+    },
+    "answer": "B",
+    "unit": 6,
+    "unitLabel": "Enzymes"
+  },
+  {
+    "id": 1251,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which stain is used to visualize nuclei in cells?",
+    "options": {
+      "A": "Aniline blue",
+      "B": "Methylene blue",
+      "C": "Safranin",
+      "D": "Feulgen's stain"
+    },
+    "answer": "B",
+    "unit": 6,
+    "unitLabel": "Enzymes"
+  },
+  {
+    "id": 1252,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which stain is used to visualize cytoplasm in cells?",
+    "options": {
+      "A": "Aniline blue",
+      "B": "Borax carmine",
+      "C": "Eosin",
+      "D": "Safranin"
+    },
+    "answer": "B",
+    "unit": 6,
+    "unitLabel": "Enzymes"
+  },
+  {
+    "id": 1253,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which cell fraction is obtained at the lowest speed of centrifugation?",
+    "options": {
+      "A": "Homogenate",
+      "B": "Supernatant",
+      "C": "Pellet rich in nuclei and cellular debris",
+      "D": "Pellet rich in mitochondria"
+    },
+    "answer": "A",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1254,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which fraction is obtained at the highest speed of centrifugation?",
+    "options": {
+      "A": "Homogenate",
+      "B": "Supernatant",
+      "C": "Pellet rich in nuclei and cellular debris",
+      "D": "Pellet rich in mitochondria"
+    },
+    "answer": "D",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1255,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which fraction is obtained at a speed of 10,000 g?",
+    "options": {
+      "A": "Homogenate",
+      "B": "Supernatant",
+      "C": "Pellet rich in nuclei and cellular debris",
+      "D": "Pellet rich in mitochondria"
+    },
+    "answer": "B",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1256,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which fraction is obtained at a speed of 20,000 g?",
+    "options": {
+      "A": "Homogenate",
+      "B": "Supernatant",
+      "C": "Pellet rich in nuclei and cellular debris",
+      "D": "Pellet rich in mitochondria"
+    },
+    "answer": "C",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1257,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which fraction is obtained at a speed of 100,000 g?",
+    "options": {
+      "A": "Homogenate",
+      "B": "Supernatant",
+      "C": "Pellet rich in nuclei and cellular debris",
+      "D": "Pellet rich in mitochondria"
+    },
+    "answer": "D",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1258,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which of the following is a main step in tissue culture?",
+    "options": {
+      "A": "Selection of plant tissue",
+      "B": "Establishment of explant in medium",
+      "C": "Multiplication of callus",
+      "D": "Hardening off of plantlets"
+    },
+    "answer": "A",
+    "unit": 16,
+    "unitLabel": "Biotechnology"
+  },
+  {
+    "id": 1259,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "What is used for the separation of photosynthetic pigments in tissue culture?",
+    "options": {
+      "A": "Cell culture hood",
+      "B": "Inverted microscope",
+      "C": "Paper chromatography",
+      "D": "Refrigerator and freezer"
+    },
+    "answer": "C",
+    "unit": 16,
+    "unitLabel": "Biotechnology"
+  },
+  {
+    "id": 1260,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which technique is used to separate molecules of different electrical charge?",
+    "options": {
+      "A": "Column Chromatography",
+      "B": "Electrophoresis",
+      "C": "Spectrophotometry",
+      "D": "Microdissection"
+    },
+    "answer": "B",
+    "unit": 1,
+    "unitLabel": "Acellular Life (Viruses, AIDS)"
+  },
+  {
+    "id": 1261,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which technique measures the change in percentage transmission of light?",
+    "options": {
+      "A": "Column Chromatography",
+      "B": "Electrophoresis",
+      "C": "Spectrophotometry",
+      "D": "Microdissection"
+    },
+    "answer": "C",
+    "unit": 1,
+    "unitLabel": "Acellular Life (Viruses, AIDS)"
+  },
+  {
+    "id": 1262,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which technique uses a fine glass needle under a microscope to remove a portion from a complete chromosome?",
+    "options": {
+      "A": "Column Chromatography",
+      "B": "Electrophoresis",
+      "C": "Spectrophotometry",
+      "D": "Microdissection"
+    },
+    "answer": "D",
+    "unit": 1,
+    "unitLabel": "Acellular Life (Viruses, AIDS)"
+  },
+  {
+    "id": 1263,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which technique uses a laser through a microscope to dissect selected cells?",
+    "options": {
+      "A": "Column Chromatography",
+      "B": "Electrophoresis",
+      "C": "Spectrophotometry",
+      "D": "Microdissection"
+    },
+    "answer": "D",
+    "unit": 1,
+    "unitLabel": "Acellular Life (Viruses, AIDS)"
+  },
+  {
+    "id": 1264,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "The cell wall was discovered by Robert Hooke in ________.",
+    "options": {
+      "A": "1645",
+      "B": "1660",
+      "C": "1670",
+      "D": "1680"
+    },
+    "answer": "B",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1265,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "The cell wall is the outermost boundary of ________.",
+    "options": {
+      "A": "Animal cells",
+      "B": "Plant cells",
+      "C": "Prokaryotic cells",
+      "D": "Eukaryotic cells"
+    },
+    "answer": "B",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1266,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "The cell wall is secreted by the ________ of the plant.",
+    "options": {
+      "A": "Nucleus",
+      "B": "Cytoplasm",
+      "C": "Mitochondria",
+      "D": "Chloroplast"
+    },
+    "answer": "B",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1267,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "The thickness of the cell wall varies in different ________.",
+    "options": {
+      "A": "cells",
+      "B": "tissues",
+      "C": "organs",
+      "D": "species"
+    },
+    "answer": "A",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1268,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "The cell wall of plant cells is composed mainly of:",
+    "options": {
+      "A": "Cellulose",
+      "B": "Lignin",
+      "C": "Proteins",
+      "D": "Chitin"
+    },
+    "answer": "A",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1269,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "Which component of the cell wall is found in primary walls?",
+    "options": {
+      "A": "Cellulose",
+      "B": "Lignin",
+      "C": "Pectic compounds",
+      "D": "Silica"
+    },
+    "answer": "A",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1270,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "The secondary wall of plant cells is mainly composed of:",
+    "options": {
+      "A": "Cellulose",
+      "B": "Lignin",
+      "C": "Pectic compounds",
+      "D": "Silica"
+    },
+    "answer": "B",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
+  },
+  {
+    "id": 1271,
+    "subject": "Biology",
+    "year": 0,
+    "source": "Generated textbook MCQs",
+    "origin": "textbook",
+    "text": "The middle lamella in plant cells is primarily made up of:",
+    "options": {
+      "A": "Cellulose",
+      "B": "Lignin",
+      "C": "Pectic compounds",
+      "D": "Silica"
+    },
+    "answer": "C",
+    "unit": 4,
+    "unitLabel": "Cell Structure & Function"
   }
 ]

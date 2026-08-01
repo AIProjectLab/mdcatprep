@@ -7,6 +7,9 @@ export interface Question {
   subject: Subject;
   year: number;
   source: string;
+  origin?: "past-paper" | "textbook";
+  unit?: number;
+  unitLabel?: string;
   text: string;
   options: Record<string, string>;
   answer: string;
@@ -17,6 +20,40 @@ export interface TestConfig {
   totalMcqs: number;
   subjects: { subject: Subject; count: number }[];
   label: string;
+}
+
+export function getTextbookQuestions(subject?: Subject, source?: string): Question[] {
+  return (questionsData as Question[]).filter((q) => {
+    const isTextbook = q.origin === "textbook";
+    const matchesSubject = !subject || q.subject === subject;
+    const matchesSource = !source || q.source === source;
+    return isTextbook && matchesSubject && matchesSource;
+  });
+}
+
+export function getTextbookSources(): string[] {
+  return [...new Set(getTextbookQuestions().map((q) => q.source))].sort();
+}
+
+export function generateTextbookTest(count: number, subjects: Subject[], sources: string[]): { questions: Question[]; config: TestConfig } {
+  const requested = Math.max(1, Math.min(500, Math.round(count)));
+  const subjectFilter = subjects.length ? subjects : undefined;
+  const sourceFilter = sources.length ? sources : undefined;
+  const pool = getTextbookQuestions().filter((q) =>
+    (!subjectFilter || subjectFilter.includes(q.subject)) &&
+    (!sourceFilter || sourceFilter.includes(q.source))
+  );
+  const questions = shuffle(pool).slice(0, Math.min(requested, pool.length));
+  const bySubject = new Map<Subject, number>();
+  for (const q of questions) bySubject.set(q.subject, (bySubject.get(q.subject) || 0) + 1);
+  return {
+    questions,
+    config: {
+      label: "Textbook Practice",
+      totalMcqs: questions.length,
+      subjects: [...bySubject.entries()].map(([subject, subjectCount]) => ({ subject, count: subjectCount })),
+    },
+  };
 }
 
 const MODES: Record<string, TestConfig> = {

@@ -6,7 +6,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { getAllTests, isFreeTestUsed, isDailyChallengeUsedToday, type StoredTest } from "@/lib/store";
-import type { Subject } from "@/lib/questions";
+import { getTextbookQuestions, getTextbookSources, type Subject } from "@/lib/questions";
 import { UserButton, useUser } from "@clerk/nextjs";
 
 const ALL_SUBJECTS: Subject[] = ["Biology", "Chemistry", "Physics", "English", "Logical Reasoning"];
@@ -26,12 +26,17 @@ export default function DashboardClient({
   // Test config state for Pro users
   const [selectedMode, setSelectedMode] = useState("full");
   const [selectedSubjects, setSelectedSubjects] = useState<Subject[]>([]);
+  const [textbookSubjects, setTextbookSubjects] = useState<Subject[]>([]);
+  const [textbookCount, setTextbookCount] = useState(30);
+  const [textbookSources, setTextbookSources] = useState<string[]>([]);
+  const [selectedTextbookSource, setSelectedTextbookSource] = useState("All books");
   const isAdmin = user?.publicMetadata?.role === "admin";
 
   useEffect(() => {
     setTests(getAllTests().filter((t) => t.submitted));
     setFreeUsed(isFreeTestUsed());
     setDailyAvailable(!isFreeTestUsed() || !isDailyChallengeUsedToday());
+    setTextbookSources(getTextbookSources());
   }, []);
 
   const modes = [
@@ -49,6 +54,12 @@ export default function DashboardClient({
   function getTestUrl() {
     const subs = selectedSubjects.length > 0 ? `&subjects=${selectedSubjects.join(",")}` : "";
     return `/test?mode=${selectedMode}${subs}`;
+  }
+
+  function getTextbookUrl() {
+    const subjects = textbookSubjects.length ? `&subjects=${textbookSubjects.join(",")}` : "";
+    const source = selectedTextbookSource !== "All books" ? `&sources=${encodeURIComponent(selectedTextbookSource)}` : "";
+    return `/test?mode=textbook&count=${textbookCount}${subjects}${source}`;
   }
 
   // Free user who hasn't used their free test yet
@@ -249,6 +260,59 @@ export default function DashboardClient({
           </p>
         </Link>
       </div>
+
+      {/* Textbook Practice */}
+      <section className="mt-8 rounded-2xl border border-blue-200 bg-blue-50/60 p-5">
+        <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+          <div>
+            <h2 className="text-lg font-bold text-gray-900">📚 Textbook Practice</h2>
+            <p className="mt-1 text-sm text-gray-600">
+              Practice new questions generated from the textbooks. This is separate from the real past-paper tests above.
+            </p>
+          </div>
+          <span className="text-sm font-semibold text-blue-700">{getTextbookQuestions().length} questions available</span>
+        </div>
+
+        {textbookSources.length === 0 ? (
+          <div className="mt-4 rounded-lg border border-blue-200 bg-white p-4 text-sm text-gray-600">
+            Textbook questions are not published yet. Generate questions from the local book generator, then sync them into the app.
+          </div>
+        ) : (
+          <>
+            <div className="mt-5 grid gap-4 sm:grid-cols-2">
+              <label className="text-sm font-semibold text-gray-700">
+                Number of questions
+                <select value={textbookCount} onChange={(e) => setTextbookCount(Number(e.target.value))}
+                  className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal">
+                  {[30, 50, 90, 180].map((count) => <option key={count} value={count}>{count} MCQs</option>)}
+                </select>
+              </label>
+              <label className="text-sm font-semibold text-gray-700">
+                Book/source
+                <select value={selectedTextbookSource} onChange={(e) => setSelectedTextbookSource(e.target.value)}
+                  className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal">
+                  <option>All books</option>
+                  {textbookSources.map((source) => <option key={source}>{source}</option>)}
+                </select>
+              </label>
+            </div>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {ALL_SUBJECTS.slice(0, 3).map((s) => (
+                <button key={`textbook-${s}`} onClick={() => setTextbookSubjects((prev) => prev.includes(s) ? prev.filter((x) => x !== s) : [...prev, s])}
+                  className={`rounded-lg border px-3 py-1.5 text-sm font-medium transition ${textbookSubjects.includes(s)
+                    ? "border-blue-500 bg-blue-100 text-blue-700" : "border-gray-200 bg-white text-gray-600 hover:border-gray-300"}`}>
+                  {s}
+                </button>
+              ))}
+              <span className="self-center text-xs text-gray-500">Leave subjects unselected for all subjects.</span>
+            </div>
+            <Link href={getTextbookUrl()}
+              className="mt-5 block rounded-xl bg-blue-600 p-4 text-center font-bold text-white shadow-sm hover:bg-blue-500 transition">
+              Start {textbookCount}-MCQ Textbook Practice
+            </Link>
+          </>
+        )}
+      </section>
 
       {tests.length > 0 && (
         <section className="mt-8">

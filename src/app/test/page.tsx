@@ -6,7 +6,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
-import { generateCustomTest } from "@/lib/questions";
+import { generateCustomTest, generateTextbookTest } from "@/lib/questions";
 import type { Question, Subject } from "@/lib/questions";
 import { saveTest, isFreeTestUsed, markFreeTestUsed, isDailyChallengeUsedToday, markDailyChallengeUsed } from "@/lib/store";
 import Timer from "@/components/Timer";
@@ -14,12 +14,14 @@ import QuestionDisplay from "@/components/QuestionDisplay";
 import QuestionPalette from "@/components/QuestionPalette";
 
 function getConfig() {
-  if (typeof window === "undefined") return { mode: "full", subjects: [] as Subject[] };
+  if (typeof window === "undefined") return { mode: "full", subjects: [] as Subject[], count: 0, sources: [] as string[] };
   const params = new URLSearchParams(window.location.search);
   const mode = params.get("mode") || "full";
   const subs = params.get("subjects") || "";
   const subjects = subs ? (subs.split(",") as Subject[]) : [];
-  return { mode, subjects };
+  const count = Number(params.get("count") || 0);
+  const sources = params.get("sources") ? params.get("sources")!.split(",") : [];
+  return { mode, subjects, count, sources };
 }
 
 interface TestData {
@@ -57,11 +59,16 @@ export default function TestPage() {
   // Generate test on mount
   useEffect(() => {
     if (redirecting || !isLoaded) return;
-    const { mode, subjects } = getConfig();
-    const { questions, config } = generateCustomTest(mode, subjects);
+    const { mode, subjects, count, sources } = getConfig();
+    const result = mode === "textbook"
+      ? generateTextbookTest(count || 30, subjects, sources)
+      : generateCustomTest(mode, subjects);
+    const { questions, config } = result;
     const id = "test_" + Date.now();
     const startTime = Date.now();
-    const duration = mode === "free" || mode === "quick"
+    const duration = mode === "textbook"
+      ? Math.max(30, questions.length) * 60 * 1000
+      : mode === "free" || mode === "quick"
       ? 30 * 60 * 1000
       : mode === "half" ? 90 * 60 * 1000 : 3 * 60 * 60 * 1000;
 
@@ -100,6 +107,16 @@ export default function TestPage() {
   }, [submitted, testData, answers, router, user]);
 
   if (redirecting || !testReady || !testData) return null;
+
+  if (testData.questions.length === 0) {
+    return <main className="mx-auto flex min-h-screen max-w-lg items-center px-4 text-center">
+      <div>
+        <h1 className="text-2xl font-bold">No textbook questions available yet</h1>
+        <p className="mt-3 text-gray-600">Generate and sync textbook questions first, then come back to start practice.</p>
+        <button onClick={() => router.push("/dashboard")} className="mt-6 rounded-lg bg-emerald-600 px-5 py-3 font-semibold text-white">Back to dashboard</button>
+      </div>
+    </main>;
+  }
 
   const { questions, startTime, duration } = testData;
   const endTime = startTime + duration;

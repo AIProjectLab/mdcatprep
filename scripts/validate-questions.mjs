@@ -15,6 +15,7 @@ for (const [index, q] of questions.entries()) {
   if (ids.has(q.id)) errors.push(`${label}: duplicate id ${q.id}`);
   ids.add(q.id);
   if (!allowedSubjects.has(q.subject)) errors.push(`${label}: invalid subject "${q.subject}"`);
+  if (q.origin !== undefined && !["past-paper", "textbook"].includes(q.origin)) errors.push(`${label}: invalid origin "${q.origin}"`);
   if (!q.text?.trim()) errors.push(`${label}: missing text`);
   if (!q.source?.trim()) errors.push(`${label}: missing source`);
   if (!Number.isInteger(q.year) || q.year < 0) errors.push(`${label}: invalid year`);

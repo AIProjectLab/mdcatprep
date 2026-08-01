@@ -58,9 +58,11 @@ for (const [index, q] of items.entries()) {
   if (!["A", "B", "C", "D"].includes(answer)) throw new Error(`Item ${index + 1} has invalid answer: ${answer}`);
 
   const clean = {
-    id: nextId++, subject, year, source, text,
+    id: nextId++, subject, year, source, origin: "textbook", text,
     options: Object.fromEntries(["A", "B", "C", "D"].map((key) => [key, options[key].trim()])),
     answer,
+    ...(Number.isInteger(q.unit) ? { unit: q.unit } : {}),
+    ...(q.unit_label ? { unitLabel: String(q.unit_label).trim() } : {}),
     ...(q.explanation ? { explanation: String(q.explanation).trim() } : {}),
   };
   const key = keyFor(clean);
@@ -88,4 +90,3 @@ if (!dryRun && imported.length) {
 } else {
   console.log("No changes needed.");
 }
-

@@ -33,6 +33,7 @@ const imported = items.map((q, index) => {
   const cleanOptions = Object.fromEntries(Object.entries(options).filter(([key, value]) => /^[A-Z]$/.test(key) && typeof value === "string" && value.trim()).map(([key, value]) => [key, value.trim()]));
   return {
     id: Number.isInteger(q.id) ? q.id : nextId++, subject, year, source,
+    ...(q.origin ? { origin: q.origin } : {}),
     text: String(q.text).trim(),
     options: cleanOptions,
     answer, ...(q.explanation ? { explanation: String(q.explanation).trim() } : {}),
