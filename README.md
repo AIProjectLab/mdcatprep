@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## MDCAT Pro
 
-MDCAT Pro is a Clerk-authenticated MDCAT practice platform with a free 30-question diagnostic, a daily 10-question challenge, Pro 30/90/180-question tests, score review, and manual Easypaisa payment verification.
+MDCAT Pro is a Clerk-authenticated MDCAT practice platform with a free 30-question diagnostic, a daily 30-question challenge, Pro 30/90/180-question tests, score review, and manual Easypaisa payment verification.
 
 - Production app: `https://mdcat.techangles.com`
 - Question bank: `src/data/questions.json`

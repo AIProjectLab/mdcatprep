@@ -98,8 +98,8 @@ const MODES: Record<string, TestConfig> = {
     ],
   },
   daily: {
-    label: "Daily 10-MCQ Challenge",
-    totalMcqs: 10,
+    label: "Daily 30-MCQ Challenge",
+    totalMcqs: 30,
     subjects: [
       { subject: "Biology", count: 4 },
       { subject: "Chemistry", count: 2 },

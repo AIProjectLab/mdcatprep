@@ -159,7 +159,7 @@ export default function DashboardClient({
               </div>
               <div className="mt-4 rounded-xl border border-blue-200 bg-blue-50 p-5 text-left">
                 <h2 className="font-bold text-gray-900">Keep practicing free</h2>
-                <p className="mt-1 text-sm text-gray-600">Try 10 fresh MDCAT-style questions each day. Come back tomorrow for a new challenge.</p>
+                <p className="mt-1 text-sm text-gray-600">Try 30 fresh MDCAT-style questions each day. Come back tomorrow for a new challenge.</p>
                 {dailyAvailable ? (
                   <Link href="/test?mode=daily" className="mt-4 block rounded-lg bg-blue-600 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-blue-500">
                     Start Today&apos;s Challenge
