@@ -4,7 +4,7 @@ This repository is the published quiz app. The local Python generator remains th
 
 ## 1. Generate textbook questions
 
-In `questionbank genrator`, start the app with `run_app.bat`. In **1 · Generate**, choose a book and use **Next batch** or **Complete book**. You do not need to know page numbers. Keep the same output filename so progress is remembered.
+In `questionbank-generator`, start the app with `run_app.bat`. In **Generate from books**, choose **All books** and **Process all remaining pages**. You do not need to know page numbers. Keep the same output filename so progress is remembered.
 
 - **Source label**: for example `Punjab Biology 11th textbook`
 - **Content year**: use `0` for textbook content, or the exam year for past papers
@@ -17,7 +17,7 @@ New questions are saved with source, year, page metadata, and automatic progress
 From `mdcat-app` run:
 
 ```powershell
-npm run sync:questions -- "..\questionbank genrator\generated_mcqs\combined_mcqs.json" --source "Punjab Biology 11th textbook" --year 0 --dry-run
+npm run sync:questions -- "questionbank-generator\generated_mcqs\combined_mcqs.json" --source "Punjab Biology 11th textbook" --year 0 --dry-run
 ```
 
 The command reports incoming, new, and duplicate questions without changing the app.
@@ -27,7 +27,7 @@ The command reports incoming, new, and duplicate questions without changing the 
 Run the same command without `--dry-run`:
 
 ```powershell
-npm run sync:questions -- "..\questionbank genrator\generated_mcqs\combined_mcqs.json" --source "Punjab Biology 11th textbook" --year 0
+npm run sync:questions -- "questionbank-generator\generated_mcqs\combined_mcqs.json" --source "Punjab Biology 11th textbook" --year 0
 npm run validate:questions
 npm run build
 ```

@@ -34,6 +34,15 @@ yarn-error.log*
 .env*
 client_secret_*.json
 
+# Local textbook generator assets and outputs (keep these out of GitHub)
+questionbank-generator/Books/
+questionbank-generator/past papers/
+questionbank-generator/Official-Syllabus/
+questionbank-generator/Public-Notices/
+questionbank-generator/generated_mcqs/
+questionbank-generator/__pycache__/
+questionbank-generator/.kilo/
+
 # vercel
 .vercel
 
