@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "validate:questions": "node scripts/validate-questions.mjs",
-    "import:questions": "node scripts/import-questions.mjs"
+    "import:questions": "node scripts/import-questions.mjs",
+    "sync:questions": "node scripts/sync-question-bank.mjs"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.12.5",
