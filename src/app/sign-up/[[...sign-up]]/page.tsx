@@ -13,7 +13,7 @@ export default function SignUpPage() {
             footerAction: { display: "flex" },
           },
         }}
-        fallbackRedirectUrl="/payment"
+        fallbackRedirectUrl="/dashboard"
       />
     </div>
   );
