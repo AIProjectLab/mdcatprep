@@ -105,6 +105,11 @@ export default function ResultPage({ params }: { params: Promise<{ id: string }>
           </ul>
           <Link href="/payment" className="mt-4 inline-block rounded-lg bg-emerald-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-emerald-500">Get Pro Access — PKR 1,000</Link>
         </div>
+        <div className="mb-6 rounded-xl border border-blue-200 bg-blue-50 p-5">
+          <h2 className="font-bold text-gray-900">Not ready for Pro yet?</h2>
+          <p className="mt-1 text-sm text-gray-600">Continue practicing free with a fresh 10-question MDCAT challenge each day.</p>
+          <Link href="/test?mode=daily" className="mt-4 inline-block rounded-lg bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-blue-500">Try Today&apos;s Free Challenge</Link>
+        </div>
         <Link href="/dashboard" className="inline-block rounded-lg bg-emerald-600 px-8 py-3 text-sm font-semibold text-white hover:bg-emerald-500">
           Back to Dashboard
         </Link>

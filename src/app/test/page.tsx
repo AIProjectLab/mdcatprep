@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
 import { generateCustomTest } from "@/lib/questions";
 import type { Question, Subject } from "@/lib/questions";
-import { saveTest, isFreeTestUsed, markFreeTestUsed } from "@/lib/store";
+import { saveTest, isFreeTestUsed, markFreeTestUsed, isDailyChallengeUsedToday, markDailyChallengeUsed } from "@/lib/store";
 import Timer from "@/components/Timer";
 import QuestionDisplay from "@/components/QuestionDisplay";
 import QuestionPalette from "@/components/QuestionPalette";
@@ -28,6 +28,7 @@ interface TestData {
   startTime: number;
   duration: number;
   mode: string;
+  modeId: string;
 }
 
 export default function TestPage() {
@@ -46,7 +47,8 @@ export default function TestPage() {
   useEffect(() => {
     if (!isLoaded) return;
     const isPro = user?.publicMetadata?.hasAccess === true;
-    if (!isPro && isFreeTestUsed()) {
+    const { mode } = getConfig();
+    if (!isPro && ((mode !== "daily" && isFreeTestUsed()) || (mode === "daily" && isDailyChallengeUsedToday()))) {
       setRedirecting(true);
       router.replace("/dashboard");
     }
@@ -68,7 +70,7 @@ export default function TestPage() {
       questions: questions.map((q) => q.id), answers: {}, submitted: false,
     });
 
-    setTestData({ questions, testId: id, startTime, duration, mode: config.label });
+    setTestData({ questions, testId: id, startTime, duration, mode: config.label, modeId: mode });
     setTestReady(true);
   }, [redirecting, isLoaded]);
 
@@ -86,7 +88,8 @@ export default function TestPage() {
     const { questions, testId, startTime, duration } = testData;
 
     const isPro = user?.publicMetadata?.hasAccess === true;
-    if (!isPro) markFreeTestUsed();
+    if (!isPro && testData.modeId === "daily") markDailyChallengeUsed();
+    else if (!isPro) markFreeTestUsed();
 
     saveTest({
       id: testId, startTime, endTime: now, duration,

@@ -60,6 +60,17 @@ const MODES: Record<string, TestConfig> = {
       { subject: "Biology", count: 30 },
     ],
   },
+  daily: {
+    label: "Daily 10-MCQ Challenge",
+    totalMcqs: 10,
+    subjects: [
+      { subject: "Biology", count: 4 },
+      { subject: "Chemistry", count: 2 },
+      { subject: "Physics", count: 2 },
+      { subject: "English", count: 1 },
+      { subject: "Logical Reasoning", count: 1 },
+    ],
+  },
 };
 
 function shuffle<T>(arr: T[]): T[] {

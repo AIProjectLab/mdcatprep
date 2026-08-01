@@ -5,7 +5,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { getAllTests, isFreeTestUsed, type StoredTest } from "@/lib/store";
+import { getAllTests, isFreeTestUsed, isDailyChallengeUsedToday, type StoredTest } from "@/lib/store";
 import type { Subject } from "@/lib/questions";
 import { UserButton, useUser } from "@clerk/nextjs";
 
@@ -21,6 +21,7 @@ export default function DashboardClient({
   const { user } = useUser();
   const [tests, setTests] = useState<StoredTest[]>([]);
   const [freeUsed, setFreeUsed] = useState(false);
+  const [dailyAvailable, setDailyAvailable] = useState(false);
 
   // Test config state for Pro users
   const [selectedMode, setSelectedMode] = useState("full");
@@ -30,6 +31,7 @@ export default function DashboardClient({
   useEffect(() => {
     setTests(getAllTests().filter((t) => t.submitted));
     setFreeUsed(isFreeTestUsed());
+    setDailyAvailable(!isFreeTestUsed() || !isDailyChallengeUsedToday());
   }, []);
 
   const modes = [
@@ -143,6 +145,17 @@ export default function DashboardClient({
                 <Link href="/payment" className="mt-5 block rounded-lg bg-emerald-600 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-emerald-500">
                   Get Pro Access — PKR 1,000
                 </Link>
+              </div>
+              <div className="mt-4 rounded-xl border border-blue-200 bg-blue-50 p-5 text-left">
+                <h2 className="font-bold text-gray-900">Keep practicing free</h2>
+                <p className="mt-1 text-sm text-gray-600">Try 10 fresh MDCAT-style questions each day. Come back tomorrow for a new challenge.</p>
+                {dailyAvailable ? (
+                  <Link href="/test?mode=daily" className="mt-4 block rounded-lg bg-blue-600 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-blue-500">
+                    Start Today&apos;s Challenge
+                  </Link>
+                ) : (
+                  <p className="mt-4 text-center text-sm font-semibold text-blue-700">Today&apos;s challenge completed ✓</p>
+                )}
               </div>
             </>
           ) : (

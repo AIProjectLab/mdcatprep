@@ -29,6 +29,7 @@ export function getAllTests(): StoredTest[] {
 }
 
 const FREE_TEST_KEY = "mdcat_free_test_used";
+const DAILY_CHALLENGE_KEY = "mdcat_daily_challenge_date";
 
 export function isFreeTestUsed(): boolean {
   if (typeof window === "undefined") return false;
@@ -38,4 +39,18 @@ export function isFreeTestUsed(): boolean {
 export function markFreeTestUsed() {
   if (typeof window === "undefined") return;
   localStorage.setItem(FREE_TEST_KEY, "true");
+}
+
+function todayKey() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+export function isDailyChallengeUsedToday(): boolean {
+  if (typeof window === "undefined") return false;
+  return localStorage.getItem(DAILY_CHALLENGE_KEY) === todayKey();
+}
+
+export function markDailyChallengeUsed() {
+  if (typeof window === "undefined") return;
+  localStorage.setItem(DAILY_CHALLENGE_KEY, todayKey());
 }
