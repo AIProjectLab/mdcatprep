@@ -140,10 +140,6 @@ export default function TestPage() {
         <main className="flex-1">
           <div className="mb-4 flex items-center justify-between">
             <p className="text-sm text-gray-500">Question {currentIndex + 1} of {questions.length}</p>
-            <button onClick={() => setShowConfirmSubmit(true)} disabled={submitted}
-              className="rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-500 disabled:opacity-50">
-              Submit Test
-            </button>
           </div>
           <QuestionDisplay question={currentQ} selected={answers[currentQ?.id] ?? null} onSelect={handleSelect} />
 
@@ -154,11 +150,17 @@ export default function TestPage() {
               ← Previous
             </button>
             <span className="text-sm text-gray-400">{currentIndex + 1} / {questions.length}</span>
-            <button onClick={() => setCurrentIndex(Math.min(questions.length - 1, currentIndex + 1))}
-              disabled={currentIndex === questions.length - 1}
-              className="rounded-lg border border-gray-300 px-5 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-30 transition">
-              Next →
-            </button>
+            {currentIndex === questions.length - 1 ? (
+              <button onClick={() => setShowConfirmSubmit(true)} disabled={submitted}
+                className="rounded-lg bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-500 disabled:opacity-50 transition">
+                Finish Test &amp; See Results
+              </button>
+            ) : (
+              <button onClick={() => setCurrentIndex(Math.min(questions.length - 1, currentIndex + 1))}
+                className="rounded-lg border border-gray-300 px-5 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 transition">
+                Next →
+              </button>
+            )}
           </div>
         </main>
 
@@ -175,9 +177,13 @@ export default function TestPage() {
             disabled={currentIndex === 0}
             className="rounded-lg border px-4 py-2 text-sm disabled:opacity-30">Previous</button>
           <span className="text-sm text-gray-500">{currentIndex + 1}/{questions.length}</span>
-          <button onClick={() => setCurrentIndex(Math.min(questions.length - 1, currentIndex + 1))}
-            disabled={currentIndex === questions.length - 1}
-            className="rounded-lg border px-4 py-2 text-sm disabled:opacity-30">Next</button>
+          {currentIndex === questions.length - 1 ? (
+            <button onClick={() => setShowConfirmSubmit(true)} disabled={submitted}
+              className="rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white disabled:opacity-50">Finish</button>
+          ) : (
+            <button onClick={() => setCurrentIndex(Math.min(questions.length - 1, currentIndex + 1))}
+              className="rounded-lg border px-4 py-2 text-sm">Next</button>
+          )}
         </div>
       </footer>
 
