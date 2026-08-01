@@ -40,6 +40,7 @@ const keys = new Set(existing.map(keyFor));
 let nextId = Math.max(0, ...existing.map((q) => Number(q.id) || 0)) + 1;
 const imported = [];
 const duplicates = [];
+const invalid = [];
 
 for (const [index, q] of items.entries()) {
   const answer = String(q.answer ?? q.correct ?? "").trim().toUpperCase();
@@ -50,12 +51,17 @@ for (const [index, q] of items.entries()) {
   const options = q.options ?? {};
 
   if (!text || !subjects.has(subject) || !source || !Number.isInteger(year) || year < 0) {
-    throw new Error(`Item ${index + 1} is missing valid text, subject, source, or year.`);
+    invalid.push(`Item ${index + 1}: missing valid text, subject, source, or year.`);
+    continue;
   }
   if (!["A", "B", "C", "D"].every((key) => typeof options[key] === "string" && options[key].trim())) {
-    throw new Error(`Item ${index + 1} must contain non-empty A, B, C, and D options.`);
+    invalid.push(`Item ${index + 1}: missing one or more A-D options.`);
+    continue;
   }
-  if (!["A", "B", "C", "D"].includes(answer)) throw new Error(`Item ${index + 1} has invalid answer: ${answer}`);
+  if (!["A", "B", "C", "D"].includes(answer)) {
+    invalid.push(`Item ${index + 1}: invalid answer ${answer || "(empty)"}.`);
+    continue;
+  }
 
   const clean = {
     id: nextId++, subject, year, source, origin: "textbook", text,
@@ -79,6 +85,8 @@ console.log(`Existing: ${existing.length}`);
 console.log(`Incoming: ${items.length}`);
 console.log(`New: ${imported.length}`);
 console.log(`Duplicates skipped: ${duplicates.length}`);
+console.log(`Invalid skipped: ${invalid.length}`);
+if (invalid.length) console.log(invalid.slice(0, 10).join("\n"));
 
 if (!dryRun && imported.length) {
   const tempFile = `${outputFile}.tmp`;

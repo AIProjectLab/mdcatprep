@@ -214,7 +214,11 @@ def process_pdf(pdf_path, output_name=None, pages=None, subject="Biology", model
             mcqs = generate_mcqs(b64, subject, model)
             new_count = 0
             for mcq in mcqs:
-                mcq["correct"] = mcq["correct"].upper()
+                if not isinstance(mcq, dict) or not mcq.get("text") or not isinstance(mcq.get("options"), dict):
+                    continue
+                if not all(str(mcq["options"].get(k, "")).strip() for k in "ABCD"):
+                    continue
+                mcq["correct"] = str(mcq.get("correct", "")).upper()
                 if mcq["correct"] not in ("A","B","C","D"):
                     continue
                 if mcq.get("unit") and isinstance(mcq["unit"], int):
@@ -245,7 +249,11 @@ def process_pdf(pdf_path, output_name=None, pages=None, subject="Biology", model
                 mcqs = generate_mcqs(b64, subject, model)
                 new_count = 0
                 for mcq in mcqs:
-                    mcq["correct"] = mcq["correct"].upper()
+                    if not isinstance(mcq, dict) or not mcq.get("text") or not isinstance(mcq.get("options"), dict):
+                        continue
+                    if not all(str(mcq["options"].get(k, "")).strip() for k in "ABCD"):
+                        continue
+                    mcq["correct"] = str(mcq.get("correct", "")).upper()
                     if mcq["correct"] not in ("A","B","C","D"):
                         continue
                     if mcq.get("unit") and isinstance(mcq["unit"], int):
