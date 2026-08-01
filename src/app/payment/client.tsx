@@ -127,7 +127,10 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
         </div>
 
         <p className="mt-4 text-center text-xs text-gray-400">
-          Having issues? Contact us on WhatsApp: 03XX-XXXXXXX
+          Having issues? Contact us on WhatsApp:{" "}
+          <a href="https://wa.me/923159319433" target="_blank" rel="noreferrer" className="font-medium text-emerald-700 hover:underline">
+            03159319433
+          </a>
         </p>
       </div>
     </main>
