@@ -42,4 +42,6 @@ git commit -m "Update question bank"
 git push origin main
 ```
 
+Vercel is configured to skip deployments when a commit changes only `questionbank-generator`. Changes to the student app or `src/data/questions.json` still deploy normally.
+
 Never commit PDFs, LM Studio credentials, or Google client-secret files. Review `git status` before committing.
