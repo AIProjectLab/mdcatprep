@@ -8,6 +8,7 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
   const { user } = useUser();
   const router = useRouter();
   const [txId, setTxId] = useState("");
+  const [payerName, setPayerName] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
 
@@ -16,6 +17,10 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!payerName.trim()) {
+      setError("Please enter the name used for the Easypaisa payment");
+      return;
+    }
     if (!txId.trim()) {
       setError("Please enter the Easypaisa transaction ID");
       return;
@@ -25,7 +30,7 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
     const res = await fetch("/api/payment/verify", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ userId, email, transactionId: txId.trim() }),
+      body: JSON.stringify({ userId, email, transactionId: txId.trim(), payerName: payerName.trim() }),
     });
     if (res.ok) {
       setSubmitted(true);
@@ -91,6 +96,16 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
             After sending, you will receive an SMS with a Transaction ID. Enter it below.
           </p>
           <form onSubmit={handleSubmit} className="mt-4 space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700">Name used for payment</label>
+              <input
+                type="text"
+                value={payerName}
+                onChange={(e) => setPayerName(e.target.value)}
+                placeholder="Enter the Easypaisa account holder name"
+                className="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500"
+              />
+            </div>
             <div>
               <label className="block text-sm font-medium text-gray-700">Transaction ID</label>
               <input

@@ -6,6 +6,7 @@ import { useUser } from "@clerk/nextjs";
 interface PaymentRequest {
   id: string;
   email: string;
+  payerName: string;
   transactionId: string;
   date: string;
 }
@@ -71,6 +72,7 @@ export default function AdminPage() {
           {requests.map((req) => (
             <div key={req.id} className="rounded-xl border bg-white p-4 shadow-sm">
               <p className="font-medium">{req.email}</p>
+              <p className="text-sm text-gray-700">Payment name: {req.payerName || "Not provided"}</p>
               <p className="text-sm text-gray-500">Transaction: {req.transactionId}</p>
               <p className="text-sm text-gray-500">Date: {new Date(req.date).toLocaleString()}</p>
               <button

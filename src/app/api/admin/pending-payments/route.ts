@@ -19,6 +19,7 @@ export async function GET() {
     .map((u: { id: string; emailAddresses?: Array<{ emailAddress: string }>; publicMetadata?: Record<string, unknown> }) => ({
       id: u.id,
       email: u.emailAddresses?.[0]?.emailAddress ?? "",
+      payerName: (u.publicMetadata?.payerName as string) || "",
       transactionId: (u.publicMetadata?.transactionId as string) || "",
       date: (u.publicMetadata?.paymentDate as string) || "",
     }));
