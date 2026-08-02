@@ -5,6 +5,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { getAllTests, isFreeTestUsed, isDailyChallengeUsedToday, getCustomPapersUsedToday, type StoredTest } from "@/lib/store";
 import { getQuestionUnits, getTextbookQuestions, getTextbookSources, type Subject } from "@/lib/questions";
 import { UserButton, useUser } from "@clerk/nextjs";
@@ -35,6 +36,7 @@ export default function DashboardClient({
   const [customUnit, setCustomUnit] = useState("all");
   const [customUsed, setCustomUsed] = useState(0);
   const isAdmin = user?.publicMetadata?.role === "admin";
+  const isDemo = useSearchParams().get("demo") === "true";
 
   useEffect(() => {
     setTests(getAllTests().filter((t) => t.submitted));
@@ -118,6 +120,12 @@ export default function DashboardClient({
           <UserButton />
         </header>
 
+        {isDemo && (
+          <Link href="/test?mode=demo" className="mt-4 block w-full rounded-xl border-2 border-dashed border-emerald-400 bg-emerald-50 p-3 text-center text-sm font-bold text-emerald-700 hover:bg-emerald-100 transition">
+            🎬 Record Demo Test — 10 Bio MCQs (auto-filled)
+          </Link>
+        )}
+
         <div className="mt-8">
           <Link href="/test?mode=free"
             className="block w-full rounded-xl bg-emerald-600 p-6 text-center text-white shadow-lg hover:bg-emerald-500 transition">
@@ -173,6 +181,7 @@ export default function DashboardClient({
       <main className="flex min-h-screen flex-col items-center justify-center px-4 text-center">
         <div className="fixed right-4 top-4 flex items-center gap-3">
           {isAdmin && <Link href="/admin" className="text-sm font-semibold text-emerald-700 hover:text-emerald-600">Admin</Link>}
+          {isDemo && <Link href="/test?mode=demo" className="rounded-lg bg-emerald-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-emerald-500">🎬 Demo</Link>}
           <UserButton />
         </div>
         <div className="max-w-md">
@@ -245,7 +254,10 @@ export default function DashboardClient({
           <h1 className="text-2xl font-bold">MDCAT Pro</h1>
           <p className="text-sm text-gray-500">Welcome, {user?.firstName || "Student"}</p>
         </div>
-        <UserButton />
+        <div className="flex items-center gap-3">
+          {isDemo && <Link href="/test?mode=demo" className="rounded-lg bg-emerald-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-emerald-500">🎬 Demo</Link>}
+          <UserButton />
+        </div>
       </header>
 
       {/* Mode Selection */}

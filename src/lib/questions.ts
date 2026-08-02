@@ -108,6 +108,13 @@ const MODES: Record<string, TestConfig> = {
       { subject: "Logical Reasoning", count: 1 },
     ],
   },
+  demo: {
+    label: "Demo Test",
+    totalMcqs: 10,
+    subjects: [
+      { subject: "Biology", count: 10 },
+    ],
+  },
 };
 
 function shuffle<T>(arr: T[]): T[] {
