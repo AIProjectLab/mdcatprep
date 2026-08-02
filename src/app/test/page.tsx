@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
 import { generateCustomPaper, generateCustomTest, generateTextbookTest } from "@/lib/questions";
 import type { Question, Subject } from "@/lib/questions";
-import { saveTest, isFreeTestUsed, markFreeTestUsed, isDailyChallengeUsedToday, markDailyChallengeUsed, isCustomPaperLimitReached, markCustomPaperStarted } from "@/lib/store";
+import { saveTest, isFreeTestUsed, markFreeTestUsed, isDailyChallengeUsedToday, markDailyChallengeUsed, isCustomPaperLimitReached, markCustomPaperStarted, isFullPreviewUsed, markFullPreviewUsed } from "@/lib/store";
 import Timer from "@/components/Timer";
 import QuestionDisplay from "@/components/QuestionDisplay";
 import QuestionPalette from "@/components/QuestionPalette";
@@ -55,7 +55,20 @@ export default function TestPage() {
     if (!isLoaded) return;
     const isPro = user?.publicMetadata?.hasAccess === true;
     const { mode } = getConfig();
-    if (!isPro && mode !== "demo" && ((mode !== "daily" && mode !== "custom" && isFreeTestUsed()) || (mode === "daily" && isDailyChallengeUsedToday()) || (mode === "custom" && isCustomPaperLimitReached()))) {
+    let blocked = false;
+    if (!isPro && mode !== "demo") {
+      if (mode === "full") {
+        // Free users get one full-length preview, then it's locked
+        blocked = isFullPreviewUsed();
+      } else if (mode !== "daily" && mode !== "custom" && isFreeTestUsed()) {
+        blocked = true;
+      } else if (mode === "daily" && isDailyChallengeUsedToday()) {
+        blocked = true;
+      } else if (mode === "custom" && isCustomPaperLimitReached()) {
+        blocked = true;
+      }
+    }
+    if (blocked) {
       setRedirecting(true);
       router.replace("/dashboard");
     }
@@ -129,6 +142,7 @@ export default function TestPage() {
 
     const isPro = user?.publicMetadata?.hasAccess === true;
     if (!isPro && testData.modeId === "daily") markDailyChallengeUsed();
+    else if (!isPro && testData.modeId === "full") markFullPreviewUsed();
     else if (!isPro && testData.modeId !== "custom") markFreeTestUsed();
 
     saveTest({

@@ -6,7 +6,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { getAllTests, isFreeTestUsed, isDailyChallengeUsedToday, getCustomPapersUsedToday, type StoredTest } from "@/lib/store";
+import { getAllTests, isFreeTestUsed, isDailyChallengeUsedToday, getCustomPapersUsedToday, isFullPreviewUsed, type StoredTest } from "@/lib/store";
 import { getQuestionUnits, getTextbookQuestions, getTextbookSources, type Subject } from "@/lib/questions";
 import questionsData from "@/data/questions.json";
 import { UserButton, useUser } from "@clerk/nextjs";
@@ -24,6 +24,7 @@ export default function DashboardClient({
   const [tests, setTests] = useState<StoredTest[]>([]);
   const [freeUsed, setFreeUsed] = useState(false);
   const [dailyAvailable, setDailyAvailable] = useState(false);
+  const [fullPreviewUsed, setFullPreviewUsed] = useState(false);
 
   // Test config state for Pro users
   const [selectedMode, setSelectedMode] = useState("full");
@@ -46,6 +47,7 @@ export default function DashboardClient({
     setDailyAvailable(!isFreeTestUsed() || !isDailyChallengeUsedToday());
     setTextbookSources(getTextbookSources());
     setCustomUsed(getCustomPapersUsedToday());
+    setFullPreviewUsed(isFullPreviewUsed());
   }, []);
 
   const modes = [
@@ -297,6 +299,22 @@ export default function DashboardClient({
                   View my full result
                 </Link>
               )}
+
+              {/* Full-length preview — the real exam, once, free */}
+              {!fullPreviewUsed ? (
+                <div className="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 p-5 text-left">
+                  <h2 className="font-bold text-gray-900">Ready for the real thing?</h2>
+                  <p className="mt-1 text-sm text-gray-600">
+                    Try one full-length 180-MCQ exam with the 3-hour timer — exactly like exam day.
+                  </p>
+                  <Link
+                    href="/test?mode=full"
+                    className="mt-4 block rounded-lg bg-emerald-600 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-emerald-500"
+                  >
+                    Try a Full-Length Exam (Free)
+                  </Link>
+                </div>
+              ) : null}
 
               {/* Daily free challenge */}
               <div className="mt-6 rounded-xl border border-blue-200 bg-blue-50 p-5 text-left">
