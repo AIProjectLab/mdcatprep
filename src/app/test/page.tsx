@@ -91,22 +91,24 @@ export default function TestPage() {
 
     setTestData({ questions, testId: id, startTime, duration, mode: config.label, modeId: mode });
     setTestReady(true);
-
-    // Auto-fill answers for demo mode (8 correct + 1 wrong + 1 blank)
-    if (mode === "demo") {
-      const demos: Record<number, string | null> = {};
-      questions.forEach((q, i) => {
-        if (i < 8) {
-          demos[q.id] = q.answer;
-        } else if (i === 8) {
-          const wrong = (Object.keys(q.options) as string[]).find((k) => k !== q.answer) || "A";
-          demos[q.id] = wrong;
-        }
-      });
-      // Use a small timeout so the state renders properly
-      setTimeout(() => setAnswers(demos), 100);
-    }
   }, [redirecting, isLoaded]);
+
+  // Demo mode: auto-fill answer 1.5s after navigating to a question
+  const demoFilled = useRef<Set<number>>(new Set());
+  useEffect(() => {
+    if (!testData || testData.modeId !== "demo") return;
+    const q = testData.questions[currentIndex];
+    if (!q || demoFilled.current.has(q.id) || currentIndex === 9) return;
+    const timer = setTimeout(() => {
+      demoFilled.current.add(q.id);
+      const isWrong = currentIndex === 8;
+      const answer = isWrong
+        ? (Object.keys(q.options) as string[]).find((k) => k !== q.answer) || "A"
+        : q.answer;
+      setAnswers((prev) => ({ ...prev, [q.id]: answer }));
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, [currentIndex, testData]);
 
   const handleSelect = (option: string) => {
     if (submitted || !testData) return;
