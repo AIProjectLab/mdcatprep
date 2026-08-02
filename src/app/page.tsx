@@ -6,7 +6,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center px-4 py-16 text-center">
       <div className="max-w-2xl">
         <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-          MDCAT <span className="text-emerald-600">Pro</span>
+          MDCAT <span className="text-emerald-600">Prep</span>
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-600">
           Start with a free 30-question MDCAT diagnostic, find your weak subject, and practice with authentic past-paper questions.

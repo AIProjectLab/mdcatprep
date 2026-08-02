@@ -8,6 +8,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { getAllTests, isFreeTestUsed, isDailyChallengeUsedToday, getCustomPapersUsedToday, type StoredTest } from "@/lib/store";
 import { getQuestionUnits, getTextbookQuestions, getTextbookSources, type Subject } from "@/lib/questions";
+import questionsData from "@/data/questions.json";
 import { UserButton, useUser } from "@clerk/nextjs";
 
 const ALL_SUBJECTS: Subject[] = ["Biology", "Chemistry", "Physics", "English", "Logical Reasoning"];
@@ -146,16 +147,45 @@ export default function DashboardClient({
       <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
         {!hasAccess ? (
           <p className="text-xs text-gray-500">
-            {customUsed}/5 free papers today &middot;{" "}
-            <Link href="/payment" className="font-semibold text-purple-700 underline hover:text-purple-600">Unlimited with Pro</Link>
+            {Math.max(0, 5 - customUsed)} free papers left today
           </p>
         ) : (
-          <p className="text-xs text-gray-400">Unlimited builds included in Pro</p>
+          <p className="text-xs text-gray-400">Unlimited builds included</p>
         )}
         <p className="text-xs text-gray-400">11,500+ questions from real past papers &amp; textbooks</p>
       </div>
     </section>
   );
+
+  // Diagnostic score analysis (uses the most recent submitted test)
+  const diagnostic = tests.find((t) => t.submitted) || null;
+  const diagnosticScore = (() => {
+    if (!diagnostic) return null;
+    const allQ = questionsData as { id: number; subject: string; answer: string }[];
+    const qMap = new Map(allQ.map((q) => [q.id, q]));
+    let correct = 0;
+    const perSubject: Record<string, { correct: number; total: number }> = {};
+    for (const qid of diagnostic.questions) {
+      const q = qMap.get(qid);
+      if (!q) continue;
+      if (!perSubject[q.subject]) perSubject[q.subject] = { correct: 0, total: 0 };
+      perSubject[q.subject].total++;
+      if (diagnostic.answers[qid] === q.answer) {
+        perSubject[q.subject].correct++;
+        correct++;
+      }
+    }
+    const total = diagnostic.questions.length;
+    // Weakest subject = lowest percentage, only among subjects with at least 1 question
+    let weakest: { subject: string; correct: number; total: number } | null = null;
+    for (const [subject, s] of Object.entries(perSubject)) {
+      if (s.total === 0) continue;
+      if (!weakest || s.correct / s.total < weakest.correct / weakest.total) {
+        weakest = { subject, ...s };
+      }
+    }
+    return { correct, total, perSubject, weakest };
+  })();
 
   // Free user who hasn't used their free test yet
   if (!hasAccess && !paymentPending && !freeUsed) {
@@ -163,7 +193,7 @@ export default function DashboardClient({
       <main className="mx-auto max-w-4xl px-4 py-8">
         <header className="flex items-center justify-between">
           <div>
-            <h1 className="text-2xl font-bold">MDCAT Pro</h1>
+            <h1 className="text-2xl font-bold">MDCAT Prep</h1>
             <p className="text-sm text-gray-500">Welcome, {user?.firstName || "Student"}</p>
           </div>
           <UserButton />
@@ -178,19 +208,14 @@ export default function DashboardClient({
         <div className="mt-8">
           <Link href="/test?mode=free"
             className="block w-full rounded-xl bg-emerald-600 p-6 text-center text-white shadow-lg hover:bg-emerald-500 transition">
-            <p className="text-lg font-bold">Start Your Free Test</p>
-            <p className="mt-1 text-sm text-emerald-100">30 MCQs | 30 Minutes | 1 Free Diagnostic</p>
+            <p className="text-lg font-bold">Start Your Free Diagnostic</p>
+            <p className="mt-1 text-sm text-emerald-100">30 MCQs | 30 Minutes | Find your weak spots</p>
           </Link>
         </div>
 
-        <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50 p-4">
-          <p className="text-sm text-amber-800">
-            <strong>Free diagnostic:</strong> Find your weakest subject first. Upgrade to Pro for unlimited full-length and focused practice tests.
-          </p>
-          <Link href="/payment" className="mt-2 inline-block text-sm font-semibold text-amber-700 underline hover:text-amber-600">
-            See Pro benefits →
-          </Link>
-        </div>
+        <p className="mt-4 text-center text-sm text-gray-500">
+          Finish the diagnostic to see your score and which subject to focus on.
+        </p>
 
         {customPaperCard}
 
@@ -236,34 +261,47 @@ export default function DashboardClient({
         <div className="max-w-md">
           {freeUsed ? (
             <>
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-amber-100">
-                <span className="text-2xl">🎯</span>
-              </div>
-              <h1 className="text-2xl font-bold">Your diagnostic is complete 🎯</h1>
-              <p className="mt-4 text-gray-600">
-                Your score is saved. Review your result or continue with the complete MDCAT preparation package.
-              </p>
-              {tests[0] && (
-                <Link href={`/result/${tests[0].id}`} className="mt-5 inline-block text-sm font-semibold text-emerald-700 underline">
-                  Review My Diagnostic Result
+              {/* Score first — the reward moment */}
+              {diagnosticScore ? (
+                <div className="text-center">
+                  <div className={`mx-auto mb-3 flex h-20 w-20 items-center justify-center rounded-full ${diagnosticScore.correct / Math.max(1, diagnosticScore.total) >= 0.55 ? "bg-emerald-100" : "bg-amber-100"}`}>
+                    <span className="text-2xl font-bold text-gray-900">{diagnosticScore.correct}</span>
+                  </div>
+                  <p className="text-sm text-gray-500">out of {diagnosticScore.total} questions</p>
+                  <h1 className="mt-2 text-xl font-bold text-gray-900">
+                    {diagnosticScore.correct / Math.max(1, diagnosticScore.total) >= 0.55 ? "Nice work!" : "Good start — keep practicing"}
+                  </h1>
+                </div>
+              ) : (
+                <h1 className="text-2xl font-bold">Welcome back</h1>
+              )}
+
+              {/* Weak-subject insight — proof of value */}
+              {diagnosticScore?.weakest && (
+                <div className="mt-5 rounded-xl border border-amber-200 bg-amber-50 p-4 text-left">
+                  <p className="text-sm text-amber-800">
+                    <strong>Focus tip:</strong> {diagnosticScore.weakest.subject} looks like your weakest area right now
+                    ({diagnosticScore.weakest.correct}/{diagnosticScore.weakest.total} correct).
+                  </p>
+                  <Link
+                    href={`/test?mode=custom&count=15&subjects=${encodeURIComponent(diagnosticScore.weakest.subject)}`}
+                    className="mt-3 inline-block rounded-lg bg-amber-600 px-4 py-2 text-sm font-semibold text-white hover:bg-amber-500"
+                  >
+                    Practice {diagnosticScore.weakest.subject} free →
+                  </Link>
+                </div>
+              )}
+
+              {diagnostic && (
+                <Link href={`/result/${diagnostic.id}`} className="mt-4 inline-block text-sm font-semibold text-emerald-700 underline">
+                  View my full result
                 </Link>
               )}
-              <div className="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 p-5 text-left">
-                <h2 className="font-bold text-gray-900">MDCAT Pro — PKR 1,000 one-time</h2>
-                <ul className="mt-3 space-y-2 text-sm text-gray-700">
-                  <li>✓ Unlimited 180-MCQ full exam simulations</li>
-                  <li>✓ 90-MCQ half tests and 30-MCQ quick practice</li>
-                  <li>✓ Subject-focused tests for Biology, Chemistry, Physics, English, and LR</li>
-                  <li>✓ Score history and subject-wise performance review</li>
-                  <li>✓ Private WhatsApp preparation and doubt-solving group</li>
-                </ul>
-                <Link href="/payment" className="mt-5 block rounded-lg bg-emerald-600 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-emerald-500">
-                  Get Pro Access — PKR 1,000
-                </Link>
-              </div>
-              <div className="mt-4 rounded-xl border border-blue-200 bg-blue-50 p-5 text-left">
-                <h2 className="font-bold text-gray-900">Keep practicing free</h2>
-                <p className="mt-1 text-sm text-gray-600">Try 30 fresh MDCAT-style questions each day. Come back tomorrow for a new challenge.</p>
+
+              {/* Daily free challenge */}
+              <div className="mt-6 rounded-xl border border-blue-200 bg-blue-50 p-5 text-left">
+                <h2 className="font-bold text-gray-900">Today&apos;s free challenge</h2>
+                <p className="mt-1 text-sm text-gray-600">30 fresh MDCAT-style questions. New one every day.</p>
                 {dailyAvailable ? (
                   <Link href="/test?mode=daily" className="mt-4 block rounded-lg bg-blue-600 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-blue-500">
                     Start Today&apos;s Challenge
@@ -272,7 +310,14 @@ export default function DashboardClient({
                   <p className="mt-4 text-center text-sm font-semibold text-blue-700">Today&apos;s challenge completed ✓</p>
                 )}
               </div>
+
               {customPaperCard}
+
+              {/* Quiet upsell — last, small, not a card wall */}
+              <p className="mt-6 text-center text-sm text-gray-500">
+                Want full-length 180-MCQ exams and subject-focused tests?{" "}
+                <Link href="/payment" className="font-semibold text-emerald-700 underline">Unlock unlimited</Link>
+              </p>
             </>
           ) : (
             <>
@@ -285,7 +330,7 @@ export default function DashboardClient({
               {!paymentPending && (
                 <Link href="/payment"
                   className="mt-6 inline-block rounded-lg bg-emerald-600 px-8 py-3 text-sm font-semibold text-white hover:bg-emerald-500">
-                  Buy Pro Access — PKR 1,000
+                  Get access
                 </Link>
               )}
             </>
@@ -300,7 +345,7 @@ export default function DashboardClient({
     <main className="mx-auto max-w-4xl px-4 py-8">
       <header className="flex items-center justify-between">
         <div>
-          <h1 className="text-2xl font-bold">MDCAT Pro</h1>
+          <h1 className="text-2xl font-bold">MDCAT Prep</h1>
           <p className="text-sm text-gray-500">Welcome, {user?.firstName || "Student"}</p>
         </div>
         <div className="flex items-center gap-3">

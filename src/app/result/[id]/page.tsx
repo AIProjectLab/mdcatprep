@@ -94,21 +94,19 @@ export default function ResultPage({ params }: { params: Promise<{ id: string }>
       </div>
 
       <div className="mt-8 text-center">
-        <div className="mb-6 rounded-xl border border-emerald-200 bg-emerald-50 p-5">
-          <h2 className="font-bold text-gray-900">Continue your MDCAT preparation</h2>
-          <p className="mt-1 text-sm text-gray-600">MDCAT Pro is a one-time PKR 1,000 package designed for regular exam practice.</p>
-          <ul className="mx-auto mt-3 max-w-md space-y-1 text-left text-sm text-gray-700">
-            <li>✓ Unlimited 180-MCQ full exam simulations</li>
-            <li>✓ 90-MCQ half tests and 30-MCQ quick practice</li>
-            <li>✓ Subject-focused tests and score history</li>
-            <li>✓ Private WhatsApp preparation group</li>
-          </ul>
-          <Link href="/payment" className="mt-4 inline-block rounded-lg bg-emerald-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-emerald-500">Get Pro Access — PKR 1,000</Link>
-        </div>
         <div className="mb-6 rounded-xl border border-blue-200 bg-blue-50 p-5">
-          <h2 className="font-bold text-gray-900">Not ready for Pro yet?</h2>
-          <p className="mt-1 text-sm text-gray-600">Continue practicing free with a fresh 30-question MDCAT challenge each day.</p>
-          <Link href="/test?mode=daily" className="mt-4 inline-block rounded-lg bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-blue-500">Try Today&apos;s Free Challenge</Link>
+          <h2 className="font-bold text-gray-900">Want more practice like this?</h2>
+          <p className="mt-1 text-sm text-gray-600">
+            {percentage >= 55
+              ? "Great result! Keep the momentum with unlimited full-length MDCAT exams and focused subject practice."
+              : "Every practice session helps. Unlock unlimited exams and focus on your weakest subjects."}
+          </p>
+          <Link href="/payment" className="mt-4 inline-block rounded-lg bg-emerald-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-emerald-500">
+            Unlock unlimited practice
+          </Link>
+          <p className="mt-3 text-xs text-gray-500">
+            Also free: <Link href="/test?mode=daily" className="font-semibold text-blue-600 underline">today&apos;s 30-question challenge</Link>
+          </p>
         </div>
         <Link href="/dashboard" className="inline-block rounded-lg bg-emerald-600 px-8 py-3 text-sm font-semibold text-white hover:bg-emerald-500">
           Back to Dashboard

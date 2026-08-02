@@ -161,7 +161,7 @@ export default function TestPage() {
       <header className="sticky top-0 z-10 border-b bg-white shadow-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2">
-            <span className="text-sm font-semibold text-gray-900">MDCAT Pro</span>
+            <span className="text-sm font-semibold text-gray-900">MDCAT Prep</span>
             <span className="rounded bg-gray-100 px-2 py-0.5 text-xs text-gray-500">{testData.mode}</span>
           </div>
           <Timer endTime={endTime} onTimeUp={finishTest} />
