@@ -3,12 +3,12 @@
 /* These effects initialize client-only test state after authentication/localStorage load. */
 /* eslint-disable react-hooks/set-state-in-effect */
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
-import { generateCustomTest, generateTextbookTest } from "@/lib/questions";
+import { generateCustomPaper, generateCustomTest, generateTextbookTest } from "@/lib/questions";
 import type { Question, Subject } from "@/lib/questions";
-import { saveTest, isFreeTestUsed, markFreeTestUsed, isDailyChallengeUsedToday, markDailyChallengeUsed } from "@/lib/store";
+import { saveTest, isFreeTestUsed, markFreeTestUsed, isDailyChallengeUsedToday, markDailyChallengeUsed, isCustomPaperLimitReached, markCustomPaperStarted } from "@/lib/store";
 import Timer from "@/components/Timer";
 import QuestionDisplay from "@/components/QuestionDisplay";
 import QuestionPalette from "@/components/QuestionPalette";
@@ -21,7 +21,8 @@ function getConfig() {
   const subjects = subs ? (subs.split(",") as Subject[]) : [];
   const count = Number(params.get("count") || 0);
   const sources = params.get("sources") ? params.get("sources")!.split(",") : [];
-  return { mode, subjects, count, sources };
+  const unitValue = params.get("unit");
+  return { mode, subjects, count, sources, unit: unitValue ? Number(unitValue) : undefined };
 }
 
 interface TestData {
@@ -44,13 +45,14 @@ export default function TestPage() {
   const [submitted, setSubmitted] = useState(false);
   const [showConfirmSubmit, setShowConfirmSubmit] = useState(false);
   const [redirecting, setRedirecting] = useState(false);
+  const initialized = useRef(false);
 
   // Redirect free users who already used their free test
   useEffect(() => {
     if (!isLoaded) return;
     const isPro = user?.publicMetadata?.hasAccess === true;
     const { mode } = getConfig();
-    if (!isPro && ((mode !== "daily" && isFreeTestUsed()) || (mode === "daily" && isDailyChallengeUsedToday()))) {
+    if (!isPro && ((mode !== "daily" && mode !== "custom" && isFreeTestUsed()) || (mode === "daily" && isDailyChallengeUsedToday()) || (mode === "custom" && isCustomPaperLimitReached()))) {
       setRedirecting(true);
       router.replace("/dashboard");
     }
@@ -59,16 +61,26 @@ export default function TestPage() {
   // Generate test on mount
   useEffect(() => {
     if (redirecting || !isLoaded) return;
-    const { mode, subjects, count, sources } = getConfig();
+    if (initialized.current) return;
+    initialized.current = true;
+    const { mode, subjects, count, sources, unit } = getConfig();
     const result = mode === "textbook"
       ? generateTextbookTest(count || 30, subjects, sources)
+      : mode === "custom"
+      ? generateCustomPaper(count || 30, subjects, unit)
       : generateCustomTest(mode, subjects);
     const { questions, config } = result;
+    if (mode === "custom" && questions.length === 0) {
+      initialized.current = false;
+      setTestReady(true);
+      return;
+    }
+    if (mode === "custom" && !user?.publicMetadata?.hasAccess) markCustomPaperStarted();
     const id = "test_" + Date.now();
     const startTime = Date.now();
     const duration = mode === "textbook"
       ? Math.max(30, questions.length) * 60 * 1000
-      : mode === "free" || mode === "quick"
+      : mode === "free" || mode === "quick" || mode === "custom"
       ? 30 * 60 * 1000
       : mode === "half" ? 90 * 60 * 1000 : 3 * 60 * 60 * 1000;
 
@@ -96,7 +108,7 @@ export default function TestPage() {
 
     const isPro = user?.publicMetadata?.hasAccess === true;
     if (!isPro && testData.modeId === "daily") markDailyChallengeUsed();
-    else if (!isPro) markFreeTestUsed();
+    else if (!isPro && testData.modeId !== "custom") markFreeTestUsed();
 
     saveTest({
       id: testId, startTime, endTime: now, duration,

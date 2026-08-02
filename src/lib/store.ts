@@ -30,6 +30,7 @@ export function getAllTests(): StoredTest[] {
 
 const FREE_TEST_KEY = "mdcat_free_test_used";
 const DAILY_CHALLENGE_KEY = "mdcat_daily_challenge_date";
+const CUSTOM_PAPER_KEY = "mdcat_custom_papers_started";
 
 export function isFreeTestUsed(): boolean {
   if (typeof window === "undefined") return false;
@@ -53,4 +54,25 @@ export function isDailyChallengeUsedToday(): boolean {
 export function markDailyChallengeUsed() {
   if (typeof window === "undefined") return;
   localStorage.setItem(DAILY_CHALLENGE_KEY, todayKey());
+}
+
+export function getCustomPapersUsedToday(): number {
+  if (typeof window === "undefined") return 0;
+  const raw = localStorage.getItem(CUSTOM_PAPER_KEY);
+  if (!raw) return 0;
+  try {
+    const value = JSON.parse(raw) as { date?: string; count?: number };
+    return value.date === todayKey() ? Math.max(0, Number(value.count) || 0) : 0;
+  } catch {
+    return 0;
+  }
+}
+
+export function isCustomPaperLimitReached(limit = 5): boolean {
+  return getCustomPapersUsedToday() >= limit;
+}
+
+export function markCustomPaperStarted() {
+  if (typeof window === "undefined") return;
+  localStorage.setItem(CUSTOM_PAPER_KEY, JSON.stringify({ date: todayKey(), count: getCustomPapersUsedToday() + 1 }));
 }

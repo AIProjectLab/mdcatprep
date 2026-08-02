@@ -5,8 +5,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { getAllTests, isFreeTestUsed, isDailyChallengeUsedToday, type StoredTest } from "@/lib/store";
-import { getTextbookQuestions, getTextbookSources, type Subject } from "@/lib/questions";
+import { getAllTests, isFreeTestUsed, isDailyChallengeUsedToday, getCustomPapersUsedToday, type StoredTest } from "@/lib/store";
+import { getQuestionUnits, getTextbookQuestions, getTextbookSources, type Subject } from "@/lib/questions";
 import { UserButton, useUser } from "@clerk/nextjs";
 
 const ALL_SUBJECTS: Subject[] = ["Biology", "Chemistry", "Physics", "English", "Logical Reasoning"];
@@ -30,6 +30,10 @@ export default function DashboardClient({
   const [textbookCount, setTextbookCount] = useState(30);
   const [textbookSources, setTextbookSources] = useState<string[]>([]);
   const [selectedTextbookSource, setSelectedTextbookSource] = useState("All books");
+  const [customSubject, setCustomSubject] = useState<Subject | "">("");
+  const [customCount, setCustomCount] = useState(30);
+  const [customUnit, setCustomUnit] = useState("all");
+  const [customUsed, setCustomUsed] = useState(0);
   const isAdmin = user?.publicMetadata?.role === "admin";
 
   useEffect(() => {
@@ -37,6 +41,7 @@ export default function DashboardClient({
     setFreeUsed(isFreeTestUsed());
     setDailyAvailable(!isFreeTestUsed() || !isDailyChallengeUsedToday());
     setTextbookSources(getTextbookSources());
+    setCustomUsed(getCustomPapersUsedToday());
   }, []);
 
   const modes = [
@@ -61,6 +66,44 @@ export default function DashboardClient({
     const source = selectedTextbookSource !== "All books" ? `&sources=${encodeURIComponent(selectedTextbookSource)}` : "";
     return `/test?mode=textbook&count=${textbookCount}${subjects}${source}`;
   }
+
+  const customUnits = getQuestionUnits(customSubject || undefined);
+  const customUrl = `/test?mode=custom&count=${customCount}${customSubject ? `&subjects=${encodeURIComponent(customSubject)}` : ""}${customUnit !== "all" ? `&unit=${customUnit}` : ""}`;
+  const customPaperCard = (
+    <section className="mt-6 rounded-2xl border border-purple-200 bg-purple-50/60 p-5">
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <h2 className="text-lg font-bold text-gray-900">🛠️ Create Your Own Paper</h2>
+          <p className="mt-1 text-sm text-gray-600">Choose a subject and topic, then build a fresh practice paper.</p>
+        </div>
+        {!hasAccess && <span className="whitespace-nowrap text-sm font-semibold text-purple-700">{customUsed}/5 today</span>}
+      </div>
+      <div className="mt-4 grid gap-3 sm:grid-cols-3">
+        <label className="text-sm font-semibold text-gray-700">Subject
+          <select value={customSubject} onChange={(e) => { setCustomSubject(e.target.value as Subject | ""); setCustomUnit("all"); }} className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal">
+            <option value="">All subjects</option>
+            {ALL_SUBJECTS.map((s) => <option key={s} value={s}>{s}</option>)}
+          </select>
+        </label>
+        <label className="text-sm font-semibold text-gray-700">Questions
+          <select value={customCount} onChange={(e) => setCustomCount(Number(e.target.value))} className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal">
+            {[10, 20, 30].map((count) => <option key={count} value={count}>{count} MCQs</option>)}
+          </select>
+        </label>
+        <label className="text-sm font-semibold text-gray-700">Topic
+          <select value={customUnit} onChange={(e) => setCustomUnit(e.target.value)} className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal">
+            <option value="all">All topics</option>
+            {customUnits.map(({ unit, label }) => <option key={unit} value={unit}>{label}</option>)}
+          </select>
+        </label>
+      </div>
+      {!hasAccess && customUsed >= 5 ? (
+        <p className="mt-4 rounded-lg bg-white p-3 text-center text-sm font-semibold text-purple-700">You have used today&apos;s 5 free papers. Come back tomorrow.</p>
+      ) : (
+        <Link href={customUrl} className="mt-4 block rounded-xl bg-purple-600 p-4 text-center font-bold text-white shadow-sm hover:bg-purple-500 transition">Build My Paper →</Link>
+      )}
+    </section>
+  );
 
   // Free user who hasn't used their free test yet
   if (!hasAccess && !paymentPending && !freeUsed) {
@@ -168,6 +211,7 @@ export default function DashboardClient({
                   <p className="mt-4 text-center text-sm font-semibold text-blue-700">Today&apos;s challenge completed ✓</p>
                 )}
               </div>
+              {customPaperCard}
             </>
           ) : (
             <>
@@ -202,6 +246,7 @@ export default function DashboardClient({
       </header>
 
       {/* Mode Selection */}
+      {customPaperCard}
       <div className="mt-8">
         <h2 className="text-sm font-semibold text-gray-600 mb-3">Select Test Mode</h2>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">

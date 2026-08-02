@@ -123,6 +123,35 @@ export function getSubjectQuestions(subject: Subject): Question[] {
   return (questionsData as Question[]).filter((q) => q.subject === subject);
 }
 
+export function getQuestionUnits(subject?: Subject): { unit: number; label: string }[] {
+  const seen = new Map<number, string>();
+  for (const q of questionsData as Question[]) {
+    if (subject && q.subject !== subject || !Number.isInteger(q.unit)) continue;
+    if (!seen.has(q.unit!)) seen.set(q.unit!, q.unitLabel || `Unit ${q.unit}`);
+  }
+  return [...seen.entries()].sort(([a], [b]) => a - b).map(([unit, label]) => ({ unit, label }));
+}
+
+export function generateCustomPaper(count: number, subjects: Subject[], unit?: number): { questions: Question[]; config: TestConfig } {
+  const requested = Math.max(5, Math.min(30, Math.round(count)));
+  const subjectFilter = subjects.length ? subjects : undefined;
+  const pool = (questionsData as Question[]).filter((q) =>
+    (!subjectFilter || subjectFilter.includes(q.subject)) &&
+    (unit === undefined || q.unit === unit)
+  );
+  const questions = shuffle(pool).slice(0, Math.min(requested, pool.length));
+  const bySubject = new Map<Subject, number>();
+  for (const q of questions) bySubject.set(q.subject, (bySubject.get(q.subject) || 0) + 1);
+  return {
+    questions,
+    config: {
+      label: "My Custom Paper",
+      totalMcqs: questions.length,
+      subjects: [...bySubject.entries()].map(([subject, subjectCount]) => ({ subject, count: subjectCount })),
+    },
+  };
+}
+
 export function generateCustomTest(mode: string, subjects: Subject[]): { questions: Question[]; config: TestConfig } {
   const config = MODES[mode] || MODES.full;
   const selected: Question[] = [];
