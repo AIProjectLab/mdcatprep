@@ -33,7 +33,11 @@ def parse_json_robust(text):
         try:
             return json.loads(candidate)
         except json.JSONDecodeError:
-            pass
+            repaired = _escape_invalid_json_backslashes(candidate)
+            try:
+                return json.loads(repaired)
+            except json.JSONDecodeError:
+                pass
 
     # 4. Fix trailing commas (common in LLM JSON)
     for candidate in [cleaned,
@@ -45,7 +49,11 @@ def parse_json_robust(text):
         try:
             return json.loads(fixed)
         except json.JSONDecodeError:
-            pass
+            repaired = _escape_invalid_json_backslashes(fixed)
+            try:
+                return json.loads(repaired)
+            except json.JSONDecodeError:
+                pass
 
     # 5. Try to salvage individual MCQ objects with regex as a last resort
     salvaged = _salvage_objects(cleaned)
@@ -61,6 +69,25 @@ def parse_json_robust(text):
         pass
 
     raise ValueError(f"Could not parse JSON. First 300 chars: {text[:300]!r}")
+
+
+def _escape_invalid_json_backslashes(text):
+    """Escape LaTeX-style backslashes that are invalid JSON escapes.
+
+    Vision models commonly return formulas such as ``\(K_p\)`` inside JSON
+    strings. JSON only permits a small set of escapes, so preserve any other
+    backslash literally before parsing.
+    """
+    valid_after_backslash = {'"', "\\", "/", "b", "f", "n", "r", "t", "u"}
+    out = []
+    i = 0
+    while i < len(text):
+        if text[i] == "\\" and (i + 1 >= len(text) or text[i + 1] not in valid_after_backslash):
+            out.append("\\\\")
+        else:
+            out.append(text[i])
+        i += 1
+    return "".join(out)
 
 
 def _convert_single_quotes(text):

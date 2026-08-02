@@ -346,12 +346,14 @@ def process_pdf(pdf_path, output_name=None, pages=None, subject="Biology", model
     # Print syllabus coverage summary
     if all_mcqs:
         units_covered = set()
+        subject_units = units_for_subject(subject)
         for m in all_mcqs:
+            if m.get("subject") != subject:
+                continue
             u = m.get("unit")
-            if u and isinstance(u, int):
+            if u in subject_units:
                 units_covered.add(u)
         if units_covered:
-            subject_units = units_for_subject(subject)
             print(f"\nCoverage: {len(units_covered)}/{len(subject_units)} syllabus units")
             for u in sorted(units_covered):
                 count = sum(1 for m in all_mcqs if m.get("unit") == u)
