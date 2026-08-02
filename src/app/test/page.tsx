@@ -48,6 +48,7 @@ export default function TestPage() {
   const [submitted, setSubmitted] = useState(false);
   const [showConfirmSubmit, setShowConfirmSubmit] = useState(false);
   const [redirecting, setRedirecting] = useState(false);
+  const [navTap, setNavTap] = useState<"next" | "prev" | null>(null);
   const initialized = useRef(false);
 
   // Redirect free users who already used their free test
@@ -109,7 +110,7 @@ export default function TestPage() {
     setTestReady(true);
   }, [redirecting, isLoaded]);
 
-  // Demo mode: auto-fill answer 1.5s after navigating to a question
+  // Demo mode: auto-fill answer 2.5s after navigating to a question
   const demoFilled = useRef<Set<number>>(new Set());
   useEffect(() => {
     if (!testData || !testData.demo) return;
@@ -123,7 +124,7 @@ export default function TestPage() {
         ? (Object.keys(q.options) as string[]).find((k) => k !== q.answer) || "A"
         : q.answer;
       setAnswers((prev) => ({ ...prev, [q.id]: answer }));
-    }, 1500);
+    }, 2500);
     return () => clearTimeout(timer);
   }, [currentIndex, testData]);
 
@@ -132,6 +133,18 @@ export default function TestPage() {
     const q = testData.questions[currentIndex];
     if (!q) return;
     setAnswers((prev) => ({ ...prev, [q.id]: option }));
+  };
+
+  // Navigate with a brief tap animation on the button
+  const navigateWithTap = (dir: "next" | "prev") => {
+    if (submitted || !testData) return;
+    setNavTap(dir);
+    setTimeout(() => setNavTap(null), 350);
+    setCurrentIndex((idx) =>
+      dir === "next"
+        ? Math.min(testData.questions.length - 1, idx + 1)
+        : Math.max(0, idx - 1)
+    );
   };
 
   const finishTest = useCallback(() => {
@@ -191,9 +204,9 @@ export default function TestPage() {
           <QuestionDisplay question={currentQ} selected={answers[currentQ?.id] ?? null} onSelect={handleSelect} />
 
           <div className="mt-6 hidden lg:flex items-center justify-between">
-            <button onClick={() => setCurrentIndex(Math.max(0, currentIndex - 1))}
+            <button onClick={() => navigateWithTap("prev")}
               disabled={currentIndex === 0}
-              className="rounded-lg border border-gray-300 px-5 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-30 transition">
+              className={`rounded-lg border border-gray-300 px-5 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-30 transition ${navTap === "prev" ? "animate-tap" : ""}`}>
               ← Previous
             </button>
             <span className="text-sm text-gray-400">{currentIndex + 1} / {questions.length}</span>
@@ -203,8 +216,8 @@ export default function TestPage() {
                 Finish Test &amp; See Results
               </button>
             ) : (
-              <button onClick={() => setCurrentIndex(Math.min(questions.length - 1, currentIndex + 1))}
-                className="rounded-lg border border-gray-300 px-5 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 transition">
+              <button onClick={() => navigateWithTap("next")}
+                className={`rounded-lg border border-gray-300 px-5 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 transition ${navTap === "next" ? "animate-tap" : ""}`}>
                 Next →
               </button>
             )}
@@ -220,16 +233,16 @@ export default function TestPage() {
 
       <footer className="sticky bottom-0 border-t bg-white p-3 lg:hidden">
         <div className="flex items-center justify-between">
-          <button onClick={() => setCurrentIndex(Math.max(0, currentIndex - 1))}
+          <button onClick={() => navigateWithTap("prev")}
             disabled={currentIndex === 0}
-            className="rounded-lg border px-4 py-2 text-sm disabled:opacity-30">Previous</button>
+            className={`rounded-lg border px-4 py-2 text-sm disabled:opacity-30 ${navTap === "prev" ? "animate-tap" : ""}`}>Previous</button>
           <span className="text-sm text-gray-500">{currentIndex + 1}/{questions.length}</span>
           {currentIndex === questions.length - 1 ? (
             <button onClick={() => setShowConfirmSubmit(true)} disabled={submitted}
               className="rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white disabled:opacity-50">Finish</button>
           ) : (
-            <button onClick={() => setCurrentIndex(Math.min(questions.length - 1, currentIndex + 1))}
-              className="rounded-lg border px-4 py-2 text-sm">Next</button>
+            <button onClick={() => navigateWithTap("next")}
+              className={`rounded-lg border px-4 py-2 text-sm ${navTap === "next" ? "animate-tap" : ""}`}>Next</button>
           )}
         </div>
       </footer>
