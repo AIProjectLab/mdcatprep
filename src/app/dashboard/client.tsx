@@ -135,6 +135,8 @@ export default function DashboardClient({
           </Link>
         </div>
 
+        {customPaperCard}
+
         {tests.length > 0 && (
           <section className="mt-8">
             <h2 className="text-lg font-semibold">Previous Tests</h2>
