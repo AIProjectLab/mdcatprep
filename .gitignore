@@ -52,3 +52,4 @@ next-env.d.ts
 
 # question bank backups
 src/data/questions.json.bak-*
+src/data/questions.json.pre-sync-backup
