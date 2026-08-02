@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
+import { UserButton } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 
 export default function PaymentPageClient({ userId, email }: { userId: string; email: string }) {
@@ -46,7 +48,11 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
 
   if (submitted) {
     return (
-      <main className="flex min-h-screen items-center justify-center px-4">
+      <main className="flex min-h-screen flex-col items-center justify-center px-4">
+        <header className="fixed right-4 top-4 flex items-center gap-3">
+          <Link href="/dashboard" className="text-sm font-semibold text-emerald-700 hover:text-emerald-600">← Dashboard</Link>
+          <UserButton />
+        </header>
         <div className="max-w-lg text-center">
           <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100">
             <svg className="h-8 w-8 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
@@ -56,6 +62,9 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
             We have received your payment request. Our team will verify it within a few hours.
             You will get access once confirmed. Check back on your dashboard.
           </p>
+          <Link href="/dashboard" className="mt-6 inline-block rounded-lg bg-emerald-600 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-500">
+            Back to Dashboard
+          </Link>
         </div>
       </main>
     );
@@ -63,6 +72,10 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
 
   return (
     <main className="flex min-h-screen items-center justify-center px-4 py-12">
+      <header className="fixed right-4 top-4 flex items-center gap-3">
+        <Link href="/dashboard" className="text-sm font-semibold text-emerald-700 hover:text-emerald-600">← Dashboard</Link>
+        <UserButton />
+      </header>
       <div className="w-full max-w-lg">
         <h1 className="text-2xl font-bold text-center">Get MDCAT Pro Access</h1>
         <p className="mt-2 text-center text-gray-600">One-time payment of PKR 1,000</p>
@@ -131,6 +144,14 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
           <a href="https://wa.me/923159319433" target="_blank" rel="noreferrer" className="font-medium text-emerald-700 hover:underline">
             03159319433
           </a>
+        </p>
+
+        <p className="mt-6 text-center text-sm text-gray-500">
+          Not ready yet?{" "}
+          <Link href="/dashboard" className="font-semibold text-emerald-700 underline hover:text-emerald-600">
+            Back to free practice
+          </Link>{" "}
+          — your diagnostic, daily challenge and custom papers are still free.
         </p>
       </div>
     </main>
