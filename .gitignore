@@ -49,3 +49,6 @@ questionbank-generator/.kilo/
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# question bank backups
+src/data/questions.json.bak-*

@@ -67,8 +67,22 @@ export default function DashboardClient({
   function getTextbookUrl() {
     const subjects = textbookSubjects.length ? `&subjects=${textbookSubjects.join(",")}` : "";
     const source = selectedTextbookSource !== "All books" ? `&sources=${encodeURIComponent(selectedTextbookSource)}` : "";
-    return `/test?mode=textbook&count=${textbookCount}${subjects}${source}`;
+    const effective = Math.min(textbookCount, textbookAvailable);
+    return `/test?mode=textbook&count=${effective}${subjects}${source}`;
   }
+
+  // Real number of questions available for the current textbook filter
+  const textbookAvailable = (() => {
+    let pool = getTextbookQuestions();
+    if (selectedTextbookSource !== "All books") {
+      pool = pool.filter((q) => q.source === selectedTextbookSource);
+    }
+    if (textbookSubjects.length > 0) {
+      pool = pool.filter((q) => textbookSubjects.includes(q.subject));
+    }
+    return pool.length;
+  })();
+  const textbookEffectiveCount = Math.min(textbookCount, textbookAvailable);
 
   const customUnits = customSubject ? getQuestionUnits(customSubject) : [];
   const customUnitLabel =
@@ -379,8 +393,16 @@ export default function DashboardClient({
                 Number of questions
                 <select value={textbookCount} onChange={(e) => setTextbookCount(Number(e.target.value))}
                   className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal">
-                  {[30, 50, 90, 180].map((count) => <option key={count} value={count}>{count} MCQs</option>)}
+                  {[30, 50, 90, 180].filter((count) => count <= textbookAvailable).map((count) => <option key={count} value={count}>{count} MCQs</option>)}
+                  {textbookCount > textbookAvailable && textbookAvailable > 0 && (
+                    <option value={textbookAvailable}>{textbookAvailable} MCQs (max available)</option>
+                  )}
                 </select>
+                <span className="mt-1 block text-xs font-normal text-blue-600">
+                  {textbookAvailable > 0
+                    ? `${textbookAvailable} available${textbookSubjects.length > 0 ? ` in ${textbookSubjects.join(", ")}` : ""}`
+                    : "No questions for this selection"}
+                </span>
               </label>
               <label className="text-sm font-semibold text-gray-700">
                 Book/source
@@ -401,10 +423,16 @@ export default function DashboardClient({
               ))}
               <span className="self-center text-xs text-gray-500">Leave subjects unselected for all subjects.</span>
             </div>
-            <Link href={getTextbookUrl()}
-              className="mt-5 block rounded-xl bg-blue-600 p-4 text-center font-bold text-white shadow-sm hover:bg-blue-500 transition">
-              Start {textbookCount}-MCQ Textbook Practice
-            </Link>
+            {textbookAvailable > 0 ? (
+              <Link href={getTextbookUrl()}
+                className="mt-5 block rounded-xl bg-blue-600 p-4 text-center font-bold text-white shadow-sm hover:bg-blue-500 transition">
+                Start {textbookEffectiveCount}-MCQ Textbook Practice
+              </Link>
+            ) : (
+              <p className="mt-5 rounded-lg bg-white p-3 text-center text-sm font-semibold text-blue-700">
+                No textbook questions match this selection. Try another subject or book.
+              </p>
+            )}
           </>
         )}
       </section>
