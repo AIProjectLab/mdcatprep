@@ -31,7 +31,7 @@ export default function DashboardClient({
   const [textbookCount, setTextbookCount] = useState(30);
   const [textbookSources, setTextbookSources] = useState<string[]>([]);
   const [selectedTextbookSource, setSelectedTextbookSource] = useState("All books");
-  const [customSubject, setCustomSubject] = useState<Subject | "">("");
+  const [customSubject, setCustomSubject] = useState<Subject | "">("Biology");
   const [customCount, setCustomCount] = useState(30);
   const [customUnit, setCustomUnit] = useState("all");
   const [customUsed, setCustomUsed] = useState(0);
@@ -71,41 +71,75 @@ export default function DashboardClient({
   }
 
   const customUnits = customSubject ? getQuestionUnits(customSubject) : [];
+  const customUnitLabel =
+    customUnit !== "all" && customSubject
+      ? customUnits.find((u) => u.unit === Number(customUnit))?.label ?? null
+      : null;
+  const previewSubject = customSubject || "All subjects";
+  const previewTopic = customUnitLabel || "All topics";
   const customUrl = `/test?mode=custom&count=${customCount}${customSubject ? `&subjects=${encodeURIComponent(customSubject)}` : ""}${customUnit !== "all" ? `&unit=${customUnit}` : ""}${isDemo ? "&demo=1" : ""}`;
   const customPaperCard = (
-    <section id="custom-paper" className="mt-6 rounded-2xl border border-purple-200 bg-purple-50/60 p-5">
-      <div className="flex items-start justify-between gap-3">
-        <div>
-          <h2 className="text-lg font-bold text-gray-900">🛠️ Create Your Own Paper</h2>
-          <p className="mt-1 text-sm text-gray-600">Choose a subject and topic, then build a fresh practice paper.</p>
-        </div>
-        {!hasAccess && <span className="whitespace-nowrap text-sm font-semibold text-purple-700">{customUsed}/5 today</span>}
+    <section id="custom-paper" className="mt-6 rounded-2xl border border-purple-200 bg-gradient-to-br from-purple-50 to-white p-5 shadow-sm">
+      <div>
+        <h2 className="text-lg font-bold text-gray-900">🎯 Build Your Own Paper</h2>
+        <p className="mt-1 text-sm text-gray-600">Drill exactly what you&apos;re weak in — pick a subject, topic and size.</p>
       </div>
+
       <div className="mt-4 grid gap-3 sm:grid-cols-3">
         <label className="text-sm font-semibold text-gray-700">Subject
-          <select value={customSubject} onChange={(e) => { setCustomSubject(e.target.value as Subject | ""); setCustomUnit("all"); }} className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal">
+          <select value={customSubject} onChange={(e) => { setCustomSubject(e.target.value as Subject | ""); setCustomUnit("all"); }} className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal focus:border-purple-500 focus:ring-1 focus:ring-purple-500">
             <option value="">All subjects</option>
             {ALL_SUBJECTS.map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
         </label>
         <label className="text-sm font-semibold text-gray-700">Questions
-          <select value={customCount} onChange={(e) => setCustomCount(Number(e.target.value))} className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal">
+          <select value={customCount} onChange={(e) => setCustomCount(Number(e.target.value))} className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal focus:border-purple-500 focus:ring-1 focus:ring-purple-500">
             {[10, 20, 30].map((count) => <option key={count} value={count}>{count} MCQs</option>)}
           </select>
         </label>
         <label className="text-sm font-semibold text-gray-700">Topic
-          <select value={customUnit} onChange={(e) => setCustomUnit(e.target.value)} className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal">
-            <option value="all">All topics</option>
-            {!customSubject && <option value="all">Select a subject first</option>}
-            {customUnits.map(({ unit, label }) => <option key={unit} value={unit}>{label}</option>)}
+          <select value={customUnit} onChange={(e) => setCustomUnit(e.target.value)} disabled={!customSubject} className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal focus:border-purple-500 focus:ring-1 focus:ring-purple-500 disabled:bg-gray-50 disabled:text-gray-400">
+            {!customSubject ? (
+              <option value="all" disabled>Select a subject first</option>
+            ) : (
+              <>
+                <option value="all">All topics</option>
+                {customUnits.map(({ unit, label }) => <option key={unit} value={unit}>{label}</option>)}
+              </>
+            )}
           </select>
         </label>
       </div>
+
+      {/* Live preview */}
+      <div className="mt-4 flex flex-wrap items-center justify-between gap-2 rounded-lg border border-purple-200 bg-purple-600/5 px-4 py-2.5">
+        <p className="text-sm font-medium text-purple-800">
+          You&apos;ll get: <span className="font-bold">{customCount} MCQs</span> &middot; {previewSubject} &middot; {previewTopic}
+        </p>
+        <p className="text-xs text-gray-500">~{customCount} min</p>
+      </div>
+
+      {/* CTA */}
       {!hasAccess && customUsed >= 5 ? (
         <p className="mt-4 rounded-lg bg-white p-3 text-center text-sm font-semibold text-purple-700">You have used today&apos;s 5 free papers. Come back tomorrow.</p>
       ) : (
-        <Link href={customUrl} className="mt-4 block rounded-xl bg-purple-600 p-4 text-center font-bold text-white shadow-sm hover:bg-purple-500 transition">Build My Paper →</Link>
+        <Link href={customUrl} className="group mt-4 block rounded-xl bg-purple-700 p-4 text-center font-bold text-white shadow-md transition hover:bg-purple-600">
+          Build My Paper <span className="inline-block transition-transform group-hover:translate-x-0.5">→</span>
+        </Link>
       )}
+
+      {/* Footer: limit + trust */}
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+        {!hasAccess ? (
+          <p className="text-xs text-gray-500">
+            {customUsed}/5 free papers today &middot;{" "}
+            <Link href="/payment" className="font-semibold text-purple-700 underline hover:text-purple-600">Unlimited with Pro</Link>
+          </p>
+        ) : (
+          <p className="text-xs text-gray-400">Unlimited builds included in Pro</p>
+        )}
+        <p className="text-xs text-gray-400">11,500+ questions from real past papers &amp; textbooks</p>
+      </div>
     </section>
   );
 
