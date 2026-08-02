@@ -155,7 +155,7 @@ export default function TestPage() {
           </div>
           <QuestionDisplay question={currentQ} selected={answers[currentQ?.id] ?? null} onSelect={handleSelect} />
 
-          <div className="mt-6 flex items-center justify-between">
+          <div className="mt-6 hidden lg:flex items-center justify-between">
             <button onClick={() => setCurrentIndex(Math.max(0, currentIndex - 1))}
               disabled={currentIndex === 0}
               className="rounded-lg border border-gray-300 px-5 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-30 transition">
