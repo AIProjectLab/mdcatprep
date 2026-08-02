@@ -9,7 +9,8 @@ import { useSearchParams } from "next/navigation";
 import { getAllTests, isFreeTestUsed, isDailyChallengeUsedToday, getCustomPapersUsedToday, isFullPreviewUsed, type StoredTest } from "@/lib/store";
 import { getQuestionUnits, getTextbookQuestions, getTextbookSources, type Subject } from "@/lib/questions";
 import questionsData from "@/data/questions.json";
-import { UserButton, useUser } from "@clerk/nextjs";
+import AppHeader from "@/components/AppHeader";
+import { useUser } from "@clerk/nextjs";
 
 const ALL_SUBJECTS: Subject[] = ["Biology", "Chemistry", "Physics", "English", "Logical Reasoning"];
 
@@ -37,7 +38,6 @@ export default function DashboardClient({
   const [customCount, setCustomCount] = useState(30);
   const [customUnit, setCustomUnit] = useState("all");
   const [customUsed, setCustomUsed] = useState(0);
-  const isAdmin = user?.publicMetadata?.role === "admin";
   const demoParam = useSearchParams().get("demo");
   const isDemo = demoParam === "true" || demoParam === "1";
 
@@ -192,14 +192,10 @@ export default function DashboardClient({
   // Free user who hasn't used their free test yet
   if (!hasAccess && !paymentPending && !freeUsed) {
     return (
-      <main className="mx-auto max-w-4xl px-4 py-8">
-        <header className="flex items-center justify-between">
-          <div>
-            <h1 className="text-2xl font-bold">MDCAT Prep</h1>
-            <p className="text-sm text-gray-500">Welcome, {user?.firstName || "Student"}</p>
-          </div>
-          <UserButton />
-        </header>
+      <main className="min-h-screen">
+        <AppHeader />
+        <div className="mx-auto max-w-4xl px-4 py-8">
+          <p className="text-sm text-gray-500">Welcome, {user?.firstName || "Student"}</p>
 
         {isDemo && (
           <Link href="#custom-paper" className="mt-4 block w-full rounded-xl border-2 border-dashed border-emerald-400 bg-emerald-50 p-3 text-center text-sm font-bold text-emerald-700 hover:bg-emerald-100 transition">
@@ -247,6 +243,7 @@ export default function DashboardClient({
             </div>
           </section>
         )}
+        </div>
       </main>
     );
   }
@@ -255,10 +252,9 @@ export default function DashboardClient({
   if (!hasAccess) {
     return (
       <main className="flex min-h-screen flex-col items-center justify-center px-4 text-center">
+        <AppHeader />
         <div className="fixed right-4 top-4 flex items-center gap-3">
-          {isAdmin && <Link href="/admin" className="text-sm font-semibold text-emerald-700 hover:text-emerald-600">Admin</Link>}
           {isDemo && <a href="#custom-paper" className="rounded-lg bg-emerald-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-emerald-500">🎬 Demo</a>}
-          <UserButton />
         </div>
         <div className="max-w-md">
           {freeUsed ? (
@@ -360,17 +356,10 @@ export default function DashboardClient({
 
   // Pro user
   return (
-    <main className="mx-auto max-w-4xl px-4 py-8">
-      <header className="flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold">MDCAT Prep</h1>
-          <p className="text-sm text-gray-500">Welcome, {user?.firstName || "Student"}</p>
-        </div>
-        <div className="flex items-center gap-3">
-          {isDemo && <a href="#custom-paper" className="rounded-lg bg-emerald-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-emerald-500">🎬 Demo</a>}
-          <UserButton />
-        </div>
-      </header>
+    <main className="min-h-screen">
+      <AppHeader />
+      <div className="mx-auto max-w-4xl px-4 py-8">
+        <p className="text-sm text-gray-500">Welcome, {user?.firstName || "Student"}</p>
 
       {/* Mode Selection */}
       {customPaperCard}
@@ -526,6 +515,7 @@ export default function DashboardClient({
           </div>
         </section>
       )}
+      </div>
     </main>
   );
 }

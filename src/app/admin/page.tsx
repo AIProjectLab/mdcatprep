@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
+import AppHeader from "@/components/AppHeader";
 import { useUser } from "@clerk/nextjs";
 
 interface PaymentRequest {
@@ -63,11 +63,10 @@ export default function AdminPage() {
   }
 
   return (
-    <main className="mx-auto max-w-4xl px-4 py-8">
-      <header className="mb-6 flex items-center justify-between">
+    <main className="min-h-screen">
+      <AppHeader />
+      <div className="mx-auto max-w-4xl px-4 py-8">
         <h1 className="text-2xl font-bold">Admin — Payment Verification</h1>
-        <Link href="/dashboard" className="text-sm font-semibold text-emerald-700 hover:text-emerald-600">← Dashboard</Link>
-      </header>
       {error && <p className="mt-4 rounded-lg bg-red-50 p-3 text-sm text-red-700">{error}</p>}
       {requests.length === 0 ? (
         <p className="mt-8 text-gray-500">No pending payment requests.</p>
@@ -89,6 +88,7 @@ export default function AdminPage() {
           ))}
         </div>
       )}
+      </div>
     </main>
   );
 }

@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import AppHeader from "@/components/AppHeader";
 import { useUser } from "@clerk/nextjs";
-import { UserButton } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 
 export default function PaymentPageClient({ userId, email }: { userId: string; email: string }) {
@@ -48,11 +48,9 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
 
   if (submitted) {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-center px-4">
-        <header className="fixed right-4 top-4 flex items-center gap-3">
-          <Link href="/dashboard" className="text-sm font-semibold text-emerald-700 hover:text-emerald-600">← Dashboard</Link>
-          <UserButton />
-        </header>
+      <main className="min-h-screen">
+        <AppHeader />
+        <div className="flex min-h-[70vh] items-center justify-center px-4">
         <div className="max-w-lg text-center">
           <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100">
             <svg className="h-8 w-8 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
@@ -66,16 +64,15 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
             Back to Dashboard
           </Link>
         </div>
+        </div>
       </main>
     );
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center px-4 py-12">
-      <header className="fixed right-4 top-4 flex items-center gap-3">
-        <Link href="/dashboard" className="text-sm font-semibold text-emerald-700 hover:text-emerald-600">← Dashboard</Link>
-        <UserButton />
-      </header>
+    <main className="min-h-screen">
+      <AppHeader />
+      <div className="flex items-center justify-center px-4 py-10">
       <div className="w-full max-w-lg">
         <h1 className="text-2xl font-bold text-center">Get MDCAT Pro Access</h1>
         <p className="mt-2 text-center text-gray-600">One-time payment of PKR 1,000</p>
@@ -153,6 +150,7 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
           </Link>{" "}
           — your diagnostic, daily challenge and custom papers are still free.
         </p>
+      </div>
       </div>
     </main>
   );

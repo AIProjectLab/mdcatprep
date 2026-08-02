@@ -48,7 +48,6 @@ fs.copyFileSync(file, backup);
 const data = JSON.parse(fs.readFileSync(file, "utf8"));
 let textbookTagged = 0;
 let pastPaperTagged = 0;
-let relabeled = 0;
 
 for (const q of data) {
   const src = q.source || "";
@@ -56,12 +55,10 @@ for (const q of data) {
     q.origin = "textbook";
     q.source = TEXTBOOK_SOURCE_LABEL;
     textbookTagged++;
-    relabeled++;
   } else if (pastPaperSources.has(src)) {
     q.origin = "past-paper";
     if (sourceRename[src]) {
       q.source = sourceRename[src];
-      relabeled++;
     }
     pastPaperTagged++;
   }

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getTest } from "@/lib/store";
 import questionsData from "@/data/questions.json";
 import QuestionDisplay from "@/components/QuestionDisplay";
+import AppHeader from "@/components/AppHeader";
 import type { Question } from "@/lib/questions";
 
 interface RawQuestion {
@@ -55,7 +56,9 @@ export default function ResultPage({ params }: { params: Promise<{ id: string }>
   const passing = percentage >= 55;
 
   return (
-    <main className="mx-auto max-w-4xl px-4 py-8">
+    <main className="min-h-screen">
+      <AppHeader />
+      <div className="mx-auto max-w-4xl px-4 py-8">
       <div className="text-center">
         <div className={`mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full ${passing ? "bg-emerald-100" : "bg-red-100"}`}>
           <span className={`text-3xl font-bold ${passing ? "text-emerald-600" : "text-red-600"}`}>{percentage}%</span>
@@ -111,6 +114,7 @@ export default function ResultPage({ params }: { params: Promise<{ id: string }>
         <Link href="/dashboard" className="inline-block rounded-lg bg-emerald-600 px-8 py-3 text-sm font-semibold text-white hover:bg-emerald-500">
           Back to Dashboard
         </Link>
+      </div>
       </div>
     </main>
   );
