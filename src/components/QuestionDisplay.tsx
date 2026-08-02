@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect, useRef } from "react";
 import type { Question } from "@/lib/questions";
 
 export default function QuestionDisplay({
@@ -14,15 +15,27 @@ export default function QuestionDisplay({
   showResult?: boolean;
 }) {
   const options = Object.keys(question.options).sort();
+  const prevSelected = useRef<string | null>(null);
+  const [tapped, setTapped] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!showResult && selected && selected !== prevSelected.current) {
+      setTapped(selected);
+      const t = setTimeout(() => setTapped(null), 350);
+      prevSelected.current = selected;
+      return () => clearTimeout(t);
+    }
+    prevSelected.current = selected;
+  }, [selected, showResult]);
 
   function getOptionStyle(option: string) {
     const base = "w-full rounded-lg border p-4 text-left transition text-sm";
+    const tapClass = tapped === option ? " animate-tap" : "";
     if (!showResult) {
       return selected === option
-        ? `${base} border-emerald-500 bg-emerald-50 text-emerald-900 font-medium`
-        : `${base} border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50 text-gray-900`;
+        ? `${base} border-emerald-500 bg-emerald-50 text-emerald-900 font-medium${tapClass}`
+        : `${base} border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50 text-gray-900${tapClass}`;
     }
-    // Show result mode
     if (option === question.answer) {
       return `${base} border-green-500 bg-green-50 text-green-900 font-medium`;
     }
