@@ -22,7 +22,8 @@ function getConfig() {
   const count = Number(params.get("count") || 0);
   const sources = params.get("sources") ? params.get("sources")!.split(",") : [];
   const unitValue = params.get("unit");
-  const demo = params.get("demo") === "1" || mode === "demo";
+  const demoVal = params.get("demo");
+  const demo = demoVal === "1" || demoVal === "true" || mode === "demo";
   return { mode, subjects, count, sources, unit: unitValue ? Number(unitValue) : undefined, demo };
 }
 

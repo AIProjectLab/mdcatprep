@@ -36,7 +36,8 @@ export default function DashboardClient({
   const [customUnit, setCustomUnit] = useState("all");
   const [customUsed, setCustomUsed] = useState(0);
   const isAdmin = user?.publicMetadata?.role === "admin";
-  const isDemo = useSearchParams().get("demo") === "true";
+  const demoParam = useSearchParams().get("demo");
+  const isDemo = demoParam === "true" || demoParam === "1";
 
   useEffect(() => {
     setTests(getAllTests().filter((t) => t.submitted));
