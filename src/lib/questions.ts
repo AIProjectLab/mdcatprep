@@ -11,6 +11,7 @@ export interface Question {
   unit?: number;
   unitLabel?: string;
   book?: string;
+  page?: number;
   text: string;
   options: Record<string, string>;
   answer: string;

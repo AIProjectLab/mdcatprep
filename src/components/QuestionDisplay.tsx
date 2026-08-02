@@ -58,6 +58,7 @@ export default function QuestionDisplay({
           {question.book ? (
             <span className="text-gray-500">
               📖 {question.book}
+              {question.page ? ` · p.${question.page}` : ""}
             </span>
           ) : question.source !== "Unknown 0" && question.year > 0 ? (
             <span className="text-gray-400">

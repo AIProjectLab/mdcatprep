@@ -45,34 +45,58 @@ const norm = (t) => String(t ?? "").toLowerCase().replace(/\s+/g, " ").trim();
 const app = JSON.parse(fs.readFileSync(appFile, "utf8"));
 const raw = JSON.parse(fs.readFileSync(rawFile, "utf8"));
 
-// Build text -> book lookup from raw data (prefer textbook book labels over generic)
-const bookByText = new Map();
+// Build text -> {book, page} lookup from raw data
+// (prefer textbook book labels over generic, and the most common page for that text)
+const refByText = new Map();
 for (const q of raw) {
   const t = norm(q.text);
   if (!t) continue;
   const rawSrc = q.source;
   const book = SOURCE_TO_BOOK[rawSrc];
   if (!book) continue;
-  // Prefer a specific book over "Textbook Bank" generic label
-  const existing = bookByText.get(t);
-  if (!existing || (existing === "Textbook Bank" && book !== "Textbook Bank")) {
-    bookByText.set(t, book);
+  let entry = refByText.get(t);
+  if (!entry) {
+    entry = { book, pages: new Map() };
+    refByText.set(t, entry);
+  }
+  // Prefer a specific book over the generic "Textbook Bank" label
+  if (entry.book === "Textbook Bank" && book !== "Textbook Bank") {
+    entry.book = book;
+  }
+  // Count pages for the winning book only (avoids cross-book conflicts)
+  if (book === entry.book) {
+    const pg = q.page;
+    if (pg != null) entry.pages.set(String(pg), (entry.pages.get(String(pg)) || 0) + 1);
   }
 }
 
 let tagged = 0;
 let untagged = 0;
 let matchedToBook = 0;
+let withPage = 0;
 const missing = [];
 
 for (const q of app) {
   // Only tag textbook-origin questions with a book. Past papers keep their source label.
   if (q.origin !== "textbook") continue;
   const t = norm(q.text);
-  const book = bookByText.get(t);
-  if (book) {
-    q.book = book;
+  const ref = refByText.get(t);
+  if (ref && ref.book) {
+    q.book = ref.book;
     matchedToBook++;
+    // Resolve page: most common page number for this text
+    if (ref.pages.size > 0) {
+      let best = null;
+      let bestCount = 0;
+      for (const [pg, count] of ref.pages) {
+        if (count > bestCount) {
+          best = pg;
+          bestCount = count;
+        }
+      }
+      q.page = Number(best);
+      withPage++;
+    }
   } else {
     untagged++;
     if (missing.length < 10) missing.push(q.text?.slice(0, 60));
@@ -83,6 +107,7 @@ for (const q of app) {
 console.log(`App total: ${app.length}`);
 console.log(`Textbook-origin questions processed: ${tagged}`);
 console.log(`Matched to a specific book: ${matchedToBook}`);
+console.log(`With a page number: ${withPage}`);
 console.log(`No book found (will show nothing / generic): ${untagged}`);
 if (missing.length) {
   console.log("\nSample unmatched texts:");
