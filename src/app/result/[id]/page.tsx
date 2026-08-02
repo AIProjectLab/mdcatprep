@@ -17,6 +17,8 @@ interface RawQuestion {
   options: Record<string, string>;
   answer: string;
   explanation?: string;
+  book?: string;
+  page?: number;
 }
 
 export default function ResultPage({ params }: { params: Promise<{ id: string }> }) {

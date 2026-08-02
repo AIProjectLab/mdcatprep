@@ -17,6 +17,7 @@ export default function QuestionDisplay({
   const options = Object.keys(question.options).sort();
   const prevSelected = useRef<string | null>(null);
   const [tapped, setTapped] = useState<string | null>(null);
+  const [showSource, setShowSource] = useState(false);
 
   useEffect(() => {
     if (!showResult && selected && selected !== prevSelected.current) {
@@ -45,6 +46,17 @@ export default function QuestionDisplay({
     return `${base} border-gray-200 bg-gray-50 text-gray-500`;
   }
 
+  // Build the source reference line (book/page for textbooks, source/year for past papers)
+  const sourceText = (() => {
+    if (question.book) {
+      return `📖 ${question.book}${question.page ? ` · p.${question.page}` : ""}`;
+    }
+    if (question.source && question.source !== "Unknown 0") {
+      return question.year > 0 ? `${question.source} ${question.year}` : question.source;
+    }
+    return null;
+  })();
+
   return (
     <div className="space-y-6">
       <div>
@@ -55,21 +67,23 @@ export default function QuestionDisplay({
           <span className="rounded bg-blue-100 px-2 py-0.5 text-blue-700">
             {question.subject}
           </span>
-          {question.book ? (
-            <span className="text-gray-500">
-              📖 {question.book}
-              {question.page ? ` · p.${question.page}` : ""}
-            </span>
-          ) : question.source !== "Unknown 0" && question.year > 0 ? (
-            <span className="text-gray-400">
-              {question.source} {question.year}
-            </span>
-          ) : question.source !== "Unknown 0" ? (
-            <span className="text-gray-400">
-              {question.source}
-            </span>
-          ) : null}
+          {/* Source shown only in result mode, behind a toggle */}
+          {showResult && sourceText && (
+            <button
+              onClick={() => setShowSource((s) => !s)}
+              className="ml-auto flex items-center gap-1 rounded-lg border border-gray-200 bg-white px-2 py-0.5 text-gray-500 hover:bg-gray-50 transition"
+              title="Show source"
+            >
+              <span>ℹ️</span>
+              {showSource ? <span>Hide source</span> : <span>Source</span>}
+            </button>
+          )}
         </div>
+        {showResult && showSource && sourceText && (
+          <p className="mb-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-1.5 text-xs text-gray-600">
+            {sourceText}
+          </p>
+        )}
         <p className="text-base leading-relaxed text-gray-900">{question.text}</p>
       </div>
       <div className="space-y-2">
