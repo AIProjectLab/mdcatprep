@@ -123,7 +123,7 @@ export default function DashboardClient({
 
         {isDemo && (
           <Link href="#custom-paper" className="mt-4 block w-full rounded-xl border-2 border-dashed border-emerald-400 bg-emerald-50 p-3 text-center text-sm font-bold text-emerald-700 hover:bg-emerald-100 transition">
-            🎬 Demo Mode ON — use "Create Your Own Paper" below to build & record a test
+            🎬 Demo Mode ON — use &quot;Create Your Own Paper&quot; below to build &amp; record a test
           </Link>
         )}
 
