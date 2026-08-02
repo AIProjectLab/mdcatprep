@@ -55,11 +55,19 @@ export default function QuestionDisplay({
           <span className="rounded bg-blue-100 px-2 py-0.5 text-blue-700">
             {question.subject}
           </span>
-          {question.source !== "Unknown 0" && question.year > 0 && (
+          {question.book ? (
+            <span className="text-gray-500">
+              📖 {question.book}
+            </span>
+          ) : question.source !== "Unknown 0" && question.year > 0 ? (
             <span className="text-gray-400">
               {question.source} {question.year}
             </span>
-          )}
+          ) : question.source !== "Unknown 0" ? (
+            <span className="text-gray-400">
+              {question.source}
+            </span>
+          ) : null}
         </div>
         <p className="text-base leading-relaxed text-gray-900">{question.text}</p>
       </div>

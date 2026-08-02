@@ -10,6 +10,7 @@ export interface Question {
   origin?: "past-paper" | "textbook";
   unit?: number;
   unitLabel?: string;
+  book?: string;
   text: string;
   options: Record<string, string>;
   answer: string;
