@@ -70,9 +70,9 @@ export default function DashboardClient({
   }
 
   const customUnits = customSubject ? getQuestionUnits(customSubject) : [];
-  const customUrl = `/test?mode=custom&count=${customCount}${customSubject ? `&subjects=${encodeURIComponent(customSubject)}` : ""}${customUnit !== "all" ? `&unit=${customUnit}` : ""}`;
+  const customUrl = `/test?mode=custom&count=${customCount}${customSubject ? `&subjects=${encodeURIComponent(customSubject)}` : ""}${customUnit !== "all" ? `&unit=${customUnit}` : ""}${isDemo ? "&demo=1" : ""}`;
   const customPaperCard = (
-    <section className="mt-6 rounded-2xl border border-purple-200 bg-purple-50/60 p-5">
+    <section id="custom-paper" className="mt-6 rounded-2xl border border-purple-200 bg-purple-50/60 p-5">
       <div className="flex items-start justify-between gap-3">
         <div>
           <h2 className="text-lg font-bold text-gray-900">🛠️ Create Your Own Paper</h2>
@@ -121,8 +121,8 @@ export default function DashboardClient({
         </header>
 
         {isDemo && (
-          <Link href="/test?mode=demo" className="mt-4 block w-full rounded-xl border-2 border-dashed border-emerald-400 bg-emerald-50 p-3 text-center text-sm font-bold text-emerald-700 hover:bg-emerald-100 transition">
-            🎬 Record Demo Test — 10 Bio MCQs (auto-filled)
+          <Link href="#custom-paper" className="mt-4 block w-full rounded-xl border-2 border-dashed border-emerald-400 bg-emerald-50 p-3 text-center text-sm font-bold text-emerald-700 hover:bg-emerald-100 transition">
+            🎬 Demo Mode ON — use "Create Your Own Paper" below to build & record a test
           </Link>
         )}
 
@@ -181,7 +181,7 @@ export default function DashboardClient({
       <main className="flex min-h-screen flex-col items-center justify-center px-4 text-center">
         <div className="fixed right-4 top-4 flex items-center gap-3">
           {isAdmin && <Link href="/admin" className="text-sm font-semibold text-emerald-700 hover:text-emerald-600">Admin</Link>}
-          {isDemo && <Link href="/test?mode=demo" className="rounded-lg bg-emerald-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-emerald-500">🎬 Demo</Link>}
+          {isDemo && <a href="#custom-paper" className="rounded-lg bg-emerald-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-emerald-500">🎬 Demo</a>}
           <UserButton />
         </div>
         <div className="max-w-md">
@@ -255,7 +255,7 @@ export default function DashboardClient({
           <p className="text-sm text-gray-500">Welcome, {user?.firstName || "Student"}</p>
         </div>
         <div className="flex items-center gap-3">
-          {isDemo && <Link href="/test?mode=demo" className="rounded-lg bg-emerald-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-emerald-500">🎬 Demo</Link>}
+          {isDemo && <a href="#custom-paper" className="rounded-lg bg-emerald-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-emerald-500">🎬 Demo</a>}
           <UserButton />
         </div>
       </header>

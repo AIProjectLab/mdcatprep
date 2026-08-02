@@ -14,7 +14,7 @@ import QuestionDisplay from "@/components/QuestionDisplay";
 import QuestionPalette from "@/components/QuestionPalette";
 
 function getConfig() {
-  if (typeof window === "undefined") return { mode: "full", subjects: [] as Subject[], count: 0, sources: [] as string[] };
+  if (typeof window === "undefined") return { mode: "full", subjects: [] as Subject[], count: 0, sources: [] as string[], demo: false };
   const params = new URLSearchParams(window.location.search);
   const mode = params.get("mode") || "full";
   const subs = params.get("subjects") || "";
@@ -22,7 +22,8 @@ function getConfig() {
   const count = Number(params.get("count") || 0);
   const sources = params.get("sources") ? params.get("sources")!.split(",") : [];
   const unitValue = params.get("unit");
-  return { mode, subjects, count, sources, unit: unitValue ? Number(unitValue) : undefined };
+  const demo = params.get("demo") === "1" || mode === "demo";
+  return { mode, subjects, count, sources, unit: unitValue ? Number(unitValue) : undefined, demo };
 }
 
 interface TestData {
@@ -32,6 +33,7 @@ interface TestData {
   duration: number;
   mode: string;
   modeId: string;
+  demo: boolean;
 }
 
 export default function TestPage() {
@@ -63,7 +65,7 @@ export default function TestPage() {
     if (redirecting || !isLoaded) return;
     if (initialized.current) return;
     initialized.current = true;
-    const { mode, subjects, count, sources, unit } = getConfig();
+    const { mode, subjects, count, sources, unit, demo } = getConfig();
     const result = mode === "textbook"
       ? generateTextbookTest(count || 30, subjects, sources)
       : mode === "custom"
@@ -89,19 +91,20 @@ export default function TestPage() {
       questions: questions.map((q) => q.id), answers: {}, submitted: false,
     });
 
-    setTestData({ questions, testId: id, startTime, duration, mode: config.label, modeId: mode });
+    setTestData({ questions, testId: id, startTime, duration, mode: config.label, modeId: mode, demo });
     setTestReady(true);
   }, [redirecting, isLoaded]);
 
   // Demo mode: auto-fill answer 1.5s after navigating to a question
   const demoFilled = useRef<Set<number>>(new Set());
   useEffect(() => {
-    if (!testData || testData.modeId !== "demo") return;
+    if (!testData || !testData.demo) return;
+    const total = testData.questions.length;
     const q = testData.questions[currentIndex];
-    if (!q || demoFilled.current.has(q.id) || currentIndex === 9) return;
+    if (!q || demoFilled.current.has(q.id) || currentIndex >= total - 2) return;
     const timer = setTimeout(() => {
       demoFilled.current.add(q.id);
-      const isWrong = currentIndex === 8;
+      const isWrong = currentIndex === total - 2;
       const answer = isWrong
         ? (Object.keys(q.options) as string[]).find((k) => k !== q.answer) || "A"
         : q.answer;
