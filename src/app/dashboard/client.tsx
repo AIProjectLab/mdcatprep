@@ -67,7 +67,7 @@ export default function DashboardClient({
     return `/test?mode=textbook&count=${textbookCount}${subjects}${source}`;
   }
 
-  const customUnits = getQuestionUnits(customSubject || undefined);
+  const customUnits = customSubject ? getQuestionUnits(customSubject) : [];
   const customUrl = `/test?mode=custom&count=${customCount}${customSubject ? `&subjects=${encodeURIComponent(customSubject)}` : ""}${customUnit !== "all" ? `&unit=${customUnit}` : ""}`;
   const customPaperCard = (
     <section className="mt-6 rounded-2xl border border-purple-200 bg-purple-50/60 p-5">
@@ -93,6 +93,7 @@ export default function DashboardClient({
         <label className="text-sm font-semibold text-gray-700">Topic
           <select value={customUnit} onChange={(e) => setCustomUnit(e.target.value)} className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal">
             <option value="all">All topics</option>
+            {!customSubject && <option value="all">Select a subject first</option>}
             {customUnits.map(({ unit, label }) => <option key={unit} value={unit}>{label}</option>)}
           </select>
         </label>

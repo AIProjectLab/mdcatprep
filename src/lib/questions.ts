@@ -135,10 +135,11 @@ export function getQuestionUnits(subject?: Subject): { unit: number; label: stri
 export function generateCustomPaper(count: number, subjects: Subject[], unit?: number): { questions: Question[]; config: TestConfig } {
   const requested = Math.max(5, Math.min(30, Math.round(count)));
   const subjectFilter = subjects.length ? subjects : undefined;
-  const pool = (questionsData as Question[]).filter((q) =>
-    (!subjectFilter || subjectFilter.includes(q.subject)) &&
-    (unit === undefined || q.unit === unit)
-  );
+  const pool = (questionsData as Question[]).filter((q) => {
+    const matchesSubject = !subjectFilter || subjectFilter.includes(q.subject);
+    const matchesTopic = unit === undefined || (subjectFilter && q.unit === unit);
+    return matchesSubject && matchesTopic;
+  });
   const questions = shuffle(pool).slice(0, Math.min(requested, pool.length));
   const bySubject = new Map<Subject, number>();
   for (const q of questions) bySubject.set(q.subject, (bySubject.get(q.subject) || 0) + 1);
