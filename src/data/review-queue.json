@@ -1845,5 +1845,130 @@
     "id": 10682,
     "reason": "answer-corrected-review",
     "note": "Corrected from B to D - AgNO3/NH4OH distinguishes ethyne (white ppt); Br2 reacts with both"
+  },
+  {
+    "id": 10744,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from C to B - C2H5I most reactive toward SN (R-I > R-Br > R-Cl > R-F)"
+  },
+  {
+    "id": 10749,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B to C - Grignard + ethyl acetate -> tertiary alcohol (ester gives tertiary)"
+  },
+  {
+    "id": 10751,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from C to A - primary alkyl halide: halo carbon bonded to one other carbon"
+  },
+  {
+    "id": 10752,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from D to A - Grignard + ketone = nucleophilic addition"
+  },
+  {
+    "id": 10755,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B to A - reactivity: alcohols > phenols > ethers"
+  },
+  {
+    "id": 10760,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B to C - trimethylene glycol is dihydric; glycerol is trihydric"
+  },
+  {
+    "id": 10763,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from A to B - alcohols named using IUPAC system"
+  },
+  {
+    "id": 10817,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from C to D - diethyl ether prepared over Al2O3 catalyst"
+  },
+  {
+    "id": 10819,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from A to C - phenol + red hot Zn dust -> benzene"
+  },
+  {
+    "id": 10820,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B to A - ethoxyethane + conc H2SO4 -> oxonium ion"
+  },
+  {
+    "id": 10823,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B to A - reduction is NOT a method for preparing carbonyls; oxidation is"
+  },
+  {
+    "id": 10828,
+    "reason": "removed",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "The common name for acetic acid is ______.",
+    "options": {
+      "A": "Acetaldehyde",
+      "B": "Formic acid",
+      "C": "Butyraldehyde",
+      "D": "Benzoic acid"
+    },
+    "answer": "A",
+    "note": "asks common name of acetic acid but no option is acetic acid"
+  },
+  {
+    "id": 10856,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from A to D - HCHO + CH3MgI -> ethyl alcohol"
+  },
+  {
+    "id": 10890,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from C to A - Grignard + CO2 = carboxylation"
+  },
+  {
+    "id": 10918,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B to A - acetic acid BP 118C highest; water 100C"
+  },
+  {
+    "id": 10921,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from D to A - acetic acid from methyl cyanide hydrolysis"
+  },
+  {
+    "id": 10935,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from A to B - sucrose = glucose + fructose"
+  },
+  {
+    "id": 10937,
+    "reason": "removed",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "Which of the following is NOT a component of proteins?",
+    "options": {
+      "A": "Carbon",
+      "B": "Hydrogen",
+      "C": "Oxygen",
+      "D": "Sulphur"
+    },
+    "answer": "D",
+    "note": "all C,H,O,S are protein components; flawed"
+  },
+  {
+    "id": 10939,
+    "reason": "removed",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "Which of the following is NOT a type of protein structure?",
+    "options": {
+      "A": "Primary Structure",
+      "B": "Secondary Structure",
+      "C": "Tertiary Structure",
+      "D": "Quaternary Structure"
+    },
+    "answer": "A",
+    "note": "all 4 (primary/secondary/tertiary/quaternary) are protein structure types; flawed"
   }
 ]
