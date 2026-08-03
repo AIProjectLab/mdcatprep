@@ -11,8 +11,6 @@ const bank = JSON.parse(fs.readFileSync(bankFile, "utf8"));
 const rq = JSON.parse(fs.readFileSync(reviewFile, "utf8"));
 const findings = JSON.parse(fs.readFileSync(findingsFile, "utf8"));
 
-const byId = new Map(bank.map((q) => [q.id, q]));
-
 // Findings format: { id, type, correct?, note?, remove? }
 // type: WRONG-ANSWER (fix answer to `correct`), FLAWED (remove), SUBJECT (change subject/unit),
 //       MOVE, UNCERTAIN (flag only, no change)

@@ -1780,5 +1780,70 @@
     "id": 10530,
     "reason": "answer-uncertain",
     "note": "Both Taxol and Artemisinin are natural products - two valid answers"
+  },
+  {
+    "id": 10544,
+    "reason": "removed",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "Which of the following is NOT a functional group?",
+    "options": {
+      "A": "-NH2",
+      "B": "-OH",
+      "C": "-COOH",
+      "D": "-CHO"
+    },
+    "answer": "B",
+    "note": "All 4 options (-NH2,-OH,-COOH,-CHO) ARE functional groups; flawed"
+  },
+  {
+    "id": 10556,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B to C - petroleum mainly alkanes (saturated hydrocarbons)"
+  },
+  {
+    "id": 10562,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B to D - oxygen not detected directly; P is detected via Lassaigne"
+  },
+  {
+    "id": 10577,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B to C - cycloalkanes = CnH2n, not CnH2n-2"
+  },
+  {
+    "id": 10606,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B to A - double bond at 1,2 = But-1-ene, not But-2-ene"
+  },
+  {
+    "id": 10647,
+    "reason": "removed",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "The compound with the formula C6H5OH is called ________.",
+    "options": {
+      "A": "Catechol",
+      "B": "Resorcinol",
+      "C": "Hydroquinone",
+      "D": "o-Xylene"
+    },
+    "answer": "B",
+    "note": "C6H5OH is phenol; none of catechol/resorcinol/hydroquinone/o-xylene is phenol"
+  },
+  {
+    "id": 10674,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from C to D - -Cl is o/p directing deactivator; -OCH3 is activating"
+  },
+  {
+    "id": 10679,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from D to A - C2H6O has 2 isomers (ethanol, dimethyl ether)"
+  },
+  {
+    "id": 10682,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B to D - AgNO3/NH4OH distinguishes ethyne (white ppt); Br2 reacts with both"
   }
 ]
