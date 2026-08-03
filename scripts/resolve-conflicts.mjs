@@ -28,6 +28,7 @@ const RESOLUTIONS = new Map([
   ["cusaltolutionisblueincolourduetotransitionofelectronsfrom", "A"],
   ["cusaltsolutionisblueincolourduetotransitionofelectronsfrom", "A"],
   ["proteinpresentinhaemoglobinhasstructure", "D"],
+  ["thepkofnpropylamineis", "C"],
   ["forlongitudinalwaves", "C"],
   ["aftershethestairsherheartalmostgaveoutfromexhaustion", "C"],
   ["thesymbolepresentstheuncertainty", "B"],

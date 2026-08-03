@@ -93,7 +93,9 @@
     "answers": [
       "C",
       "B"
-    ]
+    ],
+    "status": "resolved",
+    "resolvedAnswer": "C"
   },
   {
     "id": 675,
