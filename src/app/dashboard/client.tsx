@@ -189,6 +189,102 @@ export default function DashboardClient({
     return { correct, total, perSubject, weakest };
   })();
 
+  // ===== "What should I do next?" — the single best next action =====
+  const nextTask = (() => {
+    if (!hasAccess) {
+      if (!freeUsed) {
+        return {
+          stage: "Stage 1",
+          stageLabel: "Diagnose",
+          title: "Start Your Free Diagnostic",
+          desc: "30 MCQs · 30 minutes · Find your weak spots",
+          href: "/test?mode=free",
+          chip: "bg-teal-100 text-teal-800",
+          bar: "bg-teal-600",
+        };
+      }
+      // Diagnostic done, free user
+      if (dailyAvailable) {
+        return {
+          stage: "Stage 2",
+          stageLabel: "Practice",
+          title: "Continue Today's Daily Challenge",
+          desc: "30 MCQs · ~30 minutes · Fresh questions daily",
+          href: "/test?mode=daily",
+          chip: "bg-blue-100 text-blue-800",
+          bar: "bg-blue-600",
+        };
+      }
+      if (!fullPreviewUsed) {
+        return {
+          stage: "Stage 3",
+          stageLabel: "Mock Exams",
+          title: "Try a Full-Length Exam",
+          desc: "180 MCQs · 3 hours · Free once — feel the real exam",
+          href: "/test?mode=full",
+          chip: "bg-amber-100 text-amber-800",
+          bar: "bg-amber-500",
+        };
+      }
+      return {
+        stage: "Stage 2",
+        stageLabel: "Practice",
+        title: `Practice ${diagnosticScore?.weakest?.subject || "Your Weakest"} Subject`,
+        desc: diagnosticScore?.weakest
+          ? `Build a custom paper on ${diagnosticScore.weakest.subject}`
+          : "Build a custom paper on the subject you need most",
+        href: diagnosticScore?.weakest
+          ? `/test?mode=custom&count=15&subjects=${encodeURIComponent(diagnosticScore.weakest.subject)}`
+          : "/dashboard#custom-paper",
+        chip: "bg-blue-100 text-blue-800",
+        bar: "bg-blue-600",
+      };
+    }
+    // Pro user
+    if (dailyAvailable) {
+      return {
+        stage: "Stage 2",
+        stageLabel: "Practice",
+        title: "Continue Today's Daily Challenge",
+        desc: "30 MCQs · ~30 minutes · Fresh questions daily",
+        href: "/test?mode=daily",
+        chip: "bg-blue-100 text-blue-800",
+        bar: "bg-blue-600",
+      };
+    }
+    return {
+      stage: "Stage 3",
+      stageLabel: "Mock Exams",
+      title: "Take a Mock Exam",
+      desc: "Full (180), Half (90), or Quick (30) — real past paper questions",
+      href: "/test?mode=full",
+      chip: "bg-amber-100 text-amber-800",
+      bar: "bg-amber-500",
+    };
+  })();
+
+  const nextTaskCard = (
+    <section className="mt-6 rounded-2xl border border-stone-200 bg-white p-5 shadow-sm">
+      <div className="flex items-center justify-between">
+        <p className="text-xs font-semibold uppercase tracking-wide text-stone-500">🎯 Your Next Task</p>
+        <span className={`rounded-full px-2.5 py-0.5 text-xs font-semibold ${nextTask.chip}`}>
+          {nextTask.stage} · {nextTask.stageLabel}
+        </span>
+      </div>
+      <div className="mt-3">
+        <div className={`h-1 w-12 rounded-full ${nextTask.bar}`} />
+        <h2 className="mt-2 text-xl font-bold text-stone-900">{nextTask.title}</h2>
+        <p className="mt-1 text-sm text-stone-500">{nextTask.desc}</p>
+      </div>
+      <Link
+        href={nextTask.href}
+        className="mt-4 block rounded-xl bg-teal-700 p-4 text-center text-sm font-semibold text-white shadow-md transition hover:bg-teal-600"
+      >
+        Start Now
+      </Link>
+    </section>
+  );
+
   // Free user who hasn't used their free test yet
   if (!hasAccess && !paymentPending && !freeUsed) {
     return (
@@ -203,14 +299,11 @@ export default function DashboardClient({
           </Link>
         )}
 
-        <div className="mt-8">
-          <Link href="/test?mode=free"
-            className="block w-full rounded-xl bg-teal-700 p-6 text-center text-white shadow-lg hover:bg-teal-600 transition">
-            <p className="text-lg font-bold">Start Your Free Diagnostic</p>
-            <p className="mt-1 text-sm text-teal-100">30 MCQs | 30 Minutes | Find your weak spots</p>
-          </Link>
+        <div className="mt-6 flex items-center gap-2">
+          <span className="rounded-full bg-teal-100 px-3 py-1 text-xs font-semibold text-teal-800">Stage 1 · Diagnose</span>
+          <span className="text-xs text-stone-400">Find your weak subjects first</span>
         </div>
-
+        {nextTaskCard}
         <p className="mt-4 text-center text-sm text-stone-500">
           Finish the diagnostic to see your score and which subject to focus on.
         </p>
@@ -296,21 +389,8 @@ export default function DashboardClient({
                 </Link>
               )}
 
-              {/* Full-length preview — the real exam, once, free */}
-              {!fullPreviewUsed ? (
-                <div className="mt-6 rounded-xl border border-teal-200 bg-teal-50 p-5 text-left">
-                  <h2 className="font-bold text-stone-900">Ready for the real thing?</h2>
-                  <p className="mt-1 text-sm text-stone-600">
-                    Try one full-length 180-MCQ exam with the 3-hour timer — exactly like exam day.
-                  </p>
-                  <Link
-                    href="/test?mode=full"
-                    className="mt-4 block rounded-lg bg-teal-700 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-teal-600"
-                  >
-                    Try a Full-Length Exam (Free)
-                  </Link>
-                </div>
-              ) : null}
+              {/* The single next best action */}
+              {nextTaskCard}
 
               {/* Daily free challenge */}
               <div className="mt-6 rounded-xl border border-blue-200 bg-blue-50 p-5 text-left">
@@ -361,28 +441,32 @@ export default function DashboardClient({
       <div className="mx-auto max-w-4xl px-4 py-8">
         <p className="text-sm text-stone-500">Welcome, {user?.firstName || "Student"}</p>
 
-      {/* Mode Selection */}
-      {customPaperCard}
-      <div className="mt-8">
-        <h2 className="text-sm font-semibold text-stone-600 mb-3">Select Test Mode</h2>
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
-          {modes.map((mode) => (
-            <button
-              key={mode.id}
-              onClick={() => setSelectedMode(mode.id)}
-              className={`rounded-xl border p-4 text-left transition ${
-                selectedMode === mode.id
-                  ? "border-teal-600 bg-teal-50 ring-1 ring-teal-600"
-                  : "border-stone-200 bg-white hover:border-stone-300"
-              }`}
-            >
-              <span className="text-xl">{mode.icon}</span>
-              <p className="mt-1 font-semibold text-stone-900">{mode.label}</p>
-              <p className="text-sm text-stone-500">{mode.desc}</p>
-            </button>
-          ))}
+        {nextTaskCard}
+
+        <div className="mt-8">
+          <div className="flex items-center gap-2">
+            <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">Stage 3 · Mock Exams</span>
+            <span className="text-xs text-stone-400">Simulate the real MDCAT</span>
+          </div>
+          <h2 className="mt-3 text-sm font-semibold text-stone-600">Select Test Mode</h2>
+          <div className="mt-2 grid grid-cols-1 gap-3 sm:grid-cols-3">
+            {modes.map((mode) => (
+              <button
+                key={mode.id}
+                onClick={() => setSelectedMode(mode.id)}
+                className={`rounded-xl border p-4 text-left transition ${
+                  selectedMode === mode.id
+                    ? "border-teal-600 bg-teal-50 ring-1 ring-teal-600"
+                    : "border-stone-200 bg-white hover:border-stone-300"
+                }`}
+              >
+                <span className="text-xl">{mode.icon}</span>
+                <p className="mt-1 font-semibold text-stone-900">{mode.label}</p>
+                <p className="text-sm text-stone-500">{mode.desc}</p>
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
 
       {/* Subject Filter (shown for all modes) */}
       <div className="mt-6">
