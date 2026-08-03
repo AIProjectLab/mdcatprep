@@ -48,8 +48,10 @@ export default function Home() {
           You&apos;re in the right place.
         </h1>
         <p className="mt-4 text-lg leading-8 text-stone-600">
-          Take a free 30-MCQ diagnostic built from the actual 2025 papers,
-          find your weak subject, then practice full exams from all 5 boards.
+          Take a free 30-MCQ diagnostic built from the actual 2025 papers, find
+          your weak subject, then practice full exams from all 5 boards — from a
+          question bank of 23,000+ MCQs aligned with the official MDCAT papers
+          and syllabus.
         </p>
 
         <div className="mt-8 flex items-center justify-center gap-4">
