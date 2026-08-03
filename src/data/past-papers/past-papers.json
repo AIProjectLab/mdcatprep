@@ -18617,5 +18617,2885 @@
     },
     "answer": "C",
     "origin": "past-paper"
+  },
+  {
+    "id": 1230,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Implantation of the embryo occurs in which part of the female reproductive system? (BUMHS-2025 by",
+    "options": {
+      "A": "Ovary",
+      "B": "Uterus",
+      "C": "Cervix",
+      "D": "Fallopian tube --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Implantation is the attachment of the blastocyst to the inner wall of the uterus."
+  },
+  {
+    "id": 1231,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The structure that is directly continuous with the cell body transmits nerve impulses away from it, is:",
+    "options": {
+      "A": "Axon",
+      "B": "Synapse",
+      "C": "Dendrites",
+      "D": "Myelin sheath --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Axons are specialized projections that conduct electrical impulses away from the neuron's cell body. BUMHS MDCAT 2025 Solved Paper Whatsapp 0326-5590305 www.medixprep.com FREE MDCAT - NUMS - AFNS - AMC - PMA -PAF - Nursing Preparation If you find any error - Inform us === PAGE 2 (len=2229) ==="
+  },
+  {
+    "id": 1232,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A pea plant which upon self fertilization produces all the offspring of its own phenotype is called:",
+    "options": {
+      "A": "Plant with homogenous genotype",
+      "B": "Plant with homozygous genotype",
+      "C": "Plant with homologous genotype",
+      "D": "Plant with hemizygous genotype --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Homozygous plants are true-breeding; they produce offspring with the same phenotype upon self-fertilization."
+  },
+  {
+    "id": 1233,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "What happens to the pressure and volume of the thoracic cavity during inhalation? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Pressure and volume both increase",
+      "B": "Pressure increases and volume decreases",
+      "C": "Pressure decreases and volume increases",
+      "D": "Pressure and volume both decrease --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "During inhalation, the diaphragm contracts, increasing thoracic volume and decreasing pressure to draw air in."
+  },
+  {
+    "id": 1234,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is NOT a function of testes? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Spermatogenesis",
+      "B": "production of FSH",
+      "C": "Secretion of inhibin",
+      "D": "Secretion of testosterone --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "FSH (Follicle Stimulating Hormone) is produced by the anterior pituitary gland, not the testes."
+  },
+  {
+    "id": 1235,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Crossing over is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Exchange of segments between sister chromatids of homologous chromosomes during meiosis.",
+      "B": "Exchange of segments between non-sister chromatids of homologous chromosomes during meiosis.",
+      "C": "Exchange of segments between non-sister chromatids of heterologous chromosomes during meiosis.",
+      "D": "Exchange of segments between non-sister chromatids of homologous chromosomes during mitosis. --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Crossing over involves the exchange of genetic material between non-sister chromatids of homologous chromosomes during prophase I."
+  },
+  {
+    "id": 1236,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Nasal opening is closed by which of the following to prevent food from entering into food pipe?",
+    "options": {
+      "A": "Hard palate",
+      "B": "Epiglottis",
+      "C": "Soft palate",
+      "D": "Larynx --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "The epiglottis covers the glottis during swallowing to prevent food from entering the respiratory tract."
+  },
+  {
+    "id": 1237,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which cells are involved in humoral immunity? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "T cells === PAGE 3 (len=1874) ===",
+      "B": "B cells",
+      "C": "T or B cells",
+      "D": "T and B cells --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Humoral immunity is mediated by antibodies, which are produced and secreted by B cells."
+  },
+  {
+    "id": 1238,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following travels along a neuron during nerve impulse conduction? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "waves of electrochemical changes",
+      "B": "waves of thermal changes",
+      "C": "waves of magnetic changes",
+      "D": "waves of hormonal changes --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "A nerve impulse is an action potential, which is a localized wave of electrochemical changes across the membrane."
+  },
+  {
+    "id": 1239,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Dialyzing fluid has same osmotic pressure as the blood has, except that it lacks: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Glucose",
+      "B": "Water",
+      "C": "Sodium and Potassium",
+      "D": "Nitrogenous waste --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Dialyzing fluid contains no nitrogenous wastes, allowing them to diffuse out of the blood down their concentration gradient."
+  },
+  {
+    "id": 1240,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "When fat molecule is hydrolyzed for energy, the end products will be: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Amino acids and glycerol",
+      "B": "Glycerol and fatty acids",
+      "C": "Fatty acids and amino acids",
+      "D": "Glycerol and nitrogenous bases --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Fats (triglycerides) are composed of a glycerol backbone attached to three fatty acid chains."
+  },
+  {
+    "id": 1241,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The less common cause of HIV mode of transmission is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Blood Transfusion",
+      "B": "Placenta of mother to baby",
+      "C": "Mosquito bite",
+      "D": "Lactation from HIV positive mother to baby --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "HIV cannot be transmitted by mosquito bites; the virus does not survive or replicate in mosquitoes."
+  },
+  {
+    "id": 1242,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The cerebellum is mainly responsible for: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Vision, hearing and reflexes",
+      "B": "Regulating heart beat only",
+      "C": "Conscious, thoughts and reasoning",
+      "D": "Balance, posture and coordination === PAGE 4 (len=1835) === --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "The cerebellum controls fine motor movement, balance, posture, and coordination."
+  },
+  {
+    "id": 1243,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following method is used to prevent HIV transmission during blood transfusion? (BUMHS-",
+    "options": {
+      "A": "By freezing blood before transfusion",
+      "B": "By using blood from young donors only",
+      "C": "By boiling blood before transfusion",
+      "D": "By screening blood for HIV before its transfusion --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Screening blood donations ensures that HIV-positive blood is identified and not transfused into patients."
+  },
+  {
+    "id": 1244,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The part of male reproductive system involved in the storage and maturation of sperms: (BUMHS-2025 by",
+    "options": {
+      "A": "Scrotum",
+      "B": "Vas deferens",
+      "C": "Epididymis",
+      "D": "Testes --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Sperm cells mature and are stored in the epididymis after being produced in the testes."
+  },
+  {
+    "id": 1245,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The correct function of H⁺",
+    "options": {
+      "A": "Transporting proteins",
+      "B": "Breaking down fats",
+      "C": "Maintaining or changing pH",
+      "D": "Producing light energy --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "H⁺ and OH⁻ ions determine the acidity or alkalinity of the cell environment, so they help in maintaining or changing pH."
+  },
+  {
+    "id": 1246,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "One of the best preventive measure for kidney stones formation is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Taking antibiotic daily",
+      "B": "Avoiding all dairy food",
+      "C": "Drinking plenty of water",
+      "D": "Reducing physical activity --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "High fluid intake dilutes urine, reducing the concentration of minerals and preventing crystallization."
+  },
+  {
+    "id": 1247,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following layer is mainly composed of cardiac muscles? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Endocardium",
+      "B": "Epicardium",
+      "C": "Pericardium",
+      "D": "Myocardium --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶--- === PAGE 5 (len=2208) ==="
+    },
+    "answer": "D",
+    "explanation": "The myocardium is the thick, muscular middle layer of the heart wall responsible for contraction."
+  },
+  {
+    "id": 1248,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "During the process of gaseous exchange, all of the following are the functions of hemoglobin",
+    "options": {
+      "A": "It acts as a buffer to stabilize the blood pH",
+      "B": "It transports oxygen from lungs to other body tissues",
+      "C": "It transports carbon dioxide from body tissues to lungs",
+      "D": "It regulates the blood pressure when body is in stress --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Hemoglobin transports gases and buffers blood pH, but does not regulate blood pressure during stress."
+  },
+  {
+    "id": 1249,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "If a polypeptide of 20 amino acids is made up of all different amino acids, at least how many types of",
+    "options": {
+      "A": "20",
+      "B": "45",
+      "C": "61",
+      "D": "64 --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Each unique amino acid requires at least one specific tRNA molecule to bring it to the ribosome."
+  },
+  {
+    "id": 1250,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is NOT considered a conjugated molecule? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "A molecule containing linked sugar units",
+      "B": "A molecule made up only of carbon and hydrogen",
+      "C": "A protein attached to a non-protein group",
+      "D": "A lipid combined with another chemical component --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "A molecule composed only of carbon and hydrogen is a simple hydrocarbon, not conjugated from two different types of biological macromolecules."
+  },
+  {
+    "id": 1251,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is the causative agent of Gonorrhea? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Herpes simplex virus",
+      "B": "Treponema pallidum",
+      "C": "Mycobacterium tuberculosis",
+      "D": "Neisseria gonorrhaeae --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Neisseria gonorrhoeae is the bacterium responsible for causing the sexually transmitted infection gonorrhea."
+  },
+  {
+    "id": 1252,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is a correct structural feature of RNA? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "It contains deoxyribose sugar",
+      "B": "It has a double-stranded helical structure",
+      "C": "It contains base uracil instead of base thymine",
+      "D": "It is confined to the nucleus only --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "RNA utilizes the nitrogenous base uracil in place of thymine, which is found in DNA. === PAGE 6 (len=1949) ==="
+  },
+  {
+    "id": 1253,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A drug that relaxes smooth muscles in blood vessels is useful for: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Increasing skeletal muscles strength",
+      "B": "Reducing blood pressure (vasodilation)",
+      "C": "Increase heart rate",
+      "D": "Causing voluntary contraction --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Relaxing the smooth muscle of blood vessels increases their diameter (vasodilation), which lowers blood pressure."
+  },
+  {
+    "id": 1254,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A person quickly withdraw their hand touching a hot iron. This type of reflex is best classified as:",
+    "options": {
+      "A": "Cranial reflex",
+      "B": "Spinal reflex",
+      "C": "Hormonal reflex",
+      "D": "Conditional reflex --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Rapid withdrawal from a painful stimulus is a classic example of a spinal reflex arc."
+  },
+  {
+    "id": 1255,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following function is under control of medulla oblongata? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Memory",
+      "B": "Vision",
+      "C": "Breathing",
+      "D": "Dreaming --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "The medulla oblongata controls vital involuntary autonomic functions, such as breathing and heart rate."
+  },
+  {
+    "id": 1256,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The outer surface of the axon membrane in a resting neuron is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Negative due to sodium ions",
+      "B": "Positive due to sodium ions",
+      "C": "Positive due to potassium ions",
+      "D": "Neutral due to balanced ions --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "In a resting neuron, the extracellular fluid is positively charged largely due to a high concentration of Na+ ions."
+  },
+  {
+    "id": 1257,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The primary function of the sensory neuron in a reflex arc is to: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Contract muscles",
+      "B": "Detect environmental changes",
+      "C": "Transmit impulses to the brain",
+      "D": "Carry impulses to the spinal cord --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Sensory neurons transmit nerve impulses from peripheral receptors toward the central nervous system (spinal cord)."
+  },
+  {
+    "id": 1258,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is NOT related to large intestine? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Villi",
+      "B": "Sigmoid colon === PAGE 7 (len=1863) ===",
+      "C": "Appendix",
+      "D": "Rectum --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Villi are specialized structures found in the small intestine to increase surface area for nutrient absorption."
+  },
+  {
+    "id": 1259,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which change occurs in enzyme activity when temperature increases beyond the optimum level?",
+    "options": {
+      "A": "Activity remains same",
+      "B": "Activity increases",
+      "C": "Enzymes denatures",
+      "D": "Enzymes specificity increases --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "High temperatures disrupt the bonds maintaining the enzyme's 3D structure, causing it to denature and lose function."
+  },
+  {
+    "id": 1260,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "According to Darwin theory, the main reason of evolution is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Natural calamity",
+      "B": "Natural selection",
+      "C": "Use and disuse of an organ",
+      "D": "Inheritance of acquired character --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Charles Darwin proposed natural selection as the fundamental mechanism driving evolutionary change."
+  },
+  {
+    "id": 1261,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which structure conducts the action potential deep into the muscle fiber? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Z-line",
+      "B": "Sarcomere",
+      "C": "T-tubules",
+      "D": "Sarcoplasmic reticulum --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Transverse (T) tubules are invaginations of the sarcolemma that conduct action potentials deep into the muscle cell."
+  },
+  {
+    "id": 1262,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "What is the chemical composition of chromosomes? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "RNA and lipids",
+      "B": "DNA and proteins",
+      "C": "Proteins and carbohydrates",
+      "D": "Carbohydrates and nucleic acids --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Eukaryotic chromosomes are composed of chromatin, a complex of DNA and histone proteins."
+  },
+  {
+    "id": 1263,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "In the second step of his experiment, what did Mendel do after selecting pure breeding tall and dwarf",
+    "options": {
+      "A": "Allowed them to self pollinate",
+      "B": "Crossed them to produced hybrid offspring",
+      "C": "Collected seeds from random plants === PAGE 8 (len=1699) ===",
+      "D": "Grew them in different soil types --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "After establishing true-breeding (pure) parental lines, Mendel cross-pollinated them to produce the F1 hybrid generation."
+  },
+  {
+    "id": 1264,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which one is NOT the part of fore brain? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Cerebellum",
+      "B": "Hypothalamus",
+      "C": "Hippocampus",
+      "D": "Amygdala --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "The cerebellum is a prominent structure of the hindbrain, not the forebrain."
+  },
+  {
+    "id": 1265,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "During saltatory conduction, a nerve impulse jumps from one to another: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Synapse",
+      "B": "Axon",
+      "C": "Node of Ranvier",
+      "D": "Correct --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "In myelinated axons, action potentials \"jump\" from one unmyelinated Node of Ranvier to the next, speeding up conduction."
+  },
+  {
+    "id": 1266,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Each DNA nucleotide differs from the others based on its: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Nitrogenous bases",
+      "B": "Phosphate group",
+      "C": "Sugar molecule",
+      "D": "Number of phosphorus atoms --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "All DNA nucleotides share the same deoxyribose sugar and phosphate group but differ in their nitrogenous base (A, T, C, or G)."
+  },
+  {
+    "id": 1267,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Maintenance of healthy bone tissues by secreting enzymes and influencing bone mineral content is",
+    "options": {
+      "A": "Osteocytes",
+      "B": "Osteoblasts",
+      "C": "Osteoclasts",
+      "D": "Osteogenic cells --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Osteocytes are mature bone cells embedded in the matrix that maintain bone tissue."
+  },
+  {
+    "id": 1268,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Glycolipid is a combination of: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Lipid and carbohydrate",
+      "B": "Lipid and protein",
+      "C": "Nucleic acid and lipid",
+      "D": "Protein and carbohydrate --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶--- === PAGE 9 (len=2064) ==="
+    },
+    "answer": "A",
+    "explanation": "Glycolipids are formed when a carbohydrate chain is covalently bonded to a lipid molecule."
+  },
+  {
+    "id": 1269,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which idea suggests that life was created by a supernatural force? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Special creation",
+      "B": "Biogenesis",
+      "C": "Spontaneous generation",
+      "D": "Natural selection --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Special creation posits that life and the universe were created by a divine or supernatural being."
+  },
+  {
+    "id": 1270,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Catastrophism explains that changes in life on earth are due to: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Gradual evolution",
+      "B": "Natural selection",
+      "C": "Mutation",
+      "D": "Sudden natural disasters --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Catastrophism is the theory that the Earth's features and biological changes were shaped by sudden, short-lived, violent events."
+  },
+  {
+    "id": 1271,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following does not occur during muscle contraction? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Release of calcium from sarcoplasmic reticulum",
+      "B": "Formation of cross-bridge",
+      "C": "Sliding of actin over myosin",
+      "D": "Increase in sarcomere length --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "During muscle contraction, actin and myosin slide past each other causing the sarcomere to shorten, not increase in length."
+  },
+  {
+    "id": 1272,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Cartilage receives its nutrition through the process of: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Active transport",
+      "B": "Diffusion",
+      "C": "Phagocytosis",
+      "D": "Osmosis --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Cartilage is an avascular tissue; it relies on the diffusion of nutrients from surrounding tissues."
+  },
+  {
+    "id": 1273,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Key benefit of using biotechnology in development of vaccine for malaria is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "its ability to develop endosymbiotic relationship with host",
+      "B": "its ability to work as antimalarial drugs",
+      "C": "its ability to directly kills the malaria parasite in mosquitoes",
+      "D": "to create a targeted immune response against the parasite --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Biotechnology allows for the creation of recombinant vaccines that safely present specific antigens to trigger a targeted immune response. === PAGE 10 (len=1918) ==="
+  },
+  {
+    "id": 1274,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "During lab analysis, a student extracted a molecule that contained a sugar, a phosphate group and a",
+    "options": {
+      "A": "Nucleotide",
+      "B": "Amino acid",
+      "C": "Monosaccharides",
+      "D": "Polysaccharides --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "A nucleotide is the basic structural unit of nucleic acids, consisting of a pentose sugar, a phosphate group, and a nitrogenous base."
+  },
+  {
+    "id": 1275,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "During sample analysis, students finds that it contains Carbon, Hydrogen, Oxygen and Nitrogen, but",
+    "options": {
+      "A": "DNA",
+      "B": "Protein",
+      "C": "Phospholipid",
+      "D": "RNA --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Proteins are composed of C, H, O, and N, whereas nucleic acids and phospholipids also contain phosphorus."
+  },
+  {
+    "id": 1276,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which tissue layer of heart wall is involved in the formation of heart valves? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Epicardium",
+      "B": "Pericardium",
+      "C": "Endocardium",
+      "D": "Myocardium --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "The endocardium is the innermost layer that lines the heart chambers and covers the connective tissue of the heart valves."
+  },
+  {
+    "id": 1277,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "During vesicle formation, endoplasmic reticulum membrane: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Dissolve into the cytosol",
+      "B": "Breakdown into its chemical component s",
+      "C": "Expands and contributes to vesicle formation",
+      "D": "Moves directly into Golgi apparatus --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "The ER membrane pinches off to form transport vesicles, actively contributing its membrane to their formation."
+  },
+  {
+    "id": 1278,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "All of the following have excretory role EXCEPT: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Kidney",
+      "B": "Skin",
+      "C": "Appendix",
+      "D": "Lungs --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "The appendix is a vestigial structure with immune tissue; it does not play a role in excretion. === PAGE 11 (len=1996) ==="
+  },
+  {
+    "id": 1279,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which one of the following hormone increases the reabsorption of Na ions in the nephron? (BUMHS-",
+    "options": {
+      "A": "ADH",
+      "B": "LH",
+      "C": "Insulin",
+      "D": "Aldosteron --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Aldosterone acts on the distal convoluted tubules to stimulate sodium reabsorption and potassium excretion."
+  },
+  {
+    "id": 1280,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The key difference between lymph nodes and lymph vessels is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Vessels move lymph; nodes filter it",
+      "B": "Vessels carry oxygen; nodes produce bile",
+      "C": "Vessels digest toxins; nodes transport lymph",
+      "D": "Vessels store lymphocytes; nodes make plasma --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Lymphatic vessels transport the lymph fluid, while lymph nodes contain macrophages and lymphocytes that filter it."
+  },
+  {
+    "id": 1281,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A typical value of resting membrane potential in a neuron is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "-50 millivolts",
+      "B": "50 millivolts",
+      "C": "-70 millivolts",
+      "D": "70 millivolts --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "The resting membrane potential for a typical mammalian neuron is approximately -70 mV."
+  },
+  {
+    "id": 1282,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "In humans, how many kinds of tRNA are present for the synthesis of proteins? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "40",
+      "B": "45",
+      "C": "43",
+      "D": "50 --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Humans have roughly 45 different kinds of tRNA molecules, which is sufficient due to the wobble phenomenon in base pairing."
+  },
+  {
+    "id": 1283,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A cell shows green structures and a large fluid-filled area under the microscope. What does this",
+    "options": {
+      "A": "Plant cell with chloroplasts and vacuole",
+      "B": "Fungal cell without chloroplasts",
+      "C": "Algal cells with chloroplasts but lacking large vacuole",
+      "D": "Animal cell with small vacuoles --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Green structures are chloroplasts (for photosynthesis) and the large fluid-filled area is the central vacuole, characteristic of plant cells."
+  },
+  {
+    "id": 1284,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Lactose sugar is found in milk and is composed of _____________. (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Glucose + Glucose === PAGE 12 (len=1786) ===",
+      "B": "Glucose + Fructose",
+      "C": "Glucose + Galactose",
+      "D": "Fructose + Galactose --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Lactose is a disaccharide formed by the condensation of one glucose molecule and one galactose molecule."
+  },
+  {
+    "id": 1285,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which option best reflects species specific chromosome number? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Same in all animals",
+      "B": "Varies by tissue type",
+      "C": "Fixed for each species",
+      "D": "More in larger organisms --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "The number of chromosomes is a stable, fixed characteristic for the somatic cells of a particular species."
+  },
+  {
+    "id": 1286,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Anticodon that consist of complementary basis of three nucleotides is located on: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "rRNA",
+      "B": "mRNA",
+      "C": "tRNA",
+      "D": "DNA --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "The anticodon is a specific sequence of three nucleotides on a tRNA molecule that pairs with the mRNA codon."
+  },
+  {
+    "id": 1287,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which part of kidney is responsible for collecting urine before it enters the ureter? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Renal pelvis",
+      "B": "Renal medulla",
+      "C": "Renal cortex",
+      "D": "Renal pyramids --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "The renal pelvis is the funnel-like dilated part of the ureter in the kidney that acts as a receptacle for urine."
+  },
+  {
+    "id": 1288,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Ventricular systole causes: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Atrial relaxation",
+      "B": "Atrial contraction",
+      "C": "Closing of semilunar valve",
+      "D": "Closing of atrioventricular valves --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Ventricular contraction (systole) increases intraventricular pressure, forcing the atrioventricular (AV) valves to close to prevent backflow."
+  },
+  {
+    "id": 1289,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "After ovulation, the ruptured follicle in ovary transformed into: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Corpus luteum",
+      "B": "Corpus callosum",
+      "C": "Secondary follicle",
+      "D": "Tertiary follicle === PAGE 13 (len=1923) === --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Following ovulation, the remnants of the Graafian follicle develop into a temporary endocrine gland called the corpus luteum."
+  },
+  {
+    "id": 1290,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which one are bone destroying cells? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Osteoclasts",
+      "B": "Osteocytes",
+      "C": "Osteogenic",
+      "D": "Osteoblasts --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Osteoclasts are multinucleated cells responsible for bone resorption and breakdown."
+  },
+  {
+    "id": 1291,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Spleen contributes towards: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Producing insulin and glucagon",
+      "B": "Producing antibodies against fats",
+      "C": "Increasing oxygen binding to hemoglobin",
+      "D": "Filtering blood and removing old red blood cells --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "The spleen functions as a blood filter, effectively removing senescent (old) or damaged red blood cells."
+  },
+  {
+    "id": 1292,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Hemophilia is a sex linked recessive trait. A hemophiliac man marries to a normal woman (whose father",
+    "options": {
+      "A": "0%",
+      "B": "25%",
+      "C": "50%",
+      "D": "75% --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "The father is XhY. The mother is a carrier XHXh (inherited Xh from her father). Daughters will be either XHXh or XhXh, resulting in a 50% chance."
+  },
+  {
+    "id": 1293,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Morgan's experiment showed deviation from the law of independent assortment due to: (BUMHS-2025 by",
+    "options": {
+      "A": "Crossing over",
+      "B": "Gene linkage",
+      "C": "Random mutation",
+      "D": "Natural selection --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Thomas Hunt Morgan found that genes located closely together on the same chromosome tend to be inherited together, demonstrating gene linkage."
+  },
+  {
+    "id": 1294,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The active site is important in enzyme action because: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "It binds to the substrate",
+      "B": "It maintains the pH of reaction",
+      "C": "It provide energy for reaction",
+      "D": "It changes the shape of the enzyme --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶--- === PAGE 14 (len=1928) ==="
+    },
+    "answer": "A",
+    "explanation": "The active site is the specific physical region of the enzyme where the substrate binds to undergo a chemical reaction."
+  },
+  {
+    "id": 1295,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The main function of Pacinian corpuscles is to detect: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Chemical composition of food",
+      "B": "Changes in temperature",
+      "C": "Stimuli of pressure",
+      "D": "Sharp pain signals --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Pacinian corpuscles are encapsulated mechanoreceptors located deep in the dermis that detect deep pressure and vibration."
+  },
+  {
+    "id": 1296,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The connective tissue which connects skeletal muscle to bone is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Tendon",
+      "B": "Ligament",
+      "C": "Cartilage",
+      "D": "Synovial membrane --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Tendons are strong, fibrous bands of connective tissue that attach muscle to bone."
+  },
+  {
+    "id": 1297,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Cholesterol and phospholipids are mainly synthesized in liver cells by: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Golgi complex",
+      "B": "Mitochondria",
+      "C": "Rough endoplasmic reticulum (RER)",
+      "D": "Smooth endoplasmic reticulum (SER) --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "The Smooth Endoplasmic Reticulum (SER) lacks ribosomes and is the primary site of lipid and steroid synthesis."
+  },
+  {
+    "id": 1298,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The nerve impulse for the contraction of skeletal muscle fiber is carried from sarcolemma to every",
+    "options": {
+      "A": "T-tubules",
+      "B": "H-zone",
+      "C": "Thin myofilaments",
+      "D": "Thick myofilaments --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Transverse (T) tubules are invaginations of the sarcolemma that rapidly propagate action potentials to the interior of the muscle fiber."
+  },
+  {
+    "id": 1299,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is the most appropriate concept of oxygen carrying capacity of blood? (BUMHS-",
+    "options": {
+      "A": "Ability of blood to carry oxygen",
+      "B": "Ability of hemoglobin to bind with oxygen",
+      "C": "Amount of oxygen present in the plasma",
+      "D": "Rate of binding of fibrinogen with proteins --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶--- === PAGE 15 (len=1994) ==="
+    },
+    "answer": "B",
+    "explanation": "Oxygen carrying capacity primarily refers to the maximum amount of oxygen that the hemoglobin in blood can bind and transport."
+  },
+  {
+    "id": 1300,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The central dogma of molecular biology describes the flow of genetic information as: (BUMHS-2025 by",
+    "options": {
+      "A": "DNA →mRNA →Protein",
+      "B": "mRNA →DNA →Protein",
+      "C": "Protein →DNA →mRNA",
+      "D": "DNA →Protein →mRNA --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "The central dogma states that genetic information flows from DNA to mRNA (transcription) and then to Protein (translation)."
+  },
+  {
+    "id": 1301,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Acylglycerols like fats and oils are esters formed by condensation reaction between: (BUMHS-2025 by",
+    "options": {
+      "A": "Fatty acid and water",
+      "B": "Fatty acid and phosphates",
+      "C": "Fatty acid and glucose",
+      "D": "Fatty acid and alcohol --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Fats and oils are formed by a condensation reaction between fatty acids and an alcohol (specifically glycerol)."
+  },
+  {
+    "id": 1302,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Reflex action is considered as the simplest form of response in: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Simple animals",
+      "B": "Higher animals",
+      "C": "Lowest animals",
+      "D": "Smaller animals --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "In higher animals, reflex arcs bypass conscious brain processing, representing the simplest and fastest involuntary response."
+  },
+  {
+    "id": 1303,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A platform for protein synthesis in the cell is provided by: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "mRNA",
+      "B": "rRNA",
+      "C": "tRNA",
+      "D": "protein encoding DNA --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Ribosomal RNA (rRNA) combines with proteins to form ribosomes, which serve as the platform for protein synthesis."
+  },
+  {
+    "id": 1304,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "In disease diagnosis, the main function of monoclonal antibodies is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "To stimulate white blood cell production",
+      "B": "To detect specific antigens in clinical samples",
+      "C": "To bind to toxins produced by pathogens",
+      "D": "To label abnormal cells for immune destruction --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Monoclonal antibodies are engineered to bind to highly specific antigens, making them === PAGE 16 (len=1804) === excellent tools for diagnostic testing."
+  },
+  {
+    "id": 1305,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Pick the smallest form of carbohydrates from the following, which cannot be further hydrolyzed into",
+    "options": {
+      "A": "sucrose",
+      "B": "lactose",
+      "C": "glucose",
+      "D": "starch --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Glucose is a monosaccharide, meaning it is a single sugar unit that cannot be hydrolyzed into a simpler carbohydrate."
+  },
+  {
+    "id": 1306,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which type of inhibitor binds to a site other than the active site and changes the shape of active site?",
+    "options": {
+      "A": "Competitive inhibitor",
+      "B": "Un-competitive inhibitor",
+      "C": "Allosteric activator",
+      "D": "Non - competitive inhibitor --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Non-competitive inhibitors bind to allosteric sites, causing a conformational change that alters the active site's shape."
+  },
+  {
+    "id": 1307,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Saltatory conduction of nerve impulse occurs in: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Myelinated axons",
+      "B": "Cell bodies",
+      "C": "Unmyelinated axons",
+      "D": "Dendrites --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "The myelin sheath acts as an insulator, forcing the action potential to jump from one Node of Ranvier to the next in myelinated axons."
+  },
+  {
+    "id": 1308,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Thread-like single strand of a chromosome that is made of DNA and protein is known as: (BUMHS-2025",
+    "options": {
+      "A": "Chromosome arm",
+      "B": "Nucleosome",
+      "C": "Chromosome",
+      "D": "Chromatid --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "A chromatid is one of the two identical thread-like strands into which a chromosome divides during cell division."
+  },
+  {
+    "id": 1309,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is NOT included in the composition of bile? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Bile salt",
+      "B": "Bile pigment",
+      "C": "Cholesterol",
+      "D": "Lipase --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Bile contains salts, pigments, and cholesterol to emulsify fats, but it contains no digestive === PAGE 17 (len=1681) === enzymes like lipase."
+  },
+  {
+    "id": 1310,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which factor affects the ionization state of an enzyme's active site? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Temperature",
+      "B": "Enzyme concentration",
+      "C": "Substrate concentration",
+      "D": "pH --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Changes in pH alter the concentration of H+ ions, which affects the ionization of amino acid side chains at the active site."
+  },
+  {
+    "id": 1311,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "When hydrochloric acid is added to brine, solubility of sodium chloride ___________. (BUMHS-2025 by",
+    "options": {
+      "A": "Decreases",
+      "B": "Increases",
+      "C": "Remains same",
+      "D": "Become equal to HCl --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "The addition of HCl introduces chloride ions, reducing the solubility of NaCl via the common ion effect."
+  },
+  {
+    "id": 1312,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Zn-Hg/conc. HCl reduces acetaldehyde to: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Ethane",
+      "B": "Ethene",
+      "C": "acetic acid",
+      "D": "Para aldehyde --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "This is the Clemmensen reduction, which reduces aldehydes and ketones to their corresponding alkanes (ethane)."
+  },
+  {
+    "id": 1313,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following group acts as chromophore? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "amino group",
+      "B": "azo group",
+      "C": "hydroxyl group",
+      "D": "sulfonic acid group --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "The azo group (-N=N-) is a highly conjugated system that acts as a chromophore, producing color in dyes."
+  },
+  {
+    "id": 1314,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is natural adhesive? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "silicones",
+      "B": "polyvinylacetate",
+      "C": "casein glue",
+      "D": "polyamide --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Casein glue is derived from milk protein, classifying it as a natural adhesive."
+  },
+  {
+    "id": 1315,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "NH₃ has net dipole moment but BF₃ has zero net dipole moment because of? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "B is less E.N than N",
+      "B": "F is more E.N than N",
+      "C": "BF₃ is pyramidal",
+      "D": "NH₃ is pyramidal --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "NH3 has a lone pair creating an asymmetrical pyramidal shape, resulting in a net dipole, unlike symmetrical trigonal planar BF3."
+  },
+  {
+    "id": 1316,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following has lower vapour pressure? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "CHCl₃",
+      "B": "CCl₄",
+      "C": "H₂O",
+      "D": "CH₃COCH₃ --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Water exhibits strong intermolecular hydrogen bonding, which resists evaporation and results in a lower vapor pressure."
+  },
+  {
+    "id": 1317,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The electrons will enter which of these orbitals after filling the 3d orbital. (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "4d",
+      "B": "4f",
+      "C": "4s",
+      "D": "4p --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "According to the Aufbau principle (and n+l rule), the 4p orbital is filled immediately after the 3d orbital."
+  },
+  {
+    "id": 1318,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Dehydration of alcohol to form ethene is an example of: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "substitution reaction",
+      "B": "addition reaction",
+      "C": "elimination reaction",
+      "D": "redox reaction --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Removing a water molecule from an alcohol to form a double bond is a classic beta- elimination reaction."
+  },
+  {
+    "id": 1319,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A triatomic molecule must be either linear with bond angle of 180° or else? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "t-shape",
+      "B": "bent",
+      "C": "pyramidal",
+      "D": "tetrahedral --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "If a triatomic molecule has lone pairs on the central atom, electron repulsion causes the molecule to adopt a bent shape."
+  },
+  {
+    "id": 1320,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "If molecules have strong dipole dipole force, then they have high? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "heat of neutralization",
+      "B": "heat of combustion",
+      "C": "heat of vaporization === PAGE 19 (len=1496) ===",
+      "D": "heat atomization --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Strong intermolecular forces hold molecules tightly in the liquid phase, requiring more heat energy to vaporize them."
+  },
+  {
+    "id": 1321,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which one is the most volatile liquid? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "water",
+      "B": "methanol",
+      "C": "benzene",
+      "D": "diethylether --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Diethyl ether has the weakest intermolecular forces among the options, making it the most easily vaporized (volatile)."
+  },
+  {
+    "id": 1322,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The molecules that has non zero dipole moment is? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "CO₂",
+      "B": "CO",
+      "C": "BF₃",
+      "D": "AlCl₃ --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "CO is an asymmetrical diatomic molecule consisting of atoms with different electronegativities, giving it a net dipole moment."
+  },
+  {
+    "id": 1323,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which element has smallest ionic radius? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Li⁺ ¹",
+      "B": "Na⁺ ¹",
+      "C": "K⁺ ¹",
+      "D": "Rb⁺ ¹ --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Ionic radius increases down Group 1 because extra electron shells are added. Therefore, Li⁺ has the smallest ionic radius among Li⁺ , Na⁺ , K⁺ , and Rb⁺ ."
+  },
+  {
+    "id": 1324,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "When liquids are heated, volume __________. (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "decreases",
+      "B": "increases",
+      "C": "remains same",
+      "D": "cannot be measured --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Heating increases the kinetic energy of the molecules, causing them to spread slightly apart, increasing the volume."
+  },
+  {
+    "id": 1325,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which metal hydroxide is stable to heat? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Li",
+      "B": "Na",
+      "C": "Mg",
+      "D": "Ca === PAGE 20 (len=1799) === --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Alkali metal hydroxides (like NaOH), with the exception of Lithium, are thermally stable and do not easily decompose upon heating."
+  },
+  {
+    "id": 1326,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which one of the following reactions involve either oxidation or reduction EXCEPT: (BUMHS-2025 by",
+    "options": {
+      "A": "CH₄ + 2O₂ →CO₂ + 2H₂O",
+      "B": "Cu²⁺ + Zn →Zn²⁺ + Cu",
+      "C": "CuO + H₂SO₄ →CuSO₄ + H₂O",
+      "D": "Zn + H₂SO₄ →ZnSO₄ + H₂ --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "This is a neutralization/double displacement reaction where no elements undergo a change in oxidation state."
+  },
+  {
+    "id": 1327,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "If intermolecular forces between gas molecules disappear suddenly, which of the following would",
+    "options": {
+      "A": "pressure decreases",
+      "B": "pressure increases",
+      "C": "gas collapses",
+      "D": "pressure remain unchanged --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Without attractive forces pulling molecules slightly inward, the molecules would strike the container walls with greater force, increasing pressure."
+  },
+  {
+    "id": 1328,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which one has strongest metallic bond? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Na",
+      "B": "Mg",
+      "C": "Al",
+      "D": "P --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Aluminum provides three valence electrons per atom to the metallic 'electron sea', creating the strongest metallic bond among the metals listed."
+  },
+  {
+    "id": 1329,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Rate constant depends upon: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Volume",
+      "B": "Temperature",
+      "C": "Concentration",
+      "D": "Pressure --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "The rate constant (k) is independent of concentration but increases exponentially with temperature according to the Arrhenius equation."
+  },
+  {
+    "id": 1330,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which monomer is used for synthesis of nylon 6,6? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "sobacoyl chloride",
+      "B": "methylene diamine",
+      "C": "heptane-1,7-dioic acid",
+      "D": "hexamethylene diamine --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶--- === PAGE 21 (len=1615) ==="
+    },
+    "answer": "D",
+    "explanation": "Nylon 6,6 is synthesized by polycondensation of hexamethylenediamine and adipic acid."
+  },
+  {
+    "id": 1331,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Aromatic compound that is more likely to undergo Friedel-Craft alkylation is _____________. (BUMHS-",
+    "options": {
+      "A": "benzene",
+      "B": "toluene",
+      "C": "nitrobenzene",
+      "D": "benzaldehyde --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "The methyl group on toluene is an electron-donating group, which activates the ring towards electrophilic substitution."
+  },
+  {
+    "id": 1332,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The IUPAC name for CH₃-CH₂-CO-CH₂-CHO is : (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "3-one pentanal",
+      "B": "3-oxo pentanal",
+      "C": "3-one pentanol",
+      "D": "3-oxo pentanol --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "The aldehyde group takes priority and dictates C1. The ketone group at C3 is named as a substituent with the prefix \"oxo\"."
+  },
+  {
+    "id": 1333,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "n + l value for 4d orbital is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "6",
+      "D": "7 --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "For a 4d orbital, the principal quantum number n = 4, and the azimuthal quantum number l = 2. Thus, 4 + 2 = 6."
+  },
+  {
+    "id": 1334,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "At constant temperature, when the pressure of gas is increased three times then its volume",
+    "options": {
+      "A": "2V/3",
+      "B": "3V",
+      "C": "V/3",
+      "D": "5V --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "According to Boyle's law (P₁V₁ = P₂V₂), pressure and volume are inversely proportional. If pressure triples, volume becomes one-third."
+  },
+  {
+    "id": 1335,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Ketones when treated with LiAlH₄ in the presence of dry ether, they are converted to: (BUMHS-2025 by",
+    "options": {
+      "A": "Primary Alcohol",
+      "B": "Monohyderic alcohol",
+      "C": "Secondary alcohol",
+      "D": "Dihyderic alcohol --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶--- === PAGE 22 (len=1725) ==="
+    },
+    "answer": "C",
+    "explanation": "Lithium aluminum hydride is a strong reducing agent that reduces ketones into secondary alcohols."
+  },
+  {
+    "id": 1336,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A terminal alkyne is treated with lindler catalyst and Hydrogen. The major product is: (BUMHS-2025 by",
+    "options": {
+      "A": "Trans- alkene",
+      "B": "Cis-alkene",
+      "C": "alkane",
+      "D": "vinyl chloride --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Lindlar's catalyst facilitates the partial, syn-addition of hydrogen to an alkyne, yielding a cis- alkene."
+  },
+  {
+    "id": 1337,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A student starts a reaction expecting to get 28g of product. After isolating and drying the product",
+    "options": {
+      "A": "14g and 50%",
+      "B": "18g and 75%",
+      "C": "28g and 85%",
+      "D": "24g and 90% --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Answer mapped according to the provided Answer Key."
+  },
+  {
+    "id": 1338,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Common name of pentanoic acid is (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "valeric acid",
+      "B": "caproic acid",
+      "C": "stearic acid",
+      "D": "oxalic acid --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Valeric acid is the traditional trivial name for the five-carbon straight-chain carboxylic acid, pentanoic acid."
+  },
+  {
+    "id": 1339,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which one of the following is an exothermic process? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Melting of ice",
+      "B": "Evaporation of water",
+      "C": "Oxidation of Sulphur",
+      "D": "Photosynthesis --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Oxidation (combustion) of sulfur forms bonds to oxygen and releases significant heat energy."
+  },
+  {
+    "id": 1340,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "If an electrophile is the attacking reagent, which one is the most reactive? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "R-I",
+      "B": "R-F",
+      "C": "R-Br",
+      "D": "R-Cl --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Answer mapped according to the provided Answer Key. === PAGE 23 (len=1922) ==="
+  },
+  {
+    "id": 1341,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The activation energy of a reaction is usually: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Unaffected by the process of a catalyst.",
+      "B": "Low for the reaction that takes place slowly.",
+      "C": "Different for the forward and backward reaction.",
+      "D": "Increases with rise in temperature. --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Unless the reaction has an enthalpy change of exactly zero, the forward and backward activation energies will differ by ΔH."
+  },
+  {
+    "id": 1342,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following mechanism involves a carbocation intermediate? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "E₁ mechanism",
+      "B": "E₂ mechanism",
+      "C": "SN₁ mechanism",
+      "D": "SN₂ mechanism --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "In SN₁ reaction, the leaving group first departs and forms a carbocation intermediate. E₂ and SN₂ are concerted mechanisms, so they do not form a carbocation intermediate."
+  },
+  {
+    "id": 1343,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "What is formed by homolysis of covalent bond? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "free radical",
+      "B": "molecule",
+      "C": "ion",
+      "D": "atom --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Homolytic cleavage of a bond distributes the shared electrons evenly, producing two free radicals."
+  },
+  {
+    "id": 1344,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following reaction is the characteristic of alkene? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Electrophilic addition",
+      "B": "Nucleophilic substitution",
+      "C": "Free radical substitution",
+      "D": "Elimination --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "The electron-rich pi bond of alkenes typically attracts electrophiles, leading to electrophilic addition reactions."
+  },
+  {
+    "id": 1345,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Toluene reacts with bromine in the presence of UV light to produce: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "m-bromotoluene",
+      "B": "benzylbromide",
+      "C": "o-bromotoluene",
+      "D": "bromobenzene --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "UV light promotes a free-radical substitution mechanism, which targets the alkyl side chain rather than the aromatic ring."
+  },
+  {
+    "id": 1346,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Reaction of Phenol with Acetyl chloride will yield: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Alcohol",
+      "B": "Ester === PAGE 24 (len=1608) ===",
+      "C": "Carboxylic acid",
+      "D": "Ether --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "This is an esterification (acylation) reaction that yields phenyl acetate, which is an ester."
+  },
+  {
+    "id": 1347,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Consider the reaction: 2Na + Cl₂ →2NaCl. If 4 moles of Na and 2 moles of Cl₂ are reacted, how much",
+    "options": {
+      "A": "0 mol",
+      "B": "0.5 mol",
+      "C": "1 mol",
+      "D": "1.5 mol --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "The stoichiometry requires a 2:1 ratio. 4 moles of Na perfectly reacts with 2 moles of Cl₂, leaving no excess."
+  },
+  {
+    "id": 1348,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Unit of rate constant for a particular reaction depends upon the: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "temperature of reaction",
+      "B": "activation energy of reaction",
+      "C": "molecularity of reaction",
+      "D": "order of reaction --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "The overall order of the reaction determines the units of the rate constant (k) to ensure the rate has units of M/s."
+  },
+  {
+    "id": 1349,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Expression for Boyle's law is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "V ∝n",
+      "B": "V ∝P⁻ ¹",
+      "C": "T ∝P",
+      "D": "P ∝n --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Boyle's Law states that at constant temperature, the volume of a gas is inversely proportional to its pressure."
+  },
+  {
+    "id": 1350,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A molecule will be chiral, if it has: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "three different group",
+      "B": "no element of symmetry",
+      "C": "superimposed",
+      "D": "mirror image --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Chirality requires a lack of symmetry elements, making the molecule non-superimposable on its mirror image."
+  },
+  {
+    "id": 1351,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which hydride of group VIIA has lowest boiling point? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "HF",
+      "B": "HCl",
+      "C": "HBr",
+      "D": "HI === PAGE 25 (len=1648) === --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": null
+  },
+  {
+    "id": 1352,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Kc value will change, if we change: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Pressure",
+      "B": "Temperature",
+      "C": "Concentration",
+      "D": "any one --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "The equilibrium constant (Kc) depends solely on the temperature of the system."
+  },
+  {
+    "id": 1353,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The N-F-N bond in NF is 101.9° -102.4°, much lesser than in ammonia due to: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Presence of lone pair on F",
+      "B": "high electronegativity of F",
+      "C": "large size of F",
+      "D": "Its drawback of VSEPR --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Highly electronegative fluorine atoms draw the bonding electron pairs away from nitrogen, allowing the lone pair to compress the bond angle further."
+  },
+  {
+    "id": 1354,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "NO₂⁻",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "6 --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "The oxidation state of N increases from +3 in nitrite to +5 in nitrate, which corresponds to a loss of 2 electrons."
+  },
+  {
+    "id": 1355,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Reaction of toluene with chlorine in presence of Lewis catalyst, the major product will be: (BUMHS-",
+    "options": {
+      "A": "o-chlorotoluene",
+      "B": "m-chlorotoluene",
+      "C": "p-chlorotoluene",
+      "D": "equal mixture of o and p toluene --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "The methyl group is ortho/para directing. Due to steric hindrance at the ortho position, the para isomer is generally the major product. PHYSICS"
+  },
+  {
+    "id": 1356,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "If a photon of gamma ray and one of x-ray are compared, then: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "x-ray photon has more energy",
+      "B": "Both have same energy",
+      "C": "Gamma-ray photon has more energy",
+      "D": "Both have same wavelength === PAGE 26 (len=1664) === --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Gamma rays have higher frequencies than x-rays, and since E = hf, gamma photons possess more energy."
+  },
+  {
+    "id": 1357,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The dot product of two vectors is negative. If one vector lies along the positive x-axis, then the",
+    "options": {
+      "A": "x.axis",
+      "B": "- x-axis",
+      "C": "y-axis",
+      "D": "- y-axis --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "A negative dot product means the angle between the vectors is > 90°, placing the projection on the negative axis."
+  },
+  {
+    "id": 1358,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "If two points are at the same potential in a electric field, then the work done in moving a unit positive",
+    "options": {
+      "A": "- 0.5 J",
+      "B": "0 J",
+      "C": "1 J",
+      "D": "2 J --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Work done is charge multiplied by potential difference (W = qΔV). If points are at the same potential, ΔV is zero."
+  },
+  {
+    "id": 1359,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A string vibrates in the first, second and third harmonics. The ratio of their wavelength is: (BUMHS-",
+    "options": {
+      "A": "1 : 2 : 3",
+      "B": "3 : 2 : 1",
+      "C": "1 : 4 : 9",
+      "D": "3 : 6 : 9 --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": null
+  },
+  {
+    "id": 1360,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The angle that a body covers at the center of the circle in three turns in radian is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "0",
+      "B": "3",
+      "C": "10.8",
+      "D": "18.8 --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "One complete turn is 2π radians. Three turns equals 6π radians, which is approximately 18.8 radians."
+  },
+  {
+    "id": 1361,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The efficiency of an emf source becomes 50% when the load resistance is equal to: (BUMHS-2025 by",
+    "options": {
+      "A": "internal resistance",
+      "B": "double the internal resistance",
+      "C": "half the internal resistance",
+      "D": "zero === PAGE 27 (len=2031) === --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Maximum power transfer occurs when external resistance equals internal resistance, corresponding to 50% efficiency."
+  },
+  {
+    "id": 1362,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "If the length of a copper wire connected in a circuit is doubled, its resistivity: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Becomes half",
+      "B": "Becomes double",
+      "C": "Becomes four times",
+      "D": "Remains same --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Resistivity is an inherent property of the material (copper) and depends only on material type and temperature, not dimensions."
+  },
+  {
+    "id": 1363,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "If the angle between force and velocity is 90°, the power delivered by the force is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Zero",
+      "B": "Maximum",
+      "C": "Minimum but not zero",
+      "D": "Infinite --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Power is the dot product of force and velocity (P = Fv cosθ). Since cos(90°) = 0, power is zero."
+  },
+  {
+    "id": 1364,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A ball is thrown vertically upward with a certain velocity making an angle with the horizontal",
+    "options": {
+      "A": "Increases",
+      "B": "Decreases",
+      "C": "Remains same",
+      "D": "First decreases then increases --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "In the absence of air resistance, there are no horizontal forces, so the horizontal component of velocity remains constant."
+  },
+  {
+    "id": 1365,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A capacitor of capacitance 2 μF is connected in series with 1 MΩ resistance and 12 volts battery.",
+    "options": {
+      "A": "1 second",
+      "B": "2 seconds",
+      "C": "10 seconds",
+      "D": "Infinite --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "The time constant τ is equal to RC. τ = (10⁶ Ω) × (2×10⁻ ⁶ F) = 2 seconds."
+  },
+  {
+    "id": 1366,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A rolling cart collides with a stationary cart of equal mass. After the collision, both move together,",
+    "options": {
+      "A": "Masses are equal",
+      "B": "No external force acts on the system",
+      "C": "Both move with the same speed",
+      "D": "Internal forces are very small === PAGE 28 (len=1754) === --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "The law of conservation of momentum applies to any system as long as the net external force acting on it is zero."
+  },
+  {
+    "id": 1367,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "An electric field exists in a region if: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "A test charge experiences a force",
+      "B": "Voltage is zero",
+      "C": "Charge density is uniform",
+      "D": "The medium is vacuum --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "An electric field is fundamentally defined by the presence of an electrostatic force on a stationary test charge."
+  },
+  {
+    "id": 1368,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Dot product of two unit vectors is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "cosθ",
+      "D": "AB cosθ --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Since unit vectors have a magnitude of 1, their dot product u·v = (1)(1)cosθ = cosθ."
+  },
+  {
+    "id": 1369,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "According to the Faraday's law of electromagnetic induction, emf induced in a coil placed in",
+    "options": {
+      "A": "the magnetic field",
+      "B": "amount of current",
+      "C": "resistance of a coil",
+      "D": "the rate of change of magnetic flux --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Faraday's Law states that the induced EMF is directly proportional to the time rate of change of the magnetic flux."
+  },
+  {
+    "id": 1370,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A 4kg box initially at rest is pulled along a frictionless surface by a constant horizontal force of 8N.",
+    "options": {
+      "A": "120 J",
+      "B": "600 J",
+      "C": "960 J",
+      "D": "1800 J --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Acceleration a = F/m = 2 m/s². Velocity v = at = 30 m/s. Kinetic Energy = 0.5×m×v² = 0.5×4×900 = 1800 J."
+  },
+  {
+    "id": 1371,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The ratio of longest to shortest wave lengths in Bracket series of hydrogen spectrum is: (BUMHS-2025",
+    "options": {
+      "A": "25/9",
+      "B": "17/6",
+      "C": "9/5",
+      "D": "4/3 --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶--- === PAGE 29 (len=1988) ==="
+    },
+    "answer": "A",
+    "explanation": "The Bracket series transitions end at n=4. Calculating the transitions from n=5 (longest) and n=∞(shortest) yields the ratio 25/9."
+  },
+  {
+    "id": 1372,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "For a diode, the depletion region of a PN junction has: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Free positive charges",
+      "B": "Free negative charges",
+      "C": "Positive and negative ions",
+      "D": "No free charges --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "The depletion region is depleted of mobile charge carriers (free electrons and holes), leaving only immobile ions."
+  },
+  {
+    "id": 1373,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "When a battery is being charged, the direction of current inside the battery: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "is from positive to negative terminal",
+      "B": "is the same as the direction of emf",
+      "C": "is opposite to the direction of emf",
+      "D": "depends on the load resistance --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "During charging, an external source forces current to flow backward into the positive terminal, opposite to the battery's own EMF."
+  },
+  {
+    "id": 1374,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Two standing waves vibrate in fundamental mode in two organ pipes A (open) and B ( closed) each of",
+    "options": {
+      "A": "1 : 2",
+      "B": "1 : 1",
+      "C": "2 : 1",
+      "D": "2 : 3 --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Frequency of an open pipe is v/(2L). Frequency of a closed pipe is v/(4L). The ratio is 2:1."
+  },
+  {
+    "id": 1375,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The result of vector product of two vectors: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "number",
+      "B": "unit",
+      "C": "number and unit",
+      "D": "magnitude and a unit vector --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "A vector (cross) product results in a new vector, which possesses both magnitude and direction (represented by a unit vector)."
+  },
+  {
+    "id": 1376,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The average speed of a body in a given interval of time is equal to the average velocity, if: (BUMHS-",
+    "options": {
+      "A": "The speed of the body remains uniform.",
+      "B": "The body moves with constant acceleration.",
+      "C": "The body moves along a straight path.",
+      "D": "The body returns to its starting point. --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶--- === PAGE 30 (len=1853) ==="
+    },
+    "answer": "C",
+    "explanation": "Average speed equals the magnitude of average velocity only when distance equals displacement (unidirectional straight-line motion)."
+  },
+  {
+    "id": 1377,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A proton and an electron are held stationary at a distance r in a uniform electric field. If released,",
+    "options": {
+      "A": "Increases",
+      "B": "Decreases",
+      "C": "Remains constant",
+      "D": "First increases, then decreases --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Objects always accelerate in the direction of forces doing positive work on them, naturally lowering their potential energy."
+  },
+  {
+    "id": 1378,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "If vector A = 2î + ĵ + 3k̂ is perpendicular to B = î + ĵ + xk̂ then x = (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "3",
+      "B": "-3",
+      "C": "1",
+      "D": "-1 --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Perpendicular vectors have dot product 0. So, (2)(1) + (1)(1) + (3)(x) = 0 ⇒2 + 1 + 3x = 0 ⇒3x = -3 ⇒x = -1."
+  },
+  {
+    "id": 1379,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The magnitude of electric field intensity due to a point charge q at a distance r in vacuum is given",
+    "options": {
+      "A": "E = q/r²",
+      "B": "E = kq/r",
+      "C": "E = kq/r²",
+      "D": "E = k/r² --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "This is derived directly from Coulomb's Law by dividing the electric force by the magnitude of the test charge."
+  },
+  {
+    "id": 1380,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The power transmission lines delivering same amount of power. An increase in current will increase:",
+    "options": {
+      "A": "Heat produced in the wires",
+      "B": "Voltage output",
+      "C": "Frequency of AC",
+      "D": "Mechanical stress on the wires --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Power lost as heat in transmission lines is proportional to the square of the current (P = I²R)."
+  },
+  {
+    "id": 1381,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "When the diameter of a blood vessel narrows, the velocity and pressure of blood will: (BUMHS-2025 by",
+    "options": {
+      "A": "increase, increase",
+      "B": "increase, decrease",
+      "C": "decrease, increase",
+      "D": "decrease, decrease --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶--- === PAGE 31 (len=2043) ==="
+    },
+    "answer": "B",
+    "explanation": "When a blood vessel narrows, the cross-sectional area decreases, so blood velocity increases. According to Bernoulli’s principle, as velocity increases, pressure decreases."
+  },
+  {
+    "id": 1382,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A progressive wave differs from a stationary wave because in progressive wave: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "particles remain at fixed nodes",
+      "B": "particles oscillate and transfer energy",
+      "C": "particles stay at anti-nodes",
+      "D": "particles move forward with the wave --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Progressive waves transfer energy from one point to another, whereas stationary waves trap energy in bounded regions."
+  },
+  {
+    "id": 1383,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "For an ideal gas, the relation between molar specific heats Cp and Cv is: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Cp = Cv + R",
+      "B": "Cp = Cv – R",
+      "C": "Cv = Cp + R",
+      "D": "Cp = R - Cv --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "The difference between Cp and Cv is equal to the universal gas constant (R), representing work done during expansion."
+  },
+  {
+    "id": 1384,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "If the capacitance in a purely capacitive AC circuit is doubled, the current will be: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Double",
+      "B": "Become half",
+      "C": "Remain same",
+      "D": "Decrease to the fourth --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Capacitive reactance Xc = 1/(ωC). Doubling the capacitance halves the reactance, which doubles the current (I = V/Xc)."
+  },
+  {
+    "id": 1385,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The coulomb repulsive force between two protons inside a nucleus is much higher than the",
+    "options": {
+      "A": "10³⁶",
+      "B": "10⁻ ³⁶",
+      "C": "10⁻ ¹⁵",
+      "D": "10¹² --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "The electrostatic repulsive force between two protons is enormously greater than their gravitational attraction. The ratio is approximately 10³⁶."
+  },
+  {
+    "id": 1386,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A particle is moving in a uniform circular path of radius 4cm with velocity 4cm/s. The maximum",
+    "options": {
+      "A": "4 cm/s²",
+      "B": "8 cm/s²",
+      "C": "12 cm/s²",
+      "D": "16 cm/s² --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶--- === PAGE 32 (len=1891) ==="
+    },
+    "answer": "A",
+    "explanation": "Maximum acceleration = ω²r. Since v = ωr, ω = 1 rad/s. Thus, a = (1)² × 4 = 4 cm/s²."
+  },
+  {
+    "id": 1387,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "On increasing the length of a wire, the specific resistance (resistivity) of the wire: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "increases",
+      "B": "decreases",
+      "C": "remains unchanged",
+      "D": "first increases, then decreases --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Specific resistance (resistivity) is an intrinsic property of the material and does not change with the wire's length or area."
+  },
+  {
+    "id": 1388,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Water flows through a horizontal pipe with area of 0.02 m² at 3m/s. The pipe narrows to 0.01 m². The",
+    "options": {
+      "A": "0.5 m/s",
+      "B": "1.5 m/s",
+      "C": "3 m/s",
+      "D": "6 m/s --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "By the equation of continuity (A₁V₁ = A₂V₂), (0.02)(3) = (0.01)V₂. Solving gives V₂ = 6 m/s."
+  },
+  {
+    "id": 1389,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Bernoulli's principle helps explain why blood pressure drops when blood velocity: (BUMHS-2025 by",
+    "options": {
+      "A": "Increases in narrow vessel",
+      "B": "Decreases in narrow vessel",
+      "C": "Increases in wide vessel",
+      "D": "Decreases in wide vessel --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Higher fluid velocity results in higher kinetic energy, requiring a drop in static pressure to conserve total energy."
+  },
+  {
+    "id": 1390,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A man pushes a wall with a force of 100 N for 10 seconds. The work done by the man on the wall is:",
+    "options": {
+      "A": "1000 J",
+      "B": "100J",
+      "C": "10 J",
+      "D": "zero --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Work equals force multiplied by displacement. Since the wall does not move, displacement is zero, meaning zero work is done."
+  },
+  {
+    "id": 1391,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "F is the force between two identical charges each with a charge (e) separated by a distance (r). If the",
+    "options": {
+      "A": "F/4",
+      "B": "16F",
+      "C": "32F",
+      "D": "F --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶--- === PAGE 33 (len=1925) ==="
+    },
+    "answer": "B",
+    "explanation": "Coulomb's law states force is inversely proportional to r². (1/4)² = 1/16, so the new force is 16 times greater. ENGLISH"
+  },
+  {
+    "id": 1392,
+    "subject": "English",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Choose the word with incorrect spelling: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "sagacious",
+      "B": "foremost",
+      "C": "berister",
+      "D": "pneumonia --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Berister' is incorrectly spelled; the correct spelling of the legal profession is 'barrister'."
+  },
+  {
+    "id": 1393,
+    "subject": "English",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "What is the correct reported speech for the given sentence? He said, \" I am going to the store.\"",
+    "options": {
+      "A": "He said that he was going to the store.",
+      "B": "He said that he is going to the store.",
+      "C": "He said that he has been going to the store.",
+      "D": "He said that he had been going to the store. --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "When changing to reported speech, the present continuous tense changes to the past continuous tense."
+  },
+  {
+    "id": 1394,
+    "subject": "English",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Pick out the sentence with appropriate use of transitional device. (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "She likes to read books but watch movies.",
+      "B": "She is a talented musician likewise a gifted painter.",
+      "C": "She is not only intelligent but also very kind.",
+      "D": "Second; gather your material. First, begin your project. --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "The sentence correctly utilizes the correlative conjunction pair 'not only... but also'."
+  },
+  {
+    "id": 1395,
+    "subject": "English",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The students decided to meet the teacher and request him for a favour. The main verb in this",
+    "options": {
+      "A": "meet",
+      "B": "request",
+      "C": "meet & request",
+      "D": "decided --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Decided' acts as the main finite verb of the clause, while 'to meet' and 'request' are part of the infinitive phrase."
+  },
+  {
+    "id": 1396,
+    "subject": "English",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which sentence implies that it was unexpected that she took the test. (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "She even took the test.",
+      "B": "She took even the test.",
+      "C": "Even she took the test.",
+      "D": "She took the test even. --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶--- === PAGE 34 (len=1787) ==="
+    },
+    "answer": "C",
+    "explanation": "Placing the modifier 'even' before the subject 'she' emphasizes that her taking the test was surprising."
+  },
+  {
+    "id": 1397,
+    "subject": "English",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which version improves tone and formality in the sentence: \"You boys need to submit the paper",
+    "options": {
+      "A": "You should submit the paper as soon as you can.",
+      "B": "Everyone needs to get the paper in quickly.",
+      "C": "The paper should be submitted as soon as possible.",
+      "D": "Y’all better hand it in now. --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Using the passive voice and spelling out the acronym (\"as soon as possible\") elevates the sentence's formality."
+  },
+  {
+    "id": 1398,
+    "subject": "English",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "She remained (stoic) during the crisis, refusing to show fear or distress. Deduce the meaning of",
+    "options": {
+      "A": "Anxious",
+      "B": "Resilient",
+      "C": "Angry",
+      "D": "Confused --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Context clues such as \"refusing to show fear or distress\" suggest 'stoic' implies resilience and endurance."
+  },
+  {
+    "id": 1399,
+    "subject": "English",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Many follow exactly what is written in the ____________. (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "scripturies",
+      "B": "screptures",
+      "C": "scriptures",
+      "D": "scripttures --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "Scriptures' is the correct spelling for sacred or religious texts."
+  },
+  {
+    "id": 1400,
+    "subject": "English",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Identify the sentence that uses inversion correctly: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "Rarely I have seen such a beautiful scene.",
+      "B": "Rarely have I seen such a beautiful scene.",
+      "C": "Rarely seen I have such a beautiful scene.",
+      "D": "Rarely I seen have such a beautiful scene. --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "Sentences beginning with negative adverbial phrases like \"rarely\" require subject-auxiliary inversion. LOGICAL REASONING"
+  },
+  {
+    "id": 1401,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "CAT is to DOG, as MOUSE is to: (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "RAT",
+      "B": "CAT",
+      "C": "DOG",
+      "D": "CHEESE === PAGE 35 (len=1195) === --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "B",
+    "explanation": "This is a predator-prey relationship analogy. A dog chases a cat; similarly, a cat chases a mouse."
+  },
+  {
+    "id": 1402,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Prohibiting smoking in public areas will reduce the occurrence of lung disease. What assumption is",
+    "options": {
+      "A": "Banning smoking has no impact on lung disease rates.",
+      "B": "Hence all people live in public areas therefore, banning smoking will eliminate lung disease.",
+      "C": "Smoking is the sole cause of lung disease.",
+      "D": "Smoking in public places plays a major role in causing lung disease. --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "The argument assumes that second-hand smoke in public places is a significant contributor to lung disease occurrences."
+  },
+  {
+    "id": 1403,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "What would be the result of: 10 - 3 × 2 ? (BUMHS-2025 by Medix)",
+    "options": {
+      "A": "4",
+      "B": "6",
+      "C": "14",
+      "D": "17 --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "Following standard order of operations (BODMAS/PEMDAS), multiplication is performed first: 10 - 6 = 4."
+  },
+  {
+    "id": 1404,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "(BUMHS-2025 by Medix)",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4 --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "Assuming the figures repeat in a cycle of 4, the 12th figure corresponds to the 4th image === PAGE 36 (len=1800) === because 12 is a multiple of 4."
+  },
+  {
+    "id": 1405,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "In a certain university, 25% candidates failed university admission test. Of those who passed the",
+    "options": {
+      "A": "9000",
+      "B": "6000",
+      "C": "5000",
+      "D": "3000 --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "D",
+    "explanation": "75% passed. 80% of 75% = 60% got admission. So, 0.60x = 1800, which means x = 3000 candidates."
+  },
+  {
+    "id": 1406,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "If a person earns Rs. 1000 in the first week and their income doubles each week, how much will they",
+    "options": {
+      "A": "Rs. 4000",
+      "B": "Rs. 3000",
+      "C": "Rs. 8000",
+      "D": "Rs. 16000 --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "The progression is: Week 1=1000, Week 2=2000, Week 3=4000, Week 4=8000."
+  },
+  {
+    "id": 1407,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following represents an environmental factor that could lead to incidents? (BUMHS-2025",
+    "options": {
+      "A": "Lack of experience",
+      "B": "Machine malfunctioning",
+      "C": "A storm leading to power disruptions",
+      "D": "A design flaw --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "C",
+    "explanation": "A storm is an external, natural environmental force, unlike human errors or mechanical flaws."
+  },
+  {
+    "id": 1408,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "The age of a man is twice that of his daughter. If the man is 36 years old, what was the daughter’s",
+    "options": {
+      "A": "14 years",
+      "B": "18 years",
+      "C": "20 years",
+      "D": "10 years --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶---"
+    },
+    "answer": "A",
+    "explanation": "The daughter is currently 36/2 = 18 years old. Four years ago, she was 18 - 4 = 14 years old."
+  },
+  {
+    "id": 1409,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "BUMHS 2025",
+    "origin": "past-paper",
+    "text": "A man walks 12 meters north, then turns right and walks 8 meters, then turns right again and walks",
+    "options": {
+      "A": "5m",
+      "B": "8m",
+      "C": "13m",
+      "D": "17m --- ✶★✶--- MEDIX ♥MDCAT --- ✶★✶--- === PAGE 37 (len=171) ==="
+    },
+    "answer": "C",
+    "explanation": "He moves 12m North, 8m East, 12m South (putting him back on the initial latitude line), then 5m East. Total displacement is 8 + 5 = 13 meters East."
   }
 ]
