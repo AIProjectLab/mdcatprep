@@ -172,8 +172,8 @@ export default function TestPage() {
     return <main className="mx-auto flex min-h-screen max-w-lg items-center px-4 text-center">
       <div>
         <h1 className="text-2xl font-bold">No textbook questions available yet</h1>
-        <p className="mt-3 text-gray-600">Generate and sync textbook questions first, then come back to start practice.</p>
-        <button onClick={() => router.push("/dashboard")} className="mt-6 rounded-lg bg-emerald-600 px-5 py-3 font-semibold text-white">Back to dashboard</button>
+        <p className="mt-3 text-stone-600">Generate and sync textbook questions first, then come back to start practice.</p>
+        <button onClick={() => router.push("/dashboard")} className="mt-6 rounded-lg bg-teal-700 px-5 py-3 font-semibold text-white">Back to dashboard</button>
       </div>
     </main>;
   }
@@ -188,36 +188,36 @@ export default function TestPage() {
       <header className="sticky top-0 z-10 border-b bg-white shadow-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2">
-            <span className="text-sm font-semibold text-gray-900">MDCAT Prep</span>
-            <span className="rounded bg-gray-100 px-2 py-0.5 text-xs text-gray-500">{testData.mode}</span>
+            <span className="text-sm font-semibold text-stone-900">MDCAT Prep</span>
+            <span className="rounded bg-stone-100 px-2 py-0.5 text-xs text-stone-500">{testData.mode}</span>
           </div>
           <Timer endTime={endTime} onTimeUp={finishTest} />
-          <div className="text-sm text-gray-600">{answeredCount}/{questions.length}</div>
+          <div className="text-sm text-stone-600">{answeredCount}/{questions.length}</div>
         </div>
       </header>
 
       <div className="mx-auto flex w-full max-w-7xl flex-1 gap-6 px-4 py-6">
         <main className="flex-1">
           <div className="mb-4 flex items-center justify-between">
-            <p className="text-sm text-gray-500">Question {currentIndex + 1} of {questions.length}</p>
+            <p className="text-sm text-stone-500">Question {currentIndex + 1} of {questions.length}</p>
           </div>
           <QuestionDisplay question={currentQ} selected={answers[currentQ?.id] ?? null} onSelect={handleSelect} />
 
           <div className="mt-6 hidden lg:flex items-center justify-between">
             <button onClick={() => navigateWithTap("prev")}
               disabled={currentIndex === 0}
-              className={`rounded-lg border border-gray-300 px-5 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-30 transition ${navTap === "prev" ? "animate-tap" : ""}`}>
+              className={`rounded-lg border border-stone-300 px-5 py-2.5 text-sm font-medium text-stone-700 hover:bg-stone-50 disabled:opacity-30 transition ${navTap === "prev" ? "animate-tap" : ""}`}>
               ← Previous
             </button>
-            <span className="text-sm text-gray-400">{currentIndex + 1} / {questions.length}</span>
+            <span className="text-sm text-stone-400">{currentIndex + 1} / {questions.length}</span>
             {currentIndex === questions.length - 1 ? (
               <button onClick={() => setShowConfirmSubmit(true)} disabled={submitted}
-                className="rounded-lg bg-emerald-600 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-500 disabled:opacity-50 transition">
+                className="rounded-lg bg-teal-700 px-5 py-2.5 text-sm font-semibold text-white hover:bg-teal-600 disabled:opacity-50 transition">
                 Finish Test &amp; See Results
               </button>
             ) : (
               <button onClick={() => navigateWithTap("next")}
-                className={`rounded-lg border border-gray-300 px-5 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 transition ${navTap === "next" ? "animate-tap" : ""}`}>
+                className={`rounded-lg border border-stone-300 px-5 py-2.5 text-sm font-medium text-stone-700 hover:bg-stone-50 transition ${navTap === "next" ? "animate-tap" : ""}`}>
                 Next →
               </button>
             )}
@@ -236,10 +236,10 @@ export default function TestPage() {
           <button onClick={() => navigateWithTap("prev")}
             disabled={currentIndex === 0}
             className={`rounded-lg border px-4 py-2 text-sm disabled:opacity-30 ${navTap === "prev" ? "animate-tap" : ""}`}>Previous</button>
-          <span className="text-sm text-gray-500">{currentIndex + 1}/{questions.length}</span>
+          <span className="text-sm text-stone-500">{currentIndex + 1}/{questions.length}</span>
           {currentIndex === questions.length - 1 ? (
             <button onClick={() => setShowConfirmSubmit(true)} disabled={submitted}
-              className="rounded-lg bg-emerald-600 px-4 py-2 text-sm font-semibold text-white disabled:opacity-50">Finish</button>
+              className="rounded-lg bg-teal-700 px-4 py-2 text-sm font-semibold text-white disabled:opacity-50">Finish</button>
           ) : (
             <button onClick={() => navigateWithTap("next")}
               className={`rounded-lg border px-4 py-2 text-sm ${navTap === "next" ? "animate-tap" : ""}`}>Next</button>
@@ -251,15 +251,15 @@ export default function TestPage() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
           <div className="mx-4 w-full max-w-sm rounded-xl bg-white p-6 shadow-xl">
             <h2 className="text-lg font-semibold">Submit Test?</h2>
-            <p className="mt-2 text-sm text-gray-600">
+            <p className="mt-2 text-sm text-stone-600">
               You answered {answeredCount} of {questions.length} questions.
               {questions.length - answeredCount > 0 && <span> {questions.length - answeredCount} unanswered.</span>}
             </p>
             <div className="mt-4 flex gap-3">
               <button onClick={() => setShowConfirmSubmit(false)}
-                className="flex-1 rounded-lg border px-4 py-2 text-sm hover:bg-gray-50">Go Back</button>
+                className="flex-1 rounded-lg border px-4 py-2 text-sm hover:bg-stone-50">Go Back</button>
               <button onClick={finishTest}
-                className="flex-1 rounded-lg bg-emerald-600 px-4 py-2 text-sm text-white hover:bg-emerald-500">Submit</button>
+                className="flex-1 rounded-lg bg-teal-700 px-4 py-2 text-sm text-white hover:bg-teal-600">Submit</button>
             </div>
           </div>
         </div>

@@ -34,8 +34,8 @@ export default function QuestionDisplay({
     const tapClass = tapped === option ? " animate-tap" : "";
     if (!showResult) {
       return selected === option
-        ? `${base} border-emerald-500 bg-emerald-50 text-emerald-900 font-medium${tapClass}`
-        : `${base} border-gray-200 bg-white hover:border-gray-300 hover:bg-gray-50 text-gray-900${tapClass}`;
+        ? `${base} border-teal-600 bg-teal-50 text-teal-900 font-medium${tapClass}`
+        : `${base} border-stone-200 bg-white hover:border-stone-300 hover:bg-stone-50 text-stone-900${tapClass}`;
     }
     if (option === question.answer) {
       return `${base} border-green-500 bg-green-50 text-green-900 font-medium`;
@@ -43,7 +43,7 @@ export default function QuestionDisplay({
     if (option === selected && option !== question.answer) {
       return `${base} border-red-400 bg-red-50 text-red-900`;
     }
-    return `${base} border-gray-200 bg-gray-50 text-gray-500`;
+    return `${base} border-stone-200 bg-stone-50 text-stone-500`;
   }
 
   // Build the source reference line (book/page for textbooks, source/year for past papers)
@@ -60,8 +60,8 @@ export default function QuestionDisplay({
   return (
     <div className="space-y-6">
       <div>
-        <div className="flex items-center gap-2 text-xs text-gray-500 mb-2">
-          <span className="rounded bg-gray-100 px-2 py-0.5 font-medium">
+        <div className="flex items-center gap-2 text-xs text-stone-500 mb-2">
+          <span className="rounded bg-stone-100 px-2 py-0.5 font-medium">
             Q{question.id}
           </span>
           <span className="rounded bg-blue-100 px-2 py-0.5 text-blue-700">
@@ -71,7 +71,7 @@ export default function QuestionDisplay({
           {showResult && sourceText && (
             <button
               onClick={() => setShowSource((s) => !s)}
-              className="ml-auto flex items-center gap-1 rounded-lg border border-gray-200 bg-white px-2 py-0.5 text-gray-500 hover:bg-gray-50 transition"
+              className="ml-auto flex items-center gap-1 rounded-lg border border-stone-200 bg-white px-2 py-0.5 text-stone-500 hover:bg-stone-50 transition"
               title="Show source"
             >
               <span>ℹ️</span>
@@ -80,11 +80,11 @@ export default function QuestionDisplay({
           )}
         </div>
         {showResult && showSource && sourceText && (
-          <p className="mb-2 rounded-lg border border-gray-200 bg-gray-50 px-3 py-1.5 text-xs text-gray-600">
+          <p className="mb-2 rounded-lg border border-stone-200 bg-stone-50 px-3 py-1.5 text-xs text-stone-600">
             {sourceText}
           </p>
         )}
-        <p className="text-base leading-relaxed text-gray-900">{question.text}</p>
+        <p className="text-base leading-relaxed text-stone-900">{question.text}</p>
       </div>
       <div className="space-y-2">
         {options.map((opt) => (

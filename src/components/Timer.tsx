@@ -35,7 +35,7 @@ export default function Timer({
   return (
     <div
       className={`text-center text-xl font-bold tabular-nums tracking-wider ${
-        isLow ? "text-red-600 animate-pulse" : "text-gray-900"
+        isLow ? "text-red-600 animate-pulse" : "text-stone-900"
       }`}
     >
       {String(hours).padStart(2, "0")}:{String(minutes).padStart(2, "0")}:
