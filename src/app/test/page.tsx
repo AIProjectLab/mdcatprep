@@ -14,7 +14,7 @@ import QuestionDisplay from "@/components/QuestionDisplay";
 import QuestionPalette from "@/components/QuestionPalette";
 
 function getConfig() {
-  if (typeof window === "undefined") return { mode: "full", subjects: [] as Subject[], count: 0, sources: [] as string[], demo: false };
+  if (typeof window === "undefined") return { mode: "full", subjects: [] as Subject[], count: 0, sources: [] as string[], demo: false, pastOnly: false };
   const params = new URLSearchParams(window.location.search);
   const mode = params.get("mode") || "full";
   const subs = params.get("subjects") || "";
@@ -24,7 +24,8 @@ function getConfig() {
   const unitValue = params.get("unit");
   const demoVal = params.get("demo");
   const demo = demoVal === "1" || demoVal === "true" || mode === "demo";
-  return { mode, subjects, count, sources, unit: unitValue ? Number(unitValue) : undefined, demo };
+  const pastOnly = params.get("past") === "1";
+  return { mode, subjects, count, sources, unit: unitValue ? Number(unitValue) : undefined, demo, pastOnly };
 }
 
 interface TestData {
@@ -49,6 +50,7 @@ export default function TestPage() {
   const [showConfirmSubmit, setShowConfirmSubmit] = useState(false);
   const [redirecting, setRedirecting] = useState(false);
   const [navTap, setNavTap] = useState<"next" | "prev" | null>(null);
+  const [customEmpty, setCustomEmpty] = useState(false);
   const initialized = useRef(false);
 
   // Redirect free users who already used their free test
@@ -80,15 +82,16 @@ export default function TestPage() {
     if (redirecting || !isLoaded) return;
     if (initialized.current) return;
     initialized.current = true;
-    const { mode, subjects, count, sources, unit, demo } = getConfig();
+    const { mode, subjects, count, sources, unit, demo, pastOnly } = getConfig();
     const result = mode === "textbook"
       ? generateTextbookTest(count || 30, subjects, sources)
       : mode === "custom"
-      ? generateCustomPaper(count || 30, subjects, unit)
+      ? generateCustomPaper(count || 30, subjects, unit, pastOnly)
       : generateCustomTest(mode, subjects);
     const { questions, config } = result;
     if (mode === "custom" && questions.length === 0) {
       initialized.current = false;
+      setCustomEmpty(true);
       setTestReady(true);
       return;
     }
@@ -165,6 +168,16 @@ export default function TestPage() {
 
     router.push("/result/" + testId);
   }, [submitted, testData, answers, router, user]);
+
+  if (customEmpty) {
+    return <main className="mx-auto flex min-h-screen max-w-lg items-center px-4 text-center">
+      <div>
+        <h1 className="text-2xl font-bold">No matching questions found</h1>
+        <p className="mt-3 text-stone-600">Try a different subject or pick a smaller question count, then come back to start practice.</p>
+        <button onClick={() => router.push("/dashboard")} className="mt-6 rounded-lg bg-teal-700 px-5 py-3 font-semibold text-white">Back to dashboard</button>
+      </div>
+    </main>;
+  }
 
   if (redirecting || !testReady || !testData) {
     return (

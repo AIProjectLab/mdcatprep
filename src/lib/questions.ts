@@ -244,13 +244,15 @@ export function getQuestionUnits(subject?: Subject): { unit: number; label: stri
   return [...seen.entries()].sort(([a], [b]) => a - b).map(([unit, label]) => ({ unit, label }));
 }
 
-export function generateCustomPaper(count: number, subjects: Subject[], unit?: number): { questions: Question[]; config: TestConfig } {
+export function generateCustomPaper(count: number, subjects: Subject[], unit?: number, pastOnly?: boolean): { questions: Question[]; config: TestConfig } {
   const requested = Math.max(5, Math.min(30, Math.round(count)));
   const subjectFilter = subjects.length ? subjects : undefined;
   const pool = (questionsData as Question[]).filter((q) => {
     if (!isInSyllabus(q)) return false;
+    if (pastOnly && q.origin !== "past-paper") return false;
     const matchesSubject = !subjectFilter || subjectFilter.includes(q.subject);
-    const matchesTopic = unit === undefined || (subjectFilter && q.unit === unit);
+    // Past papers carry no unit tags, so topic filtering only applies to textbook questions
+    const matchesTopic = pastOnly || unit === undefined || (subjectFilter && q.unit === unit);
     return matchesSubject && matchesTopic;
   });
   const questions = shuffle(pool).slice(0, Math.min(requested, pool.length));

@@ -37,6 +37,7 @@ export default function DashboardClient({
   const [customSubject, setCustomSubject] = useState<Subject | "">("Biology");
   const [customCount, setCustomCount] = useState(30);
   const [customUnit, setCustomUnit] = useState("all");
+  const [customPastOnly, setCustomPastOnly] = useState(false);
   const [customUsed, setCustomUsed] = useState(0);
   const demoParam = useSearchParams().get("demo");
   const isDemo = demoParam === "true" || demoParam === "1";
@@ -94,14 +95,13 @@ export default function DashboardClient({
       ? customUnits.find((u) => u.unit === Number(customUnit))?.label ?? null
       : null;
   const previewSubject = customSubject || "All subjects";
-  const previewTopic = customUnitLabel || "All topics";
-  const customUrl = `/test?mode=custom&count=${customCount}${customSubject ? `&subjects=${encodeURIComponent(customSubject)}` : ""}${customUnit !== "all" ? `&unit=${customUnit}` : ""}${isDemo ? "&demo=1" : ""}`;
+  const previewTopic = customPastOnly ? "Real past-paper MCQs" : customUnitLabel || "All topics";
+  const customUrl = `/test?mode=custom&count=${customCount}${customSubject ? `&subjects=${encodeURIComponent(customSubject)}` : ""}${customUnit !== "all" && !customPastOnly ? `&unit=${customUnit}` : ""}${customPastOnly ? "&past=1" : ""}${isDemo ? "&demo=1" : ""}`;
   const customPaperCard = (
     <section id="custom-paper" className="mt-6 rounded-2xl border border-purple-200 bg-gradient-to-br from-purple-50 to-white p-5 shadow-sm">
       <div>
         <h2 className="text-lg font-bold text-stone-900">🎯 Build Your Own Paper</h2>
-        <p className="mt-1 text-sm text-stone-600">Drill exactly what you&apos;re weak in — pick a subject, topic and size.</p>
-      </div>
+        <p className="mt-1 text-sm text-stone-600">Drill exactly what you&apos;re weak in — pick a subject, topic and size.</p>      </div>
 
       <div className="mt-4 grid gap-3 sm:grid-cols-3">
         <label className="text-sm font-semibold text-stone-700">Subject
@@ -129,6 +129,20 @@ export default function DashboardClient({
         </label>
       </div>
 
+      {/* Past-paper only toggle */}
+      <label className="mt-3 flex cursor-pointer items-start gap-3 rounded-lg border border-purple-200 bg-white px-4 py-3">
+        <input
+          type="checkbox"
+          checked={customPastOnly}
+          onChange={(e) => setCustomPastOnly(e.target.checked)}
+          className="mt-0.5 h-4 w-4 rounded border-stone-300 accent-purple-700"
+        />
+        <span>
+          <span className="block text-sm font-semibold text-stone-900">Only real MDCAT past-paper MCQs</span>
+          <span className="block text-xs text-stone-500">Build from actual past papers only — no textbook questions.</span>
+        </span>
+      </label>
+
       {/* Live preview */}
       <div className="mt-4 flex flex-wrap items-center justify-between gap-2 rounded-lg border border-purple-200 bg-purple-600/5 px-4 py-2.5">
         <p className="text-sm font-medium text-purple-800">
@@ -155,7 +169,7 @@ export default function DashboardClient({
         ) : (
           <p className="text-xs text-stone-400">Unlimited builds included</p>
         )}
-        <p className="text-xs text-stone-400">{questionsData.length.toLocaleString()}+ questions from real past papers &amp; textbooks</p>
+        <p className="text-xs text-stone-400">{customPastOnly ? "Built from real past-paper MCQs only" : `${questionsData.length.toLocaleString()}+ questions from real past papers &amp; textbooks`}</p>
       </div>
     </section>
   );
