@@ -58,7 +58,7 @@ export default function TestPage() {
     const { mode } = getConfig();
     let blocked = false;
     if (!isPro && mode !== "demo") {
-      if (mode === "full") {
+      if (mode === "full" || mode === "2025") {
         // Free users get one full-length preview, then it's locked
         blocked = isFullPreviewUsed();
       } else if (mode !== "daily" && mode !== "custom" && isFreeTestUsed()) {

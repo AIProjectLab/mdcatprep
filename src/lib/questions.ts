@@ -159,6 +159,17 @@ const MODES: Record<string, TestConfig> = {
       { subject: "Logical Reasoning", count: 9 },
     ],
   },
+  "2025": {
+    label: "2025 Past Paper Exam",
+    totalMcqs: 180,
+    subjects: [
+      { subject: "Biology", count: 81 },
+      { subject: "Chemistry", count: 45 },
+      { subject: "Physics", count: 36 },
+      { subject: "English", count: 9 },
+      { subject: "Logical Reasoning", count: 9 },
+    ],
+  },
   half: {
     label: "Half Test",
     totalMcqs: 90,
@@ -212,6 +223,17 @@ export function getSubjectQuestions(subject: Subject): Question[] {
   );
 }
 
+// Real MDCAT past papers from the 2025 exams only (all 5 boards)
+export function get2025Questions(subject: Subject): Question[] {
+  return (questionsData as Question[]).filter(
+    (q) =>
+      q.subject === subject &&
+      q.origin === "past-paper" &&
+      q.year === 2025 &&
+      isInSyllabus(q)
+  );
+}
+
 export function getQuestionUnits(subject?: Subject): { unit: number; label: string }[] {
   const seen = new Map<number, string>();
   for (const q of questionsData as Question[]) {
@@ -248,6 +270,9 @@ export function generateCustomTest(mode: string, subjects: Subject[]): { questio
   const config = MODES[mode] || MODES.full;
   const selected: Question[] = [];
 
+  // For the 2025 past-paper exam, pull only real 2025 papers
+  const poolFor = mode === "2025" ? get2025Questions : getSubjectQuestions;
+
   // Determine which subjects to include
   const activeSubjects = subjects.length > 0
     ? config.subjects.filter((s) => subjects.includes(s.subject))
@@ -260,9 +285,9 @@ export function generateCustomTest(mode: string, subjects: Subject[]): { questio
   for (const { subject, count } of activeSubjects) {
     const adjustedCount = Math.min(
       Math.round(count * scale),
-      getSubjectQuestions(subject).length
+      poolFor(subject).length
     );
-    const pool = shuffle(getSubjectQuestions(subject));
+    const pool = shuffle(poolFor(subject));
     selected.push(...pool.slice(0, Math.max(1, adjustedCount)));
   }
 
@@ -270,7 +295,7 @@ export function generateCustomTest(mode: string, subjects: Subject[]): { questio
   // to hit the target total
   if (selected.length < config.totalMcqs) {
     for (const { subject } of activeSubjects) {
-      const pool = shuffle(getSubjectQuestions(subject));
+      const pool = shuffle(poolFor(subject));
       const existing = new Set(selected.map((q) => q.id));
       const remaining = pool.filter((q) => !existing.has(q.id));
       const needed = config.totalMcqs - selected.length;

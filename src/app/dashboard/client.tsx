@@ -51,6 +51,7 @@ export default function DashboardClient({
   }, []);
 
   const modes = [
+    { id: "2025", label: "2025 Past Paper Exam", desc: "180 MCQs | Real 2025 papers", icon: "📋" },
     { id: "full", label: "Full Test", desc: "180 MCQs | 3 hrs", icon: "🎯" },
     { id: "half", label: "Half Test", desc: "90 MCQs | 90 min", icon: "⚡" },
     { id: "quick", label: "Quick Practice", desc: "30 MCQs | 30 min", icon: "📚" },
