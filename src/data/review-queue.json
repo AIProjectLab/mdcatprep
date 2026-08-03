@@ -2030,5 +2030,120 @@
     "id": 11130,
     "reason": "answer-corrected-review",
     "note": "Corrected from A to D - UV range = 10-400nm; 400-800nm is visible light"
+  },
+  {
+    "id": 11153,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B to A - Δ denotes ABSOLUTE uncertainty (ε is relative/percent)"
+  },
+  {
+    "id": 11159,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from C to A - uncertainties in difference always ADD: ΔZ = ΔA + ΔB"
+  },
+  {
+    "id": 11161,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B to C - INCORRECT: dividing % uncertainties; should ADD for quotient"
+  },
+  {
+    "id": 11167,
+    "reason": "removed",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "text": "Which of the following is INCORRECT regarding significant figures?",
+    "options": {
+      "A": "All non-zero digits are significant.",
+      "B": "Zeros in between two significant digits are always significant.",
+      "C": "Zeros to the left of a decimal point and before any other digit are not significant.",
+      "D": "In scientific notation, all figures except powers of ten are significant."
+    },
+    "answer": "D",
+    "note": "all 4 statements about significant figures are correct; no incorrect option"
+  },
+  {
+    "id": 11173,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B to A - precision of 0.0210 s = 0.0001 s (last recorded digit)"
+  },
+  {
+    "id": 11175,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from A to C - force = [MLT^-2] not [MLT^2]"
+  },
+  {
+    "id": 11179,
+    "reason": "removed",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "text": "The dimensional formula for acceleration is ________.",
+    "options": {
+      "A": "[M L T^2]",
+      "B": "[M^-1 L T]",
+      "C": "[M L^-1 T^2]",
+      "D": "[M L T]"
+    },
+    "answer": "C",
+    "note": "acceleration = [LT^-2]; no option matches"
+  },
+  {
+    "id": 11182,
+    "reason": "removed",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "text": "What is the radian measure between the arms of a watch at 5:00 pm?",
+    "options": {
+      "A": "1 radian",
+      "B": "2 radians",
+      "C": "3 radians",
+      "D": "4 radians"
+    },
+    "answer": "B",
+    "note": "5:00 angle = 150° = 2.618 rad; options 1-4 rad don't match"
+  },
+  {
+    "id": 11186,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from A to C - mean 50.0 ± 0.2 cm, not 49.8"
+  },
+  {
+    "id": 11188,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from D to C - errors add: 0.5+0.5 = ±1°C, not ±1.5"
+  },
+  {
+    "id": 11196,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from D to B - dimensional correctness necessary but NOT sufficient -> No"
+  },
+  {
+    "id": 11202,
+    "reason": "removed",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "text": "Which of the following represents a vector in plane?",
+    "options": {
+      "A": "50 N at 30°",
+      "B": "10 cm at 45°",
+      "C": "20 N at 60°",
+      "D": "30 N at 90°"
+    },
+    "answer": "A",
+    "note": "all 4 options are vectors with magnitude+direction; multiple correct"
+  },
+  {
+    "id": 11206,
+    "reason": "removed",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "text": "Calculate the resultant displacement of a ship that travels 200 km at 30° north of east and then 350 km at 140° north of east.",
+    "options": {
+      "A": "34 km, 106° with east",
+      "B": "38 km, 90° with east",
+      "C": "27 km, 120° with east",
+      "D": "45 km, 110° with east"
+    },
+    "answer": "A",
+    "note": "resultant = 338.6km at 106°; options 34-45km don't match"
   }
 ]
