@@ -1970,5 +1970,65 @@
     },
     "answer": "A",
     "note": "all 4 (primary/secondary/tertiary/quaternary) are protein structure types; flawed"
+  },
+  {
+    "id": 10945,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from C to D - enterokinase is in intestinal juice, not pancreatic"
+  },
+  {
+    "id": 11004,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from A to B - DDT insoluble because it lacks polar groups"
+  },
+  {
+    "id": 11018,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from A to C - petroleum residue -> asphalt"
+  },
+  {
+    "id": 11022,
+    "reason": "removed",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "Which of the following is an example of a condensation polymer?",
+    "options": {
+      "A": "Polyethylene",
+      "B": "Polyvinyl chloride (PVC)",
+      "C": "Polypropylene",
+      "D": "Polystyrene"
+    },
+    "answer": "D",
+    "note": "all options (polyethylene, PVC, polypropylene, polystyrene) are addition polymers; no condensation polymer listed"
+  },
+  {
+    "id": 11026,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B to A - nylon 6,10 from hexamethylene diamine + sebacoyl chloride (adipic acid gives 6,6)"
+  },
+  {
+    "id": 11088,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from D to B - red lead (Pb3O4) is the anticorrosive paint pigment"
+  },
+  {
+    "id": 11092,
+    "reason": "removed",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "The empirical formula of aspirin is ________.",
+    "options": {
+      "A": "C3H4O2",
+      "B": "C6H8O5",
+      "C": "C9H10O7",
+      "D": "C12H14O9"
+    },
+    "answer": "B",
+    "note": "asks aspirin empirical formula C9H8O4 but no option matches"
+  },
+  {
+    "id": 11130,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from A to D - UV range = 10-400nm; 400-800nm is visible light"
   }
 ]
