@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useMemo } from "react";
+import { use, useMemo, useState } from "react";
 import Link from "next/link";
 import { getTest } from "@/lib/store";
 import questionsData from "@/data/questions.json";
@@ -24,6 +24,7 @@ interface RawQuestion {
 export default function ResultPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
   const test = getTest(id);
+  const [filter, setFilter] = useState<"all" | "wrong">("all");
 
   const result = useMemo(() => {
     if (!test) return null;
@@ -92,13 +93,32 @@ export default function ResultPage({ params }: { params: Promise<{ id: string }>
       </div>
 
       <div className="mt-8 space-y-6">
-        <h2 className="text-xl font-bold">Review All Questions</h2>
-        {result.questions.map((q: RawQuestion, i: number) => (
-          <div key={q.id} className="rounded-xl border bg-white p-6 shadow-sm">
-            <span className="text-sm text-stone-500">Q{i + 1}</span>
-            <QuestionDisplay question={q as unknown as Question} selected={result.answers[q.id]} onSelect={() => {}} showResult />
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <h2 className="text-xl font-bold">Review Questions</h2>
+          <div className="flex gap-1 rounded-lg border border-stone-200 bg-white p-1">
+            <button
+              onClick={() => setFilter("all")}
+              className={`rounded-md px-3 py-1.5 text-sm font-medium transition ${filter === "all" ? "bg-teal-700 text-white" : "text-stone-600 hover:bg-stone-100"}`}
+            >
+              All
+            </button>
+            <button
+              onClick={() => setFilter("wrong")}
+              className={`rounded-md px-3 py-1.5 text-sm font-medium transition ${filter === "wrong" ? "bg-red-600 text-white" : "text-stone-600 hover:bg-stone-100"}`}
+            >
+              Wrong only
+            </button>
           </div>
-        ))}
+        </div>
+
+        {result.questions
+          .filter((q) => (filter === "wrong" ? result.answers[q.id] != null && result.answers[q.id] !== q.answer : true))
+          .map((q: RawQuestion, i: number) => (
+            <div key={q.id} className="rounded-xl border bg-white p-6 shadow-sm">
+              <span className="text-sm text-stone-500">Q{i + 1}</span>
+              <QuestionDisplay question={q as unknown as Question} selected={result.answers[q.id]} onSelect={() => {}} showResult />
+            </div>
+          ))}
       </div>
 
       <div className="mt-8 text-center">

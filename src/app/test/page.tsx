@@ -166,7 +166,14 @@ export default function TestPage() {
     router.push("/result/" + testId);
   }, [submitted, testData, answers, router, user]);
 
-  if (redirecting || !testReady || !testData) return null;
+  if (redirecting || !testReady || !testData) {
+    return (
+      <main className="flex min-h-screen flex-col items-center justify-center px-4">
+        <div className="h-10 w-10 animate-spin rounded-full border-4 border-teal-600 border-t-transparent" aria-label="Loading" />
+        <p className="mt-4 text-sm text-stone-500">Preparing your test...</p>
+      </main>
+    );
+  }
 
   if (testData.questions.length === 0) {
     return <main className="mx-auto flex min-h-screen max-w-lg items-center px-4 text-center">
@@ -232,17 +239,17 @@ export default function TestPage() {
       </div>
 
       <footer className="sticky bottom-0 border-t bg-white p-3 lg:hidden">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-3">
           <button onClick={() => navigateWithTap("prev")}
             disabled={currentIndex === 0}
-            className={`rounded-lg border px-4 py-2 text-sm disabled:opacity-30 ${navTap === "prev" ? "animate-tap" : ""}`}>Previous</button>
+            className={`min-h-12 flex-1 rounded-lg border px-4 py-3 text-sm font-medium disabled:opacity-30 ${navTap === "prev" ? "animate-tap" : ""}`}>Previous</button>
           <span className="text-sm text-stone-500">{currentIndex + 1}/{questions.length}</span>
           {currentIndex === questions.length - 1 ? (
             <button onClick={() => setShowConfirmSubmit(true)} disabled={submitted}
-              className="rounded-lg bg-teal-700 px-4 py-2 text-sm font-semibold text-white disabled:opacity-50">Finish</button>
+              className="min-h-12 flex-1 rounded-lg bg-teal-700 px-4 py-3 text-sm font-semibold text-white disabled:opacity-50">Finish</button>
           ) : (
             <button onClick={() => navigateWithTap("next")}
-              className={`rounded-lg border px-4 py-2 text-sm ${navTap === "next" ? "animate-tap" : ""}`}>Next</button>
+              className={`min-h-12 flex-1 rounded-lg border px-4 py-3 text-sm font-medium ${navTap === "next" ? "animate-tap" : ""}`}>Next</button>
           )}
         </div>
       </footer>

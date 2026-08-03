@@ -162,24 +162,24 @@ export default function DashboardClient({
 
   // Diagnostic = the actual 30-MCQ free test (mode "free"), not any recent test
   const diagnostic = tests.find((t) => t.submitted && t.mode === "free") || null;
-  const diagnosticScore = (() => {
-    if (!diagnostic) return null;
+
+  // Compute correct count + per-subject for any stored test
+  const testScore = (test: StoredTest) => {
     const allQ = questionsData as { id: number; subject: string; answer: string }[];
     const qMap = new Map(allQ.map((q) => [q.id, q]));
     let correct = 0;
     const perSubject: Record<string, { correct: number; total: number }> = {};
-    for (const qid of diagnostic.questions) {
+    for (const qid of test.questions) {
       const q = qMap.get(qid);
       if (!q) continue;
       if (!perSubject[q.subject]) perSubject[q.subject] = { correct: 0, total: 0 };
       perSubject[q.subject].total++;
-      if (diagnostic.answers[qid] === q.answer) {
+      if (test.answers[qid] === q.answer) {
         perSubject[q.subject].correct++;
         correct++;
       }
     }
-    const total = diagnostic.questions.length;
-    // Weakest subject = lowest percentage, only among subjects with at least 1 question
+    const total = test.questions.length;
     let weakest: { subject: string; correct: number; total: number } | null = null;
     for (const [subject, s] of Object.entries(perSubject)) {
       if (s.total === 0) continue;
@@ -188,7 +188,9 @@ export default function DashboardClient({
       }
     }
     return { correct, total, perSubject, weakest };
-  })();
+  };
+
+  const diagnosticScore = diagnostic ? testScore(diagnostic) : null;
 
   // ===== "What should I do next?" — the single best next action =====
   const nextTask = (() => {
@@ -333,7 +335,7 @@ export default function DashboardClient({
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="font-medium text-stone-900">{date}</p>
-                        <p className="text-sm text-stone-500">{Object.values(test.answers).filter(Boolean).length} / {test.questions.length} answered</p>
+                        <p className="text-sm text-stone-500">{Object.values(test.answers).filter(Boolean).length} / {test.questions.length} answered · Score: {testScore(test).correct}</p>
                       </div>
                       <svg className="h-5 w-5 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -592,7 +594,7 @@ export default function DashboardClient({
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="font-medium text-stone-900">{date}</p>
-                      <p className="text-sm text-stone-500">{Object.values(test.answers).filter(Boolean).length} / {test.questions.length} answered</p>
+                      <p className="text-sm text-stone-500">{Object.values(test.answers).filter(Boolean).length} / {test.questions.length} answered · Score: {testScore(test).correct}</p>
                     </div>
                     <svg className="h-5 w-5 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
