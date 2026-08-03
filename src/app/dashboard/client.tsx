@@ -169,7 +169,7 @@ export default function DashboardClient({
         ) : (
           <p className="text-xs text-stone-400">Unlimited builds included</p>
         )}
-        <p className="text-xs text-stone-400">{customPastOnly ? "Built from real past-paper MCQs only" : `${questionsData.length.toLocaleString()}+ questions from real past papers &amp; textbooks`}</p>
+        <p className="text-xs text-stone-400">Built from real MDCAT past-paper questions</p>
       </div>
     </section>
   );

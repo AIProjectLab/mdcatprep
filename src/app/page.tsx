@@ -77,7 +77,7 @@ export default function Home() {
           Find your weak subject with a free diagnostic built from the real 2025 papers.
         </p>
         <p className="mt-2 text-sm text-stone-500">
-          Then practice full 180-MCQ exams from all 5 boards — 23,000+ syllabus-aligned questions.
+          Then practice full 180-MCQ exams built from real 2025 papers of all 5 boards.
         </p>
 
         <div className="mt-8 flex items-center justify-center gap-4">
@@ -141,9 +141,8 @@ export default function Home() {
         {/* Trust strip */}
         <div className="mt-14 rounded-2xl border border-teal-200 bg-teal-50 p-5">
           <p className="text-sm text-teal-800">
-            <strong>23,000+ real questions</strong> · all 5 boards of 2025
-            (UHS, KMU, SIBA, SZABMU, BUMHS) · book &amp; page references ·
-            100% MDCAT syllabus only
+            <strong>2,000+ real past-paper questions</strong> · all 5 boards of 2025
+            (UHS, KMU, SIBA, SZABMU, BUMHS) · 100% real exam questions
           </p>
         </div>
       </div>

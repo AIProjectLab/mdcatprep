@@ -88,12 +88,18 @@ const MDCAT_UNITS: Record<Subject, Set<string>> = {
   "Logical Reasoning": new Set(),
 };
 
+// TEMPORARY SAFETY SWITCH
+// While the textbook question bank is being corrected, all tests are built from
+// REAL PAST-PAPER questions only (custom papers, free 30-MCQ, full 180-MCQ, daily).
+// Set to false to re-enable syllabus-tagged textbook questions once the bank is fixed.
+export const PAST_PAPERS_ONLY = true;
+
 // A question is usable in MDCAT tests if:
 //  - it is a real past paper (always in syllabus), OR
-//  - it is a textbook question tagged with an official MDCAT unit for its subject
-// Untagged or mislabeled textbook questions are excluded (they may be out of syllabus).
+//  - (when PAST_PAPERS_ONLY is false) it is a textbook question tagged with an official MDCAT unit
 export function isInSyllabus(q: Question): boolean {
   if (q.origin === "past-paper") return true;
+  if (PAST_PAPERS_ONLY) return false;
   if (q.origin !== "textbook") return false;
   const label = q.unitLabel;
   if (!label) return false;
