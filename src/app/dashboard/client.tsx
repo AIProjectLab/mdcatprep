@@ -155,7 +155,7 @@ export default function DashboardClient({
         ) : (
           <p className="text-xs text-stone-400">Unlimited builds included</p>
         )}
-        <p className="text-xs text-stone-400">11,500+ questions from real past papers &amp; textbooks</p>
+        <p className="text-xs text-stone-400">{questionsData.length.toLocaleString()}+ questions from real past papers &amp; textbooks</p>
       </div>
     </section>
   );
