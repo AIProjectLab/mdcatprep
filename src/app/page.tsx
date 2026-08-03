@@ -15,7 +15,7 @@ const steps = [
   {
     n: "1",
     title: "Find your weak subject",
-    desc: "Free 30-MCQ diagnostic. See your score and which subject needs the most work.",
+    desc: "Free 30-MCQ diagnostic built from the real 2025 papers. See your score and which subject needs the most work.",
   },
   {
     n: "2",
@@ -48,8 +48,8 @@ export default function Home() {
           You&apos;re in the right place.
         </h1>
         <p className="mt-4 text-lg leading-8 text-stone-600">
-          Take a free 30-MCQ diagnostic, find your weak subject, then practice
-          full exams built from the actual 2025 papers — all 5 boards.
+          Take a free 30-MCQ diagnostic built from the actual 2025 papers,
+          find your weak subject, then practice full exams from all 5 boards.
         </p>
 
         <div className="mt-8 flex items-center justify-center gap-4">

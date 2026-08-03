@@ -198,7 +198,7 @@ export default function DashboardClient({
           stage: "Stage 1",
           stageLabel: "Diagnose",
           title: "Start Your Free Diagnostic",
-          desc: "30 MCQs · 30 minutes · Find your weak spots",
+          desc: "30 MCQs from the real 2025 papers · 30 minutes · Find your weak spots",
           href: "/test?mode=free",
           chip: "bg-teal-100 text-teal-800",
           bar: "bg-teal-600",

@@ -270,8 +270,8 @@ export function generateCustomTest(mode: string, subjects: Subject[]): { questio
   const config = MODES[mode] || MODES.full;
   const selected: Question[] = [];
 
-  // For the 2025 past-paper exam, pull only real 2025 papers
-  const poolFor = mode === "2025" ? get2025Questions : getSubjectQuestions;
+  // Free diagnostic + 2025 exam pull only real 2025 past papers
+  const poolFor = mode === "free" || mode === "2025" ? get2025Questions : getSubjectQuestions;
 
   // Determine which subjects to include
   const activeSubjects = subjects.length > 0
