@@ -98,24 +98,24 @@ export default function DashboardClient({
   const customPaperCard = (
     <section id="custom-paper" className="mt-6 rounded-2xl border border-purple-200 bg-gradient-to-br from-purple-50 to-white p-5 shadow-sm">
       <div>
-        <h2 className="text-lg font-bold text-gray-900">🎯 Build Your Own Paper</h2>
-        <p className="mt-1 text-sm text-gray-600">Drill exactly what you&apos;re weak in — pick a subject, topic and size.</p>
+        <h2 className="text-lg font-bold text-stone-900">🎯 Build Your Own Paper</h2>
+        <p className="mt-1 text-sm text-stone-600">Drill exactly what you&apos;re weak in — pick a subject, topic and size.</p>
       </div>
 
       <div className="mt-4 grid gap-3 sm:grid-cols-3">
-        <label className="text-sm font-semibold text-gray-700">Subject
-          <select value={customSubject} onChange={(e) => { setCustomSubject(e.target.value as Subject | ""); setCustomUnit("all"); }} className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal focus:border-purple-500 focus:ring-1 focus:ring-purple-500">
+        <label className="text-sm font-semibold text-stone-700">Subject
+          <select value={customSubject} onChange={(e) => { setCustomSubject(e.target.value as Subject | ""); setCustomUnit("all"); }} className="mt-1 w-full rounded-lg border border-stone-300 bg-white px-3 py-2 font-normal focus:border-purple-500 focus:ring-1 focus:ring-purple-500">
             <option value="">All subjects</option>
             {ALL_SUBJECTS.map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
         </label>
-        <label className="text-sm font-semibold text-gray-700">Questions
-          <select value={customCount} onChange={(e) => setCustomCount(Number(e.target.value))} className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal focus:border-purple-500 focus:ring-1 focus:ring-purple-500">
+        <label className="text-sm font-semibold text-stone-700">Questions
+          <select value={customCount} onChange={(e) => setCustomCount(Number(e.target.value))} className="mt-1 w-full rounded-lg border border-stone-300 bg-white px-3 py-2 font-normal focus:border-purple-500 focus:ring-1 focus:ring-purple-500">
             {[10, 20, 30].map((count) => <option key={count} value={count}>{count} MCQs</option>)}
           </select>
         </label>
-        <label className="text-sm font-semibold text-gray-700">Topic
-          <select value={customUnit} onChange={(e) => setCustomUnit(e.target.value)} disabled={!customSubject} className="mt-1 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal focus:border-purple-500 focus:ring-1 focus:ring-purple-500 disabled:bg-gray-50 disabled:text-gray-400">
+        <label className="text-sm font-semibold text-stone-700">Topic
+          <select value={customUnit} onChange={(e) => setCustomUnit(e.target.value)} disabled={!customSubject} className="mt-1 w-full rounded-lg border border-stone-300 bg-white px-3 py-2 font-normal focus:border-purple-500 focus:ring-1 focus:ring-purple-500 disabled:bg-stone-50 disabled:text-stone-400">
             {!customSubject ? (
               <option value="all" disabled>Select a subject first</option>
             ) : (
@@ -133,7 +133,7 @@ export default function DashboardClient({
         <p className="text-sm font-medium text-purple-800">
           You&apos;ll get: <span className="font-bold">{customCount} MCQs</span> &middot; {previewSubject} &middot; {previewTopic}
         </p>
-        <p className="text-xs text-gray-500">~{customCount} min</p>
+        <p className="text-xs text-stone-500">~{customCount} min</p>
       </div>
 
       {/* CTA */}
@@ -148,13 +148,13 @@ export default function DashboardClient({
       {/* Footer: limit + trust */}
       <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
         {!hasAccess ? (
-          <p className="text-xs text-gray-500">
+          <p className="text-xs text-stone-500">
             {Math.max(0, 5 - customUsed)} free papers left today
           </p>
         ) : (
-          <p className="text-xs text-gray-400">Unlimited builds included</p>
+          <p className="text-xs text-stone-400">Unlimited builds included</p>
         )}
-        <p className="text-xs text-gray-400">11,500+ questions from real past papers &amp; textbooks</p>
+        <p className="text-xs text-stone-400">11,500+ questions from real past papers &amp; textbooks</p>
       </div>
     </section>
   );
@@ -195,23 +195,23 @@ export default function DashboardClient({
       <main className="min-h-screen">
         <AppHeader />
         <div className="mx-auto max-w-4xl px-4 py-8">
-          <p className="text-sm text-gray-500">Welcome, {user?.firstName || "Student"}</p>
+          <p className="text-sm text-stone-500">Welcome, {user?.firstName || "Student"}</p>
 
         {isDemo && (
-          <Link href="#custom-paper" className="mt-4 block w-full rounded-xl border-2 border-dashed border-emerald-400 bg-emerald-50 p-3 text-center text-sm font-bold text-emerald-700 hover:bg-emerald-100 transition">
+          <Link href="#custom-paper" className="mt-4 block w-full rounded-xl border-2 border-dashed border-teal-400 bg-teal-50 p-3 text-center text-sm font-bold text-teal-700 hover:bg-teal-100 transition">
             🎬 Demo Mode ON — use &quot;Create Your Own Paper&quot; below to build &amp; record a test
           </Link>
         )}
 
         <div className="mt-8">
           <Link href="/test?mode=free"
-            className="block w-full rounded-xl bg-emerald-600 p-6 text-center text-white shadow-lg hover:bg-emerald-500 transition">
+            className="block w-full rounded-xl bg-teal-700 p-6 text-center text-white shadow-lg hover:bg-teal-600 transition">
             <p className="text-lg font-bold">Start Your Free Diagnostic</p>
-            <p className="mt-1 text-sm text-emerald-100">30 MCQs | 30 Minutes | Find your weak spots</p>
+            <p className="mt-1 text-sm text-teal-100">30 MCQs | 30 Minutes | Find your weak spots</p>
           </Link>
         </div>
 
-        <p className="mt-4 text-center text-sm text-gray-500">
+        <p className="mt-4 text-center text-sm text-stone-500">
           Finish the diagnostic to see your score and which subject to focus on.
         </p>
 
@@ -227,13 +227,13 @@ export default function DashboardClient({
                 });
                 return (
                   <Link key={test.id} href={`/result/${test.id}`}
-                    className="block rounded-xl border bg-white p-4 shadow-sm hover:border-emerald-300 transition">
+                    className="block rounded-xl border bg-white p-4 shadow-sm hover:border-teal-300 transition">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="font-medium text-gray-900">{date}</p>
-                        <p className="text-sm text-gray-500">{Object.values(test.answers).filter(Boolean).length} / {test.questions.length} answered</p>
+                        <p className="font-medium text-stone-900">{date}</p>
+                        <p className="text-sm text-stone-500">{Object.values(test.answers).filter(Boolean).length} / {test.questions.length} answered</p>
                       </div>
-                      <svg className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="h-5 w-5 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </div>
@@ -254,7 +254,7 @@ export default function DashboardClient({
       <main className="flex min-h-screen flex-col items-center justify-center px-4 text-center">
         <AppHeader />
         <div className="fixed right-4 top-4 flex items-center gap-3">
-          {isDemo && <a href="#custom-paper" className="rounded-lg bg-emerald-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-emerald-500">🎬 Demo</a>}
+          {isDemo && <a href="#custom-paper" className="rounded-lg bg-teal-700 px-3 py-1.5 text-xs font-bold text-white hover:bg-teal-600">🎬 Demo</a>}
         </div>
         <div className="max-w-md">
           {freeUsed ? (
@@ -262,11 +262,11 @@ export default function DashboardClient({
               {/* Score first — the reward moment */}
               {diagnosticScore ? (
                 <div className="text-center">
-                  <div className={`mx-auto mb-3 flex h-20 w-20 items-center justify-center rounded-full ${diagnosticScore.correct / Math.max(1, diagnosticScore.total) >= 0.55 ? "bg-emerald-100" : "bg-amber-100"}`}>
-                    <span className="text-2xl font-bold text-gray-900">{diagnosticScore.correct}</span>
+                  <div className={`mx-auto mb-3 flex h-20 w-20 items-center justify-center rounded-full ${diagnosticScore.correct / Math.max(1, diagnosticScore.total) >= 0.55 ? "bg-teal-100" : "bg-amber-100"}`}>
+                    <span className="text-2xl font-bold text-stone-900">{diagnosticScore.correct}</span>
                   </div>
-                  <p className="text-sm text-gray-500">out of {diagnosticScore.total} questions</p>
-                  <h1 className="mt-2 text-xl font-bold text-gray-900">
+                  <p className="text-sm text-stone-500">out of {diagnosticScore.total} questions</p>
+                  <h1 className="mt-2 text-xl font-bold text-stone-900">
                     {diagnosticScore.correct / Math.max(1, diagnosticScore.total) >= 0.55 ? "Nice work!" : "Good start — keep practicing"}
                   </h1>
                 </div>
@@ -291,21 +291,21 @@ export default function DashboardClient({
               )}
 
               {diagnostic && (
-                <Link href={`/result/${diagnostic.id}`} className="mt-4 inline-block text-sm font-semibold text-emerald-700 underline">
+                <Link href={`/result/${diagnostic.id}`} className="mt-4 inline-block text-sm font-semibold text-teal-700 underline">
                   View my full result
                 </Link>
               )}
 
               {/* Full-length preview — the real exam, once, free */}
               {!fullPreviewUsed ? (
-                <div className="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 p-5 text-left">
-                  <h2 className="font-bold text-gray-900">Ready for the real thing?</h2>
-                  <p className="mt-1 text-sm text-gray-600">
+                <div className="mt-6 rounded-xl border border-teal-200 bg-teal-50 p-5 text-left">
+                  <h2 className="font-bold text-stone-900">Ready for the real thing?</h2>
+                  <p className="mt-1 text-sm text-stone-600">
                     Try one full-length 180-MCQ exam with the 3-hour timer — exactly like exam day.
                   </p>
                   <Link
                     href="/test?mode=full"
-                    className="mt-4 block rounded-lg bg-emerald-600 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-emerald-500"
+                    className="mt-4 block rounded-lg bg-teal-700 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-teal-600"
                   >
                     Try a Full-Length Exam (Free)
                   </Link>
@@ -314,8 +314,8 @@ export default function DashboardClient({
 
               {/* Daily free challenge */}
               <div className="mt-6 rounded-xl border border-blue-200 bg-blue-50 p-5 text-left">
-                <h2 className="font-bold text-gray-900">Today&apos;s free challenge</h2>
-                <p className="mt-1 text-sm text-gray-600">30 fresh MDCAT-style questions. New one every day.</p>
+                <h2 className="font-bold text-stone-900">Today&apos;s free challenge</h2>
+                <p className="mt-1 text-sm text-stone-600">30 fresh MDCAT-style questions. New one every day.</p>
                 {dailyAvailable ? (
                   <Link href="/test?mode=daily" className="mt-4 block rounded-lg bg-blue-600 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-blue-500">
                     Start Today&apos;s Challenge
@@ -328,22 +328,22 @@ export default function DashboardClient({
               {customPaperCard}
 
               {/* Quiet upsell — last, small, not a card wall */}
-              <p className="mt-6 text-center text-sm text-gray-500">
+              <p className="mt-6 text-center text-sm text-stone-500">
                 Want full-length 180-MCQ exams and subject-focused tests?{" "}
-                <Link href="/payment" className="font-semibold text-emerald-700 underline">Unlock unlimited</Link>
+                <Link href="/payment" className="font-semibold text-teal-700 underline">Unlock unlimited</Link>
               </p>
             </>
           ) : (
             <>
               <h1 className="text-2xl font-bold">Access Required</h1>
-              <p className="mt-4 text-gray-600">
+              <p className="mt-4 text-stone-600">
                 {paymentPending
                   ? "Your payment is being verified. You will get access within a few hours."
                   : "Purchase access to start practicing full-length MDCAT mock tests."}
               </p>
               {!paymentPending && (
                 <Link href="/payment"
-                  className="mt-6 inline-block rounded-lg bg-emerald-600 px-8 py-3 text-sm font-semibold text-white hover:bg-emerald-500">
+                  className="mt-6 inline-block rounded-lg bg-teal-700 px-8 py-3 text-sm font-semibold text-white hover:bg-teal-600">
                   Get access
                 </Link>
               )}
@@ -359,12 +359,12 @@ export default function DashboardClient({
     <main className="min-h-screen">
       <AppHeader />
       <div className="mx-auto max-w-4xl px-4 py-8">
-        <p className="text-sm text-gray-500">Welcome, {user?.firstName || "Student"}</p>
+        <p className="text-sm text-stone-500">Welcome, {user?.firstName || "Student"}</p>
 
       {/* Mode Selection */}
       {customPaperCard}
       <div className="mt-8">
-        <h2 className="text-sm font-semibold text-gray-600 mb-3">Select Test Mode</h2>
+        <h2 className="text-sm font-semibold text-stone-600 mb-3">Select Test Mode</h2>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
           {modes.map((mode) => (
             <button
@@ -372,13 +372,13 @@ export default function DashboardClient({
               onClick={() => setSelectedMode(mode.id)}
               className={`rounded-xl border p-4 text-left transition ${
                 selectedMode === mode.id
-                  ? "border-emerald-500 bg-emerald-50 ring-1 ring-emerald-500"
-                  : "border-gray-200 bg-white hover:border-gray-300"
+                  ? "border-teal-600 bg-teal-50 ring-1 ring-teal-600"
+                  : "border-stone-200 bg-white hover:border-stone-300"
               }`}
             >
               <span className="text-xl">{mode.icon}</span>
-              <p className="mt-1 font-semibold text-gray-900">{mode.label}</p>
-              <p className="text-sm text-gray-500">{mode.desc}</p>
+              <p className="mt-1 font-semibold text-stone-900">{mode.label}</p>
+              <p className="text-sm text-stone-500">{mode.desc}</p>
             </button>
           ))}
         </div>
@@ -386,8 +386,8 @@ export default function DashboardClient({
 
       {/* Subject Filter (shown for all modes) */}
       <div className="mt-6">
-        <h2 className="text-sm font-semibold text-gray-600 mb-3">
-          Subject Focus <span className="font-normal text-gray-400">(optional — leave empty for all subjects)</span>
+        <h2 className="text-sm font-semibold text-stone-600 mb-3">
+          Subject Focus <span className="font-normal text-stone-400">(optional — leave empty for all subjects)</span>
         </h2>
         <div className="flex flex-wrap gap-2">
           {ALL_SUBJECTS.map((s) => (
@@ -396,8 +396,8 @@ export default function DashboardClient({
               onClick={() => toggleSubject(s)}
               className={`rounded-lg border px-3 py-1.5 text-sm font-medium transition ${
                 selectedSubjects.includes(s)
-                  ? "border-emerald-500 bg-emerald-50 text-emerald-700"
-                  : "border-gray-200 bg-white text-gray-600 hover:border-gray-300"
+                  ? "border-teal-600 bg-teal-50 text-teal-700"
+                  : "border-stone-200 bg-white text-stone-600 hover:border-stone-300"
               }`}
             >
               {s}
@@ -410,10 +410,10 @@ export default function DashboardClient({
       <div className="mt-8">
         <Link
           href={getTestUrl()}
-          className="block w-full rounded-xl bg-emerald-600 p-6 text-center text-white shadow-lg hover:bg-emerald-500 transition"
+          className="block w-full rounded-xl bg-teal-700 p-6 text-center text-white shadow-lg hover:bg-teal-600 transition"
         >
           <p className="text-lg font-bold">Start {modes.find((m) => m.id === selectedMode)?.label}</p>
-          <p className="mt-1 text-sm text-emerald-100">
+          <p className="mt-1 text-sm text-teal-100">
             {selectedSubjects.length > 0
               ? selectedSubjects.join(", ")
               : "All Subjects"}
@@ -426,8 +426,8 @@ export default function DashboardClient({
       <section className="mt-8 rounded-2xl border border-blue-200 bg-blue-50/60 p-5">
         <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
           <div>
-            <h2 className="text-lg font-bold text-gray-900">📚 Textbook Practice</h2>
-            <p className="mt-1 text-sm text-gray-600">
+            <h2 className="text-lg font-bold text-stone-900">📚 Textbook Practice</h2>
+            <p className="mt-1 text-sm text-stone-600">
               Practice new questions generated from the textbooks. This is separate from the real past-paper tests above.
             </p>
           </div>
@@ -435,16 +435,16 @@ export default function DashboardClient({
         </div>
 
         {textbookSources.length === 0 ? (
-          <div className="mt-4 rounded-lg border border-blue-200 bg-white p-4 text-sm text-gray-600">
+          <div className="mt-4 rounded-lg border border-blue-200 bg-white p-4 text-sm text-stone-600">
             Textbook questions are not published yet. Generate questions from the local book generator, then sync them into the app.
           </div>
         ) : (
           <>
             <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              <label className="text-sm font-semibold text-gray-700">
+              <label className="text-sm font-semibold text-stone-700">
                 Number of questions
                 <select value={textbookCount} onChange={(e) => setTextbookCount(Number(e.target.value))}
-                  className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal">
+                  className="mt-2 w-full rounded-lg border border-stone-300 bg-white px-3 py-2 font-normal">
                   {[30, 50, 90, 180].filter((count) => count <= textbookAvailable).map((count) => <option key={count} value={count}>{count} MCQs</option>)}
                   {textbookCount > textbookAvailable && textbookAvailable > 0 && (
                     <option value={textbookAvailable}>{textbookAvailable} MCQs (max available)</option>
@@ -456,10 +456,10 @@ export default function DashboardClient({
                     : "No questions for this selection"}
                 </span>
               </label>
-              <label className="text-sm font-semibold text-gray-700">
+              <label className="text-sm font-semibold text-stone-700">
                 Book/source
                 <select value={selectedTextbookSource} onChange={(e) => setSelectedTextbookSource(e.target.value)}
-                  className="mt-2 w-full rounded-lg border border-gray-300 bg-white px-3 py-2 font-normal">
+                  className="mt-2 w-full rounded-lg border border-stone-300 bg-white px-3 py-2 font-normal">
                   <option>All books</option>
                   {textbookSources.map((source) => <option key={source}>{source}</option>)}
                 </select>
@@ -469,11 +469,11 @@ export default function DashboardClient({
               {ALL_SUBJECTS.slice(0, 3).map((s) => (
                 <button key={`textbook-${s}`} onClick={() => setTextbookSubjects((prev) => prev.includes(s) ? prev.filter((x) => x !== s) : [...prev, s])}
                   className={`rounded-lg border px-3 py-1.5 text-sm font-medium transition ${textbookSubjects.includes(s)
-                    ? "border-blue-500 bg-blue-100 text-blue-700" : "border-gray-200 bg-white text-gray-600 hover:border-gray-300"}`}>
+                    ? "border-blue-500 bg-blue-100 text-blue-700" : "border-stone-200 bg-white text-stone-600 hover:border-stone-300"}`}>
                   {s}
                 </button>
               ))}
-              <span className="self-center text-xs text-gray-500">Leave subjects unselected for all subjects.</span>
+              <span className="self-center text-xs text-stone-500">Leave subjects unselected for all subjects.</span>
             </div>
             {textbookAvailable > 0 ? (
               <Link href={getTextbookUrl()}
@@ -499,13 +499,13 @@ export default function DashboardClient({
               });
               return (
                 <Link key={test.id} href={`/result/${test.id}`}
-                  className="block rounded-xl border bg-white p-4 shadow-sm hover:border-emerald-300 transition">
+                  className="block rounded-xl border bg-white p-4 shadow-sm hover:border-teal-300 transition">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="font-medium text-gray-900">{date}</p>
-                      <p className="text-sm text-gray-500">{Object.values(test.answers).filter(Boolean).length} / {test.questions.length} answered</p>
+                      <p className="font-medium text-stone-900">{date}</p>
+                      <p className="text-sm text-stone-500">{Object.values(test.answers).filter(Boolean).length} / {test.questions.length} answered</p>
                     </div>
-                    <svg className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="h-5 w-5 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
