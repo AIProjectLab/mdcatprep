@@ -38,7 +38,33 @@ export default function Home() {
   const days = getDaysLeft();
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center px-4 py-16 text-center">
+    <main className="flex min-h-screen flex-col">
+      {/* Minimal homepage header */}
+      <header className="sticky top-0 z-20 border-b border-stone-200 bg-[#faf6ef]/95 backdrop-blur">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+          <Link href="/" className="flex items-center gap-2">
+            <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+            </svg>
+            <span className="text-lg font-bold text-stone-900">
+              MDCAT <span className="text-teal-700">Prep</span>
+            </span>
+          </Link>
+          <SignedOut>
+            <Link href="/sign-in" className="text-sm font-semibold text-stone-600 hover:text-stone-900 transition">
+              Sign In
+            </Link>
+          </SignedOut>
+          <SignedIn>
+            <Link href="/dashboard" className="rounded-lg bg-teal-700 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-600">
+              Dashboard
+            </Link>
+          </SignedIn>
+        </div>
+      </header>
+
+      <div className="flex flex-1 flex-col items-center justify-center px-4 py-16 text-center">
       <div className="max-w-3xl">
         <p className="inline-block rounded-full bg-amber-100 px-4 py-1.5 text-sm font-semibold text-amber-800">
           ⏳ MDCAT in {days} {days === 1 ? "day" : "days"}
@@ -120,6 +146,7 @@ export default function Home() {
             100% MDCAT syllabus only
           </p>
         </div>
+      </div>
       </div>
     </main>
   );
