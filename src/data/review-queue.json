@@ -224,5 +224,305 @@
       "D": "4"
     },
     "answer": "D"
+  },
+  {
+    "id": 5138,
+    "reason": "corrupt-options",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "The most stable arrangement of electrons for carbon is:",
+    "options": {
+      "A": "2p_x2p_y2p_z",
+      "B": "2p_x2p_y2p_z",
+      "C": "2p_x2p_y2p_z",
+      "D": "2p_x2p_y2p_z"
+    },
+    "answer": "C",
+    "note": "All four options identical/placeholder - removed from bank, unrecoverable from source"
+  },
+  {
+    "id": 5398,
+    "reason": "corrupt-options",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "According to Graham's Law of Diffusion, the ratio of square roots of velocities is given by:",
+    "options": {
+      "A": "––––",
+      "B": "––––",
+      "C": "––––",
+      "D": "––––"
+    },
+    "answer": "A",
+    "note": "All four options identical/placeholder - removed from bank, unrecoverable from source"
+  },
+  {
+    "id": 11485,
+    "reason": "corrupt-options",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "text": "If a circular drum of radius 40 cm is initially rotating at 400 revolution/min, what is the angular acceleration and stopping time after making 50 revolutions?",
+    "options": {
+      "A": "? rad/s², ? s",
+      "B": "? rad/s², ? s",
+      "C": "? rad/s², ? s",
+      "D": "? rad/s², ? s"
+    },
+    "answer": "A",
+    "note": "All four options identical/placeholder - removed from bank, unrecoverable from source"
+  },
+  {
+    "id": 12424,
+    "reason": "corrupt-options",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "text": "Calculate the minimum wavelength produced when electrons are accelerated through a potential difference of 1000, 00 V, for an X-ray tube.",
+    "options": {
+      "A": "__",
+      "B": "__",
+      "C": "__",
+      "D": "__"
+    },
+    "answer": "A",
+    "note": "All four options identical/placeholder - removed from bank, unrecoverable from source"
+  },
+  {
+    "id": 34423,
+    "reason": "corrupt-options",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "Which of the following is a correct representation of an open chain structure containing five carbon atoms?",
+    "options": {
+      "A": "C-C-C-C-C",
+      "B": "C-C-C-C-C",
+      "C": "C-C-C-C-C",
+      "D": "C-C-C-C-C"
+    },
+    "answer": "A",
+    "note": "All four options identical/placeholder - removed from bank, unrecoverable from source"
+  },
+  {
+    "id": 34760,
+    "reason": "corrupt-options",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "The nuclear reaction between uranium-235 and a neutron is represented by the equation: ______ + _n → __Ba + _Kr + 3_n+ energy",
+    "options": {
+      "A": "_U + _n → _Ba + _Kr + 3_n+ energy",
+      "B": "_U + _n → _Ba + _Kr + 3_n+ energy",
+      "C": "_U + _n → _Ba + _Kr + 3_n+ energy",
+      "D": "_U + _n → _Ba + _Kr + 3_n+ energy"
+    },
+    "answer": "A",
+    "note": "All four options identical/placeholder - removed from bank, unrecoverable from source"
+  },
+  {
+    "id": 58625,
+    "reason": "corrupt-options",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "The total pressure in a cylinder with oxygen at 250mmHg and nitrogen at 510mmHg is ________ mmHg.",
+    "options": {
+      "A": "760",
+      "B": "760",
+      "C": "760",
+      "D": "760"
+    },
+    "answer": "B",
+    "note": "All four options identical/placeholder - removed from bank, unrecoverable from source"
+  },
+  {
+    "id": 59003,
+    "reason": "corrupt-options",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "Balance the equation by half-reaction method: KMnO4 + HCl → _______",
+    "options": {
+      "A": "+ Cl2 + MnCl2 + H2O",
+      "B": "+ Cl2 + MnCl2 + H2O",
+      "C": "+ Cl2 + MnCl2 + H2O",
+      "D": "+ Cl2 + MnCl2 + H2O"
+    },
+    "answer": "A",
+    "note": "All four options identical/placeholder - removed from bank, unrecoverable from source"
+  },
+  {
+    "id": 59382,
+    "reason": "corrupt-options",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "The priority order for substituents in benzene is: ________",
+    "options": {
+      "A": "-COOH, -CN, -CHO, -OH, -NH2, -OR, -R",
+      "B": "-COOH, -CN, -CHO, -OH, -NH2, -OR, -R",
+      "C": "-COOH, -CN, -CHO, -OH, -NH2, -OR, -R",
+      "D": "-COOH, -CN, -CHO, -OH, -NH2, -OR, -R"
+    },
+    "answer": "A",
+    "note": "All four options identical/placeholder - removed from bank, unrecoverable from source"
+  },
+  {
+    "id": 59521,
+    "reason": "corrupt-options",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "Why do phenols have higher boiling points than alcohols?",
+    "options": {
+      "A": "?",
+      "B": "?",
+      "C": "?",
+      "D": "?"
+    },
+    "answer": "A",
+    "note": "All four options identical/placeholder - removed from bank, unrecoverable from source"
+  },
+  {
+    "id": 59523,
+    "reason": "corrupt-options",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "What is the difference between primary and secondary alcohols?",
+    "options": {
+      "A": "?",
+      "B": "?",
+      "C": "?",
+      "D": "?"
+    },
+    "answer": "A",
+    "note": "All four options identical/placeholder - removed from bank, unrecoverable from source"
+  },
+  {
+    "id": 59702,
+    "reason": "corrupt-options",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "The atmosphere consists of four main components: _______.",
+    "options": {
+      "A": "atmosphere, hydrosphere, lithosphere, biosphere",
+      "B": "atmosphere, hydrosphere, lithosphere, biosphere",
+      "C": "atmosphere, hydrosphere, lithosphere, biosphere",
+      "D": "atmosphere, hydrosphere, lithosphere, biosphere"
+    },
+    "answer": "B",
+    "note": "All four options identical/placeholder - removed from bank, unrecoverable from source"
+  },
+  {
+    "id": 60075,
+    "reason": "corrupt-options",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "text": "Wind energy is pollution free and cheap but it requires a vast area of land and a method of storing electricity for use when the wind drops. Due to the uneven heating and cooling of the atmosphere by the Sun as well as the rotation of earth, wind blows from areas of high pressure to areas of low pressure.",
+    "options": {
+      "A": "Wind energy is pollution free and cheap but it requires a vast area of land and a method of storing electricity for use when the wind drops. Due to the uneven heating and cooling of the atmosphere by the Sun as well as the rotation of earth, wind blows from areas of high pressure to areas of low pressure.",
+      "B": "Wind energy is pollution free and cheap but it requires a vast area of land and a method of storing electricity for use when the wind drops. Due to the uneven heating and cooling of the atmosphere by the Sun as well as the rotation of earth, wind blows from areas of high pressure to areas of low pressure.",
+      "C": "Wind energy is pollution free and cheap but it requires a vast area of land and a method of storing electricity for use when the wind drops. Due to the uneven heating and cooling of the atmosphere by the Sun as well as the rotation of earth, wind blows from areas of high pressure to areas of low pressure.",
+      "D": "Wind energy is pollution free and cheap but it requires a vast area of land and a method of storing electricity for use when the wind drops. Due to the uneven heating and cooling of the atmosphere by the Sun as well as the rotation of earth, wind blows from areas of high pressure to areas of low pressure."
+    },
+    "answer": "A",
+    "note": "All four options identical/placeholder - removed from bank, unrecoverable from source"
+  },
+  {
+    "id": 5058,
+    "reason": "corrupt-options",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "text": "The equation for frequency of radiation emitted or absorbed during electronic transitions is:",
+    "options": {
+      "A": "ΔE = ρℎ",
+      "B": "u = εθℎ",
+      "C": "u = εθℎ",
+      "D": "u = ρℎ"
+    },
+    "answer": "B",
+    "note": "Options unreadable/corrupt or question truncated - removed from bank"
+  },
+  {
+    "id": 10496,
+    "reason": "corrupt-options",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "The simplest ion formed by copper in a solution is the typical blue Hexaaqua copper (II) ion. This complex ion performs the following reactions.",
+    "options": {
+      "A": "[Cu(H2O)8]2+ + OH− → [Cu(H2O)4(OH)2]+ 2H2O",
+      "B": "[Cu(H2O)6]2+ + NH3 → [Cu(NH3)5(H2O)]+ + H2O",
+      "C": "[Cu(H2O)8]2+ + OH− → [Cu(H2O)4(OH)2]+ 2H2O",
+      "D": "[Cu(H2O)6]2+ + NH3 → [Cu(NH3)5(H2O)]+ H2O"
+    },
+    "answer": "C",
+    "note": "Options unreadable/corrupt or question truncated - removed from bank"
+  },
+  {
+    "id": 21582,
+    "reason": "corrupt-options",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "The relationship between \\( K_p \\) and \\( K_n \\) is given by:",
+    "options": {
+      "A": "\\( K_p = K_n ( rac{P}{N})^{\\Delta n} \\)",
+      "B": "\\( K_p = K_n P^{( rac{n_A}{N})} \\)",
+      "C": "\\( K_p = K_n ( rac{P}{N})^{(c+d)-(a+b)} \\)",
+      "D": "\\( K_p = K_n ( rac{P}{N})^{\\Delta n} \\)"
+    },
+    "answer": "A",
+    "note": "Options unreadable/corrupt or question truncated - removed from bank"
+  },
+  {
+    "id": 34559,
+    "reason": "corrupt-options",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "Which of the following is a correct representation of ethyl chloride?",
+    "options": {
+      "A": "CH₃-CH₂-C-Cl",
+      "B": "CH₃-CH₂-CH₂-Cl",
+      "C": "CH₃-CH₂-CH₂-Cl",
+      "D": "CH₃-CH₂-C-Cl"
+    },
+    "answer": "A",
+    "note": "Options unreadable/corrupt or question truncated - removed from bank"
+  },
+  {
+    "id": 58767,
+    "reason": "corrupt-options",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "text": "What is the unit of Ke for the reaction:",
+    "options": {
+      "A": "mol dm⁻³",
+      "B": "mol⁻¹ dm³",
+      "C": "mol² dm⁻⁶",
+      "D": "mol dm⁻³"
+    },
+    "answer": "D",
+    "note": "Options unreadable/corrupt or question truncated - removed from bank"
+  },
+  {
+    "id": 60978,
+    "reason": "corrupt-options",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "text": "The order of the conductivity of the conductor is",
+    "options": {
+      "A": "(a) $10^2 (\\Omega m)^{-1}$ to $10^8 (\\Omega m)^{-1}$ (b) $10^{-2} (\\Omega m)^{-1}$ to $10^{-8} (\\Omega m)^{-1}$",
+      "B": "(c) $10^{-11} (\\Omega m)^{-1}$ and $10^{19} (\\Omega m)^{-1}$ (d) $10^{-11} (\\Omega m)^{-1}$ to $10^{19} (\\Omega m)^{-1}$",
+      "C": "(a) $10^2 (\\Omega m)^{-1}$ to $10^8 (\\Omega m)^{-1}$ (b) $10^{-2} (\\Omega m)^{-1}$ to $10^{-8} (\\Omega m)^{-1}$",
+      "D": "(c) $10^{-11} (\\Omega m)^{-1}$ and $10^{19} (\\Omega m)^{-1}$ (d) $10^{-11} (\\Omega m)^{-1}$ to $10^{19} (\\Omega m)^{-1}$"
+    },
+    "answer": "A",
+    "note": "Options unreadable/corrupt or question truncated - removed from bank"
+  },
+  {
+    "id": 1160,
+    "reason": "answer-uncertain",
+    "note": "SHE+Cu electrochemistry: options made distinct; stored answer B (H+ reduces) needs official SIBA key verification - chemically Cu2+ is reduced"
+  },
+  {
+    "id": 5115,
+    "reason": "answer-uncertain",
+    "note": "n=4 subshells: options deduped; stored answer C content questionable (should be 4s,4p,4d,4f)"
+  },
+  {
+    "id": 37620,
+    "reason": "answer-uncertain",
+    "note": "hysteresis loop: options made distinct; question text truncated, answer A kept"
   }
 ]
