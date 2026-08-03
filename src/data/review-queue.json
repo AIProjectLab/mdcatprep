@@ -1630,5 +1630,65 @@
     "id": 5524,
     "reason": "subject-corrected",
     "note": "Was tagged Chemistry; re-subjected to Chemistry (untagged, excluded from tests)"
+  },
+  {
+    "id": 10172,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from D (was stored) to D - batch-001 review"
+  },
+  {
+    "id": 10210,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from D (was stored) to D - batch-001 review"
+  },
+  {
+    "id": 10223,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from B (was stored) to B - batch-001 review"
+  },
+  {
+    "id": 10257,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from A (was stored) to A - batch-001 review"
+  },
+  {
+    "id": 10270,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from A (was stored) to A - batch-001 review"
+  },
+  {
+    "id": 10286,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from A (was stored) to A - batch-001 review"
+  },
+  {
+    "id": 10312,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from C (was stored) to C - batch-001 review"
+  },
+  {
+    "id": 10324,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from A (was stored) to A - batch-001 review"
+  },
+  {
+    "id": 10326,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from A (was stored) to A - batch-001 review"
+  },
+  {
+    "id": 10327,
+    "reason": "answer-corrected-review",
+    "note": "Corrected from D (was stored) to D - batch-001 review"
+  },
+  {
+    "id": 10171,
+    "reason": "flawed-question",
+    "note": "Molality = 1.99m, no matching option (0.34,0.67,0.90,1.20). Removed."
+  },
+  {
+    "id": 10143,
+    "reason": "answer-uncertain",
+    "note": "Temp effect: C(increase KE) vs D(more molecules attain Ea). Both true; D is classic MDCAT answer. Needs confirmation."
   }
 ]
