@@ -21497,5 +21497,5330 @@
     },
     "answer": "C",
     "explanation": "He moves 12m North, 8m East, 12m South (putting him back on the initial latitude line), then 5m East. Total displacement is 8 + 5 = 13 meters East."
+  },
+  {
+    "id": 1410,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which part of brain controls transition between sleeping and wakefulness?",
+    "options": {
+      "A": "Medulla oblongata",
+      "B": "Cerebellum",
+      "C": "Cerebrum",
+      "D": "Pons"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1411,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which part of the brain contains central chemoreceptors that monitor CO2 levels in blood?",
+    "options": {
+      "A": "Pons",
+      "B": "Midbrain",
+      "C": "Hypothalamus",
+      "D": "Medulla oblongata"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1412,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which component of a reflex arc connects the sensory neuron to the motor neuron within the spinal cord?",
+    "options": {
+      "A": "Receptor",
+      "B": "Effector",
+      "C": "Muscle fiber",
+      "D": "Associative neuron"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1413,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The 9.3.3.1 ratio of law of independent assortment can be affected by",
+    "options": {
+      "A": "Genetic drift",
+      "B": "Small population",
+      "C": "Gene linkage",
+      "D": "Gene duplication"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1414,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Best description of the process of crossing over during meiosis:",
+    "options": {
+      "A": "Duplication of chromosome",
+      "B": "Exchange of genes between non-sister chromatids",
+      "C": "Movement of chromosome to opposite poles",
+      "D": "Separation of sister chromatids"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1415,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Total number of linkage groups in a normal human is:",
+    "options": {
+      "A": "02",
+      "B": "23",
+      "C": "46",
+      "D": "92"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1416,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Nissl granule is a specialized structure in neuron formed by modification of:",
+    "options": {
+      "A": "Golgi bodies & Smooth ER",
+      "B": "Peroxisome & Mitochondria",
+      "C": "Lysosome & Vacuole",
+      "D": "Ribosome & Rough ER"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1417,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "What is the function of a centromere?",
+    "options": {
+      "A": "To protect the ends of chromosomes",
+      "B": "To hold sister chromatids together",
+      "C": "To carry genetic information",
+      "D": "To initiate DNA replication"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1418,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "All are the functions of lysosome EXCEPT:",
+    "options": {
+      "A": "Intra cellular digestion",
+      "B": "Removal of the waste",
+      "C": "Autophagy",
+      "D": "Lipid synthesis"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1419,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The first consequence of lymphatic blockage in tissues is:",
+    "options": {
+      "A": "Deficiency of oxygen",
+      "B": "Loss of nerve signals",
+      "C": "Drop in blood pressure",
+      "D": "Excess fluid accumulation in tissue"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1420,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is the auditory relay Centre and Centre that controls reflex movement of eyes?",
+    "options": {
+      "A": "a) Forebrain",
+      "B": "b) Cerebellum",
+      "C": "c) Midbrain",
+      "D": "d) Cerebellum"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1421,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is the correct pathway of nerve impulse?",
+    "options": {
+      "A": "a) Receptors→ CNS→ Effectors",
+      "B": "b) Effectors→ Receptors → CNS",
+      "C": "c) CNS→ Effectors→ Receptors",
+      "D": "d) Effectors → CNS → Receptors"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1422,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The neurotransmitters are secreted by the neuron from:",
+    "options": {
+      "A": "a) Axon ends",
+      "B": "b) Dendrite end",
+      "C": "c) Nissl's granules",
+      "D": "d) Cell body"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1423,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Hippocampus plays an important role in the:",
+    "options": {
+      "A": "a) Formation of short-term memory",
+      "B": "b) Formation of image on retina",
+      "C": "c) Formation of long-term memory",
+      "D": "d) Formation of emotions"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1424,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Enzymes activity decreases at very low or high pH because:",
+    "options": {
+      "A": "a) Substrate concentration increases",
+      "B": "b) Enzymes become denatured",
+      "C": "c) Product formation increases",
+      "D": "d) Temperature becomes constant"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1425,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The complementary base pairing in DNA is important because it:",
+    "options": {
+      "A": "a) Maintains the tertiary structure of enzymes",
+      "B": "b) Provides energy for all cell metabolism",
+      "C": "c) Enables protein to fold properly",
+      "D": "d) Allows DNA act as a genetic blueprint during replication"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1426,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "A mature duplicated chromosome consists of:",
+    "options": {
+      "A": "a) Two identical double helical DNA molecules",
+      "B": "b) Two different double helical DNA molecules",
+      "C": "c) A double helical DNA molecule distributed in both chromatids",
+      "D": "d) Histone chains wrapped around DNA core"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1427,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The most primitive respiratory process occurring in a living cell is;",
+    "options": {
+      "A": "a) Lactic acid fermentation",
+      "B": "b) Alcoholic fermentation",
+      "C": "c) Glycolysis",
+      "D": "d) Krebs's cycle"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1428,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Receive, retain and nourish a fertilized ovum is the main function of:",
+    "options": {
+      "A": "a) Cervix",
+      "B": "b) Uterus",
+      "C": "c) Ovary",
+      "D": "d) Oviduct"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1429,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The primary function of larynx is:",
+    "options": {
+      "A": "a) Humidifying air",
+      "B": "b) Filtering dust",
+      "C": "c) Gaseous exchange",
+      "D": "d) Voice production"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1430,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "During menstrual cycle, luteinizing hormone (LH) is secreted due to;",
+    "options": {
+      "A": "a) Decrease in Estrogen",
+      "B": "b) Decrease in FSH",
+      "C": "c) Increase in FSH",
+      "D": "d) Environmental effect"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1431,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Left and right cerebral hemispheres are connected with each other by:",
+    "options": {
+      "A": "Corpus luteum",
+      "B": "Corpus callosum",
+      "C": "A band of dendrites",
+      "D": "Dorsal and ventral nerve roots"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1432,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which is the common feature between cardiac and smooth muscles?",
+    "options": {
+      "A": "Voluntary",
+      "B": "Involuntary",
+      "C": "Branched",
+      "D": "Unbranched"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1433,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The joints which cause rotational movements are",
+    "options": {
+      "A": "Hinge",
+      "B": "Ball and Socket",
+      "C": "Cartilage",
+      "D": "Sutures"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1434,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Self-fertilization in plants through successive generations can lead to the development of:",
+    "options": {
+      "A": "Hybrid breeds of plants",
+      "B": "Variations in coming generation",
+      "C": "True breeding plants",
+      "D": "Adaptation with their environment"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1435,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which part of the neuron typically receives incoming signals from other neurons?",
+    "options": {
+      "A": "Axon",
+      "B": "Dendrites",
+      "C": "Myelin sheath",
+      "D": "Synaptic knob"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1436,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Why thick filaments are unable to bind with thin filament in a relaxed muscle fiber?",
+    "options": {
+      "A": "Actin blocks the myosin binding site",
+      "B": "Tropomyosin blocks the myosin binding site",
+      "C": "Troponin blocks the myosin binding site",
+      "D": "Tropomyosin blocks the troponin binding site"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1437,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following best highlights the importance of proteins in immunity?",
+    "options": {
+      "A": "They act as receptors of pathogens",
+      "B": "They are long term energy reserves",
+      "C": "They act as antibodies",
+      "D": "They act as mechanical barrier for pathogens"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1438,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The secondary structure of proteins is stabilized by:",
+    "options": {
+      "A": "Ionic bonds",
+      "B": "Hydrogen bonds",
+      "C": "Disulfide bridges",
+      "D": "Hydrophobic exclusion"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1439,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The following is an example of a globular protein.",
+    "options": {
+      "A": "Keratin",
+      "B": "Collagen",
+      "C": "Hemoglobin",
+      "D": "Histone"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1440,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The process of osmoregulation refers to:",
+    "options": {
+      "A": "The filtration of blood to remove metabolic waste",
+      "B": "The regulation of solute and water movement between an organism and its environment",
+      "C": "The creation of an osmotic gradient in the kidney medulla",
+      "D": "The secretion of hormones that control blood plasma"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1441,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "A baby girl is born with hemophilia, which is an X-linked recessive disorder. What are the most likely genotypes of her parents?",
+    "options": {
+      "A": "The mother is a carrier and the father is normal.",
+      "B": "The mother is hemophiliac and the father is normal.",
+      "C": "The mother is carrier and the father is hemophiliac",
+      "D": "Both are normal."
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1442,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Identify the most appropriate function of chromosomes",
+    "options": {
+      "A": "a) Energy production and storage",
+      "B": "b) Protein synthesis and regulation",
+      "C": "c) Storage of genetic information",
+      "D": "d) Lipid metabolism and transport"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1443,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Enzymes belong to which class of biomolecules?",
+    "options": {
+      "A": "a) Carbohydrates",
+      "B": "b) Lipids",
+      "C": "c) Proteins",
+      "D": "d) Nucleic acids"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1444,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "________ arranges the DNA into the chromosomes in a eukaryotic cell.",
+    "options": {
+      "A": "a) Hormones",
+      "B": "b) Elastin",
+      "C": "c) Histone",
+      "D": "d) Nucleosome"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1445,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The function of nucleolus is to make:",
+    "options": {
+      "A": "a) tDNA",
+      "B": "b) Lysosomes",
+      "C": "c) Ribosomes",
+      "D": "d) Chromosomes"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1446,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following blood vessels have lowest blood velocity with correct reason for low blood velocity?",
+    "options": {
+      "A": "a) Arteries: Due to thick walls",
+      "B": "b) Capillaries: due to highest overall cross-sectional area",
+      "C": "c) Veins: due to blood flow against the gravity",
+      "D": "d) Capillaries: Due to two-way blood flow in capillaries"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1447,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "An active athlete has more stamina of running compared to an officer of same age with physically inactive lifestyle. Which of the following organelles has greatly increased in the muscle cells of athlete?",
+    "options": {
+      "A": "a) Nucleus",
+      "B": "b) Mitochondria",
+      "C": "c) Golgi bodies",
+      "D": "d) Smooth endoplasmic reticulum (SER)"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1448,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Once an action potential reaches the membrane of a skeletal muscle fiber, what is the first event that occurs in the contraction process?",
+    "options": {
+      "A": "a) Actin and myosin form a cross-bridge",
+      "B": "b) Calcium is pumped back into the sarcoplasmic reticulum",
+      "C": "c) Calcium is released from the sarcoplasmic reticulum",
+      "D": "d) ATP is hydrolyzed by troponin"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1449,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The public symphysis is a slightly movable joint joined by which of the following tissue?",
+    "options": {
+      "A": "a) Elastic cartilage",
+      "B": "b) Fibrocartilage",
+      "C": "c) Costal cartilage",
+      "D": "d) Articular cartilage"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1450,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "In a pea plant seed color is determined by two alleles: Y (Yellow, dominant) and y (green recessive). Which parental cross would most likely result in offspring showing a 1:1 ratio of yellow to green seeds?",
+    "options": {
+      "A": "a) Yy x YY",
+      "B": "b) Yy x yy",
+      "C": "c) Yy x Yy",
+      "D": "d) YY x yy"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1451,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Mendel crossed a plant with round yellow seeds (RYY) and a plant with wrinkled green seeds (rryy), what was the phenotype of all F1 offspring?",
+    "options": {
+      "A": "a) All round green",
+      "B": "b) All round yellow",
+      "C": "c) All wrinkled yellow",
+      "D": "d) All wrinkled green"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1452,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "In a normal 28 days menstrual cycle when would you expect the LH surge to occur?",
+    "options": {
+      "A": "Days 7-10",
+      "B": "Days 11-14",
+      "C": "Days 15-18",
+      "D": "Days 19-22"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1453,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which property of water helps in moderating Earth's climate and maintaining stable temperature in aquatic environment?",
+    "options": {
+      "A": "Low viscosity",
+      "B": "High specific heat capacity",
+      "C": "High surface tension",
+      "D": "High polarity"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1454,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Effect of increased substrate concentration on enzyme activity:",
+    "options": {
+      "A": "Decrease the rate of reaction",
+      "B": "Increase the reaction rate until all active sites are saturated",
+      "C": "Have no effect on the reaction rate",
+      "D": "Increase the rate of reaction in a straight diagonal line"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1455,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "An oligosaccharide is made up of at least:",
+    "options": {
+      "A": "two saccharide units",
+      "B": "ten saccharide units",
+      "C": "three to ten saccharide units",
+      "D": "more than ten saccharide units"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1456,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which statement best explains the difference between humoral and cell mediated immune response?",
+    "options": {
+      "A": "Humoral immunity involves B-Lymphocytes and cell mediated immunity involves T-Lymphocytes",
+      "B": "Humoral immunity destroys viruses and cell mediated immunity destroys bacteria",
+      "C": "Humoral immunity is specific and cell mediated immunity is nonspecific",
+      "D": "Humoral immunity uses antibodies and cell mediated immunity does not involve immune cells"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1457,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is the correct higher (left) to lower (right) sequence of molecules with respect to their amount in the cell?",
+    "options": {
+      "A": "DNA → tRNA → rRNA → mRNA",
+      "B": "rRNA → tRNA → mRNA → DNA",
+      "C": "mRNA → tRNA → rRNA → DNA",
+      "D": "DNA → mRNA → tRNA → rRNA"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1458,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "A person in hot weather is unable to maintain body temperature. Which physiological process has failed?",
+    "options": {
+      "A": "Vasodilation & sweating",
+      "B": "Vasoconstriction",
+      "C": "Shivering",
+      "D": "Renin secretion"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1459,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The main idea in Darwin's Theory of \"Origin of species by natural selection\" is:",
+    "options": {
+      "A": "Inheritance of acquired traits",
+      "B": "Use and disuse of organs",
+      "C": "Species never change",
+      "D": "Evolution occurs through gradual accumulation of adaptation through successive generations"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1460,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is a key feature of RNA?",
+    "options": {
+      "A": "Deoxyribose and thymine",
+      "B": "Double stranded and thymine",
+      "C": "Ribose and uracil",
+      "D": "Ribose and thymine"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1461,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following types of RNA makeup the largest proportion of total cellular RNA?",
+    "options": {
+      "A": "Messenger RNA",
+      "B": "Ribosomal RNA",
+      "C": "Transfer RNA",
+      "D": "Catalytic RNA (ribozyme)"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1462,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The bacterium Treponema Pallidum is responsible for which sexually transmitted disease?",
+    "options": {
+      "A": "Syphilis",
+      "B": "Chlamydia",
+      "C": "Gonorrhea",
+      "D": "Genital herpes"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1463,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Tissue fluid in a lymphatic system is called as:",
+    "options": {
+      "A": "Plasma",
+      "B": "Matrix",
+      "C": "Lymph",
+      "D": "Blood"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1464,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which one of the following biomolecules is a polymer/polysaccharide?",
+    "options": {
+      "A": "Sucrose",
+      "B": "Pentose",
+      "C": "Lactose",
+      "D": "Glycogen"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1465,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Olfactory receptors are the type of:",
+    "options": {
+      "A": "photoreceptors",
+      "B": "mechanoreceptors",
+      "C": "thermoreceptors",
+      "D": "chemoreceptors"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1466,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following organisms eliminate nitrogenous waste mainly in the form of uric acid?",
+    "options": {
+      "A": "Freshwater Fish",
+      "B": "Amphibians",
+      "C": "Birds",
+      "D": "Mammals"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1467,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following cells possess Nissl's granules?",
+    "options": {
+      "A": "Nerve cells",
+      "B": "WBC",
+      "C": "RBC",
+      "D": "Platelets"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1468,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which part of human brain is involved in maintaining the posture and balance of the body?",
+    "options": {
+      "A": "Cerebrum",
+      "B": "Cerebellum",
+      "C": "Hypothalamus",
+      "D": "Medulla oblongata"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1469,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Arthritis is:",
+    "options": {
+      "A": "Inflammation of joints",
+      "B": "Herniation of intervertebral disc",
+      "C": "Fusion of vertebral joint",
+      "D": "Tingling along the length of legs"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1470,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which type of joint is present in pubis?",
+    "options": {
+      "A": "Fibrous joints",
+      "B": "Immovable joints",
+      "C": "Cartilaginous joints",
+      "D": "Freely movable joints"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1471,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which type of neurons stimulate muscles to contract in a reflex arc?",
+    "options": {
+      "A": "Motor neurons",
+      "B": "Sensory neurons",
+      "C": "Interneurons",
+      "D": "Afferent neurons"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1472,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following statements best compares cell division in prokaryotic and Eukaryotic cells?",
+    "options": {
+      "A": "Eukaryotes divide by budding; prokaryotes by mitosis",
+      "B": "Eukaryotes use binary fission; prokaryotes by meiosis",
+      "C": "Eukaryotes divide by mitosis; prokaryotes by binary fission",
+      "D": "Both use mitosis by cell division"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1473,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following best describes \"acquired characteristics\" according to Lamarckism?",
+    "options": {
+      "A": "Traits caused by mutation",
+      "B": "Traits inherited from parents",
+      "C": "Traits developed by use or disuse",
+      "D": "Traits selected by nature"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1474,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "According to Lock and Key model, the active site is regarded as:",
+    "options": {
+      "A": "Rigid and specific",
+      "B": "Flexible and specific",
+      "C": "Rigid and non specific",
+      "D": "Flexible and non specific"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1475,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Peptide bonds are important in protein because they:",
+    "options": {
+      "A": "Affect solubility",
+      "B": "Hold R-groups",
+      "C": "Link amino acid",
+      "D": "help in releasing oxygen"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1476,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Why are retroviruses placed in a separate class of RNA viruses?",
+    "options": {
+      "A": "They always infect animal cells only",
+      "B": "Their RNA acts directly as mRNA",
+      "C": "They lack protein coats",
+      "D": "They use reverse transcriptase to make DNA from RNA"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1477,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Reversible inhibitors differ from irreversible inhibitors because they:",
+    "options": {
+      "A": "Binds permanently and cannot be removed",
+      "B": "Bind temporarily and can be removed",
+      "C": "Permanently inactivate the enzyme",
+      "D": "Change enzyme structure permanently"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1478,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which is an enzyme activator secreted by the intestinal glands:",
+    "options": {
+      "A": "Amylase",
+      "B": "Pepsinogens",
+      "C": "Enterokinase",
+      "D": "Lipase"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1479,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "In which of the following combination, both components have Hyaline cartilage?",
+    "options": {
+      "A": "Epiglottis & intervertebral disc",
+      "B": "Trachea & intervertebral disc",
+      "C": "Nose & pinna",
+      "D": "Nose & trachea"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1480,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "According to Lamarck, the evolution of long necks in giraffes is explained by:",
+    "options": {
+      "A": "Natural selection",
+      "B": "Genetic mutation",
+      "C": "Survival of the fittest",
+      "D": "Stretching of necks over generations"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1481,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The process of spermatogenesis occurs in which part of the male reproductive system?",
+    "options": {
+      "A": "Seminiferous tubules",
+      "B": "Vas deferens",
+      "C": "Scrotum",
+      "D": "Epididymis"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1482,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which layer of uterus nourishes the embryo after Implantation?",
+    "options": {
+      "A": "Cervical epithelium",
+      "B": "Myometrium",
+      "C": "Endometrium",
+      "D": "Perimetrium"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1483,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The main role of mRNA during protein synthesis is to:",
+    "options": {
+      "A": "Carry genetic information for protein synthesis",
+      "B": "stabilize ribosome",
+      "C": "deliver amino acids",
+      "D": "provide platform for proteins synthesis"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1484,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Glycoproteins are formed as a result of the combination of:",
+    "options": {
+      "A": "Lipids and proteins",
+      "B": "Carbohydrates and proteins",
+      "C": "Nucleic acid and proteins",
+      "D": "Fatty acids and carbohydrates"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1485,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "A student observed a boundary in both plant and animal cells that controls entry and exit of substances. Which of the following structures is likely being observed?",
+    "options": {
+      "A": "Mitochondria",
+      "B": "Golgi apparatus",
+      "C": "Plasma membrane",
+      "D": "Cell wall"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1486,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "If a normal person marries with colour blind female what will be the possibility of normal male child:",
+    "options": {
+      "A": "0%",
+      "B": "25%",
+      "C": "50%",
+      "D": "75%"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1487,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following characters is shared by both skeletal and cardiac muscles?",
+    "options": {
+      "A": "Presence of Striation",
+      "B": "Involuntary control",
+      "C": "Multinucleated fibers",
+      "D": "Intercalated discs"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1488,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following muscle types are involuntary in action?",
+    "options": {
+      "A": "Skeletal and smooth",
+      "B": "Skeletal and cardiac",
+      "C": "Cardiac and smooth",
+      "D": "Smooth muscle only"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1489,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "In which of the following combinations, both components have non-striated muscle fibers?",
+    "options": {
+      "A": "Intestine & biceps",
+      "B": "Intestine & blood vessels",
+      "C": "Heart & lungs",
+      "D": "Stomach & heart"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1490,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Value of R gas constant in J mol<sup>-1</sup> K<sup>-1</sup> is",
+    "options": {
+      "A": "8.314",
+      "B": "62.4",
+      "C": "0.821",
+      "D": "62400"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1491,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following best explains why phenol reacts with aqueous NaOH, but alcohols do not?",
+    "options": {
+      "A": "Phenol has a lower boiling point than alcohol.",
+      "B": "Alcohols contain a strong O-H bond that cannot be broken by weak bases.",
+      "C": "Phenol form hydrogen bonding that facilitates ionization.",
+      "D": "Phenol is weakly acidic due to resonance stabilization of phenoxide ion."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1492,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "In propene pi-bond is formed by sideway overlap of:",
+    "options": {
+      "A": "s-orbitals",
+      "B": "p-orbitals",
+      "C": "sp<sup>3</sup> hybrid orbitals",
+      "D": "sp<sup>2</sup> hybrid orbitals"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1493,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "An enzyme used to decompose the lipids into fatty acids in our alimentary canal is",
+    "options": {
+      "A": "Amylase",
+      "B": "Protease",
+      "C": "Lipase",
+      "D": "Urease"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1494,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Molecules having one lone pair and three bond pairs have geometrical shape",
+    "options": {
+      "A": "Bent or angular",
+      "B": "Trigonal",
+      "C": "Trigonal pyramidal",
+      "D": "Trigonal planner"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1495,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Conversion of dihaloalkane into alkyne does not involve",
+    "options": {
+      "A": "Addition",
+      "B": "Elimination",
+      "C": "Base",
+      "D": "Heat"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1496,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Majority of reactions taking place at ordinary temperatures with -ΔH are",
+    "options": {
+      "A": "Endothermic",
+      "B": "Exothermic",
+      "C": "Thermally unstable",
+      "D": "Reversible"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1497,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which one of the following is a coinage metal",
+    "options": {
+      "A": "Pd",
+      "B": "Cu",
+      "C": "Cd",
+      "D": "Hg"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1498,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Consider the given balanced chemical equation: 2H₂ + O₂ → 2H₂O If 4 g of H₂ reacts with 32 g of O₂ to produce 28 g of H₂O, what is the percentage yield of the reaction? (Molar mass of H₂ = 2 g/mol, O₂ = 32 g/mol and H₂O = 18 g/mol)",
+    "options": {
+      "A": "63.6%",
+      "B": "77.8%",
+      "C": "87.5%",
+      "D": "92.5%"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1499,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Amount of energy needed to weaken the existing bonds to an extent that can be broken through collision is called:",
+    "options": {
+      "A": "Bond energy",
+      "B": "Activation energy",
+      "C": "Average energy",
+      "D": "Enthalpy"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1500,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Oxidation numbers of X,Y,Z are +6, -2, & -1 respectively, possible molecular formula when atoms combine:",
+    "options": {
+      "A": "X₂YZ",
+      "B": "XY₂Z₂",
+      "C": "XYZ₃",
+      "D": "XYZ₂"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1501,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which set of quantum numbers is not allowed for an electron.",
+    "options": {
+      "A": "n=2, l=1, m=0, s=+1/2",
+      "B": "n=3, l=0, m=0, s=-1/2",
+      "C": "n=2, l=2, m=1, s=+1/2",
+      "D": "n=1, l=0, m=0, s=+1/2"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1502,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "2A + B → 3C + D which of the following does not express the reaction rate?",
+    "options": {
+      "A": "-d[B]/dt",
+      "B": "d[D]/dt",
+      "C": "-1/2 d[A]/dt",
+      "D": "-1/3 d[C]/dt"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1503,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The order of ease of reduction of H⁺, Cu²⁺ and Ag⁺:",
+    "options": {
+      "A": "H⁺ >Cu²⁺>Ag⁺",
+      "B": "H⁺ >Ag⁺>Cu²⁺",
+      "C": "Ag⁺>Cu²⁺>H⁺",
+      "D": "H⁺ >Cu²⁺=Ag⁺"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1504,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Acetaldehyde undergoes oxidation to produce acetic acid, in this reaction oxidizing agent used is:",
+    "options": {
+      "A": "HI",
+      "B": "LiAlH₄",
+      "C": "K₂CrO₇",
+      "D": "NaBH₄"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1505,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which one of the following has higher vapour pressure?",
+    "options": {
+      "A": "acetone",
+      "B": "acetaldehyde",
+      "C": "isopentane",
+      "D": "benzene"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1506,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Terminal alkynes show acidic character due to:",
+    "options": {
+      "A": "Terminal carbon atoms are sp hybridized.",
+      "B": "Terminal carbon atoms are sp² hybridized.",
+      "C": "Terminal carbon atoms are sp³ hybridized.",
+      "D": "Terminal carbon atoms show hydrogen bonding."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1507,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Fischer ESTERIFICATION is which type of reaction:",
+    "options": {
+      "A": "a) Condensation",
+      "B": "b) Substitution",
+      "C": "c) Elimination",
+      "D": "d) Dehydrogenation"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1508,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Shape of orbital is determined by quantum number:",
+    "options": {
+      "A": "a) n",
+      "B": "b) l",
+      "C": "c) m",
+      "D": "d) s"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1509,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The theories which explain the formation of sigma and pi bond are EXCEPT:",
+    "options": {
+      "A": "a) MOT",
+      "B": "b) VBT",
+      "C": "c) VSEPR",
+      "D": "d) CFT"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1510,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The value of Planck's constant is:",
+    "options": {
+      "A": "a) 6.6262x10-30 J. sec",
+      "B": "b) 6.6262x10-32 J. sec",
+      "C": "c) 6.6262x10-34 J. sec",
+      "D": "d) 6.6262x10-36 J. sec"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1511,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Final equation for the representation of rate of reaction in term of concentration is called",
+    "options": {
+      "A": "a) Rate law",
+      "B": "b) Rate constant",
+      "C": "c) Reaction rate",
+      "D": "d) Reaction order"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1512,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Poly vinyl chloride (PVC) is the type of?",
+    "options": {
+      "A": "a) Homopolymer",
+      "B": "b) Thermosetting polymer",
+      "C": "c) Thermoplastic polymer",
+      "D": "d) Copolymer"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1513,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is true about pressure for an ideal gas at -273°C?",
+    "options": {
+      "A": "a) P=1atm",
+      "B": "b) P=2atm",
+      "C": "c) P=3atm",
+      "D": "d) P=0 atm"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1514,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is basic buffer?",
+    "options": {
+      "A": "a) NH4OH/NH4Cl",
+      "B": "b) NaOH/NaCl",
+      "C": "c) NaOH/HCl",
+      "D": "d) H2CO3/NaHCO3"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1515,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "What happens when H+ is added to ammonium hydroxide and ammonium chloride buffer?",
+    "options": {
+      "A": "a) more ammonium hydroxide is formed",
+      "B": "b) reaction will move reverse",
+      "C": "c) reaction will move forward",
+      "D": "d) no effect on equilibrium"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1516,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "What is general requirement for free radical substitution reaction of ethane and halogen?",
+    "options": {
+      "A": "a) low pressure",
+      "B": "b) low temperature",
+      "C": "c) high pressure",
+      "D": "d) heat and UV light"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1517,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which one of the following is not a characteristic of benzene?",
+    "options": {
+      "A": "a) Aromativity",
+      "B": "b) Stability",
+      "C": "c) to follow Huckel rule",
+      "D": "d) High reactivity"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1518,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Correct arrangement of orbital according to size of hybridized orbitals?",
+    "options": {
+      "A": "sp>sp²>sp³",
+      "B": "sp³> sp>sp²",
+      "C": "sp²>sp>sp³",
+      "D": "sp³>sp²>sp"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1519,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Consider the equation H₂ + O₂ →H₂O, what volume of hydrogen gas is required to produce 1 mol of water at standard temperature & pressure?",
+    "options": {
+      "A": "11.2 dm³",
+      "B": "22.4 dm³",
+      "C": "10 dm³",
+      "D": "58 dm³"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1520,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "A chemical reaction has a theoretical yield of 25 g, but only 20 g of product was obtained. What is the percentage yield of the reaction?",
+    "options": {
+      "A": "20%",
+      "B": "25%",
+      "C": "45%",
+      "D": "80%"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1521,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following situations most clearly demonstrates a key characteristic of a Redox reaction?",
+    "options": {
+      "A": "Water boiling to steam",
+      "B": "Hydrogen gas reacting with chlorine to form hydrogen chloride gas",
+      "C": "Sodium chloride dissolving in water",
+      "D": "Ethanol evaporating at room temperature"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1522,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "If 100 KJ of heat is absorbed by the system and 40 KJ of work is done on the system what is the change of internal energy?",
+    "options": {
+      "A": "-60 KJ",
+      "B": "+60 KJ",
+      "C": "-140 KJ",
+      "D": "+ 140 KJ"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1523,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Number of unpaired electrons present in the ground state of Fe³⁺ are (Atomic number of Fe=26).",
+    "options": {
+      "A": "Three",
+      "B": "Four",
+      "C": "Five",
+      "D": "Six"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1524,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "If % yield and actual yield is 80 and 20g respectively, what will be theoretical yield?",
+    "options": {
+      "A": "20g",
+      "B": "25g",
+      "C": "30g",
+      "D": "40g"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1525,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following best identifies the redox reaction:",
+    "options": {
+      "A": "transfer of proton",
+      "B": "transfer of electron",
+      "C": "absorption of light",
+      "D": "exchange of ions"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1526,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Methanol is produced by reduction of",
+    "options": {
+      "A": "Formaldehyde",
+      "B": "Acetaldehyde",
+      "C": "Propanal",
+      "D": "Propanone"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1527,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "IUPAC name of (CH₃)₂ CCH₂ Br is",
+    "options": {
+      "A": "1-bromopentane",
+      "B": "1-bromo-2,2,2-trimethylethane",
+      "C": "1-bromo-2,2-dimethylpropane",
+      "D": "2-bromopentane"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1528,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which one shows anisotropic behavior?",
+    "options": {
+      "A": "Wood",
+      "B": "Gemstone",
+      "C": "Coke",
+      "D": "Graphite"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1529,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "In a unit cell of a crystal lattice the angle β is between faces:",
+    "options": {
+      "A": "a and b",
+      "B": "b and c",
+      "C": "c and a",
+      "D": "not specified"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1530,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Pick the crystalline solid:",
+    "options": {
+      "A": "Cement",
+      "B": "Ceramics",
+      "C": "Concrete",
+      "D": "Copper"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1531,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Number of unpaired electrons in Boron in ground state is/are:",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1532,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Chlorination of benzene in the presence of Iron (III) chloride involves mechanism of:",
+    "options": {
+      "A": "Electrophilic addition",
+      "B": "Electrophilic Substitution",
+      "C": "Free radical Substitution",
+      "D": "Free radical halogenation"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1533,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The element with smallest value of ionization energy is:",
+    "options": {
+      "A": "U",
+      "B": "Al",
+      "C": "Ca",
+      "D": "Ba"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1534,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Carboxylic acid reacts with ammonia to form ammonium salts which on heating produces:",
+    "options": {
+      "A": "Carbonates",
+      "B": "Alkane",
+      "C": "Ester",
+      "D": "Amide"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1535,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "If P is the momentum of an object and m is its mass, then its kinetic energy is:",
+    "options": {
+      "A": "P/2m",
+      "B": "P^2/2m",
+      "C": "1/2 Pm^2",
+      "D": "1/2 P^2m"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1536,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The electric field at a point due to two equal and opposite charges is 100 N/C. If the magnitude of each charge is doubled then the electric field at that point becomes:",
+    "options": {
+      "A": "50 N/C",
+      "B": "100 N/C",
+      "C": "200 N/C",
+      "D": "400 N/C"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1537,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "If a plastic sheet of relative permittivity 2.5 is inserted between two-point charges placed in vacuum, then the electrostatic force between them:",
+    "options": {
+      "A": "Increases by a factor of 2.5",
+      "B": "Decreases by a factor of 2.5",
+      "C": "Increases by a factor of 5",
+      "D": "Decreases by a factor of 5"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1538,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "After 3 half-lives, the remaining fraction of a radioactive sample is:",
+    "options": {
+      "A": "1/2",
+      "B": "1/4",
+      "C": "1/8",
+      "D": "1/16"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1539,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "If the horizontal range of a projectile becomes half of its maximum possible horizontal range, the probable angle of projection is;",
+    "options": {
+      "A": "15°",
+      "B": "30°",
+      "C": "45°",
+      "D": "60°"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1540,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "In an ideal transformer, If the primary voltage is doubled and the turns ratio remains the same, what happens to the secondary current?",
+    "options": {
+      "A": "Doubles",
+      "B": "Halves",
+      "C": "Remains the same",
+      "D": "Becomes four times"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1541,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "An angular displacement of 90° is equal to:",
+    "options": {
+      "A": "One-fourth revolution",
+      "B": "One- third revolution",
+      "C": "One half revolution",
+      "D": "One complete revolution"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1542,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The time in which half of the given number of radioactive nuclei decay is known as",
+    "options": {
+      "A": "1/2 life of radioactive element.",
+      "B": "2/3 life of radioactive element.",
+      "C": "1/4 life of radioactive element.",
+      "D": "2/5 life of radioactive element."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1543,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Earth receives large amount of energy directly from:",
+    "options": {
+      "A": "Wind",
+      "B": "Water",
+      "C": "Sun",
+      "D": "Moon"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1544,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "A phase difference of 90° is equal to:",
+    "options": {
+      "A": "n radians",
+      "B": "n /2 radians",
+      "C": "2n radians",
+      "D": "n /4 radians"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1545,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The reciprocal of the resistivity of a material is called its:",
+    "options": {
+      "A": "impedance",
+      "B": "conductivity",
+      "C": "admittance",
+      "D": "reactance"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1546,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The Balmer series of hydrogen spectrum appears in the",
+    "options": {
+      "A": "Infrared region",
+      "B": "Ultraviolet region",
+      "C": "X-ray region",
+      "D": "Visible region"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1547,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "A ball is thrown into the air with certain velocity v making an angle θ with horizontal. If air resistance is neglected, then at maximum height its velocity is:",
+    "options": {
+      "A": "Equal to initial velocity",
+      "B": "Half of initial velocity",
+      "C": "Equal to zero",
+      "D": "Minimum but not zero"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1548,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "A canon is placed on a smooth surface. When it fires a shell, the canon moves backward, this recoil occurs due to:",
+    "options": {
+      "A": "Law of conservation of energy",
+      "B": "Backward thrust of the gases",
+      "C": "Newton's third law of motion",
+      "D": "Newton's first law of motion"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1549,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "If the surface charge density of an infinite sheet increases by 25%, the electric field intensity:",
+    "options": {
+      "A": "Increases by 25%",
+      "B": "Increases by 50%",
+      "C": "Decreases by 25%",
+      "D": "Remains the same"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1550,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "An incompressible fluid flows through a pipe that becomes narrower in one section. The fluid speed increases in that region to maintain:",
+    "options": {
+      "A": "Constant pressure",
+      "B": "constant energy",
+      "C": "constant mass flow rate",
+      "D": "constant volume"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1551,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "In a pipe of varying cross-section as fluid enters the narrower region, it exhibits:",
+    "options": {
+      "A": "high velocity, high pressure",
+      "B": "high velocity, low pressure",
+      "C": "low velocity, high pressure",
+      "D": "low velocity, low pressure"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1552,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The curved shape of an airplane wing causes air to move faster over the top surface. This leads to:",
+    "options": {
+      "A": "greater pressure on the top",
+      "B": "lower pressure on the top",
+      "C": "equal pressure on both sides",
+      "D": "zero pressure above the wing"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1553,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The protons in the nucleus of an atom DO NOT exit due to",
+    "options": {
+      "A": "Electromagnetic force",
+      "B": "Gravitational Force",
+      "C": "Weak Nuclear Force",
+      "D": "Strong Nuclear Force"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1554,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Mechanical waves cannot travel through outer space because they:",
+    "options": {
+      "A": "have low speed in vacuum",
+      "B": "disperse in space due to long wavelength",
+      "C": "lose frequency in the absence of air",
+      "D": "lose transmission without interacting particles"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1555,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Terminal voltage of a cell equals its EMF only when:",
+    "options": {
+      "A": "No current flows",
+      "B": "Current is maximum",
+      "C": "Internal resistance is infinite",
+      "D": "Load resistance is zero"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1556,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "A loop moves toward a stationary magnet. The induced current will:",
+    "options": {
+      "A": "enhance the motion",
+      "B": "try to stop the approach",
+      "C": "become zero",
+      "D": "become alternating"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1557,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The energy of a Simple Harmonic oscillation depends upon the",
+    "options": {
+      "A": "frequency",
+      "B": "time period",
+      "C": "wavelength",
+      "D": "amplitude"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1558,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The wave that has the highest frequency & penetrating power is",
+    "options": {
+      "A": "X-rays",
+      "B": "Ultraviolet rays",
+      "C": "Gamma rays",
+      "D": "Microwaves"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1559,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "According to First law of thermodynamics when heat flows into a system and no work is done the internal energy of the system must",
+    "options": {
+      "A": "Increase",
+      "B": "Decrease",
+      "C": "Remains constant",
+      "D": "Becomes zero"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1560,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "If the length of the conductor is made 4 times its original length, its resistance becomes",
+    "options": {
+      "A": "quarter",
+      "B": "half",
+      "C": "zero",
+      "D": "4 times"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1561,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The unit of temperature coefficient of resistivity is",
+    "options": {
+      "A": "1/C",
+      "B": "1/K",
+      "C": "1/A",
+      "D": "1/Ω"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1562,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The work done by the gravitational force on an object as it moves from a reference level to a higher point is:",
+    "options": {
+      "A": "Always positive",
+      "B": "Always negative",
+      "C": "Zero",
+      "D": "Depends on the path taken"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1563,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "If two speakers emit sound at same frequency and phase, maximum loudness occurs when:",
+    "options": {
+      "A": "Path difference = λ/2",
+      "B": "Path difference = λ",
+      "C": "Path difference = λ/4",
+      "D": "Path difference = 3λ/4"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1564,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "When an object attains terminal velocity, its acceleration is:",
+    "options": {
+      "A": "9.8m/s²",
+      "B": "Zero",
+      "C": "1 m/s²",
+      "D": "9.8m/s²"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1565,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "A 0.5 kg ball moving at 6 m/s has kinetic energy",
+    "options": {
+      "A": "9 J",
+      "B": "18 J",
+      "C": "6 J",
+      "D": "3 J"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1566,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "A fluid is flowing through a tube, to undergo transition from laminar to turbulent flow it's velocity must be:",
+    "options": {
+      "A": "Slightly less than critical velocity",
+      "B": "equal to critical velocity",
+      "C": "greater than critical velocity",
+      "D": "increasing gradually but less than critical velocity"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1567,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "For two equal positive charges, the electric field weakest?",
+    "options": {
+      "A": "Midway between them",
+      "B": "Along the perpendicular bisector",
+      "C": "Close to either charge",
+      "D": "At infinity"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1568,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "A projectile is launched in air with certain angle; its velocity is maximum at:",
+    "options": {
+      "A": "Point of projection",
+      "B": "Highest point",
+      "C": "Between launching and highest point",
+      "D": "At all points"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1569,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "If the distance between two charges is halved and magnitude of charges are also doubled, then the force between these charges becomes:",
+    "options": {
+      "A": "two times",
+      "B": "four times",
+      "C": "eight times",
+      "D": "sixteen times"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1570,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "If a body having mass m1 (2 kg), moving with 5 m/s approaches another mass, m2 (3 kg) with speed of 1 m/s in same direction, relative speed of approach is 4 m/s. Relative speed of separation after collision will be:",
+    "options": {
+      "A": "4 m/s",
+      "B": "2 m/s",
+      "C": "6 m/s",
+      "D": "depends on masses"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1571,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following sentences has correct subject verb agreement?",
+    "options": {
+      "A": "The teacher give the students homework.",
+      "B": "The teacher gives the students homework.",
+      "C": "The teachers gives the student homework.",
+      "D": "The teachers given the student homework."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1572,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The keys were found _____the drawer where you left them last week.",
+    "options": {
+      "A": "under",
+      "B": "in",
+      "C": "on",
+      "D": "beside"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1573,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Identify the sentence among of the following, which is punctuated correctly?",
+    "options": {
+      "A": "a) The teaching staff asked the principal what time the meeting would start.",
+      "B": "b) The teaching staff asked the principal: \"What time would the meeting start?\"",
+      "C": "c) The teaching staff asked the principal, \"What time would the meeting start?\"",
+      "D": "d) The teaching staff asked the principal; \"What time would the meeting start?\""
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1574,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "\"She was elated when she got first position in exams.\" What is the meaning of \"elated\" in this sentence?",
+    "options": {
+      "A": "a) Disappointed",
+      "B": "b) Worried",
+      "C": "c) Excited",
+      "D": "d) Mad"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1575,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The board of directors expressed__________ disappointment with the financial results.",
+    "options": {
+      "A": "a) their",
+      "B": "b) its",
+      "C": "c) his or her",
+      "D": "d) one's"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1576,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "It rained all night;__________, the roads were flooded in the morning.",
+    "options": {
+      "A": "a) similarly",
+      "B": "b) instead",
+      "C": "c) as a result",
+      "D": "d) in contrast"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1577,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The manager accepted the cashier's__________ for coming late.",
+    "options": {
+      "A": "a) explanation",
+      "B": "b) explanation",
+      "C": "c) explanation",
+      "D": "d) explanation"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1578,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The writer has unearthed serious irregularities in the entire project. The word 'unearthed' in this sentence means",
+    "options": {
+      "A": "a) written",
+      "B": "b) mentioned",
+      "C": "c) exposed",
+      "D": "d) stated"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1579,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Identify the sentence with no spelling error:",
+    "options": {
+      "A": "a) Imtiaz invited me on a dinner party at restaurant.",
+      "B": "b) Imtiaz invited me on a diner party at restaurant.",
+      "C": "c) Imtiaz invited me on a dinner party at resturant.",
+      "D": "d) Imtiaz invited me on a dinar party at resturant."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1580,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "What will come next? 1, 4, 2, 5, 3, 6, 4, 7, ?",
+    "options": {
+      "A": "a) 5",
+      "B": "b) 6",
+      "C": "c) 7",
+      "D": "d) 8"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1581,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "All daffodils are plants. All plants are living things. Some living things are real.\nConclusions:\nI. All daffodils are living things.\nII. Some living things are flowers.\nIII. All daffodils are real.\nWhich conclusions follow?",
+    "options": {
+      "A": "a) Only I",
+      "B": "b) Only I and II",
+      "C": "c) Only II and III",
+      "D": "d) All follow"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1582,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "One apple pie has 10 slices, and each apple pie feeds five people. Henry is having a party with 200 people. How many slices of pie does he need?",
+    "options": {
+      "A": "a) 200",
+      "B": "b) 50",
+      "C": "c) 400",
+      "D": "d) 100"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1583,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "How many trees are in the orchard? Which of the statements below are needed to sufficiently answer this question?\n i. Ibrahim is a farmer and looks after half of the trees in the orchard\n ii. 300 trees in the orchard are under Ibrahim's care",
+    "options": {
+      "A": "i is enough",
+      "B": "ii is enough",
+      "C": "both I and II are needed",
+      "D": "neither i or ii are sufficient"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1584,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "P and Q are M's parents, M and N are siblings. Q is N's mother. What is P to M?",
+    "options": {
+      "A": "Mother",
+      "B": "Father",
+      "C": "Sister",
+      "D": "Brother"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1585,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Asad bought 50 packets of biscuits for the price of Rs. 500; whereas Anum bought 25 packets of chips for the price of Rs.1000. While comparing the prices of packets of biscuits and packet of chips, which of the following statements is correct?",
+    "options": {
+      "A": "Price of 4 packets of biscuits is equal to the price of 1 packet of chips",
+      "B": "Price of 1 packet of biscuits is equal to the price of 4 packets of chips",
+      "C": "Price of 2 packets of biscuits is equal to the price of 1 packet of chips",
+      "D": "Price of 1 packet of biscuits is equal to the price of 2 packets of chips"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1586,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "The virus spreads rapidly in the town. It infected the people - First day: 8, Second day: 1 Third day: 32. What will the number of people infected on the next day?",
+    "options": {
+      "A": "44 people",
+      "B": "56 people",
+      "C": "64 people",
+      "D": "74 people"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1587,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is a result of poor design that could cause an accident in the workplace?",
+    "options": {
+      "A": "Equipment failure",
+      "B": "Slippery surfaces",
+      "C": "Insufficient lighting",
+      "D": "Unplanned workspace layout"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1588,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "UHS 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is the main cause of accidents involving equipment?",
+    "options": {
+      "A": "Overconfidence",
+      "B": "Insufficient maintenance",
+      "C": "Fatigue",
+      "D": "Poor training"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1589,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following hormones in the body of animal is lipid-based in nature?",
+    "options": {
+      "A": "Insulin",
+      "B": "FSH",
+      "C": "Oxytocin",
+      "D": "Aldosterone"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1590,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following base pairing maintains the constant diameter of the DNA double helix as per Watson and Crick's model?",
+    "options": {
+      "A": "Purine - Purine",
+      "B": "Pyrimidine - Pyrimidine",
+      "C": "Purine - Pyrimidine",
+      "D": "Sugar-Phosphate"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1591,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following connective tissue is completely avascular and heals slowly?",
+    "options": {
+      "A": "Bone",
+      "B": "Cartilage",
+      "C": "Adipose tissue",
+      "D": "Areolar tissue"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1592,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Cardiac muscles are different from skeletal muscles because they:",
+    "options": {
+      "A": "Lack striations",
+      "B": "Are voluntary and multinucleated",
+      "C": "Are involuntary and multinucleated",
+      "D": "Are striated but involuntary"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1593,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which organelle give rise to primary lysosomes through budding in eukaryotic cells?",
+    "options": {
+      "A": "Smooth endoplasmic reticulum (SER)",
+      "B": "Rough endoplasmic reticulum (RER)",
+      "C": "Plasma membrane",
+      "D": "Golgi cisternae"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1594,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A mutation prevents proper disulphide bond formation in a fibrous protein, causing brittle nails and slow hair growth. Which of the following proteinaceous substance would be affected?",
+    "options": {
+      "A": "Elastin",
+      "B": "Actin",
+      "C": "Keratin",
+      "D": "Collagen"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1595,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "In muscle fibers, T-tubules are extension of the sarcolemma that penetrate into the cell's interior. What is their main function during muscle contraction?",
+    "options": {
+      "A": "Unblock actin's binding sites.",
+      "B": "Conduct nerve impulses deep into the muscle cell.",
+      "C": "Synthesize glycogen in the sarcoplasm.",
+      "D": "Store calcium ions with in the sarcoplasmic reticulum."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1596,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Polysaccharides such as starch and glycogen are mainly used for:",
+    "options": {
+      "A": "Structural framework only",
+      "B": "Short-term and long-term energy storage",
+      "C": "Enzyme catalysis",
+      "D": "Ready source of energy"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1597,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "In chromosome, positively charged histone proteins are organized with negatively charged DNA. The positive charges of histone are due to an abundance of basic amino acids:",
+    "options": {
+      "A": "arginine and alanine",
+      "B": "arginine and lysine",
+      "C": "lysine and alanine",
+      "D": "phenylalanine and arginine"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1598,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The envelop in a virus is derived from:",
+    "options": {
+      "A": "Host cell ribosomes",
+      "B": "Host cell membrane",
+      "C": "Viral capsid proteins",
+      "D": "Viral genome replication"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1599,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Myelin sheath acts as:",
+    "options": {
+      "A": "Protector",
+      "B": "Insulator",
+      "C": "Sensor",
+      "D": "Supporter"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1600,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "DNA/RNA probes are most commonly used as:",
+    "options": {
+      "A": "diagnostic tools of infectious diseases",
+      "B": "carrier in gene cloning experiments",
+      "C": "cementing material in somatic cell hybridization",
+      "D": "carrier or vector in gene therapy"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1601,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The event that occurs first during skeletal muscle contraction?",
+    "options": {
+      "A": "Cross-bridge formation",
+      "B": "Release of calcium from sarcoplasmic reticulum",
+      "C": "Power stroke",
+      "D": "Myosin head binds to ATP"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1602,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "When genes are linked, they tend to:",
+    "options": {
+      "A": "Segregate randomly",
+      "B": "Cross over every time",
+      "C": "Stay together during inheritance",
+      "D": "Be inherited separately"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1603,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "According to Morgan's experiment, which of the following is essential for detecting gene linkage accurately?",
+    "options": {
+      "A": "Large number of progeny",
+      "B": "Small sample size",
+      "C": "Use of male flies only",
+      "D": "Mutation induction"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1604,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The end of skeletal muscle attached with moveable bone is:",
+    "options": {
+      "A": "Insertion",
+      "B": "Origin",
+      "C": "Tendons",
+      "D": "Belly"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1605,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is common between aldosterone, sex hormone and cortisone?",
+    "options": {
+      "A": "They are peptides",
+      "B": "They are Phospholipids",
+      "C": "They are steroids",
+      "D": "They are glycoproteins"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1606,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which one of the following organism is uricotelic with reference to excretion of nitrogenous compound?",
+    "options": {
+      "A": "Human",
+      "B": "freshwater Fish",
+      "C": "Snake",
+      "D": "Frog"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1607,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Ureotelism (removal of nitrogenous waste in the form of urea) is an adaptation to the:",
+    "options": {
+      "A": "cold weather",
+      "B": "less availability of water",
+      "C": "flooded environmental conditions",
+      "D": "food shortage"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1608,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "All of the following are the characteristics of limbic system EXCEPT:",
+    "options": {
+      "A": "produce most basic and primitive emotions and drives",
+      "B": "formation of memories",
+      "C": "consists of hypothalamus, amygdala and hippocampus",
+      "D": "controls reflex movement of eyes"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1609,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Sensory input from auditory and visual pathways, skin and within the body is received by ___________and distributed to:",
+    "options": {
+      "A": "Hypothalamus: Cerebellum",
+      "B": "Thalamus: cerebrum Correct",
+      "C": "Cerebrum: rest of the brain",
+      "D": "Cerebellum: rest of the brain"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1610,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "According to the Lamarck theory of evolution, the organ that has not been used in several generations will:",
+    "options": {
+      "A": "Become strong",
+      "B": "Get amputated",
+      "C": "Disappear",
+      "D": "Become developed"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1611,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following statement is incorrect with reference to the enzyme action?",
+    "options": {
+      "A": "Substrate binds with the enzyme at its active site",
+      "B": "Non-competitive inhibitor binds the enzyme at a site distinct from that of active site",
+      "C": "Addition of a lot of succinate do not reverse the inhibition of succinic dehydrogenase by malonate",
+      "D": "Malonate is a competitive inhibitor of succinic dehydrogenase"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1612,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The temperature of underground water remains constant due to;",
+    "options": {
+      "A": "Heat capacity",
+      "B": "Polarity of water",
+      "C": "Heat of vaporization",
+      "D": "Specific heat of vaporization"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1613,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The shape of Adenovirus is;",
+    "options": {
+      "A": "Helical shape",
+      "B": "Tadpole shape",
+      "C": "Polyhedron shape",
+      "D": "Circular shape"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1614,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "In human female normally ovulation occurs at day__________ of menstrual cycle.",
+    "options": {
+      "A": "9",
+      "B": "11",
+      "C": "14",
+      "D": "15"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1615,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "HIV belongs to which class of virus with respect to genome type?",
+    "options": {
+      "A": "Single stranded DNA viruses",
+      "B": "Double stranded RNA viruses",
+      "C": "ssRNA; template for DNA synthesis",
+      "D": "ssRNA; template for mRNA synthesis"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1616,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "How many ATPs are produced during oxidative phase of glycolysis?",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "34",
+      "D": "36"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1617,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following best describes the relationship between endoplasmic reticulum (ER) and Golgi apparatus?",
+    "options": {
+      "A": "Both ER and Golgi apparatus are completely separate organelles with no interaction",
+      "B": "ER is precursor organelle to Golgi apparatus because material is transported from ER to Golgi",
+      "C": "Golgi apparatus is precursor organelle to ER because material is transported from Golgi to ER",
+      "D": "ER and Golgi apparatus have similar roles"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1618,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Osmotic gradient of inner medulla of kidney is increased by:",
+    "options": {
+      "A": "Urea",
+      "B": "Water",
+      "C": "Phosphate",
+      "D": "Potassium"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1619,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Decreased level of FSH hormone during menstrual cycle triggers the release of:",
+    "options": {
+      "A": "hcg",
+      "B": "LH",
+      "C": "Oxytocin",
+      "D": "progestrone"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1620,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The digestive secretions from different parts of GIT have the ability to kill microbe present in the food. Which of the following best describe this role?",
+    "options": {
+      "A": "Antiseptics",
+      "B": "Disinfectants",
+      "C": "Chemotherapeutics",
+      "D": "Immunosuppressant"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1621,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A carrier mother for hemophilia and a normal father can produce:",
+    "options": {
+      "A": "All hemophilic sons",
+      "B": "25 % Hemophilic among sons",
+      "C": "50 % hemophilic among sons",
+      "D": "All normal sons and daughter"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1622,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "During ventricular systole, which pressure changes occur?",
+    "options": {
+      "A": "Ventricular pressure rises above atrial and arterial pressure",
+      "B": "Atrial pressure rises above Ventricular pressure",
+      "C": "Ventricular pressure falls below arterial pressures",
+      "D": "Ventricular pressure falls below Atrial pressure"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1623,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which cell type is essential for stimulating cell division of both B-cells and T-cells?",
+    "options": {
+      "A": "Plasma cells",
+      "B": "Memory cells",
+      "C": "Helper T-cells",
+      "D": "Neutrophils"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1624,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The hormone, when overproduced can lead to hypercalcemia and stone formation is:",
+    "options": {
+      "A": "Insulin",
+      "B": "Thyroxine",
+      "C": "Parathyroid hormone",
+      "D": "Antidiuretic hormone"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1625,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Fibrocartilage is found in:",
+    "options": {
+      "A": "Trachea",
+      "B": "Nose",
+      "C": "Knee joint",
+      "D": "Ear flaps"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1626,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Additional capillaries present in the juxtaglomerular nephrons to form a loop of vessels are:",
+    "options": {
+      "A": "Efferent arterioles",
+      "B": "Peritubular capillaries",
+      "C": "Vasa recta",
+      "D": "Afferent arterioles"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1627,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Y-linked inheritance refers to which mode of the inheritance?",
+    "options": {
+      "A": "Crisscross",
+      "B": "Straight",
+      "C": "Loop",
+      "D": "Jumping"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1628,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "If a colorblind lady marries a normal man, their children will be:",
+    "options": {
+      "A": "Normal daughters and normal sons",
+      "B": "Normal sons and carrier daughters",
+      "C": "Colorblind sons and carrier daughters",
+      "D": "Colorblind sons and colorblind daughters"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1629,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "All of the following properties of water are associated with its capillary action. EXCEPT:",
+    "options": {
+      "A": "Adhesion",
+      "B": "Density",
+      "C": "Cohesion",
+      "D": "Surface tension"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1630,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which organelle serves as a packaging and a distribution center for molecules within the cells?",
+    "options": {
+      "A": "Golgi apparatus",
+      "B": "Mitochondrion",
+      "C": "Ribosome",
+      "D": "Vacuole"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1631,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following hormone is not produced in older women?",
+    "options": {
+      "A": "Estrogen",
+      "B": "Gastrin",
+      "C": "Secretin",
+      "D": "Renin"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1632,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which lymphatic structure absorbs dietary fats in the intestine?",
+    "options": {
+      "A": "Peyer's patches",
+      "B": "Lacteals in villi",
+      "C": "Pancreatic duct",
+      "D": "Lymph nodes"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1633,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Thinking, memory and voluntary actions are mainly controlled by:",
+    "options": {
+      "A": "Cerebrum",
+      "B": "Cerebellum",
+      "C": "Pons",
+      "D": "Hippocampus"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1634,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Ventricular diastole causes:",
+    "options": {
+      "A": "ventricular contraction",
+      "B": "Closure of Atrioventricular valve",
+      "C": "Opening of semilunar valve",
+      "D": "Closure of of semilunar valve"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1635,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following statement correctly describes the organelle that is not membrane bound?",
+    "options": {
+      "A": "Presence of cristae",
+      "B": "Modification and packaging of proteins",
+      "C": "Presence of digestive enzymes",
+      "D": "Made of rRNA and protein"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1636,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A biological laboratory is developing gene therapy with a modified virus that infects the birds only. Which of the following category does this virus belong to?",
+    "options": {
+      "A": "Algal virus",
+      "B": "Fungal virus",
+      "C": "Animal virus",
+      "D": "Bacterial virus"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1637,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "CFTR gene that encode a protein which regulate:",
+    "options": {
+      "A": "Protein and salt",
+      "B": "Salt and Water",
+      "C": "Sugar and Water",
+      "D": "Liquid and Protein"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1638,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which organelle is usually referred as post office of the cell and why?",
+    "options": {
+      "A": "Golgi apparatus, because it receives, sorts and packages material for transport to other parts of cell",
+      "B": "Rough endoplasmic reticulum because it synthesizes protein used by the cell",
+      "C": "Mitochondria, because it synthesizes and provides energy to other parts of the cells",
+      "D": "Nucleus, because it controls other organelles of the cell"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1639,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Components of reflex arc must contain neurons from:",
+    "options": {
+      "A": "Motor nerve and Mixed nerve",
+      "B": "Sensory nerve and intermediate nerve",
+      "C": "Motor nerve and Sensory Nerve",
+      "D": "Mixed nerve and intermediate nerve"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1640,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A confirmed COVID patient shows weak specific immunity. Which component is most likely deficient in this patient?",
+    "options": {
+      "A": "Red Blood Cells",
+      "B": "Helper T-Lymphocytes",
+      "C": "Thrombocytes",
+      "D": "Suppressor T-Lymphocytes"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1641,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following organ takes part in the T-cell maturation for both the lymphatic and endocrine systems?",
+    "options": {
+      "A": "Spleen",
+      "B": "Thymus",
+      "C": "Liver",
+      "D": "Kidney"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1642,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The part of male reproductive system that maintains the temperature for sperm production is:",
+    "options": {
+      "A": "Testes",
+      "B": "Scrotum",
+      "C": "Vas deferens",
+      "D": "Epididymis"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1643,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "After Liver transplant, doctors suppress the T-lymphocyte activity in patient. Why?",
+    "options": {
+      "A": "To increase the rate of antibody production",
+      "B": "To prevent infections",
+      "C": "To avoid graft rejection immune system",
+      "D": "To produce memory cells faster"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1644,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "How do the kidneys contribute to maintain normal blood calcium level?",
+    "options": {
+      "A": "By storing excess calcium",
+      "B": "By reabsorbing calcium and activating vitamin D",
+      "C": "By secreting calcium directly into the blood",
+      "D": "By converting calcium into urea for excretion"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1645,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Nodes of Ranvier along the length of axon fibers allow:",
+    "options": {
+      "A": "More diffusion of neurotransmitters",
+      "B": "Saltatory conduction of nerve impulse",
+      "C": "Formation of new synaptic connections",
+      "D": "Synthesis of new neurons"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1646,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Arachidonic acid, which is the precursor molecule for prostaglandins is:",
+    "options": {
+      "A": "A saturated fatty acid with 18 carbons",
+      "B": "An unsaturated fatty acid with 18 carbons",
+      "C": "A tri-unsaturated fatty acid with 20 carbons",
+      "D": "A tetra-unsaturated fatty acid with 20 carbons"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1647,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Atrial walls are thinner as compared to ventricles because:",
+    "options": {
+      "A": "Atria are small in size",
+      "B": "Atria are present above the ventricles",
+      "C": "Atria has to force blood into the ventricles which lie very close to them",
+      "D": "Blood enters into the atria by osmosis"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1648,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A patient with a genetic disorder undergoes treatment where a normal gene is inserted into their cells. This is called",
+    "options": {
+      "A": "Gene therapy",
+      "B": "Genetic testing",
+      "C": "Protein engineering",
+      "D": "DNA fingerprinting"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1649,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is a potential symptom of chronic renal failure?",
+    "options": {
+      "A": "Nephritis and bacterial infection",
+      "B": "Bone pain and fractures",
+      "C": "Impaired concentration and confusion",
+      "D": "Muscle cramps due to electrolyte imbalance"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1650,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Arthritis is a disease that primarily affects the",
+    "options": {
+      "A": "Kidneys",
+      "B": "Lungs",
+      "C": "Joints",
+      "D": "Muscles"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1651,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Osmoreceptors that detect the osmotic pressure of blood are primarily located in the:",
+    "options": {
+      "A": "Cerebellum",
+      "B": "Medulla oblongata",
+      "C": "Hypothalamus",
+      "D": "Cerebral cortex"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1652,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A chromosome which contain centromere at the center is called:",
+    "options": {
+      "A": "mesocentric chromosome",
+      "B": "metacentric chromosome",
+      "C": "acrocentric chromosome",
+      "D": "telocentric chromosome"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1653,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Binding site for a substrate on enzyme is:",
+    "options": {
+      "A": "Allosteric site",
+      "B": "Passive site",
+      "C": "Active site",
+      "D": "Regulatory site"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1654,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The most abundant polysaccharide in plants, widely used in paper and as a source of dietary fibre for human is:",
+    "options": {
+      "A": "Chitin",
+      "B": "Glycogen",
+      "C": "Starch",
+      "D": "Cellulose"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1655,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "This given organelle is involved in the synthesis of oil, phospholipids and steroids:",
+    "options": {
+      "A": "Mitochondria",
+      "B": "Golgi complex",
+      "C": "Endoplasmic reticulum",
+      "D": "Ribosomes"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1656,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which type of neurons stimulate the muscles to contract in a reflex are:",
+    "options": {
+      "A": "Efferent neurons",
+      "B": "Sensory neurons",
+      "C": "Interneurons",
+      "D": "Afferent neurons"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1657,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Receptors that are located in the retina of eye are called:",
+    "options": {
+      "A": "Merkel disc",
+      "B": "Ruffini endings",
+      "C": "Pacinian corpuscles",
+      "D": "Rod and Cone cells"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1658,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The bony roof of the oral cavity, which separates it from the nasal cavity, is formed by the:",
+    "options": {
+      "A": "soft palate",
+      "B": "Mandible",
+      "C": "Hard palate",
+      "D": "Maxilla"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1659,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which structure in neuron is responsible for receiving information from other neurons?",
+    "options": {
+      "A": "Axon",
+      "B": "Soma",
+      "C": "Dendrite",
+      "D": "Axon terminal"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1660,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Chemicals that stimulate the olfactory receptors enter the nasal cavity in the form of ________.",
+    "options": {
+      "A": "solid",
+      "B": "liquid",
+      "C": "gas",
+      "D": "plasma"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1661,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Neurosecretory cells are:",
+    "options": {
+      "A": "endocrine cells",
+      "B": "exocrine cells",
+      "C": "neuroglial cells",
+      "D": "neurons that have been adapted to secrete hormones"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1662,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Lamarck theory of evolution was rejected experimentally by:",
+    "options": {
+      "A": "Earnest Hackle",
+      "B": "Charles Darwin",
+      "C": "August Wiseman",
+      "D": "Thomas R Malthas"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1663,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following characteristics is common among sucrose, lactose and maltose?",
+    "options": {
+      "A": "molecular formula",
+      "B": "occurrence in living beings",
+      "C": "chemical nature of their monosaccharide units",
+      "D": "to act as reducing sugar"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1664,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Ribozymes are the only biocatalysts that are made up of:",
+    "options": {
+      "A": "DNA",
+      "B": "RNA",
+      "C": "Protein",
+      "D": "Fatty acid"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1665,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The induced fit model differs from the Lock and Key model because the enzyme in this model:",
+    "options": {
+      "A": "Has a rigid and fixed active site",
+      "B": "Changes shape to fit the substrate",
+      "C": "Is non-specific in its action",
+      "D": "Is denatured during reaction"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1666,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which competitive inhibitor blocks the enzyme responsible for bacterial cell wall synthesis?",
+    "options": {
+      "A": "Sulphonamide",
+      "B": "Streptomycin",
+      "C": "Tetracycline",
+      "D": "Penicillin"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1667,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Water commonly known as a universal solvent because:",
+    "options": {
+      "A": "It dissolves polar and ionic substances effectively",
+      "B": "It supports chemical reactions without reacting itself",
+      "C": "It has a high specific heat capacity",
+      "D": "It dissolves many substances due to its small molecule size"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1668,
+    "subject": "Biology",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following structural change in water molecule leads to the low density of ice?",
+    "options": {
+      "A": "Formation of ionic bonds",
+      "B": "Expansion due to hydrogen bonding",
+      "C": "Increased kinetic energy",
+      "D": "Loss of polarity in molecules"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1669,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Reduction of carboxylic acid by using lithium aluminohydride produce:",
+    "options": {
+      "A": "Alcohol",
+      "B": "acid halide",
+      "C": "ester",
+      "D": "alkane"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1670,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "In separate vessel of volume 2000 cm3 and 1500cm3, 6g of hydrogen and 28g of nitrogen are mixed in each vessel at 25°C, ammonia formed is?",
+    "options": {
+      "A": "More in 2 L vessel",
+      "B": "More in 1500 cm3 vessel",
+      "C": "Equal in both vessel",
+      "D": "Cannot be predicted"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1671,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The weakest intermolecular force present in liquid is?",
+    "options": {
+      "A": "dipole dipole forces",
+      "B": "induce dipole force",
+      "C": "Instantaneous dipole induced dipole force",
+      "D": "hydrogen bonding"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1672,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Number of sigma bond in acetylene and ethylene are?",
+    "options": {
+      "A": "3 & 5",
+      "B": "5 & 3",
+      "C": "6 & 5",
+      "D": "5 & 6"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1673,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following has smallest bond angle?",
+    "options": {
+      "A": "CH2",
+      "B": "NH3",
+      "C": "H2S",
+      "D": "BeCl2"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1674,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which one of the following has highest ionic character?",
+    "options": {
+      "A": "AlCl3",
+      "B": "BCl3",
+      "C": "PCl5",
+      "D": "NaH"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1675,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which one has highest bond energy?",
+    "options": {
+      "A": "sp-s",
+      "B": "sp2-s",
+      "C": "sp3-s",
+      "D": "sp3-p"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1676,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The relationship of (+) tartaric acid and (-) Tartaric acid are:",
+    "options": {
+      "A": "geometric isomers",
+      "B": "enantiomers",
+      "C": "diasteroers",
+      "D": "planar"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1677,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "IUPAC name of compound C3H5COCH3 is?",
+    "options": {
+      "A": "methylphenylketone",
+      "B": "phenylethanone",
+      "C": "octan-2-one",
+      "D": "benzylethane"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1678,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "During reaction of aldehyde with HCN, the hybridization of carbon atom of carbonyl group changes to:",
+    "options": {
+      "A": "sp → sp2",
+      "B": "sp3 → sp2",
+      "C": "sp2→ sp",
+      "D": "dsp2→ sp3"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1679,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Acetone reacts with water in presence of catalyst produces:",
+    "options": {
+      "A": "propan-2-ol",
+      "B": "propan-1,2-diol",
+      "C": "propan-2,2-diol",
+      "D": "propanol"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1680,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which one show positive test with Fehling solution:",
+    "options": {
+      "A": "acetophenone",
+      "B": "metaformaldehyde",
+      "C": "acetaldehyde",
+      "D": "benzaldehyde"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1681,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Oxidation state of Tungsten in Na2W4O13.H2O is:",
+    "options": {
+      "A": "+5",
+      "B": "+6",
+      "C": "+8",
+      "D": "Zero"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1682,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Orientation of molecule is more important in following cases except:",
+    "options": {
+      "A": "high Pressure",
+      "B": "complex molecules",
+      "C": "poly atomic molecules",
+      "D": "low pressure"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1683,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Keeping temperature constant, if pressure is increased, density of gas will:",
+    "options": {
+      "A": "Increases",
+      "B": "decreases",
+      "C": "gets doubled",
+      "D": "remains same"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1684,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "IUPAC name of chloroform is:",
+    "options": {
+      "A": "methylchloride",
+      "B": "methyltrichloride",
+      "C": "trichloromethane",
+      "D": "chloromethane"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1685,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which among the following will react with ammonical cuprous chloride;",
+    "options": {
+      "A": "1-butene",
+      "B": "1-butyne",
+      "C": "2-butene",
+      "D": "2-butyne"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1686,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following is not a crystalline solid?",
+    "options": {
+      "A": "KCl",
+      "B": "Fe metal",
+      "C": "Glass",
+      "D": "rhombic S"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1687,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Number of electron with j=2 in an atom having atomic number 23 is:",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1688,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Reaction having high activation energy are:",
+    "options": {
+      "A": "spontaneous",
+      "B": "fast",
+      "C": "slow",
+      "D": "always exothermic"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1689,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following reagents is used to convert benzene to 2-chloro methyl benzene?",
+    "options": {
+      "A": "CH3Cl/AlCl3 followed by Cl2 in the presence of anhydrous FeCl3",
+      "B": "CH3Cl/AlCl3 followed by Cl2 in the presence of diffused sunlight",
+      "C": "Cl2/FeCl3 followed by CH3Cl in the presence of diffused sunlight.",
+      "D": "Cl2/UV followed by CH3Cl in the presence of anhydrous FeCl3."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1690,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "According to the Kinetic molecular theory, the kinetic energy of gas molecules increases when they are:",
+    "options": {
+      "A": "melted from solid to liquid state",
+      "B": "mixed with other molecules at lower temperature",
+      "C": "frozen into solids",
+      "D": "condensed into liquids"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1691,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "If the equilibrium expression of a reversible reaction is [C]3/[A][B], The balanced chemical equation should be:",
+    "options": {
+      "A": "C⇌A+B",
+      "B": "2C⇌A+B",
+      "C": "A+B⇌C",
+      "D": "A+B⇌2C"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1692,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Common name of 1,3 benzene diol is:",
+    "options": {
+      "A": "Pyrogallol",
+      "B": "Cresol",
+      "C": "Resorcinol",
+      "D": "Catechol"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1693,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "How many sigma and pi bonds are present in maleic anhydride?",
+    "options": {
+      "A": "5 sigma 3 pi",
+      "B": "6 sigma 3 pi",
+      "C": "7 sigma 2 pi",
+      "D": "9 sigma 3 pi"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1694,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Addition of three molecules of chlorine intro benzene prove that benzene has:",
+    "options": {
+      "A": "3 double bonds",
+      "B": "non polar",
+      "C": "polar",
+      "D": "non planner"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1695,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Propyne is allowed to react with hydrochloric acid two times then final product is:",
+    "options": {
+      "A": "1,1-dichloropropane",
+      "B": "1,2-dichloropropane",
+      "C": "2,2-dichloropropane",
+      "D": "1,2-dichloropropene"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1696,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Diethyl ether and Methyl n-propyl ether are:",
+    "options": {
+      "A": "position isomers",
+      "B": "functional group isomers",
+      "C": "metamers",
+      "D": "tautomers"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1697,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "In the given reaction CH3OH → HCOOH, oxidation state of carbon changes from:",
+    "options": {
+      "A": "-2 to 0",
+      "B": "-2 to +2",
+      "C": "-3 to +2",
+      "D": "0 to +2"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1698,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "For endothermic reaction, enthalpy change is:",
+    "options": {
+      "A": "ΔHreactant>ΔHproduct",
+      "B": "ΔHreactant<ΔHproduct",
+      "C": "ΔHreactant=ΔHproduct",
+      "D": "ΔHreactant=ΔHproduct=0"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1699,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The structure of four Chloroalkanes W X, Y and Z are shown: (CH3)2CHCH(Cl)CH2 CH3(Cl)CH3 (CH3)2CHCHCl CH3)2CHC(CH3)2Cl WX Y Z Select the Chloroalkane classified as tertiary",
+    "options": {
+      "A": "W only",
+      "B": "X only",
+      "C": "Y only",
+      "D": "Z only Correct"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1700,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The smallest repeating pattern from which the lattice is built in a crystalline solid is called",
+    "options": {
+      "A": "Crystallite",
+      "B": "Amorphous region",
+      "C": "Unit cell",
+      "D": "Crystal lattice"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1701,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following reaction will move backward by decreasing pressure?",
+    "options": {
+      "A": "4Q⇌T+S",
+      "B": "2A⇌3C",
+      "C": "K⇌L",
+      "D": "H+2M⇌2B+2D"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1702,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "According to Le Chatelier's principle, in Haber's process yield of ammonia can be increased by:",
+    "options": {
+      "A": "decreasing pressure and increasing temperature",
+      "B": "increasing pressure and decreasing temperature",
+      "C": "increasing volume and decreasing temperature.",
+      "D": "decreasing concentration of H2"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1703,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Hyperbola isotherm is obtained when graph is plotted between:",
+    "options": {
+      "A": "P and 1/V",
+      "B": "PV and V",
+      "C": "P and V",
+      "D": "V and 1/P"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1704,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Highest energy for one quantum among radiation is:",
+    "options": {
+      "A": "microwave",
+      "B": "infrared",
+      "C": "ultra violet",
+      "D": "visible"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1705,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following reagent is commonly used to prepare alkyne form vicinal dihalide?",
+    "options": {
+      "A": "H2 and catalyst",
+      "B": "KOH/NaNH2",
+      "C": "KMnO4",
+      "D": "LiAlH4"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1706,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "In a standard hydrogen electrode, the platinum electrode:",
+    "options": {
+      "A": "Reacts with hydrogen",
+      "B": "Provide a surface for oxidation and reduction.",
+      "C": "Acts as a salt bridge.",
+      "D": "Provide voltage to the circuit."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1707,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which of the following compound has lower Lattice Energy?",
+    "options": {
+      "A": "LiCl",
+      "B": "KCl",
+      "C": "CaCl2",
+      "D": "CaH10O4"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1708,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Reaction of 2-Bromobutane with alcoholic KOH yields:",
+    "options": {
+      "A": "2-Butanol",
+      "B": "2-Butene",
+      "C": "2-Butyne",
+      "D": "1-Butanol"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1709,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which species contain an element with an oxidation number of +4?",
+    "options": {
+      "A": "CrO3^2−",
+      "B": "MnO2^−",
+      "C": "H2SO4",
+      "D": "Na2CO3"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1710,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The order of chemical reaction is defined as:",
+    "options": {
+      "A": "The number of reactants involved in balanced equation",
+      "B": "The number of products formed in balanced equation",
+      "C": "The power to which the concentration of a reactant is raised in the rate equation",
+      "D": "The rate constant of the reaction"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1711,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Real gases show more positive deviation as pressure increases because of:",
+    "options": {
+      "A": "ionic nature",
+      "B": "repulsive forces",
+      "C": "attractive forces",
+      "D": "non polar nature"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1712,
+    "subject": "Chemistry",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which statement applies to both ideal and real gases",
+    "options": {
+      "A": "collision between molecules are elastic",
+      "B": "molecules are in constant random motion",
+      "C": "molecules attract each other",
+      "D": "molecules have zero size"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1713,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "If voltage across a resistor is doubled then its resistance will become: (temperature and physical state of the conductor remains constant).",
+    "options": {
+      "A": "Doubled",
+      "B": "Half",
+      "C": "Four times",
+      "D": "Remains constant"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1714,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A particle is moving in a uniform circular path whose projection is executing simple harmonic motion on horizontal diameter. The ratio of instantaneous velocity to the maximum velocity of the projection while passing through the center is:",
+    "options": {
+      "A": "1:1",
+      "B": "1:2",
+      "C": "2:1",
+      "D": "1:4"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1715,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The option that shows the conditions used by Laplace for connecting the velocity of sound is options medium used thermodynamics process 1 solid adiabatic 2 liquids isobaric 3 gas adiabatic 4 gas isothermal",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1716,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "If different colored light beams have same total energy, which color beam will contain the smallest number of photons?",
+    "options": {
+      "A": "Violet",
+      "B": "Blue",
+      "C": "Green",
+      "D": "Red"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1717,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "When two identical waves arrive in phase at same point a region at the same time the resultant displacement is equal to",
+    "options": {
+      "A": "Displacement of a single wave",
+      "B": "Difference of their displacements",
+      "C": "Sum of their displacements",
+      "D": "Product of their displacements"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1718,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A patient is injected with a radioactive isotope to trace blood flow and detect circulation issues. The isotope used is more likely to be:",
+    "options": {
+      "A": "Iodine-131",
+      "B": "Phosphorus-32",
+      "C": "Cobalt-60",
+      "D": "Sodium-24"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1719,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Water flows through a pipe of 0.02 m² with a speed of 3 m/s. The pipe narrows to 0.01 m². The speed in narrower section is:",
+    "options": {
+      "A": "1.5 m/s",
+      "B": "3 m/s",
+      "C": "6 m/s",
+      "D": "9 m/s"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1720,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "In the human circulatory system, turbulent blood flow is most likely to occur when the:",
+    "options": {
+      "A": "Vessel diameter is very small",
+      "B": "Velocity of blood is very low",
+      "C": "Blood flows through a clogged vessel",
+      "D": "Blood viscosity increases"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1721,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A conducting ring placed near a current-carrying coil. As the current in the coil increases, the induced current in the ring flows:",
+    "options": {
+      "A": "In the direction of magnetic field",
+      "B": "To increase the magnetic flux",
+      "C": "To oppose increasing magnetic flux",
+      "D": "Randomly without a definite direction"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1722,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "In progressive waves, energy is transferred from one point to another through:",
+    "options": {
+      "A": "Circular motion of particles",
+      "B": "Oscillatory motion of particles",
+      "C": "Rotation of particles",
+      "D": "Translation of particles"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1723,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A capacitor is connected to an ac source. If the frequency of the AC source is doubled, the current in a purely capacitive circuit will:",
+    "options": {
+      "A": "Be doubled",
+      "B": "Remains Unchanged",
+      "C": "Become Half",
+      "D": "Becomes zero"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1724,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "When thermal energy is transferred from a hot object to a cold one, the change occurs in the hot object as:",
+    "options": {
+      "A": "Increases in internal energy",
+      "B": "Decrease in internal energy",
+      "C": "Increase in temperature",
+      "D": "Increase in heat content"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1725,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Two spectral lines in the Hydrogen atom spectrum are close together. This likely means:",
+    "options": {
+      "A": "The energy difference is zero",
+      "B": "The energy difference is small",
+      "C": "The light intensity is low",
+      "D": "The atom become unstable"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1726,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "High slope of Ohm's law graph means",
+    "options": {
+      "A": "Low resistance",
+      "B": "High resistance",
+      "C": "Open circuit",
+      "D": "Low current"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1727,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The electric potential at a point due to a point charge is 100J/C. If a test charge of magnitude IC placed at that point is replaced with a 2C charge, then the physical quantity that will change is",
+    "options": {
+      "A": "Electric Field at that point",
+      "B": "Electric potential at that point",
+      "C": "Electric Potential Energy of the system",
+      "D": "Temperature"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1728,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The waves among the following which require a material medium for their propagation are:",
+    "options": {
+      "A": "Gamma rays",
+      "B": "X-rays",
+      "C": "Infrared waves",
+      "D": "Infrasonic waves"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1729,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Unequal changes occurring in velocity of a body is called",
+    "options": {
+      "A": "Uniform acceleration",
+      "B": "Uniform velocity",
+      "C": "Instantaneous acceleration",
+      "D": "Variable acceleration"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1730,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "What will potential difference, if a wire has resistance of 10Ω and current 2A flow through it:",
+    "options": {
+      "A": "5V",
+      "B": "10V Correct",
+      "C": "20V",
+      "D": "40V"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1731,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "According to the particle model of light, a photon is:",
+    "options": {
+      "A": "A Particle with mass and charge",
+      "B": "A quantum of energy with zero rest mass and zero charge",
+      "C": "A continuous energy wave",
+      "D": "A particle that travels slower than light"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1732,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The current in forward biased PN junction is mainly due to:",
+    "options": {
+      "A": "Majority carriers",
+      "B": "Minority carriers",
+      "C": "leakage carrier",
+      "D": "Thermionic emission"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1733,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Stationary waves are formed in a stretched string of 2m length, such that two vibrating loops are formed. The distance between consecutive nodes formed is:",
+    "options": {
+      "A": "0.5 m",
+      "B": "1 m",
+      "C": "2 m",
+      "D": "3 m"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1734,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A football is kicked with a speed of 20 m/s at an angle of 30° with the horizontal, the maximum height it attains is:",
+    "options": {
+      "A": "5 m.",
+      "B": "10 m",
+      "C": "15 m",
+      "D": "20 m"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1735,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A high internal resistance battery is not suitable for heavy loads due to:",
+    "options": {
+      "A": "Excess voltage drop",
+      "B": "High terminal voltage",
+      "C": "Infinite emf",
+      "D": "Constant current"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1736,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Two equal charges experience a certain force when placed in vacuum. When the charges are placed in a medium, the force becomes 1/4 th. The dielectric constant of the medium is:",
+    "options": {
+      "A": "0.25",
+      "B": "2",
+      "C": "4",
+      "D": "16"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1737,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "If a test charge of magnitude 2C experience forces of 100N and 200N at two points A and B in an electric field respectively. The ratio of electric fields at A to that of B is",
+    "options": {
+      "A": "1:1",
+      "B": "1:2",
+      "C": "1:4",
+      "D": "4:1"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1738,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A body of mass 2 kg moving with velocity 3 m/s collides with a body of mass 1 kg at rest. If they stick together, their common velocity after collision is:",
+    "options": {
+      "A": "1 m/s",
+      "B": "2 m/s",
+      "C": "3 m/s",
+      "D": "4 m/s"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1739,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Two balls thrown with equal speeds but at different angles cover equal horizontal distance. If one is thrown at an angle of 40°, then the angle of projection of the other is:",
+    "options": {
+      "A": "20 °",
+      "B": "30 °",
+      "C": "45 °",
+      "D": "50 °"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1740,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The work done on a body is stored in it in the form of:",
+    "options": {
+      "A": "Power",
+      "B": "Energy",
+      "C": "Momentum",
+      "D": "Impulse"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1741,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "If 20 waves pass a point in 2 seconds and with a speed of 5m/s, then the wavelength of wave is:",
+    "options": {
+      "A": "0.5 m",
+      "B": "1 m",
+      "C": "1.5 m",
+      "D": "2 m"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1742,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The unit of RC in case of charging a capacitor is",
+    "options": {
+      "A": "Farad",
+      "B": "Seconds",
+      "C": "Ohm",
+      "D": "Volt"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1743,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A longitudinal wave has a frequency of 500 Hz and wavelength of 0.6 m, its speed is:",
+    "options": {
+      "A": "30 m/s",
+      "B": "83 m/s",
+      "C": "300 m/s",
+      "D": "1200 m/s"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1744,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The true statement about angular displacement is:",
+    "options": {
+      "A": "It always increases with time",
+      "B": "It is treated as vector for small rotations",
+      "C": "It is always a scalar quantity",
+      "D": "It is measured in meters"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1745,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "π radians are equivalent to",
+    "options": {
+      "A": "30°",
+      "B": "270°",
+      "C": "90°",
+      "D": "180°"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1746,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A person moves 600 m towards north then 300 m towards south. Its displacement to distance ratio is:",
+    "options": {
+      "A": "1:2",
+      "B": "1:3",
+      "C": "2:1",
+      "D": "3 : 1"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1747,
+    "subject": "Physics",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "In a stationary wave the point that undergoes zero acceleration is:",
+    "options": {
+      "A": "Node",
+      "B": "Antinode",
+      "C": "Midpoint between node and antinode",
+      "D": "Every point along the wave"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1748,
+    "subject": "English",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "If the speed of sound is measured at sea level and at the top of a mountain, both at the same temperature. It will be:",
+    "options": {
+      "A": "Greater at sea level",
+      "B": "Greater at the mountain top",
+      "C": "The same at both places",
+      "D": "Greater where the air is denser"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1749,
+    "subject": "English",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The book was written by Rashid Khan. Identify the correct usage of voice.",
+    "options": {
+      "A": "Rashid Khan writes the book.",
+      "B": "Rashid Khan wrote the book.",
+      "C": "Rashid Khan written the book.",
+      "D": "Rashid Khan has write the book."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1750,
+    "subject": "English",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Identify the example of complex sentence.",
+    "options": {
+      "A": "I both thanked him and rewarded him.",
+      "B": "Life is what we make it.",
+      "C": "He owed his success to his father.",
+      "D": "Jumping up, he ran away."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1751,
+    "subject": "English",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Pick out the sentence which illustrates the use of infinitive.",
+    "options": {
+      "A": "He refused to obey the orders.",
+      "B": "He refused obeying the orders.",
+      "C": "He refused obey the orders.",
+      "D": "He refused obeyed the orders."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1752,
+    "subject": "English",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "What is the effect of using synonyms with different shades of meaning in satire?",
+    "options": {
+      "A": "To create a serious tone",
+      "B": "To highlight the absurdity or irony of a situation",
+      "C": "To confuse the reader",
+      "D": "To add complexity to the language"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1753,
+    "subject": "English",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "People approach the situation differently depending on who they are. The word 'approach' in this sentence means .........",
+    "options": {
+      "A": "relate",
+      "B": "coordinate",
+      "C": "comprehend",
+      "D": "verify"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 1754,
+    "subject": "English",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "The team won the match. ___, they broke the school record.",
+    "options": {
+      "A": "Similarly",
+      "B": "Nevertheless",
+      "C": "Furthermore",
+      "D": "Instead"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1755,
+    "subject": "English",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Travelling in a hot dusty train gives me no pleasure. The underlined part of the sentence is:",
+    "options": {
+      "A": "Adverb phrase",
+      "B": "Adjective phrase",
+      "C": "Noun phrase",
+      "D": "Infinitive phrase"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1756,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "What does 'I've told you a million times?' means?",
+    "options": {
+      "A": "To provide an exact count",
+      "B": "To emphasize frustration or impatience",
+      "C": "To confuse the listener",
+      "D": "To make the character sound foolish"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1757,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "An outbreak of a corona disease is reported in the city. What should be the first course of action?",
+    "options": {
+      "A": "Develop a vaccination plan.",
+      "B": "Conduct research on the disease.",
+      "C": "Implement quarantine measures.",
+      "D": "Inform the public by using all means."
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1758,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Find the next number: 5,11,23,47,95, ____?",
+    "options": {
+      "A": "190",
+      "B": "191",
+      "C": "192",
+      "D": "193"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1759,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Which number comes in the missing place? 1, 3, 7, 15, 31, ____",
+    "options": {
+      "A": "61",
+      "B": "63",
+      "C": "65",
+      "D": "67"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1760,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "Every alphabet in the word \"SURGEON\" represent a fixed numerical value and the numbers when added, sum up to 99. Based on this, what will the sum of the word \"FORGIVEN\"?",
+    "options": {
+      "A": "102",
+      "B": "78",
+      "C": "99",
+      "D": "56"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1761,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "What is the primary difference between hypothesis and a theory?",
+    "options": {
+      "A": "A hypothesis is a proven fact, while a theory is an unproven data.",
+      "B": "A hypothesis is a specific prediction, while a theory is a broad explanation.",
+      "C": "A hypothesis is a qualitative statement, while a theory is quantitative statement.",
+      "D": "A hypothesis is a tentative explanation, while a theory is a well-substantiated explanation."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 1762,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "What comes next? ZX, WU, TR, QO, ____",
+    "options": {
+      "A": "NL",
+      "B": "LN",
+      "C": "NM",
+      "D": "KH"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 1763,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "In a row of students, a student is at 13th position from the left end and at 20th position from the right end. How many students are there in the row?",
+    "options": {
+      "A": "30",
+      "B": "31",
+      "C": "32",
+      "D": "33"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 1764,
+    "subject": "Logical Reasoning",
+    "year": 2025,
+    "source": "SZABMU 2025",
+    "origin": "past-paper",
+    "text": "A is older than B but younger than F. C is younger than B but older than D. Who is the youngest of them?",
+    "options": {
+      "A": "A",
+      "B": "B",
+      "C": "C",
+      "D": "D"
+    },
+    "answer": "A"
   }
 ]
