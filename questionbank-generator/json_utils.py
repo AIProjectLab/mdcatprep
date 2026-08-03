@@ -2,6 +2,27 @@ import json
 import re
 
 
+def _normalize_latex_escapes(text):
+    """Remove LaTeX-style backslash escapes that break JSON.
+
+    Vision models often emit things like \\(100\\mu F\\) or \\mu inside
+    strings. In JSON, ``\\`` before a non-escape char is invalid. We rewrite
+    the LaTeX backslashes that would otherwise crash json.loads:
+      -  \\(  -> (
+      -  \\)  -> )
+      -  \\\\  -> \\  (collapses double backslash)
+      -  \\x  -> x  for other single backslashes (e.g. \\mu -> mu)
+    This only runs on the JSON *text* before parsing; it does not touch the
+    resulting string values beyond what LaTeX introduced.
+    """
+    # First collapse any escaped backslashes that the model doubled up.
+    text = text.replace("\\\\", "\\")
+    # Then remove a backslash that precedes a LaTeX macro letter or a paren.
+    text = re.sub(r"\\([()])", r"\1", text)
+    text = re.sub(r"\\([a-zA-Z]+)", r"\1", text)
+    return text
+
+
 def parse_json_robust(text):
     """Parse JSON from LLM output, tolerating common malformations.
 
@@ -9,6 +30,9 @@ def parse_json_robust(text):
     """
     if not text:
         raise ValueError("Empty text")
+
+    # 0. Normalize LaTeX escapes that would otherwise make JSON invalid
+    text = _normalize_latex_escapes(text)
 
     # 1. Try direct parse
     try:
