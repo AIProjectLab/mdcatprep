@@ -1,0 +1,1388 @@
+[
+  {
+    "id": 662,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "KMU 2024",
+    "year": 2024,
+    "text": "The embryological stages of _____ show similarity in anatomical features",
+    "answers": [
+      "C",
+      "B"
+    ]
+  },
+  {
+    "id": 665,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "KMU 2024",
+    "year": 2024,
+    "text": "The production of energy is",
+    "answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 668,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "KMU 2024",
+    "year": 2024,
+    "text": "Viruses can NOT",
+    "answers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 669,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "KMU 2024",
+    "year": 2024,
+    "text": "Sugarcane contains",
+    "answers": [
+      "D",
+      "A"
+    ]
+  },
+  {
+    "id": 671,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "KMU 2024",
+    "year": 2024,
+    "text": "ΔΗ can be measured indirectly by applying",
+    "answers": [
+      "D",
+      "B"
+    ]
+  },
+  {
+    "id": 673,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "KMU 2024",
+    "year": 2024,
+    "text": "Cu²+ salt solution is blue in colour due to transition of electrons from",
+    "answers": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": 674,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "KMU 2024",
+    "year": 2024,
+    "text": "The pk of n-propyl amine is",
+    "answers": [
+      "C",
+      "B"
+    ]
+  },
+  {
+    "id": 675,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "KMU 2024",
+    "year": 2024,
+    "text": "Protein present in haemoglobin has _____ structure.",
+    "answers": [
+      "D",
+      "A"
+    ]
+  },
+  {
+    "id": 676,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "KMU 2024",
+    "year": 2024,
+    "text": "For longitudinal waves",
+    "answers": [
+      "C",
+      "B"
+    ]
+  },
+  {
+    "id": 678,
+    "reason": "duplicate-conflict",
+    "subject": "English",
+    "source": "KMU 2024",
+    "year": 2024,
+    "text": "After she _______ the stairs, her heart almost gave out from exhaustion.",
+    "answers": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": 976,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "NUMS 2012",
+    "year": 2012,
+    "text": "Choose the correct option:",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 1786,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which of the following is NOT a function of the plasma membrane?",
+    "answers": [
+      "C",
+      "B"
+    ]
+  },
+  {
+    "id": 1793,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Ribosomes are composed of RNA and ________.",
+    "answers": [
+      "C",
+      "B"
+    ]
+  },
+  {
+    "id": 2031,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The role of water in photosynthesis is to ________.",
+    "answers": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "id": 2079,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The electron transport chain is located in the ________.",
+    "answers": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "id": 2400,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which of the following is not a biological molecule?",
+    "answers": [
+      "D",
+      "A"
+    ]
+  },
+  {
+    "id": 2421,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The cell wall was discovered by Robert Hooke in ______.",
+    "answers": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": 2422,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The cell wall is the outermost boundary of ______.",
+    "answers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 2435,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The rough endoplasmic reticulum is characterized by?",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 2468,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The cell wall in bacteria is made up of:",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 2477,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "What do you know about Golgi apparatus? Describe its functions.",
+    "answers": [
+      "C",
+      "B"
+    ]
+  },
+  {
+    "id": 2581,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The role of light in photosynthesis is to ________",
+    "answers": [
+      "C",
+      "A"
+    ]
+  },
+  {
+    "id": 2583,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The role of water in photosynthesis is to ________",
+    "answers": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": 2652,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The process of ATP synthesis in mitochondria is called?",
+    "answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 2670,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Viruses are considered to be simple because they lack ________",
+    "answers": [
+      "C",
+      "B"
+    ]
+  },
+  {
+    "id": 5551,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The presence of hydrogen bonds in water molecules causes it to have a high ________.",
+    "answers": [
+      "D",
+      "A"
+    ]
+  },
+  {
+    "id": 5555,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which carbohydrate is a monosaccharide?",
+    "answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 5556,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which carbohydrate is a disaccharide?",
+    "answers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 5564,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which of the following is a storage molecule?",
+    "answers": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": 5565,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which molecule is found in grapes?",
+    "answers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 10666,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The general formula for alkanes is __________.",
+    "answers": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": 10877,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The IUPAC name for HOOC–(CH₂)₄–COOH is __________.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 10879,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The IUPAC name for HOOC–(CH₂)₂–COOH is __________.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 10964,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The reaction shown is an example of ________.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 11093,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The empirical formula of Aspirin is _______.",
+    "answers": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "id": 11154,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The symbol 'ε' represents the ________ uncertainty.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 11429,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The centripetal acceleration is given by ______.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 11799,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "In a wave, the distance between two consecutive crests is called:",
+    "answers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 12766,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The __________ is the control center of a cell.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 12789,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The Endoplasmic Reticulum is continuous with the ________.",
+    "answers": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": 12807,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The rough endoplasmic reticulum is involved in the synthesis of:",
+    "answers": [
+      "C",
+      "B"
+    ]
+  },
+  {
+    "id": 12818,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The cell membrane is primarily composed of:",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 12867,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The soluble part of the cytoplasm is called ____________",
+    "answers": [
+      "C",
+      "A"
+    ]
+  },
+  {
+    "id": 20165,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Viruses are classified as:",
+    "answers": [
+      "C",
+      "B"
+    ]
+  },
+  {
+    "id": 21673,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The work done by a force is given by _______.",
+    "answers": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "id": 33358,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The atomic number of an element is equal to the number of _______ in its nucleus.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 33532,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The molar heat of fusion for water is ________ kJ mol⁻¹.",
+    "answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 33533,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The molar heat of vaporization for water at its boiling point is ________ kJ mol⁻¹.",
+    "answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 34004,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The work done by a force is given by __________.",
+    "answers": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": 34005,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The moment of a force about a point is __________.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 34008,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The work done by a force is given by ________.",
+    "answers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 34267,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Gamma radiations are emitted due to:",
+    "answers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 34306,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which of the following is NOT a characteristic of blackbody radiation?",
+    "answers": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": 34338,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The equilibrium constant (K) for a reaction is __________.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 35148,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The adrenal medulla produces ________.",
+    "answers": [
+      "C",
+      "A"
+    ]
+  },
+  {
+    "id": 35635,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which of the following is NOT a type of T cell?",
+    "answers": [
+      "D",
+      "C"
+    ]
+  },
+  {
+    "id": 35844,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The first step in drugs discovery is;",
+    "answers": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": 36249,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which hormone stimulates the release of thyroid-stimulating hormone (TSH) from the anterior pituitary?",
+    "answers": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "id": 36683,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The genetic code for alanine is ________",
+    "answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 37331,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The pressure of a fluid at rest is ________.",
+    "answers": [
+      "D",
+      "A"
+    ]
+  },
+  {
+    "id": 37343,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which of the following is INCORRECT about Boyle's Law?",
+    "answers": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": 37908,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Water has a high specific heat due to its ________.",
+    "answers": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "id": 39259,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "2456-KMU_MDCAT_Paper_2024_PDF_with_Answers_Key_Code_A_-by-Admin-_taleem360_com__2026-07-27.json",
+    "year": 2026,
+    "text": "When a crystalline substance conducts current in one direction but not through other directions of the crystal, this property is ______",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 39288,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "2456-KMU_MDCAT_Paper_2024_PDF_with_Answers_Key_Code_A_-by-Admin-_taleem360_com__2026-07-27.json",
+    "year": 2026,
+    "text": "The carbon atom carrying positive charge and attached to three other atoms or groups is called ______",
+    "answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 39393,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "2457-KMU_MDCAT_2024_Original_Paper_PDF_with_Answers_Code_B_-by-Admin-_taleem360_com__2026-07-27.json",
+    "year": 2026,
+    "text": "What mass of aluminium oxide (Al2O3) is produced from 18.5g of Al metal, when it reacts completely with oxygen gas according to the following equation? 4Al(S) +3O2(g) → 2Al2O3(S)",
+    "answers": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": 39424,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "2457-KMU_MDCAT_2024_Original_Paper_PDF_with_Answers_Code_B_-by-Admin-_taleem360_com__2026-07-27.json",
+    "year": 2026,
+    "text": "Temperature coefficient of resistance is defined as increase in resistance per ohm original resistance per _______?",
+    "answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 55378,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The ________ is involved in the production of ATP.",
+    "answers": [
+      "C",
+      "B"
+    ]
+  },
+  {
+    "id": 55624,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "What is the role of a cofactor in an enzyme?",
+    "answers": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": 55764,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which of the following is a characteristic feature of C₃ plants?",
+    "answers": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "id": 55766,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which of the following is true about C₃ plants?",
+    "answers": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": 56378,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which of the following is a short-day plant?",
+    "answers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 56619,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which of the following is NOT a function of T-cells?",
+    "answers": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": 57591,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The ABO blood group system is an example of ________.",
+    "answers": [
+      "D",
+      "C"
+    ]
+  },
+  {
+    "id": 58024,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The greenhouse effect is primarily caused by?",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 58365,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The kinetic molecular theory of gases assumes that gas particles are ________.",
+    "answers": [
+      "C",
+      "B"
+    ]
+  },
+  {
+    "id": 58523,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The bond order of N₂ is _______.",
+    "answers": [
+      "C",
+      "A"
+    ]
+  },
+  {
+    "id": 58534,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The bond length of Cl-Cl is ______ pm.",
+    "answers": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "id": 58661,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The molar heat of fusion for water is __________ kJ/mol.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 58725,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The melting point of a solid is the temperature at which it __________.",
+    "answers": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": 58820,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Calculate the pH of a solution with [H⁺] = 1.0 × 10⁻⁴M.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 59060,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The atomic number of an element is equal to the number of ______ in its nucleus.",
+    "answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 59102,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "In a crystal lattice, the arrangement of atoms is determined by __________.",
+    "answers": [
+      "D",
+      "A"
+    ]
+  },
+  {
+    "id": 59305,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The general formula for alkanes is ________.",
+    "answers": [
+      "C",
+      "A"
+    ]
+  },
+  {
+    "id": 59594,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The general formula for monosaccharides is _______.",
+    "answers": [
+      "C",
+      "A"
+    ]
+  },
+  {
+    "id": 59613,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The sugar in DNA is ________.",
+    "answers": [
+      "C",
+      "A"
+    ]
+  },
+  {
+    "id": 59683,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The catalytic converter reduces emissions of ___________.",
+    "answers": [
+      "D",
+      "B"
+    ]
+  },
+  {
+    "id": 59790,
+    "reason": "duplicate-conflict",
+    "subject": "Chemistry",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which of the following is NOT a type of organic compound?",
+    "answers": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": 59806,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The work done by a force is given by the product of ______ and displacement.",
+    "answers": [
+      "C",
+      "A"
+    ]
+  },
+  {
+    "id": 59830,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The base unit for length in the SI system is __________.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 59884,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which of the following is NOT a type of vector?",
+    "answers": [
+      "D",
+      "C"
+    ]
+  },
+  {
+    "id": 59957,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The SI unit of velocity is _______.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 60012,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The SI unit of weight is;",
+    "answers": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": 60104,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The direction of angular displacement is determined by the __________ rule.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 60378,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The Michelson interferometer is used to measure _______.",
+    "answers": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "id": 60393,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The Michelson interferometer is used to measure __________.",
+    "answers": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": 60463,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The work done by a constant force is given by the product of ________ and displacement.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 60472,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The rate of change of velocity is called __________.",
+    "answers": [
+      "C",
+      "A"
+    ]
+  },
+  {
+    "id": 60508,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The SI unit for temperature is ________.",
+    "answers": [
+      "D",
+      "A"
+    ]
+  },
+  {
+    "id": 60510,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The SI unit of power is _______.",
+    "answers": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "id": 60567,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The work done by a force is given by: ________",
+    "answers": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "id": 60575,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The electric field strength at a distance 'r' from a point charge 'q' is given by _______.",
+    "answers": [
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": 60596,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The electric flux through a surface enclosing a charge is given by ________.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 60597,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The electric flux through a closed surface depends on the ________.",
+    "answers": [
+      "C",
+      "B"
+    ]
+  },
+  {
+    "id": 60614,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The capacitance of a parallel plate capacitor is given by:",
+    "answers": [
+      "D",
+      "A"
+    ]
+  },
+  {
+    "id": 60666,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The SI unit of current is _______.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 60715,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The reciprocal of resistivity is called ________.",
+    "answers": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": 60771,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The unit of magnetic flux density is:",
+    "answers": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "id": 60773,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The permeability of free space is ______.",
+    "answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 60834,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The unit of inductance is",
+    "answers": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": 60939,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "The strain energy per unit volume is given by _______.",
+    "answers": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": 61045,
+    "reason": "duplicate-conflict",
+    "subject": "Physics",
+    "source": "Textbook Bank",
+    "year": 2026,
+    "text": "Which of the following statements about blackbody radiation is INCORRECT?",
+    "answers": [
+      "D",
+      "A"
+    ]
+  },
+  {
+    "id": 61336,
+    "reason": "duplicate-conflict",
+    "subject": "Biology",
+    "source": "BUMHS 2025",
+    "year": 2025,
+    "text": "The active site is important in enzyme action because:",
+    "answers": [
+      "B",
+      "A"
+    ]
+  },
+  {
+    "id": 61434,
+    "reason": "duplicate-conflict",
+    "subject": "English",
+    "source": "BUMHS 2025",
+    "year": 2025,
+    "text": "Choose the word with incorrect spelling:",
+    "answers": [
+      "D",
+      "C"
+    ]
+  },
+  {
+    "id": 61396,
+    "reason": "text-too-short",
+    "subject": "Chemistry",
+    "source": "BUMHS 2025",
+    "year": 2025,
+    "text": "NO₂⁻",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "6"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 61446,
+    "reason": "text-too-short",
+    "subject": "Logical Reasoning",
+    "source": "BUMHS 2025",
+    "year": 2025,
+    "text": "",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "answer": "D"
+  }
+]
