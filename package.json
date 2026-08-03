@@ -10,6 +10,7 @@
     "validate:questions": "node scripts/validate-questions.mjs",
     "review:keys": "node scripts/review-against-keys.mjs",
     "review:batches": "node scripts/export-review-batches.mjs",
+    "review:apply": "node scripts/apply-findings.mjs",
     "import:questions": "node scripts/import-questions.mjs",
     "sync:questions": "node scripts/sync-question-bank.mjs"
   },
