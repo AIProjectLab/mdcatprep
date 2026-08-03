@@ -102,7 +102,7 @@ export default function TestPage() {
       : mode === "half" ? 90 * 60 * 1000 : 3 * 60 * 60 * 1000;
 
     saveTest({
-      id, startTime, endTime: null, duration,
+      id, mode, startTime, endTime: null, duration,
       questions: questions.map((q) => q.id), answers: {}, submitted: false,
     });
 
@@ -155,11 +155,11 @@ export default function TestPage() {
 
     const isPro = user?.publicMetadata?.hasAccess === true;
     if (!isPro && testData.modeId === "daily") markDailyChallengeUsed();
-    else if (!isPro && testData.modeId === "full") markFullPreviewUsed();
+    else if (!isPro && (testData.modeId === "full" || testData.modeId === "2025")) markFullPreviewUsed();
     else if (!isPro && testData.modeId !== "custom") markFreeTestUsed();
 
     saveTest({
-      id: testId, startTime, endTime: now, duration,
+      id: testId, mode: testData.modeId, startTime, endTime: now, duration,
       questions: questions.map((q) => q.id), answers, submitted: true,
     });
 

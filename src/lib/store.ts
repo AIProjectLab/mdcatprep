@@ -1,5 +1,6 @@
 export interface StoredTest {
   id: string;
+  mode?: string; // test mode: free, daily, custom, full, 2025, etc.
   startTime: number;
   endTime: number | null;
   duration: number; // 3 hours in ms

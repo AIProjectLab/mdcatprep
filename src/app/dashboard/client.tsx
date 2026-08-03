@@ -160,8 +160,8 @@ export default function DashboardClient({
     </section>
   );
 
-  // Diagnostic score analysis (uses the most recent submitted test)
-  const diagnostic = tests.find((t) => t.submitted) || null;
+  // Diagnostic = the actual 30-MCQ free test (mode "free"), not any recent test
+  const diagnostic = tests.find((t) => t.submitted && t.mode === "free") || null;
   const diagnosticScore = (() => {
     if (!diagnostic) return null;
     const allQ = questionsData as { id: number; subject: string; answer: string }[];
@@ -205,6 +205,18 @@ export default function DashboardClient({
         };
       }
       // Diagnostic done, free user
+      // Priority: weak subject (most valuable) → daily challenge → full exam
+      if (diagnosticScore?.weakest) {
+        return {
+          stage: "Stage 2",
+          stageLabel: "Practice",
+          title: `Practice ${diagnosticScore.weakest.subject}`,
+          desc: `Build a custom paper on ${diagnosticScore.weakest.subject} — your weakest area`,
+          href: `/test?mode=custom&count=15&subjects=${encodeURIComponent(diagnosticScore.weakest.subject)}`,
+          chip: "bg-blue-100 text-blue-800",
+          bar: "bg-blue-600",
+        };
+      }
       if (dailyAvailable) {
         return {
           stage: "Stage 2",
@@ -220,9 +232,9 @@ export default function DashboardClient({
         return {
           stage: "Stage 3",
           stageLabel: "Mock Exams",
-          title: "Try a Full-Length Exam",
-          desc: "180 MCQs · 3 hours · Free once — feel the real exam",
-          href: "/test?mode=full",
+          title: "Try the 2025 Past Paper Exam",
+          desc: "180 MCQs from real UHS, KMU, SIBA, SZABMU & BUMHS 2025 papers · Free once",
+          href: "/test?mode=2025",
           chip: "bg-amber-100 text-amber-800",
           bar: "bg-amber-500",
         };
@@ -230,13 +242,9 @@ export default function DashboardClient({
       return {
         stage: "Stage 2",
         stageLabel: "Practice",
-        title: `Practice ${diagnosticScore?.weakest?.subject || "Your Weakest"} Subject`,
-        desc: diagnosticScore?.weakest
-          ? `Build a custom paper on ${diagnosticScore.weakest.subject}`
-          : "Build a custom paper on the subject you need most",
-        href: diagnosticScore?.weakest
-          ? `/test?mode=custom&count=15&subjects=${encodeURIComponent(diagnosticScore.weakest.subject)}`
-          : "/dashboard#custom-paper",
+        title: "Build a Custom Paper",
+        desc: "Drill any subject and topic you need",
+        href: "/dashboard#custom-paper",
         chip: "bg-blue-100 text-blue-800",
         bar: "bg-blue-600",
       };
@@ -375,12 +383,6 @@ export default function DashboardClient({
                     <strong>Focus tip:</strong> {diagnosticScore.weakest.subject} looks like your weakest area right now
                     ({diagnosticScore.weakest.correct}/{diagnosticScore.weakest.total} correct).
                   </p>
-                  <Link
-                    href={`/test?mode=custom&count=15&subjects=${encodeURIComponent(diagnosticScore.weakest.subject)}`}
-                    className="mt-3 inline-block rounded-lg bg-amber-600 px-4 py-2 text-sm font-semibold text-white hover:bg-amber-500"
-                  >
-                    Practice {diagnosticScore.weakest.subject} free →
-                  </Link>
                 </div>
               )}
 
