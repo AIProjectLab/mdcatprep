@@ -52,15 +52,17 @@ const cleaned = bank.map((q) => {
 
 // ---- 2. Deduplicate ----
 const norm = (s) => String(s ?? "").toLowerCase().replace(/[^a-z0-9]/g, "");
+const optKey = (q) => JSON.stringify(Object.keys(q.options).sort().map((k) => norm(q.options[k])));
 const keep = [];
 const seen = new Map();
 let removedDup = 0;
 
 for (const q of cleaned) {
-  const key = `${norm(q.origin)}|${q.year}|${norm(q.text)}`;
+  // Duplicates are only true duplicates when text AND all option values match
+  const key = `${norm(q.origin)}|${q.year}|${norm(q.text)}|${optKey(q)}`;
   const prev = seen.get(key);
 
-  // Same origin + year + text but different answer => conflict, flag for review
+  // Same question (text + options) but different answer => conflict, flag for review
   if (prev && prev.answer !== q.answer) {
     review.push({
       id: q.id,
@@ -75,7 +77,7 @@ for (const q of cleaned) {
     continue;
   }
 
-  // Exact true duplicate (same origin + year + text + answer) => drop the later copy
+  // Exact true duplicate (same origin + year + text + options + answer) => drop the later copy
   if (prev) {
     removedDup++;
     continue;
