@@ -71,30 +71,24 @@ export default function Home() {
           </SignedIn>
         </div>
 
-        {/* Hero visual — mock diagnostic result */}
+        {/* Hero visual — the real exam structure */}
         <div className="mx-auto mt-12 max-w-md rounded-2xl border border-stone-200 bg-white p-6 text-left shadow-md">
-          <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">Your diagnostic result</p>
-          <div className="mt-3 flex items-center gap-4">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-teal-50 text-2xl font-bold text-teal-700">
-              18<span className="text-sm font-medium text-teal-500">/30</span>
-            </div>
-            <div>
-              <p className="font-semibold text-stone-900">Nice work!</p>
-              <p className="text-sm text-stone-500">60% · Focus on Chemistry next</p>
-            </div>
-          </div>
-          <div className="mt-4 space-y-2">
+          <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">The Real MDCAT 2025 Exam</p>
+          <p className="mt-1 text-sm text-stone-500">180 MCQs · 3 hours · all 5 boards</p>
+          <div className="mt-4 space-y-3">
             {[
-              { name: "Biology", pct: 70, color: "bg-teal-500" },
-              { name: "Chemistry", pct: 43, color: "bg-amber-500" },
-              { name: "Physics", pct: 66, color: "bg-teal-400" },
+              { name: "Biology", count: 81, color: "bg-teal-600" },
+              { name: "Chemistry", count: 45, color: "bg-teal-500" },
+              { name: "Physics", count: 36, color: "bg-teal-400" },
+              { name: "English", count: 9, color: "bg-amber-500" },
+              { name: "Logical Reasoning", count: 9, color: "bg-amber-400" },
             ].map((s) => (
               <div key={s.name} className="flex items-center gap-3 text-sm">
-                <span className="w-20 text-stone-600">{s.name}</span>
-                <div className="h-2 flex-1 rounded-full bg-stone-100">
-                  <div className={`h-2 rounded-full ${s.color}`} style={{ width: s.pct + "%" }} />
+                <span className="w-28 text-stone-600">{s.name}</span>
+                <div className="h-2.5 flex-1 rounded-full bg-stone-100">
+                  <div className={`h-2.5 rounded-full ${s.color}`} style={{ width: (s.count / 81) * 100 + "%" }} />
                 </div>
-                <span className="w-10 text-right text-stone-500">{s.pct}%</span>
+                <span className="w-10 text-right text-stone-500">{s.count}</span>
               </div>
             ))}
           </div>
