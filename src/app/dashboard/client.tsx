@@ -393,18 +393,20 @@ export default function DashboardClient({
               {/* The single next best action */}
               {nextTaskCard}
 
-              {/* Daily free challenge */}
-              <div className="mt-6 rounded-xl border border-blue-200 bg-blue-50 p-5 text-left">
-                <h2 className="font-bold text-stone-900">Today&apos;s free challenge</h2>
-                <p className="mt-1 text-sm text-stone-600">30 fresh MDCAT-style questions. New one every day.</p>
-                {dailyAvailable ? (
-                  <Link href="/test?mode=daily" className="mt-4 block rounded-lg bg-blue-600 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-blue-500">
-                    Start Today&apos;s Challenge
-                  </Link>
-                ) : (
-                  <p className="mt-4 text-center text-sm font-semibold text-blue-700">Today&apos;s challenge completed ✓</p>
-                )}
-              </div>
+              {/* Daily free challenge — only show if Next Task isn't already pointing to it */}
+              {nextTask.href !== "/test?mode=daily" && (
+                <div className="mt-6 rounded-xl border border-blue-200 bg-blue-50 p-5 text-left">
+                  <h2 className="font-bold text-stone-900">Today&apos;s free challenge</h2>
+                  <p className="mt-1 text-sm text-stone-600">30 fresh MDCAT-style questions. New one every day.</p>
+                  {dailyAvailable ? (
+                    <Link href="/test?mode=daily" className="mt-4 block rounded-lg bg-blue-600 px-5 py-3 text-center text-sm font-semibold text-white hover:bg-blue-500">
+                      Start Today&apos;s Challenge
+                    </Link>
+                  ) : (
+                    <p className="mt-4 text-center text-sm font-semibold text-blue-700">Today&apos;s challenge completed ✓</p>
+                  )}
+                </div>
+              )}
 
               {customPaperCard}
 
