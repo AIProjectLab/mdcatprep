@@ -24,12 +24,90 @@ export interface TestConfig {
   label: string;
 }
 
+// Official PMDC MDCAT syllabus unit labels (must match unitLabel values in data)
+const MDCAT_UNITS: Record<Subject, Set<string>> = {
+  Biology: new Set([
+    "Acellular Life (Viruses, AIDS)",
+    "Bioenergetics (Respiration)",
+    "Biological Molecules (Water, Carbs, Proteins, Lipids, DNA/RNA)",
+    "Cell Structure & Function",
+    "Coordination & Control / Nervous & Chemical Coordination",
+    "Enzymes",
+    "Evolution",
+    "Reproduction",
+    "Support & Movement",
+    "Inheritance",
+    "Circulation",
+    "Immunity",
+    "Respiration",
+    "Digestion",
+    "Homeostasis (Kidney, Thermoregulation)",
+    "Biotechnology",
+  ]),
+  Chemistry: new Set([
+    "Fundamentals: Moles, Stoichiometry, Limiting Reactants and Yield",
+    "Atomic Structure",
+    "Gases",
+    "Liquids and Hydrogen Bonding",
+    "Solids and Crystal Lattice",
+    "Chemical Equilibrium",
+    "Reaction Kinetics",
+    "Thermochemistry and Energetics",
+    "Electrochemistry",
+    "Chemical Bonding",
+    "S- and P-Block Elements",
+    "Transition Elements",
+    "Fundamental Principles of Organic Chemistry",
+    "Chemistry of Hydrocarbons",
+    "Alkyl Halides",
+    "Alcohols and Phenols",
+    "Aldehydes and Ketones",
+    "Carboxylic Acids",
+    "Macromolecules",
+    "Industrial Chemistry",
+  ]),
+  Physics: new Set([
+    "Vectors and Equilibrium",
+    "Force and Motion",
+    "Work and Energy",
+    "Rotational and Circular Motion",
+    "Fluid Dynamics",
+    "Waves",
+    "Thermodynamics",
+    "Electrostatics",
+    "Current Electricity",
+    "Electromagnetism",
+    "Electromagnetic Induction",
+    "Alternating Current",
+    "Electronics",
+    "Dawn of Modern Physics",
+    "Atomic Spectra",
+    "Nuclear Physics",
+  ]),
+  English: new Set(),
+  "Logical Reasoning": new Set(),
+};
+
+// A question is usable in MDCAT tests if:
+//  - it is a real past paper (always in syllabus), OR
+//  - it is a textbook question tagged with an official MDCAT unit for its subject
+// Untagged or mislabeled textbook questions are excluded (they may be out of syllabus).
+export function isInSyllabus(q: Question): boolean {
+  if (q.origin === "past-paper") return true;
+  if (q.origin !== "textbook") return false;
+  const label = q.unitLabel;
+  if (!label) return false;
+  const units = MDCAT_UNITS[q.subject];
+  return !!units && units.has(label);
+}
+
 export function getTextbookQuestions(subject?: Subject, source?: string): Question[] {
   return (questionsData as Question[]).filter((q) => {
     const isTextbook = q.origin === "textbook";
+    const inSyllabus = isInSyllabus(q);
     const matchesSubject = !subject || q.subject === subject;
     const matchesSource = !source || q.source === source;
-    return isTextbook && matchesSubject && matchesSource;
+    return isTextbook && inSyllabus && matchesSubject && matchesSource;
   });
 }
 
@@ -129,13 +207,16 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 export function getSubjectQuestions(subject: Subject): Question[] {
-  return (questionsData as Question[]).filter((q) => q.subject === subject);
+  return (questionsData as Question[]).filter(
+    (q) => q.subject === subject && isInSyllabus(q)
+  );
 }
 
 export function getQuestionUnits(subject?: Subject): { unit: number; label: string }[] {
   const seen = new Map<number, string>();
   for (const q of questionsData as Question[]) {
     if (subject && q.subject !== subject || !Number.isInteger(q.unit)) continue;
+    if (!isInSyllabus(q)) continue;
     if (!seen.has(q.unit!)) seen.set(q.unit!, q.unitLabel || `Unit ${q.unit}`);
   }
   return [...seen.entries()].sort(([a], [b]) => a - b).map(([unit, label]) => ({ unit, label }));
@@ -145,6 +226,7 @@ export function generateCustomPaper(count: number, subjects: Subject[], unit?: n
   const requested = Math.max(5, Math.min(30, Math.round(count)));
   const subjectFilter = subjects.length ? subjects : undefined;
   const pool = (questionsData as Question[]).filter((q) => {
+    if (!isInSyllabus(q)) return false;
     const matchesSubject = !subjectFilter || subjectFilter.includes(q.subject);
     const matchesTopic = unit === undefined || (subjectFilter && q.unit === unit);
     return matchesSubject && matchesTopic;
