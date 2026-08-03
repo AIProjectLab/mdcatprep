@@ -75,7 +75,7 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
       <div className="flex items-center justify-center px-4 py-10">
       <div className="w-full max-w-lg">
         <h1 className="text-2xl font-bold text-center">Get MDCAT Pro Access</h1>
-        <p className="mt-2 text-center text-stone-600">One-time payment of PKR 1,000</p>
+        <p className="mt-2 text-center text-stone-600">One-time payment of PKR 2,000</p>
 
         <div className="mt-6 rounded-xl border border-teal-200 bg-teal-50 p-5">
           <h2 className="font-semibold text-stone-900">What you get with Pro</h2>
@@ -89,14 +89,14 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
         </div>
 
         <div className="mt-8 rounded-xl border bg-white p-6 shadow-sm">
-          <h2 className="font-semibold text-stone-900">Step 1: Send PKR 1,000 via Easypaisa</h2>
+          <h2 className="font-semibold text-stone-900">Step 1: Send PKR 2,000 via Easypaisa</h2>
           <div className="mt-3 rounded-lg bg-stone-50 p-4 text-center">
             <p className="text-sm text-stone-500">Send to Easypaisa Number</p>
             <p className="mt-1 text-2xl font-bold text-stone-900 tracking-wider">{process.env.NEXT_PUBLIC_EASYPAISA_NUMBER || "03XX-XXXXXXX"}</p>
             <p className="mt-1 text-xs text-stone-500">{process.env.NEXT_PUBLIC_EASYPAISA_NAME || "Your Name"}</p>
           </div>
           <p className="mt-2 text-xs text-stone-500">
-            Open Easypaisa → Send Money → Enter this number → PKR 1,000 → Your PIN → Done
+            Open Easypaisa → Send Money → Enter this number → PKR 2,000 → Your PIN → Done
           </p>
         </div>
 
