@@ -524,5 +524,21 @@
     "id": 37620,
     "reason": "answer-uncertain",
     "note": "hysteresis loop: options made distinct; question text truncated, answer A kept"
+  },
+  {
+    "id": 708,
+    "reason": "answer-corrected-via-key",
+    "subject": "Biology",
+    "source": "KMU 2025",
+    "text": "The active site is important in enzyme action because",
+    "note": "KMU 2025 key wrong; corrected to A per BUMHS 2025 solved key (active site binds substrate)"
+  },
+  {
+    "id": 1296,
+    "reason": "answer-corrected-via-key",
+    "subject": "Biology",
+    "source": "KMU 2025",
+    "text": "The active site is important in enzyme action because",
+    "note": "KMU 2025 key wrong; corrected to A per BUMHS 2025 solved key (active site binds substrate)"
   }
 ]
