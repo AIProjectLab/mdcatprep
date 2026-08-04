@@ -1,0 +1,79 @@
+{
+  "source": "PMDC Official MDCAT Curriculum (Uniform Curriculum MDCAT-2025 Final 26-05-2025)",
+  "structure": {
+    "totalMcqs": 180,
+    "duration": "3 hours",
+    "format": "Paper-based MCQs",
+    "passMedical": "55%",
+    "passDental": "50%",
+    "negativeMarking": false,
+    "difficulty": { "easy": "15%", "moderate": "70%", "difficult": "15%" }
+  },
+  "weightage": [
+    { "subject": "Biology", "percent": 45, "mcqs": 81 },
+    { "subject": "Chemistry", "percent": 25, "mcqs": 45 },
+    { "subject": "Physics", "percent": 20, "mcqs": 36 },
+    { "subject": "English", "percent": 5, "mcqs": 9 },
+    { "subject": "Logical Reasoning", "percent": 5, "mcqs": 9 }
+  ],
+  "units": {
+    "Biology": [
+      { "unit": 1, "name": "Acellular Life", "topics": ["Viruses", "AIDS and HIV Infection"] },
+      { "unit": 2, "name": "Bioenergetics", "topics": ["Respiration"] },
+      { "unit": 3, "name": "Biological Molecules", "topics": ["Biological molecules", "Biological Importance of Water", "Carbohydrates", "Proteins", "Lipids", "Ribonucleic acid (RNA)", "Conjugated molecules", "Structure of DNA"] },
+      { "unit": 4, "name": "Cell Structure & Function", "topics": ["Cell structure", "Prokaryotic and Eukaryotic cell", "Cytoplasmic Organelles", "Chromosomes"] },
+      { "unit": 5, "name": "Coordination & Control / Nervous & Chemical Coordination", "topics": ["Receptors", "Neurons", "Brain"] },
+      { "unit": 6, "name": "Enzymes", "topics": ["Enzymes", "Mode of Enzyme Action", "Factors that Affect the Rate of Enzyme Reactions", "Inhibitors"] },
+      { "unit": 7, "name": "Evolution", "topics": ["Concept of Evolution", "Lamarckism", "Darwinism"] },
+      { "unit": 8, "name": "Reproduction", "topics": ["Human Reproductive system", "Menstrual cycle", "Sexually transmitted diseases"] },
+      { "unit": 9, "name": "Support & Movement", "topics": ["Human skeleton", "Muscles", "Skeletal muscles", "Muscle contraction", "Joints", "Arthritis"] },
+      { "unit": 10, "name": "Inheritance", "topics": ["Mendel's laws of Inheritance", "Gene linkage and crossing over", "X-linked Recessive inheritance"] },
+      { "unit": 11, "name": "Circulation", "topics": ["Human Heart", "Cardiac cycle and phases of Heartbeat", "Blood Vessels", "Lymphatic system"] },
+      { "unit": 12, "name": "Immunity", "topics": ["Specific Defense Mechanism"] },
+      { "unit": 13, "name": "Respiration", "topics": ["Human Respiratory System"] },
+      { "unit": 14, "name": "Digestion", "topics": ["Human digestive system"] },
+      { "unit": 15, "name": "Homeostasis", "topics": ["Homeostasis (kidney specifically)", "Thermoregulation", "Excretion"] },
+      { "unit": 16, "name": "Biotechnology", "topics": ["Biotechnology and Health Care"] }
+    ],
+    "Chemistry": [
+      { "unit": 1, "name": "Fundamentals: Moles, Stoichiometry, Limiting Reactants and Yield", "topics": ["Moles and Avogadro's Numbers", "Limiting and Excess Reactants", "Yield"] },
+      { "unit": 2, "name": "Atomic Structure", "topics": ["Discovery of Proton", "Planck's Quantum Theory", "Quantum Number", "Shapes of orbitals", "Spectrum of Hydrogen", "Electronic Configuration"] },
+      { "unit": 3, "name": "Gases", "topics": ["Kinetic Molecular Theory", "Standard Temperature and Pressure (STP)", "Boyle's Law", "Charles's Law", "Absolute Zero", "Ideal Gas Equation", "Unit of R", "Real and Ideal Gas"] },
+      { "unit": 4, "name": "Liquids", "topics": ["Properties Of Liquids based on Kinetic Molecular Theory", "Evaporation, Boiling point and Vapor Pressure", "Hydrogen Bonding", "Anomalous behavior of Water"] },
+      { "unit": 5, "name": "Solids", "topics": ["Crystalline Solids", "Factors Affecting the Shape of Ionic Crystals", "Difference between Ionic and Molecular Crystals", "Crystal lattice", "Lattice Energy"] },
+      { "unit": 6, "name": "Chemical Equilibrium", "topics": ["Chemical Equilibrium", "Le Chatelier's principle", "Solubility Products", "Common Ion Effect", "Buffer Solution", "Haber's Process"] },
+      { "unit": 7, "name": "Reaction Kinetics", "topics": ["Chemical Kinetics", "Factors affecting rate of reaction", "Order of Reaction", "Rate Constant"] },
+      { "unit": 8, "name": "Thermochemistry and Energetics", "topics": ["Thermodynamics", "Exothermic and Endothermic Reaction", "Different Terms Used", "Internal Energies", "Law of Thermodynamics", "Hess's Law", "Enthalpy"] },
+      { "unit": 9, "name": "Electrochemistry", "topics": ["Redox Reaction", "Oxidation and Reduction", "Balancing Chemical Reaction", "Standard Hydrogen Electrode (SHE)"] },
+      { "unit": 10, "name": "Chemical Bonding", "topics": ["VSEPR Theory", "Sigma and Pi Bond", "Hybridization", "Application of VSEPR Theory", "Dipole Movement", "Application of Dipole Movement", "Bond Energy"] },
+      { "unit": 11, "name": "S- and P-Block Elements", "topics": ["Properties and their Trends", "S-, P-, D- & F- Block Elements", "Reaction of Group I elements", "Reaction of Group II elements", "Reaction of Group IV elements"] },
+      { "unit": 12, "name": "Transition Elements", "topics": ["Electronic Structure"] },
+      { "unit": 13, "name": "Fundamental Principles of Organic Chemistry", "topics": ["Definition and Classification of Organic Compound", "Functional Group", "Isomerism"] },
+      { "unit": 14, "name": "Chemistry of Hydrocarbons", "topics": ["Nomenclature of Alkanes", "Free Radical Mechanism", "Nomenclature of Alkenes", "Shapes of Alkenes", "Structure and Reactivity of Alkenes", "Preparation of Alkanes", "MOT of Benzene", "Resonance and Resonance Energy", "Reactivity of Benzene", "Chemical Reactions of Benzenes", "Effect of Substituents", "IUPAC System of Alkynes", "Preparation of Alkynes", "Acidity of Alkynes", "Reactions of Alkynes", "Substitution vs Addition"] },
+      { "unit": 15, "name": "Alkyl Halides", "topics": ["Nomenclature", "Structure and Reactivity", "Substitution vs Elimination"] },
+      { "unit": 16, "name": "Alcohols and Phenols", "topics": ["Nomenclature, structure and reactivity of Alcohol", "Nomenclature, structure and reactivity of Phenols", "Alcohols and Phenols"] },
+      { "unit": 17, "name": "Aldehydes and Ketones", "topics": ["Nomenclature and structure of Aldehydes and Ketones", "Preparation", "Reactivity of Aldehydes and Ketones", "Reaction of Aldehydes and Ketones"] },
+      { "unit": 18, "name": "Carboxylic Acids", "topics": ["Nomenclature, Structure and Preparation of Carboxylic Acid", "Chemical Reactions/Reactivity", "Conversion of Carboxylic Acid"] },
+      { "unit": 19, "name": "Macromolecules", "topics": ["Classification of Proteins", "Importance of Proteins", "Enzymes as Biocatalyst"] },
+      { "unit": 20, "name": "Industrial Chemistry", "topics": ["Adhesive", "Dyes", "Polymers"] }
+    ],
+    "Physics": [
+      { "unit": 1, "name": "Vectors and Equilibrium", "topics": ["Addition of Vectors (Rectangular Components)", "Product of Vectors (Scalar Product)", "Product of Vectors (Vector Product)"] },
+      { "unit": 2, "name": "Force and Motion", "topics": ["Displacement", "Velocity", "Displacement-time Graph", "Acceleration", "Uniform and variable acceleration", "Projectile motion", "Ideal Projectile", "Projectile motion (Velocity)", "Projectile motion: Maximum Height", "Range", "Time of flight", "Maximum angle", "Newton's Laws of motion", "Newton's Second Law and Linear momentum", "Newton's third law of motion", "Collision", "Momentum and Explosive forces", "Perfectly elastic collision in one dimension"] },
+      { "unit": 3, "name": "Work and Energy", "topics": ["Work", "Energy", "Kinetic Energy", "Potential energy", "Absolute potential energy", "Power", "Work energy theorem in resistive medium", "Implications of energy losses in practical devices and Efficiency"] },
+      { "unit": 4, "name": "Rotational and Circular Motion", "topics": ["Angular displacement", "Angular Velocity", "Relation between angular and linear quantities"] },
+      { "unit": 5, "name": "Fluid Dynamics", "topics": ["Terminal Velocity", "Fluid Drag", "Fluid Flow", "Equation of Continuity", "Bernoulli's Equation"] },
+      { "unit": 6, "name": "Waves", "topics": ["Motion of wave", "Progressive waves", "Characteristics of wave", "Wave Speed", "Progressive waves", "Classification of progressive waves", "Speed of sound", "Newton's Formula for speed of sound in air", "Laplace's Correction", "Effect of various factors on speed of sound", "Superposition of waves", "Interference of sound waves", "Stationary waves", "Stationary waves in a stretched string", "Organ pipes", "Superposition of waves", "Simple Harmonic Motion", "Circular Motion and SHM"] },
+      { "unit": 7, "name": "Thermodynamics", "topics": ["Thermal equilibrium, Heat", "Molar specific heat of gas", "Work", "First law of thermodynamics", "Molar specific heat of gas", "Relation between molar specific heat at constant volume and constant pressure"] },
+      { "unit": 8, "name": "Electrostatics", "topics": ["Columb's Law", "Electric Field", "Electric field intensity due to a point charge", "Representation of electric field by lines", "Electric field intensity due to an infinite sheet of charges", "Electric potential energy and potential due to a point charge", "Electric potential", "Charging and discharging of a capacitor through a resistance"] },
+      { "unit": 9, "name": "Current Electricity", "topics": ["Steady current", "Ohm's Law", "Factors on which resistance depends", "Temperature coefficient of resistivity", "Internal resistance of sources", "Maximum power Output"] },
+      { "unit": 10, "name": "Electromagnetism", "topics": ["Magnetic flux density/Magnetic field", "Magnetic flux", "Motion of charged particle in magnetic field"] },
+      { "unit": 11, "name": "Electromagnetic Induction", "topics": ["Faraday's Law of electromagnetic induction", "Lenz's Law", "Transformer"] },
+      { "unit": 12, "name": "Alternating Current", "topics": ["Phase of Alternating Current", "AC through Resistor, Capacitor, Inductor", "Electromagnetic waves"] },
+      { "unit": 13, "name": "Electronics", "topics": ["Rectification", "PN Junction"] },
+      { "unit": 14, "name": "Dawn of Modern Physics", "topics": ["Quantum Theory and Radiation"] },
+      { "unit": 15, "name": "Atomic Spectra", "topics": ["Atomic Spectra"] },
+      { "unit": 16, "name": "Nuclear Physics", "topics": ["Composition of atomic nuclei", "Spontaneous and random nuclear decay", "Half-life and rate of decay", "Biological and Medical uses of radiation"] }
+    ]
+  }
+}

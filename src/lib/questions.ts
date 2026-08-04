@@ -27,8 +27,11 @@ export interface TestConfig {
 // Official PMDC MDCAT syllabus unit labels (must match unitLabel values in data)
 const MDCAT_UNITS: Record<Subject, Set<string>> = {
   Biology: new Set([
+    "Acellular Life",
     "Acellular Life (Viruses, AIDS)",
+    "Bioenergetics",
     "Bioenergetics (Respiration)",
+    "Biological Molecules",
     "Biological Molecules (Water, Carbs, Proteins, Lipids, DNA/RNA)",
     "Cell Structure & Function",
     "Coordination & Control / Nervous & Chemical Coordination",
@@ -41,6 +44,7 @@ const MDCAT_UNITS: Record<Subject, Set<string>> = {
     "Immunity",
     "Respiration",
     "Digestion",
+    "Homeostasis",
     "Homeostasis (Kidney, Thermoregulation)",
     "Biotechnology",
   ]),
@@ -48,7 +52,9 @@ const MDCAT_UNITS: Record<Subject, Set<string>> = {
     "Fundamentals: Moles, Stoichiometry, Limiting Reactants and Yield",
     "Atomic Structure",
     "Gases",
+    "Liquids",
     "Liquids and Hydrogen Bonding",
+    "Solids",
     "Solids and Crystal Lattice",
     "Chemical Equilibrium",
     "Reaction Kinetics",
