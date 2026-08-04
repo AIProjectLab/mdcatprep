@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { getAllTests, isFreeTestUsed, isDailyChallengeUsedToday, getCustomPapersUsedToday, isFullPreviewUsed, type StoredTest } from "@/lib/store";
-import { getQuestionUnits, getTextbookQuestions, getTextbookSources, PAYMENTS_DISABLED, type Subject } from "@/lib/questions";
+import { getQuestionUnits, getTextbookQuestions, getTextbookSources, PAYMENTS_DISABLED, PAST_PAPERS_ONLY, type Subject } from "@/lib/questions";
 import questionsData from "@/data/questions.json";
 import AppHeader from "@/components/AppHeader";
 import { useUser } from "@clerk/nextjs";
@@ -95,15 +95,15 @@ export default function DashboardClient({
       ? customUnits.find((u) => u.unit === Number(customUnit))?.label ?? null
       : null;
   const previewSubject = customSubject || "All subjects";
-  const previewTopic = customPastOnly ? "Real past-paper MCQs" : customUnitLabel || "All topics";
-  const customUrl = `/test?mode=custom&count=${customCount}${customSubject ? `&subjects=${encodeURIComponent(customSubject)}` : ""}${customUnit !== "all" && !customPastOnly ? `&unit=${customUnit}` : ""}${customPastOnly ? "&past=1" : ""}${isDemo ? "&demo=1" : ""}`;
+  const previewTopic = PAST_PAPERS_ONLY || customPastOnly ? "Real past-paper MCQs" : customUnitLabel || "All topics";
+  const customUrl = `/test?mode=custom&count=${customCount}${customSubject ? `&subjects=${encodeURIComponent(customSubject)}` : ""}${customUnit !== "all" && !customPastOnly && !PAST_PAPERS_ONLY ? `&unit=${customUnit}` : ""}${customPastOnly || PAST_PAPERS_ONLY ? "&past=1" : ""}${isDemo ? "&demo=1" : ""}`;
   const customPaperCard = (
     <section id="custom-paper" className="mt-6 rounded-2xl border border-purple-200 bg-gradient-to-br from-purple-50 to-white p-5 shadow-sm">
       <div>
         <h2 className="text-lg font-bold text-stone-900">🎯 Build Your Own Paper</h2>
-        <p className="mt-1 text-sm text-stone-600">Drill exactly what you&apos;re weak in — pick a subject, topic and size.</p>      </div>
-
-      <div className="mt-4 grid gap-3 sm:grid-cols-3">
+        <p className="mt-1 text-sm text-stone-600">Pick a subject and size — built from real MDCAT past-paper MCQs.</p>
+      </div>
+      <div className={`mt-4 grid gap-3 ${PAST_PAPERS_ONLY ? "sm:grid-cols-2" : "sm:grid-cols-3"}`}>
         <label className="text-sm font-semibold text-stone-700">Subject
           <select value={customSubject} onChange={(e) => { setCustomSubject(e.target.value as Subject | ""); setCustomUnit("all"); }} className="mt-1 w-full rounded-lg border border-stone-300 bg-white px-3 py-2 font-normal focus:border-purple-500 focus:ring-1 focus:ring-purple-500">
             <option value="">All subjects</option>
@@ -115,33 +115,37 @@ export default function DashboardClient({
             {[10, 20, 30].map((count) => <option key={count} value={count}>{count} MCQs</option>)}
           </select>
         </label>
-        <label className="text-sm font-semibold text-stone-700">Topic
-          <select value={customUnit} onChange={(e) => setCustomUnit(e.target.value)} disabled={!customSubject} className="mt-1 w-full rounded-lg border border-stone-300 bg-white px-3 py-2 font-normal focus:border-purple-500 focus:ring-1 focus:ring-purple-500 disabled:bg-stone-50 disabled:text-stone-400">
-            {!customSubject ? (
-              <option value="all" disabled>Select a subject first</option>
-            ) : (
-              <>
-                <option value="all">All topics</option>
-                {customUnits.map(({ unit, label }) => <option key={unit} value={unit}>{label}</option>)}
-              </>
-            )}
-          </select>
-        </label>
+        {!PAST_PAPERS_ONLY && (
+          <label className="text-sm font-semibold text-stone-700">Topic
+            <select value={customUnit} onChange={(e) => setCustomUnit(e.target.value)} disabled={!customSubject} className="mt-1 w-full rounded-lg border border-stone-300 bg-white px-3 py-2 font-normal focus:border-purple-500 focus:ring-1 focus:ring-purple-500 disabled:bg-stone-50 disabled:text-stone-400">
+              {!customSubject ? (
+                <option value="all" disabled>Select a subject first</option>
+              ) : (
+                <>
+                  <option value="all">All topics</option>
+                  {customUnits.map(({ unit, label }) => <option key={unit} value={unit}>{label}</option>)}
+                </>
+              )}
+            </select>
+          </label>
+        )}
       </div>
 
-      {/* Past-paper only toggle */}
-      <label className="mt-3 flex cursor-pointer items-start gap-3 rounded-lg border border-purple-200 bg-white px-4 py-3">
-        <input
-          type="checkbox"
-          checked={customPastOnly}
-          onChange={(e) => setCustomPastOnly(e.target.checked)}
-          className="mt-0.5 h-4 w-4 rounded border-stone-300 accent-purple-700"
-        />
-        <span>
-          <span className="block text-sm font-semibold text-stone-900">Only real MDCAT past-paper MCQs</span>
-          <span className="block text-xs text-stone-500">Build from actual past papers only — no textbook questions.</span>
-        </span>
-      </label>
+      {/* Past-paper only toggle — hidden while the bank is past-paper only by default */}
+      {!PAST_PAPERS_ONLY && (
+        <label className="mt-3 flex cursor-pointer items-start gap-3 rounded-lg border border-purple-200 bg-white px-4 py-3">
+          <input
+            type="checkbox"
+            checked={customPastOnly}
+            onChange={(e) => setCustomPastOnly(e.target.checked)}
+            className="mt-0.5 h-4 w-4 rounded border-stone-300 accent-purple-700"
+          />
+          <span>
+            <span className="block text-sm font-semibold text-stone-900">Only real MDCAT past-paper MCQs</span>
+            <span className="block text-xs text-stone-500">Build from actual past papers only — no textbook questions.</span>
+          </span>
+        </label>
+      )}
 
       {/* Live preview */}
       <div className="mt-4 flex flex-wrap items-center justify-between gap-2 rounded-lg border border-purple-200 bg-purple-600/5 px-4 py-2.5">
