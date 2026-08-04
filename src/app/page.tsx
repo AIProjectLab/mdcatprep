@@ -101,8 +101,8 @@ export default function Home() {
 
         {/* Hero visual — the real exam structure */}
         <div className="mx-auto mt-12 max-w-md rounded-2xl border border-stone-200 bg-white p-6 text-left shadow-md">
-          <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">The Real MDCAT 2025 Exam</p>
-          <p className="mt-1 text-sm text-stone-500">180 MCQs · 3 hours · all 5 boards</p>
+          <p className="text-xs font-semibold uppercase tracking-wide text-teal-700">The Real MDCAT Exam Pattern</p>
+          <p className="mt-1 text-sm text-stone-500">180 MCQs · 3 hours · same as the real 2025 papers</p>
           <div className="mt-4 space-y-3">
             {[
               { name: "Biology", count: 81, color: "bg-teal-600" },
