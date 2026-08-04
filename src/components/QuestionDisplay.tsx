@@ -52,7 +52,11 @@ export default function QuestionDisplay({
       return `📖 ${question.book}${question.page ? ` · p.${question.page}` : ""}`;
     }
     if (question.source && question.source !== "Unknown 0") {
-      return question.year > 0 ? `${question.source} ${question.year}` : question.source;
+      // Avoid duplicating the year when it's already part of the source (e.g. "DUHS 2024")
+      if (question.year > 0 && !question.source.includes(String(question.year))) {
+        return `${question.source} ${question.year}`;
+      }
+      return question.source;
     }
     return null;
   })();
