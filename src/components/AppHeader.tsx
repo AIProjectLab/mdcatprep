@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { UserButton, useUser } from "@clerk/nextjs";
+import { PAYMENTS_DISABLED } from "@/lib/questions";
 
 export default function AppHeader() {
   const { user, isLoaded } = useUser();
@@ -56,7 +57,7 @@ export default function AppHeader() {
 
         {/* Right side */}
         <div className="flex items-center gap-3">
-          {isLoaded && !isPro && (
+          {isLoaded && !isPro && !PAYMENTS_DISABLED && (
             <Link
               href="/payment"
               className="hidden rounded-lg border border-teal-700 px-3 py-1.5 text-sm font-semibold text-teal-700 hover:bg-teal-50 md:inline-block"
@@ -104,7 +105,7 @@ export default function AppHeader() {
               {link.label}
             </Link>
           ))}
-          {isLoaded && !isPro && (
+          {isLoaded && !isPro && !PAYMENTS_DISABLED && (
             <Link
               href="/payment"
               onClick={() => setMenuOpen(false)}

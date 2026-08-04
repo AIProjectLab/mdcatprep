@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { getAllTests, isFreeTestUsed, isDailyChallengeUsedToday, getCustomPapersUsedToday, isFullPreviewUsed, type StoredTest } from "@/lib/store";
-import { getQuestionUnits, getTextbookQuestions, getTextbookSources, type Subject } from "@/lib/questions";
+import { getQuestionUnits, getTextbookQuestions, getTextbookSources, PAYMENTS_DISABLED, type Subject } from "@/lib/questions";
 import questionsData from "@/data/questions.json";
 import AppHeader from "@/components/AppHeader";
 import { useUser } from "@clerk/nextjs";
@@ -428,25 +428,43 @@ export default function DashboardClient({
 
               {customPaperCard}
 
-              {/* Quiet upsell — last, small, not a card wall */}
-              <p className="mt-6 text-center text-sm text-stone-500">
-                Want full-length 180-MCQ exams and subject-focused tests?{" "}
-                <Link href="/payment" className="font-semibold text-teal-700 underline">Unlock unlimited</Link>
-              </p>
+              {/* Quiet upsell — hidden while payments are paused */}
+              {!PAYMENTS_DISABLED && (
+                <p className="mt-6 text-center text-sm text-stone-500">
+                  Want full-length 180-MCQ exams and subject-focused tests?{" "}
+                  <Link href="/payment" className="font-semibold text-teal-700 underline">Unlock unlimited</Link>
+                </p>
+              )}
             </>
           ) : (
             <>
-              <h1 className="text-2xl font-bold">Access Required</h1>
-              <p className="mt-4 text-stone-600">
-                {paymentPending
-                  ? "Your payment is being verified. You will get access within a few hours."
-                  : "Purchase access to start practicing full-length MDCAT mock tests."}
-              </p>
-              {!paymentPending && (
-                <Link href="/payment"
-                  className="mt-6 inline-block rounded-lg bg-teal-700 px-8 py-3 text-sm font-semibold text-white hover:bg-teal-600">
-                  Get access
-                </Link>
+              {PAYMENTS_DISABLED ? (
+                <>
+                  <h1 className="text-2xl font-bold">Keep practicing free</h1>
+                  <p className="mt-4 text-stone-600">
+                    All practice is currently free while we refresh the question bank.
+                    Take the free diagnostic, try today&apos;s challenge, or build your own past-paper test.
+                  </p>
+                  <Link href="/dashboard#custom-paper"
+                    className="mt-6 inline-block rounded-lg bg-teal-700 px-8 py-3 text-sm font-semibold text-white hover:bg-teal-600">
+                    Build a past-paper test
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <h1 className="text-2xl font-bold">Access Required</h1>
+                  <p className="mt-4 text-stone-600">
+                    {paymentPending
+                      ? "Your payment is being verified. You will get access within a few hours."
+                      : "Purchase access to start practicing full-length MDCAT mock tests."}
+                  </p>
+                  {!paymentPending && (
+                    <Link href="/payment"
+                      className="mt-6 inline-block rounded-lg bg-teal-700 px-8 py-3 text-sm font-semibold text-white hover:bg-teal-600">
+                      Get access
+                    </Link>
+                  )}
+                </>
               )}
             </>
           )}

@@ -6,7 +6,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
-import { generateCustomPaper, generateCustomTest, generateTextbookTest } from "@/lib/questions";
+import { generateCustomPaper, generateCustomTest, generateTextbookTest, PAYMENTS_DISABLED } from "@/lib/questions";
 import type { Question, Subject } from "@/lib/questions";
 import { saveTest, isFreeTestUsed, markFreeTestUsed, isDailyChallengeUsedToday, markDailyChallengeUsed, isCustomPaperLimitReached, markCustomPaperStarted, isFullPreviewUsed, markFullPreviewUsed } from "@/lib/store";
 import Timer from "@/components/Timer";
@@ -60,7 +60,14 @@ export default function TestPage() {
     const { mode } = getConfig();
     let blocked = false;
     if (!isPro && mode !== "demo") {
-      if (mode === "full" || mode === "2025") {
+      if (PAYMENTS_DISABLED) {
+        // Payments paused: past-paper tests are fully free — only daily/custom limits apply
+        if (mode === "daily" && isDailyChallengeUsedToday()) {
+          blocked = true;
+        } else if (mode === "custom" && isCustomPaperLimitReached()) {
+          blocked = true;
+        }
+      } else if (mode === "full" || mode === "2025") {
         // Free users get one full-length preview, then it's locked
         blocked = isFullPreviewUsed();
       } else if (mode !== "daily" && mode !== "custom" && isFreeTestUsed()) {
@@ -157,9 +164,15 @@ export default function TestPage() {
     const { questions, testId, startTime, duration } = testData;
 
     const isPro = user?.publicMetadata?.hasAccess === true;
-    if (!isPro && testData.modeId === "daily") markDailyChallengeUsed();
-    else if (!isPro && (testData.modeId === "full" || testData.modeId === "2025")) markFullPreviewUsed();
-    else if (!isPro && testData.modeId !== "custom") markFreeTestUsed();
+    // Payments paused: past-paper tests are free — only per-day daily/custom limits still apply
+    if (PAYMENTS_DISABLED) {
+      if (!isPro && testData.modeId === "daily") markDailyChallengeUsed();
+      else if (!isPro && testData.modeId === "custom") markCustomPaperStarted();
+    } else {
+      if (!isPro && testData.modeId === "daily") markDailyChallengeUsed();
+      else if (!isPro && (testData.modeId === "full" || testData.modeId === "2025")) markFullPreviewUsed();
+      else if (!isPro && testData.modeId !== "custom") markFreeTestUsed();
+    }
 
     saveTest({
       id: testId, mode: testData.modeId, startTime, endTime: now, duration,

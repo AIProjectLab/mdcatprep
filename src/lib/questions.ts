@@ -94,6 +94,12 @@ const MDCAT_UNITS: Record<Subject, Set<string>> = {
 // Set to false to re-enable syllabus-tagged textbook questions once the bank is fixed.
 export const PAST_PAPERS_ONLY = true;
 
+// TEMPORARY SAFETY SWITCH
+// While the question bank is limited to past papers, paid Pro access is paused so
+// students are not asked to pay for content that is temporarily reduced.
+// Set to false to re-enable the payment/paywall once the bank is fully restored.
+export const PAYMENTS_DISABLED = true;
+
 // A question is usable in MDCAT tests if:
 //  - it is a real past paper (always in syllabus), OR
 //  - (when PAST_PAPERS_ONLY is false) it is a textbook question tagged with an official MDCAT unit

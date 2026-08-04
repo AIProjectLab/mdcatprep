@@ -6,7 +6,7 @@ import { getTest } from "@/lib/store";
 import questionsData from "@/data/questions.json";
 import QuestionDisplay from "@/components/QuestionDisplay";
 import AppHeader from "@/components/AppHeader";
-import type { Question } from "@/lib/questions";
+import { PAYMENTS_DISABLED, type Question } from "@/lib/questions";
 
 interface RawQuestion {
   id: number;
@@ -126,12 +126,18 @@ export default function ResultPage({ params }: { params: Promise<{ id: string }>
           <h2 className="font-bold text-stone-900">Want more practice like this?</h2>
           <p className="mt-1 text-sm text-stone-600">
             {percentage >= 55
-              ? "Great result! Keep the momentum with unlimited full-length MDCAT exams and focused subject practice."
-              : "Every practice session helps. Unlock unlimited exams and focus on your weakest subjects."}
+              ? "Great result! Keep the momentum with full-length MDCAT exams and focused subject practice."
+              : "Every practice session helps. Keep practicing and focus on your weakest subjects."}
           </p>
-          <Link href="/payment" className="mt-4 inline-block rounded-lg bg-teal-700 px-6 py-2.5 text-sm font-semibold text-white hover:bg-teal-600">
-            Unlock unlimited practice
-          </Link>
+          {PAYMENTS_DISABLED ? (
+            <Link href="/dashboard#custom-paper" className="mt-4 inline-block rounded-lg bg-teal-700 px-6 py-2.5 text-sm font-semibold text-white hover:bg-teal-600">
+              Practice more — free
+            </Link>
+          ) : (
+            <Link href="/payment" className="mt-4 inline-block rounded-lg bg-teal-700 px-6 py-2.5 text-sm font-semibold text-white hover:bg-teal-600">
+              Unlock unlimited practice
+            </Link>
+          )}
           <p className="mt-3 text-xs text-stone-500">
             Also free: <Link href="/test?mode=daily" className="font-semibold text-blue-600 underline">today&apos;s 30-question challenge</Link>
           </p>

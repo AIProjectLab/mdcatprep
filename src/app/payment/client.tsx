@@ -5,6 +5,7 @@ import Link from "next/link";
 import AppHeader from "@/components/AppHeader";
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
+import { PAYMENTS_DISABLED } from "@/lib/questions";
 
 export default function PaymentPageClient({ userId, email }: { userId: string; email: string }) {
   const { user } = useUser();
@@ -44,6 +45,31 @@ export default function PaymentPageClient({ userId, email }: { userId: string; e
   if (hasAccess) {
     router.push("/dashboard");
     return null;
+  }
+
+  // Payments paused — show a friendly notice instead of the payment form
+  if (PAYMENTS_DISABLED) {
+    return (
+      <main className="min-h-screen">
+        <AppHeader />
+        <div className="flex min-h-[70vh] items-center justify-center px-4">
+          <div className="max-w-lg text-center">
+            <h1 className="text-2xl font-bold">Pro access is paused right now</h1>
+            <p className="mt-4 text-stone-600">
+              We&apos;re currently refreshing the question bank to make it even better.
+              All practice — including the free diagnostic, daily challenge and custom
+              past-paper tests — remains free and available on your dashboard.
+            </p>
+            <p className="mt-2 text-sm text-stone-500">
+              Pro access will reopen here soon. Thank you for your patience.
+            </p>
+            <Link href="/dashboard" className="mt-6 inline-block rounded-lg bg-teal-700 px-6 py-3 text-sm font-semibold text-white hover:bg-teal-600">
+              Back to free practice
+            </Link>
+          </div>
+        </div>
+      </main>
+    );
   }
 
   if (submitted) {
