@@ -267,7 +267,59 @@ export function generateCustomPaper(count: number, subjects: Subject[], unit?: n
     const matchesTopic = pastOnly || unit === undefined || (subjectFilter && q.unit === unit);
     return matchesSubject && matchesTopic;
   });
-  const questions = shuffle(pool).slice(0, Math.min(requested, pool.length));
+
+  // ---- Balanced selection across all boards ----
+  // Group the pool by board so every board that has questions is fairly represented,
+  // instead of big banks (e.g. UHS, KMU) crowding out smaller ones in a plain shuffle.
+  const byBoard = new Map<string, Question[]>();
+  for (const q of pool) {
+    const board = (q.source || "?").split(" ")[0];
+    if (!byBoard.has(board)) byBoard.set(board, []);
+    byBoard.get(board)!.push(q);
+  }
+
+  const boardNames = [...byBoard.keys()];
+  const target = Math.min(requested, pool.length);
+  const selected: Question[] = [];
+
+  if (boardNames.length === 0) {
+    // No questions at all
+  } else if (target === pool.length) {
+    // Requesting everything available — take it all
+    selected.push(...shuffle(pool));
+  } else {
+    // Base share: divide the target evenly across boards
+    let remaining = target;
+    const perBoard = Math.floor(target / boardNames.length);
+
+    // Round 1: each board contributes its base share (shuffled within board)
+    for (const board of boardNames) {
+      const shuffled = shuffle(byBoard.get(board)!);
+      const take = Math.min(perBoard, shuffled.length, remaining);
+      selected.push(...shuffled.slice(0, take));
+      remaining -= take;
+    }
+
+    // Round 2: fill any leftover by taking more from boards that still have questions
+    let guard = 0;
+    while (remaining > 0 && guard++ < 50) {
+      let added = false;
+      for (const board of boardNames) {
+        if (remaining <= 0) break;
+        const shuffled = shuffle(byBoard.get(board)!);
+        const used = new Set(selected.map((q) => q.id));
+        const fresh = shuffled.filter((q) => !used.has(q.id));
+        if (fresh.length > 0) {
+          selected.push(fresh[0]);
+          remaining--;
+          added = true;
+        }
+      }
+      if (!added) break; // no more fresh questions anywhere
+    }
+  }
+
+  const questions = shuffle(selected);
   const bySubject = new Map<Subject, number>();
   for (const q of questions) bySubject.set(q.subject, (bySubject.get(q.subject) || 0) + 1);
   return {
